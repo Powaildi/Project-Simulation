@@ -1,0 +1,9 @@
+[creative_tabs]
+	#Allow vanilla creative tabs to be reordered and hidden
+	manage_vanilla_tabs = false
+
+[menu]
+	#Show the Tab Organizer button in the creative inventory
+	show_creative_menu_button = true
+	#Show the config button in the Tab Organizer screen
+	show_organizer_config_button = true

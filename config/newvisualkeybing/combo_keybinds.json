@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "combos": [
+    {
+      "mappingName": "gui.xaero_instant_waypoint",
+      "action": "快速路径点",
+      "category": "Xaero\u0027s Minimap",
+      "firstKey": "key.keyboard.left.control",
+      "secondKey": "key.keyboard.keypad.add",
+      "updatedAt": "2026-07-31T11:55:53.774120400"
+    }
+  ]
+}

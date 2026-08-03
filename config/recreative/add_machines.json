@@ -1,0 +1,32 @@
+[ 
+    {
+        "action": "custom_tab",
+        "tabs": ["recreative:machines"],
+        "name": "tab.recreative.machines",
+        "icon": "dndesires:gold_mixer",
+        "items": [
+            "create:encased_fan", "create:nozzle", "create:millstone", "create:crushing_wheel", "create:mechanical_press", "create:mechanical_mixer", "create:basin", "create:empty_blaze_burner", "create:blaze_burner",
+            "create:mechanical_saw", "create:deployer", "create:spout", "vintageimprovements:belt_grinder", "vintageimprovements:spring_coiling_machine", "vintageimprovements:vacuum_chamber", "vintageimprovements:vibrating_table", "vintageimprovements:centrifuge", "vintageimprovements:curving_press",
+            "vintageimprovements:convex_curving_head", "vintageimprovements:concave_curving_head", "vintageimprovements:w_shaped_curving_head", "vintageimprovements:v_shaped_curving_head", "vintageimprovements:lathe", "vintageimprovements:laser", "createbigcannons:basin_foundry_lid", "createdieselgenerators:basin_lid", "createdieselgenerators:bulk_fermenter",
+            {
+                "item": "createdieselgenerators:mold",
+                "nbt": "[createdieselgenerators:mold_type=\"createdieselgenerators:bowl\"]"
+            },
+            {
+                "item": "createdieselgenerators:mold",
+                "nbt": "[createdieselgenerators:mold_type=\"createdieselgenerators:lines\"]"
+            },
+            {
+                "item": "createdieselgenerators:mold",
+                "nbt": "[createdieselgenerators:mold_type=\"createdieselgenerators:chain\"]"
+            },
+            {
+                "item": "createdieselgenerators:mold",
+                "nbt": "[createdieselgenerators:mold_type=\"createdieselgenerators:bar\"]"
+            },
+            "createdieselgenerators:burner", "create:mechanical_crafter", "createimp:batch_mechanical_crafter", "createaddition:rolling_mill", "minecraft:grass_block", "createaddition:tesla_coil"
+
+        ]
+    
+    }
+]

@@ -1,0 +1,70 @@
+#Tectonic Layers incremental rebuild. Step 1 only prepares Tectonic's own height config.
+[general]
+	#STANDARD keeps normal Tectonic Overworld generation tall enough for the stacked Nether layer.
+	#Allowed Values: STANDARD
+	preset = "STANDARD"
+	#Makes water hurt players below the Nether-depth threshold without changing terrain generation.
+	boiling_water_damage = true
+	#How often boiling water deals damage below the Nether-depth threshold.
+	# Default: 20
+	# Range: 1 ~ 200
+	boiling_water_damage_interval_ticks = 20
+	#Damage dealt by boiling water each interval. 2.0 equals one heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	boiling_water_damage_amount = 1.0
+	#Makes beds explode below the Nether-depth threshold, matching Nether behavior.
+	nether_depth_beds_explode = true
+	#Makes water bucket placement evaporate below the Nether-depth threshold, matching Nether behavior.
+	nether_depth_water_evaporates = true
+	#Replaces a portion of deep Overworld hostile spawns with Nether-style mobs.
+	nether_depth_replace_hostile_spawns = true
+	#Imports real Nether terrain blocks into the deep Overworld layer by sampling the Nether dimension at the same X/Z.
+	nether_depth_import_nether_terrain = false
+	#When true, Tectonic Layers writes Tectonic's Overworld min_y/max_y from the selected preset before world creation. When false, existing tectonic.json is preserved.
+	manage_tectonic_height_config = false
+	#Preset for the Overworld/Tectonic vertical span. CUSTOM uses overworld_min_y and overworld_max_y.
+	#Allowed Values: VANILLA, STANDARD, TALL, MEGA, CUSTOM
+	overworld_height_preset = "STANDARD"
+	#Custom Overworld min Y used when overworld_height_preset is CUSTOM.
+	# Default: -336
+	# Range: -2048 ~ -16
+	overworld_min_y = -336
+	#Custom Overworld max Y used when overworld_height_preset is CUSTOM.
+	# Default: 320
+	# Range: 128 ~ 2048
+	overworld_max_y = 320
+	#Manual Y level where the deep Nether-like layer starts in the Overworld. Leave at -80 to auto-fit from the world's real minY and Nether source height.
+	# Default: -80
+	# Range: -2048 ~ 2048
+	nether_depth_threshold_y = -80
+	#Blocks above Nether-depth threshold where water only boils (particles) before full evaporation below threshold.
+	# Default: 48
+	# Range: 0 ~ 256
+	nether_boiling_transition_band = 48
+	#Blocks used to blend the imported Nether ceiling into the Overworld caves. Lower values make a shorter, sharper transition.
+	# Default: 20
+	# Range: 8 ~ 96
+	nether_terrain_transition_band = 20
+	#How far below Nether-depth threshold vertical portal targets should prefer to land; defaults near the middle of the single Nether source layer.
+	# Default: 128
+	# Range: 16 ~ 256
+	nether_portal_offset_below_threshold = 128
+	#Blocks used to fade from Overworld visuals into the stacked End layer before client dimension effects/shaders switch fully to End.
+	# Default: 64
+	# Range: 0 ~ 256
+	end_visual_transition_band = 64
+	#Maximum number of deep chunks processed per server tick. Lower this if the server lags during world generation.
+	# Default: 8
+	# Range: 1 ~ 100
+	max_layer_tasks_per_server_tick = 8
+	#Maximum number of synchronous chunk loads allowed per tick when importing terrain.
+	# Default: 4
+	# Range: 1 ~ 20
+	max_nether_sync_loads_per_tick = 4
+	#Experimental: generate source Nether/End chunks only to FEATURES instead of FULL when importing terrain. Falls back to FULL for Nether chunks that need block entity data.
+	use_features_status_for_source = true
+	#The registry name of the dimension to stack BELOW the Overworld (at the bottom of the world).
+	stacked_dimension_below = "minecraft:the_nether"
+	#The registry name of the dimension to stack ABOVE the Overworld (at the top of the world).
+	stacked_dimension_above = "minecraft:the_end"

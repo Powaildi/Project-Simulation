@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "selectedProfile": 0,
+  "profiles": [],
+  "priorities": {
+    "key.ftbchunks.map": -1,
+    "key.aero_reformation.ender_compass": 0,
+    "key.touhou_little_maid.dismount.desc": 0,
+    "key.sophisticatedbackpacks.inventory_interaction": 0,
+    "key.modernui.zoom": 0,
+    "key.socialInteractions": -1,
+    "key.extendedae.viewpattern": 0,
+    "key.kubejs.kubedex": 0,
+    "key.sophisticatedbackpacks.open_backpack": 0,
+    "key.tacz.crawl.desc": 0,
+    "gui.xaero_new_waypoint": 0,
+    "iris.keybind.reload": 0
+  },
+  "conflictIgnored": []
+}

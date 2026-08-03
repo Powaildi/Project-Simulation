@@ -1,0 +1,11 @@
+ServerEvents.recipes(e=>{
+    //去除3粒合线配方
+    e.remove({id:'electroenergetics:crafting/copper_wire'})
+    e.remove({id:'electroenergetics:crafting/electrum_wire'})
+    e.remove({id:'electroenergetics:crafting/iron_wire'})
+    //变压器铁片
+    e.remove({id:'electroenergetics:stonecutting/transformer_core_lamination'})
+    e.recipes.vintageimprovements.turning('electroenergetics:transformer_core_lamination',Item.of('create:iron_sheet'),40)
+    //去除植物油配方
+    e.remove({id:'electroenergetics:compacting/plant_oil'})
+})

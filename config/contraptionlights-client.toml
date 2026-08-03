@@ -1,0 +1,30 @@
+[general]
+	#Rendering backend for the dynamic light. LAMB uses LambDynamicLights: lightmap-based and works with shaders. VEIL uses Veil deferred point lights: colored, with sub-level shadows. OFF disables client lighting.
+	#Allowed Values: OFF, LAMB, VEIL
+	mode = "LAMB"
+	#Overall brightness of the dynamic light. 1.0 is normal; lower values dim, higher values brighten.
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	luminanceMultiplier = 1.0
+	#Minimum time in milliseconds between light updates for a moving structure. 0 updates every tick for the smoothest result; higher values reduce cost.
+	# Default: 0
+	# Range: 0 ~ 500
+	updateInterval = 0
+
+#Light cast into the world by a moving structure's own blocks.
+[lightFromStructures]
+	#Cast light from the blocks a moving Create contraption carries.
+	enableContraptionDynamicLight = true
+	#Cast light from the blocks a moving Sable sub-level carries.
+	enableSubLevelDynamicLight = true
+
+#Light cast onto a moving structure by nearby world sources.
+[lightOntoStructures]
+	#Light Create contraptions from nearby dynamic world sources such as held torches, glowing mobs, and dropped glowing items.
+	enableWorldToContraptionLambLight = false
+	#Light Sable sub-levels from nearby world light, both dynamic sources and static blocks like torches, glowstone, and lava.
+	enableWorldToSubLevelLambLight = false
+	#Light stationary Create kinetics such as rotating shafts and cogs from nearby dynamic world sources.
+	enableWorldToKineticLambLight = false
+	#Light contraptions and sub-levels from nearby world light sources.
+	enableWorldToStructureVeilLight = false

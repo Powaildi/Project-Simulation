@@ -1,0 +1,77 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "55F2C817E8D2DB65"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "create:precision_mechanism"
+	}
+	id: "55F2C817E8D2DB65"
+	images: [{
+		height: 1.0d
+		id: "3D39348AF7244CFD"
+		image: "minecraft:textures/gui/sprites/world_list/warning_highlighted.png"
+		rotation: 0.0d
+		width: 1.0d
+		x: 2.0d
+		y: 0.0d
+	}]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "577724F278C5C0CE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3195FBC8ABE52356"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["577724F278C5C0CE"]
+			id: "4FD590696D0A11F2"
+			rewards: [{
+				count: 16
+				id: "1804241D2B30576B"
+				item: {
+					count: 1
+					id: "create:precision_mechanism"
+				}
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "71E00744AA8EC7A5"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "3FE93C87E8C7FAAF"
+			tasks: [{
+				id: "12B258FCD83643AD"
+				item: { count: 1, id: "create:mechanical_arm" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "147BD4A983D191C0"
+			tasks: [{
+				id: "5E0C20A40549B60F"
+				item: { count: 1, id: "create:rotation_speed_controller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+	]
+}

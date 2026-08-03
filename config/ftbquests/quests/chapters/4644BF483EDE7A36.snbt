@@ -1,0 +1,34 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4644BF483EDE7A36"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "createutilities:void_casing"
+	}
+	id: "4644BF483EDE7A36"
+	images: [ ]
+	order_index: 4
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "aeronautics:fluid/levitite_blend_still"
+			}
+			id: "ftbquests:custom_icon"
+		}
+		id: "6BB61A20A98ECE6D"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			advancement: "simulated:call_of_the_void"
+			criterion: ""
+			id: "1678DA5B1AB1BCCE"
+			type: "advancement"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

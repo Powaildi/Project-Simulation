@@ -1,0 +1,24 @@
+#Enables CTL's built-in layouts for selected vanilla creative tabs.
+#This does not disable the CTL API.
+#External plugins can still control their own tabs independently.
+#Changes apply immediately. Reopen the Creative Inventory if needed.
+enableBuiltinVanillaLayouts = true
+#Enables CTL subtab grouping in the Creative Inventory.
+#When disabled, registered subtabs remain normal independent creative tabs.
+#External integrations may only display grouped subtabs while this option is enabled.
+enableSubtabs = true
+#Shows a CTL configuration button in the Creative Inventory.
+showCreativeConfigButton = true
+#Enables developer-only visual debug helpers for CTL headers and banners.
+#When enabled, CTL may show extra metadata/tooltips such as visual ids and JSON paths.
+enableDeveloperVisualDebug = true
+#Automatically adds fallback pages to CTL-controlled tabs.
+#Fallback pages contain non-Minecraft items that were added to the original vanilla tab but were not claimed by CTL pages.
+#This helps preserve items from mods without CTL compatibility.
+enableFallbackPages = true
+#Controls how fallback content is grouped.
+#BY_MOD_SECTION: one final page named 'Mods', with one section per mod.
+#BY_MOD_PAGE: one final page per mod.
+#This option only applies when enableFallbackPages is true.
+#Allowed Values: BY_MOD_SECTION, BY_MOD_PAGE
+fallbackMode = "BY_MOD_SECTION"

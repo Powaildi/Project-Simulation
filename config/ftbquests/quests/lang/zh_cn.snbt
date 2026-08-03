@@ -1,0 +1,642 @@
+{
+	chapter.1642F9C1277277FB.title: "不止农业"
+	chapter.267276FE11D1F343.title: "无限产矿"
+	chapter.2AA715C4FBF89DC9.title: "向天空奔去"
+	chapter.35D5A88BB6D93F0B.title: "包裹物流"
+	chapter.4644BF483EDE7A36.title: "末影传输"
+	chapter.4E080401B8222C5E.title: "通用机械"
+	chapter.4E86CA3348BC5844.title: "应用能源2"
+	chapter.55F2C817E8D2DB65.title: "高级制造"
+	chapter.6B6916B21A0B9243.title: "欢迎来到机械动力：模拟计划"
+	chapter.6D812D0F1FB67760.title: "长途运输"
+	chapter.7092222EFAF380AA.title: "启动流程"
+	chapter.7535927818BB5361.title: "超越维度"
+	chapter.75FE8B397D533EFA.title: "无限采矿"
+	chapter_group.218ACD7D75A06A52.title: "第二章 物流时代"
+	chapter_group.5C60B2A5FE1D41C3.title: "起始篇"
+	chapter_group.6DDED6A143CA022F.title: "第一章 确立基础"
+	chapter_group.7FA4C321DCF44059.title: "第三章 物理工厂"
+	image.3FB9428AA14AA8E3.title: "一定要用烈焰人燃烧室吗"
+	image.7540D97F5BFC3A51.title: "活用被动过滤"
+	quest.0098EF300945C17B.quest_desc: ["插入感应卡的样板供应器能向机器提供FE能量"]
+	quest.0098EF300945C17B.title: "能源元件和感应卡"
+	quest.00F2BB5FD1262BE2.quest_subtitle: "无线终端！"
+	quest.0107F8C53691ABA4.title: "升级卡"
+	quest.0199D2B8C04D51A1.quest_desc: [
+		"每个轴有两个方向，用扳手旋转；"
+		"红石充能后停止起重机移动，并将应力传到起重机取物器。"
+	]
+	quest.0199D2B8C04D51A1.quest_subtitle: "向停止移动的机器传递应力"
+	quest.01E55B6567AE27DD.quest_desc: [
+		"给管道套壳或者用扳手右键变成玻璃管形式，可以阻止管道自动连接。"
+		"给管道染色可以阻止不同色管道自动连接。"
+		"{@pagebreak}"
+		"管道扳手可以调整管道的连接。"
+		"用管道扳手右键管道，也能阻止管道自动连接，shift右键管道解除。"
+		"{@pagebreak}"
+		"如果你没有管道扳手，就丢弃你手里的扳手，这样就能变成管道扳手。"
+	]
+	quest.01E55B6567AE27DD.quest_subtitle: "使用管道扳手改变连接的法则"
+	quest.02426635645BB447.quest_subtitle: "塞进样板供应器"
+	quest.02426635645BB447.title: "样板"
+	quest.0247E25E1EF5BE93.quest_desc: ["推荐放进me箱子中，然后放入染料或者染色球"]
+	quest.0247E25E1EF5BE93.quest_subtitle: "给线缆上色"
+	quest.0247E25E1EF5BE93.title: "染色器"
+	quest.025D3545CFDA92BC.quest_subtitle: "另一个选择"
+	quest.02AE894307BE87B7.quest_subtitle: "一虚一实"
+	quest.03B68793A3855E06.quest_desc: [
+		"右键组装物理结构，这个结构被转动时，根据阻力和转速提供应力。"
+		"Shift右键以调整阻力大小。"
+		"最多提供2,000,000su应力；如果有结构中有黑名单方块，则最多提供400,000su。"
+		"物品提示仅供参考，请以实际应力输出为准!"
+	]
+	quest.03B68793A3855E06.quest_subtitle: "恭迎新神降临"
+	quest.03E1FF1EBAAC726E.quest_subtitle: "风弹驱动"
+	quest.03E1FF1EBAAC726E.title: "运输器和流体传输器"
+	quest.040DF246743F2681.quest_desc: [
+		"分子装配室会主动向6个方向传输样板和合成材料；"
+		"扳手右键分子装配室就可以让它固定向某一面传这些。"
+		"{@pagebreak}"
+		"只要样板标记的产物回到网络，就算合成完成，不管中间是怎么处理的，甚至可以是手搓！"
+		"然而，当你打开了 锁定合成-直到主产物被返回 模式，产物就得回到这个样板供应器，才能让它继续发送材料！"
+		"{@pagebreak}"
+		"分子装配室可以单走，这种情况下可以直接放一个样板进去，它也能进行合成。"
+	]
+	quest.040DF246743F2681.quest_subtitle: "下单和自动合成"
+	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
+	quest.058A306939F2A867.quest_subtitle: "动态结构"
+	quest.061579E55CFCD5AF.quest_desc: ["女仆饰品，如果你觉得不保险可以用。"]
+	quest.061579E55CFCD5AF.quest_subtitle: "绿色的云莓？"
+	quest.070C1AF80BD8C2E3.quest_desc: ["注意：工作盆盖板和工作盆铸造盖执行的不是同一种配方！"]
+	quest.070C1AF80BD8C2E3.quest_subtitle: "放在工作盆上面"
+	quest.077ECF29212AFD4C.quest_subtitle: "连接多条传送带，在顶部设定物流规则"
+	quest.082BC4F3A23DF1A3.quest_subtitle: "浮力"
+	quest.08C6A7A19C537F32.quest_subtitle: "是的，它可以合成"
+	quest.0983EC4C5B82647D.quest_desc: [
+		"[修改配置]无限流体池所需格数：10000->512;"
+		"允许软管滑轮直接填充无限流体池。"
+		"{@pagebreak}"
+		"软管滑轮不需要一直通入应力。"
+		"让软管头停留在上，输入流体填充流体池；"
+		"填满后让软管头沉底，即可无限抽出。"
+		"支持无限抽出的流体：水、熔岩、巧克力"
+	]
+	quest.0983EC4C5B82647D.quest_subtitle: "无限抽取！"
+	quest.09FC03E3ABD3DEE7.quest_desc: [
+		"开放容器"
+		"如果工作盆东南西北斜下角有传送带、置物台、分液池等开放容器，它就会向那里开口，自动将处理完的物品和流体输出到那里。"
+		"{@pagebreak}"
+		"从另一个角度来说，如果你发现工作盆向它开口，它就是开放容器！"
+		"如果它向你不想要的那一面开口了，就用扳手右键你想开口那一面。"
+	]
+	quest.09FC03E3ABD3DEE7.quest_subtitle: "含自动输出功能"
+	quest.0A5E2E86219B753F.quest_desc: [
+		"包层线缆降低渲染压力"
+		"智能线缆显示频道占用"
+	]
+	quest.0A5E2E86219B753F.title: "包层线缆和智能线缆"
+	quest.0B1C1CC339570182.quest_desc: ["[ \"你至少在制造出\", { \"text\": \"ME扩展接口\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0C7FB0E13AD5BE48\" } }, \"以后才能制造！\" ]"]
+	quest.0B1CC582366222D7.quest_desc: ["通入燃料后燃烧，相当于加热的烈焰人燃烧室。"]
+	quest.0B1CC582366222D7.quest_subtitle: "高炉cos烈焰人燃烧室"
+	quest.0B1CC582366222D7.title: "燃烧器"
+	quest.0D22AE7BA883E752.quest_desc: ["开放容器"]
+	quest.0D22AE7BA883E752.quest_subtitle: "不妨把它当做置物台"
+	quest.0EFE5894220E5B85.quest_desc: [
+		"比如1x1抽屉，一旦使用配置工具锁定，即使物品全部被取出，不匹配的物品也不会进入。"
+		"{@pagebreak}"
+		"最合适的应该是精妙存储的背包，它能非常优雅地解决循环装配中间产物堆积的问题。"
+		"——给前面两三格放半成品，后面填满原料（每格只要放一个），然后找到栏位记忆功能，记忆全部栏位。这样就能保证半成品总是能先进行下一步，尽快变成成品，以免半成品填满容器，卡停产线。"
+		"{@pagebreak}"
+		"在极端情况下，你也可以使用工程师工具箱，它也有栏位记忆功能。"
+	]
+	quest.0EFE5894220E5B85.quest_subtitle: "使用具有栏位记忆的存储方块"
+	quest.0FBB5F3D1C5E3A9C.quest_desc: ["爆炒无线合成终端[森罗物语真实瞬间]"]
+	quest.0FBB5F3D1C5E3A9C.quest_subtitle: "以防你把无线终端炒了"
+	quest.0FCB2695748A8CD7.quest_desc: ["听到这个不用费心思去找有背包的怪，因为不存在的。"]
+	quest.0FCB2695748A8CD7.quest_subtitle: "它为什么在自己放"
+	quest.0FFB58E57B41DC77.quest_desc: ["按下F3+H，你可以看到物品的命名空间和id，命名空间是Create的是打板的冲压机，Vintage Improvements的是模具的冲压机。"]
+	quest.0FFB58E57B41DC77.quest_subtitle: "以前叫辊压机"
+	quest.103619ECEE085C73.quest_subtitle: "那么，我们开始吧？"
+	quest.103619ECEE085C73.title: "你的旅途就此开始"
+	quest.1061DF3B153EC47E.quest_desc: [
+		"开放容器"
+		"手持物品右键台面，可以将物品放上去，并且将上面原有的物品拿下来。"
+		"空手则只拿下来。"
+	]
+	quest.1068E23EADF46CCE.quest_desc: [
+		"扳手右键切换加压/抽真空。"
+		"一些原料或者产物会在这个机器而不是工作盆里面。"
+	]
+	quest.1068E23EADF46CCE.quest_subtitle: "两个模式"
+	quest.10F250DF2A074C5A.quest_subtitle: "接入存储网络"
+	quest.110ABF2530D4EF66.title: "离合器和反转齿轮箱"
+	quest.11A2D28175E53D85.quest_subtitle: "一次出一组，可过滤和调整数量"
+	quest.11DDBD0B1C6FEF9F.quest_subtitle: "气密"
+	quest.12E6DEF90A35C9BD.quest_desc: [
+		"开放容器"
+		"往上面丢要处理的物品，处理完后右键取出。"
+	]
+	quest.13998C57E753F87F.quest_desc: [
+		"用扳手调整每个格子的合成方向，合成材料最终要汇集到一起。"
+		"从背面调整可以让一些格子连接。"
+		"合成的出口可以放一个容器。"
+		"{@pagebreak}"
+		"使用合成槽盖板表示这里是空气；"
+		"使用红石充能强制开始合成。"
+	]
+	quest.13998C57E753F87F.quest_subtitle: "对我弱小的应力来源造成了极大的打击"
+	quest.13998C57E753F87F.title: "动力合成器"
+	quest.15246B798AF9A52F.quest_desc: ["[ \"海洋可以离你的出生点4000格以上。如果你没有海带，请完成\", { \"text\": \"传动杆\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"294DA6134929C6BA\" } }, \"任务\" ]"]
+	quest.16944825D416ECF6.quest_desc: [
+		"云绸成为了重要的工材料！"
+		"它可以在一些配方中代替海带和皮革。"
+	]
+	quest.16944825D416ECF6.quest_subtitle: "为什么会是它？"
+	quest.16B38C91BE2155A4.quest_desc: [
+		"墙壁和玻璃之间可以互相替换"
+		"一整个只占用一个频道！"
+	]
+	quest.16B38C91BE2155A4.quest_subtitle: "超大分子装配室"
+	quest.16B38C91BE2155A4.title: "装配矩阵"
+	quest.16C6D219ECD5A275.quest_subtitle: "物品流体都能传"
+	quest.16CD560361E8DEE8.quest_desc: [
+		"试着在输出大量物资的传送带末端放一个溜槽，底下放桶岩浆。"
+		"不要把重要的东西丢上这个传送带！"
+		"现在还有专门的销毁装置"
+	]
+	quest.18F42B310CF3BA9B.quest_subtitle: "便携的储罐"
+	quest.19C7F226F860613E.quest_desc: [
+		"Mob Neutralizer 改变了怪物对你的探测范围，"
+		"只要你不打它们或者激怒它们或者靠太近，它们就不会打你！"
+	]
+	quest.1B26B34F4E8FB480.quest_subtitle: "去造个重锤玩玩"
+	quest.1B457E3FB907EB28.quest_subtitle: "编辑样板"
+	quest.1C0D3C6649F6736A.quest_subtitle: "配合动态结构"
+	quest.1CC766D153D8A473.quest_subtitle: "需要冲压头"
+	quest.1CD1C5B8A1C8234D.quest_desc: [
+		"根据不同的燃料产生不同的应力和速度，鼠标悬停在燃料桶上按alt键可以看到信息。"
+		"注意：本整合包大幅修改了燃料的属性！"
+	]
+	quest.1CD1C5B8A1C8234D.quest_subtitle: "常见小型引擎"
+	quest.1D07141C7211A806.quest_desc: [
+		"如果你直接站在铁把手所在物理结构上，你就不能把自己拉起来。"
+		"Grip Handle 与铁把手不同的是，抓握时会让这个把手朝向自己。"
+	]
+	quest.1D07141C7211A806.quest_subtitle: "小明能把自己拉起来吗？"
+	quest.1E220BF067A4AABB.quest_subtitle: "用它再生是前期不错的手段"
+	quest.1E3A8BA45D26C457.quest_subtitle: "更轻的雪"
+	quest.1EF93DED50739580.quest_subtitle: "编辑元件"
+	quest.1FC02254EFFE1CE0.quest_desc: [""]
+	quest.1FC02254EFFE1CE0.quest_subtitle: "来自附属mod的传动元件"
+	quest.1FC02254EFFE1CE0.title: "特殊传动手段"
+	quest.2111149AE352A053.quest_subtitle: "挖掉它，寻找陨石中心的外星科技"
+	quest.2142E4744C27EF45.quest_subtitle: "移动空间"
+	quest.24482FF7F5A5C497.quest_desc: ["你知道JEI可以翻页吗？"]
+	quest.24482FF7F5A5C497.quest_subtitle: "最安全最方便的一集"
+	quest.24482FF7F5A5C497.title: "鼓风机触媒"
+	quest.24B67411E9633D6D.title: "粉碎羊毛出更多"
+	quest.2578C69D83581EDA.quest_desc: [
+		"两个粉碎轮中间会生成粉碎轮控制器，对其中的生物造成伤害（无视盔甲与附魔）。"
+		"配方结束以后，控制器会将产物投入前下方（横放）或者正下方（竖放，思索中的）的开放容器，如果没有开放容器，就在世界上生成掉落物。"
+	]
+	quest.2578C69D83581EDA.quest_subtitle: "注重生产安全"
+	quest.259C4083619FD9B8.quest_desc: [
+		"长按侧面调整模式，通常使用旋转锁定，"
+		"搭配控制铁轨可以做直线农场。"
+		"{@pagebreak}"
+		"使用扳手shift右键装配后的矿车能直接带走矿车上的东西。"
+	]
+	quest.259C4083619FD9B8.quest_subtitle: "一把抓住，顷刻炼化"
+	quest.25F1115E9916C61C.quest_desc: ["需要更好的工具"]
+	quest.270B696D6B36D811.quest_desc: [
+		"你可能在别的包见过那个灰色的水龙头。"
+		"它是Supplemantaries的，然而这个包没有！"
+		"水龙头能注液和填充工作盆，但是不能填充流体到封闭的容器。"
+		"或许一些中期的科技能帮到你！"
+		"{@pagebreak}"
+		"水龙头不能对传送带上的物品注液，那是注液器和智能水龙头才能干的事情。"
+	]
+	quest.2ADE68F0135119C2.quest_desc: [
+		"按x+c打开配置"
+		"按F4灵魂出窍"
+		"按F6伽马覆写"
+		"按鼠标按键5伪潜行放置"
+		"更多功能请自行设置"
+	]
+	quest.2B0A4EC343A2AB61.quest_subtitle: "先让它流一格"
+	quest.2B7261FAA7E7B1C0.quest_subtitle: "打包带走"
+	quest.2C5091F9E0EB15BA.quest_desc: ["向指向的方向传递红石信号。"]
+	quest.2C5091F9E0EB15BA.quest_subtitle: "将指南针放在上面"
+	quest.2C6E930E52925654.quest_desc: ["[ \"请打开任务的下一节：\", { \"text\": \"向天空奔去\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0530F866F0C5EDD2\" } } ]"]
+	quest.2C6E930E52925654.quest_subtitle: "我不属于这里，但是也会动"
+	quest.2CDB253624DF5677.title: "鼓风机（吸）"
+	quest.2D84C696D048115A.quest_desc: [
+		"物品在使用后打上不可破坏标签；"
+		"移除了耐久和经验修补这两个附魔，尽管能在jei中显示，它们不会在正常游戏中出现。"
+	]
+	quest.2F10E89A968A75D9.quest_desc: [
+		"将它贴在你的物理结构上，右键就能查看受力图。"
+		"现在，你要处理的力就不是一定过重心的了！"
+	]
+	quest.2F10E89A968A75D9.quest_subtitle: "受力分析"
+	quest.2FECC8CE4280FFE2.quest_desc: [
+		"[{\"text\":\"下载Neo-Voxy的源码并自行构建\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/NHblock-Johnsnow/neo-voxy\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"点击打开 GitHub 仓库\"}}]"
+		"你必须从源代码构建。请自行配置代理，并且学习如何构建模组。构建的过程需要十几分钟到数小时，如果不配置代理几乎一定失败。请耐心等待。"
+		"这是这个整合包最难的部分。"
+		"当然，即使没有这个mod也不影响你游玩本整合包。"
+		"为什么要这样呢？"
+		"{@pagebreak}"
+		"由于 Voxy 的 ARR（All Rights Reserved）许可证，这些Fork不分发编译好的 JAR 文件。"
+		"而整合包也不能直接分发mod本体 JAR 文件，只能通过链接下载编译好的 JAR 文件。"
+		"这显然冲突了。"
+		""
+		"{@pagebreak}"
+		"在 C:\\Users\\（你的用户名）\\.gradle\\ 目录下，找到或新建一个名为 gradle.properties 的文件。"
+		"用记事本打开该文件，根据你的代理软件类型，添加以下内容（替换掉端口号和IP）："
+		"如果你的代理运行在本地（如 Clash、V2Ray、SSR 等），通常 HTTP 和 HTTPS 使用同一个端口："
+		"systemProp.http.proxyHost=127.0.0.1"
+		"systemProp.http.proxyPort=7890"
+		"systemProp.https.proxyHost=127.0.0.1"
+		"systemProp.https.proxyPort=7890"
+		"注意：端口号 7890 只是常见值（Clash 默认混合端口）。请去你的代理软件设置中查看HTTP(S) 代理端口（有些是 10809、1080 或 8118）。"
+		"{@pagebreak}"
+		"如果你看不懂这些文字，请立即放弃并向群友询问模组文件！"
+	]
+	quest.30A53B64763061C9.quest_desc: ["开放容器"]
+	quest.30D12F139F33850F.quest_desc: [
+		"可以给大小齿轮和传动杆套壳。"
+		"鼠标悬停在物品上，长按w直到出现思索界面。"
+	]
+	quest.30D12F139F33850F.quest_subtitle: "手持安山合金右键去皮原木方块"
+	quest.31B7A7AFA98F0204.quest_desc: ["无限的存储！不过你暂时不能通过接口让它与世界中的方块沟通。"]
+	quest.31F0CE31EEACF0BD.quest_desc: ["普通镐挖掘会掉落损低一级的母岩，带精准采集的掉落本体（除了无瑕母岩，这个挖掘一定掉落低一级的）。"]
+	quest.31F0CE31EEACF0BD.title: "石英母岩"
+	quest.327172E392FDDA31.title: "无线红石"
+	quest.33544FE083DAD503.quest_subtitle: "中间是另一个网络"
+	quest.337A0C9565DEDAEB.quest_desc: [
+		"按住~键挖矿会挖掉相邻的方块，最多64个。"
+		"按住~+Shift滚动鼠标滚轮切换模式。"
+		"同样按住~键，你对传动杆、传送带等进行套壳和拆壳时也会连锁。"
+		"{@pagebreak}"
+		"月光灯筒在饰品栏中时，默认按V键开关。"
+	]
+	quest.337A0C9565DEDAEB.title: "连锁挖矿/连锁套壳"
+	quest.33F6A2180EABBB49.quest_desc: [
+		"每10mB/t就能提供一级锅炉的水量。"
+		"还有很多好用的应力源，多在其他任务中找找吧！"
+	]
+	quest.33F6A2180EABBB49.quest_subtitle: "更好的应力来源"
+	quest.34390F8254673F95.quest_desc: [
+		"探测到世界中的矿床结构，拿着它看到矿床就会在Xaero的地图上标记。"
+		"潜行滑动滚轮以切换要探测的矿床。"
+		"但是，把矿床移走，标记不会跟着走。"
+	]
+	quest.34390F8254673F95.quest_subtitle: "实体方块"
+	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
+	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
+	quest.37097B68F6CC04CF.quest_subtitle: "还可以给无线终端充能"
+	quest.398D70C6A7A9108D.quest_subtitle: "最好把多个矿床叠一起"
+	quest.398D70C6A7A9108D.title: "可以把矿床物理化带走"
+	quest.39C2795AFBF3BF50.quest_desc: [
+		"上下面接线缆，其余四面催生。"
+		"不占用频道。"
+	]
+	quest.39C2795AFBF3BF50.quest_subtitle: "加快随机刻"
+	quest.3A2BA0179D3427F6.quest_desc: ["有一些需要你有管理员权限！"]
+	quest.3A2BA0179D3427F6.quest_subtitle: "与刚才的相反"
+	quest.3A7A79D470A26577.quest_subtitle: "附着在采矿机动态结构上"
+	quest.3BDBB52B158BEBFA.title: "羊毛自增殖"
+	quest.3BE27FEE59ECE692.quest_desc: ["更多的压印模板不会在这里展示，而是将它们的产物放在任务中。"]
+	quest.3D4147E44C0A90F8.quest_desc: ["从ME控制器拉出来32个频道"]
+	quest.3D4147E44C0A90F8.quest_subtitle: "传递32个频道"
+	quest.3D4147E44C0A90F8.title: "致密线缆"
+	quest.3D4B9A068D12708C.quest_desc: ["[修改配置]长度 40格 -> 200格"]
+	quest.3D66BE6FFD11EB64.quest_desc: [
+		"开放容器"
+		"右键两个传动杆，在它们之间创建传送带，最长20格。"
+		"空手右键传送带，把上面的东西拿下来。"
+		"传送带的末端有开放容器时，物品会输出到这个容器。"
+	]
+	quest.3E3DE48243CBFD65.title: "破坏核心和成型核心"
+	quest.3EFEB4F6AA3160A3.quest_subtitle: "复制配置"
+	quest.3F268AF2847961FD.quest_subtitle: "试试用它来制作安山合金"
+	quest.3F91B9A9B32FC4DF.quest_subtitle: "用于放置物品和流体等组件"
+	quest.3FF5C9B379E26866.quest_desc: [
+		"将方块以物品形式扔出去，或者放在世界中。然后看着它，Jade（就是屏幕顶部的那个东西）会显示它的物理性质，比如质量(kpg)。"
+		"佩戴&e工程师护目镜&r以后，将鼠标悬停在物品上就能看到。"
+	]
+	quest.3FF5C9B379E26866.quest_subtitle: "佩戴工程师护目镜"
+	quest.403E0FC8B877BB82.quest_subtitle: "制作冲压机的模版"
+	quest.4279C7A6565AED0C.quest_subtitle: "丝绸之触"
+	quest.4279C7A6565AED0C.title: "精准采集"
+	quest.43C16273D16F3372.quest_subtitle: "一次出一组，可过滤和调整数量"
+	quest.445AE1D2E559C3B4.quest_desc: [
+		"动力泵每4rpm就提供10mB/t流速；"
+		"流体泵应力需求和传输速度都翻倍。"
+	]
+	quest.4600A08AC1E40CFF.quest_desc: [
+		"向动力锯扔4个铁板能得到它们（动力锯会遍历配方）。"
+		"有铸模的工作盆有视觉改变，并可以额外执行需要它们的配方。"
+		"它们不会被自动输出，但是会被漏斗输出。"
+	]
+	quest.4600A08AC1E40CFF.quest_subtitle: "扔在工作盆里面"
+	quest.4600A08AC1E40CFF.title: "铸模"
+	quest.48B8B5226A03CFFB.quest_desc: ["堆在网络任意位置就能发挥功能"]
+	quest.48B8B5226A03CFFB.quest_subtitle: "为网络缓存能量"
+	quest.495E54DE6BDA8722.quest_desc: [
+		"开放容器"
+		"物品能滚动过去，并且能连续滚。"
+		"还有一个特化这一功能的元件。"
+	]
+	quest.495E54DE6BDA8722.quest_subtitle: "滚滚而来"
+	quest.4B52FF34322B4E09.quest_desc: [
+		"不同颜色的线缆不会自动连接，但都自动和福鲁伊克斯色的线缆连接；"
+		"使用石英纤维可以让两个不自动连接的线缆之间传输能量。"
+	]
+	quest.4B52FF34322B4E09.quest_subtitle: "给它们染色吧"
+	quest.4B6C5761E541D393.quest_desc: ["未完成"]
+	quest.4B6C5761E541D393.quest_subtitle: "召唤陨石，然后接住它，以获得丰厚奖励"
+	quest.4EB08D6A562C58B9.quest_desc: [
+		"直接挖掘矿床不会掉落任何东西！"
+		"如果你的出生点并不好，建议重新开一个档。"
+	]
+	quest.4EB08D6A562C58B9.quest_subtitle: "别挖矿床"
+	quest.4EE3A928F6B4335F.quest_desc: [
+		"自己设计工业平台去吧"
+		"{@pagebreak}"
+		"以下是已经移除的mod 工业平台 的描述："
+		"放上去后，用扳手右键选择规格，shift右键选择是否清除上方的方块。"
+		"平台展开时对齐区块。按F3+G显示区块边界，平台自身也会显示建造区域。"
+		"{@pagebreak}"
+		"平台展开时，工业平台方块同一y值将会填满方块。也就是说，如果你在地面上放了一个，展开的时候你会半截入地。"
+		"而这一格（不包括）往上15格将会清空，往下5格会将空气替换为石头。"
+		"你可以在Industrial Platform的模组配置页面调整往上清空和往下填充的格数。"
+		"{@pagebreak}"
+		"手持石头右键工业平台，就会展开。"
+	]
+	quest.4EE3A928F6B4335F.quest_subtitle: "未完成"
+	quest.4F125AA018CE5F16.quest_desc: [
+		"[ \"试试去\", { \"text\": \"寻找陨石\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"73A2BDD0064188B1\" } } ]"
+		"如果你还没有改造过矿机，那么最后右键采矿机轴承把它停了，以免物品溢出！"
+	]
+	quest.4F1441AFE9D49275.quest_desc: ["每个面提供32个频道"]
+	quest.4F1441AFE9D49275.quest_subtitle: "网络的中心"
+	quest.4F9C54DCAAAC988A.quest_subtitle: "为什么我不直接掏矿机的马达？"
+	quest.4FD590696D0A11F2.quest_desc: [
+		"在查看配方时，鼠标悬停在配方页面，滚动鼠标滚轮，可以翻页。"
+		""
+	]
+	quest.4FD590696D0A11F2.quest_subtitle: "一二三四五"
+	quest.50176211DAE10324.quest_desc: [
+		"隔断线缆连接"
+		"伪装板不会隔断线缆连接"
+	]
+	quest.50176211DAE10324.quest_subtitle: "隔断线缆连接"
+	quest.503A2FBFAF7DCA26.quest_desc: [
+		"开放容器"
+		"如果上面有不是16个的物品，少了不会尝试合并，多了不会拆分。"
+		"比如往上丢64物品，它和下面的溜槽都会直接传64物品。"
+		"扳手右键开窗。"
+	]
+	quest.503A2FBFAF7DCA26.quest_subtitle: "一次传输16个物品"
+	quest.51E83972B9868417.quest_subtitle: "近在咫尺，却邈以山河"
+	quest.52C79C3DF42BDCDC.quest_desc: [
+		"在即将组装的动态结构上放一个，在对侧放一个，中间隔1~2个方块。"
+		"装配动态结构以后，每次可以对接的时候，这对接口都会对接，同时动态结构暂停动作，直到装卸停止。"
+		"{@pagebreak}"
+		"一个移动接口可以与多个同类接口配对，只要它们中间隔1~2个方块。"
+		"如果你不想让它们对接，就给将世界中的那一个红石充能，这会阻止对接行为。"
+		"推荐给钻机对侧的接口充能，隔一段时间就停止充能，这对提高钻机效率相当重要！"
+		"{@pagebreak}"
+		"那么，有没有让钻机不用停下的方法呢？"
+	]
+	quest.52C79C3DF42BDCDC.quest_subtitle: "与外界交换物品和流体"
+	quest.52DBE39A81CFB72F.quest_subtitle: "推力"
+	quest.52DBE39A81CFB72F.title: "螺旋桨"
+	quest.5309CF54BE9339B7.quest_subtitle: "接受物品，创建子网"
+	quest.5489EACC0072DA0A.quest_desc: ["结构名称：Cloud Island"]
+	quest.5489EACC0072DA0A.quest_subtitle: "使用结构罗盘"
+	quest.5491BE8E5291EBC9.quest_subtitle: "无法手动取出"
+	quest.55EBEE3B63D35B7B.quest_desc: ["5x5x10 -> 7x7x10"]
+	quest.55EBEE3B63D35B7B.quest_subtitle: "可以让钻井范围增大"
+	quest.55EBEE3B63D35B7B.title: "在钻头上放置3x3铁块"
+	quest.56C5E859D3CB0D82.quest_desc: ["被套壳以后，用扳手右键传动杆的两面，可以开关应力在这两个面的传输。"]
+	quest.592125B9214B82AA.title: "破坏面板和成型面板"
+	quest.5A1E0FBBF949AECD.quest_subtitle: "2FE/t -> 1AE/t"
+	quest.5A6139B22BD9F214.title: "能源存储组件"
+	quest.5B64FA9A4C9FCD66.quest_subtitle: "使用含流体的容器过滤该流体"
+	quest.5C6ECCAAE59B0EA7.quest_desc: ["将铁粒或者锌粒与安山岩在工作台2x2交错摆放合成安山合金"]
+	quest.5C6ECCAAE59B0EA7.quest_subtitle: "我已启动"
+	quest.5CC134B6078D71D1.quest_subtitle: "掉落赛特斯石英粉"
+	quest.5CC134B6078D71D1.title: "未长成的晶簇"
+	quest.5D27744F84C8FAE1.quest_subtitle: "快速复制配置，或者产生材料清单"
+	quest.5D91D787AFB7CE93.quest_desc: ["如果你一时到达不了下界要塞，或许你可以用这些来应急，以及通过别的方法制造一些。"]
+	quest.5E1A14E5C549DDAA.title: "无限的存储"
+	quest.5F0E6732B3550195.quest_desc: [
+		"专门供能AE网络，一个网络只能由一台这个发电机供能（包括用石英纤维隔断的网络）。"
+		"[修改配置]发电量20AE/t -> 200000AE/t"
+	]
+	quest.5F0E6732B3550195.quest_subtitle: "无代价网络能源"
+	quest.5F93F939BA212B92.quest_desc: ["[魔改]玩家吃掉以后获得创造飞行能力。女仆吃掉以后免疫摔落伤害。"]
+	quest.5F93F939BA212B92.quest_subtitle: "创造飞行"
+	quest.60A8C8E612262147.quest_subtitle: "小型动态结构首选缓存"
+	quest.60EA9D9D4801E43B.quest_subtitle: "暂时无作用"
+	quest.6137E43860EFCB87.title: "砂轮分液池"
+	quest.613F7DCF72C046DC.quest_desc: ["放在燃烧器或者烈焰人燃烧室上面，燃烧器燃烧时提供4096su应力，可以调整方向和转速。"]
+	quest.613F7DCF72C046DC.quest_subtitle: "提供4096su应力"
+	quest.615BD1A519693678.quest_subtitle: "物品上行"
+	quest.615BD1A519693678.title: "溜槽（开窗）"
+	quest.622A7A64E2D34E9B.quest_desc: ["[ \"在\", { \"text\": \"吃掉云莓\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5F93F939BA212B92\" } }, \"以后，生存玩家也可以像在创造模式中那样飞行。\" ]"]
+	quest.622A7A64E2D34E9B.title: "创造飞行"
+	quest.62F3F76E788E2F8F.quest_desc: ["它现在也支持在动态结构中工作。"]
+	quest.62F3F76E788E2F8F.quest_subtitle: "少种类大宗存储"
+	quest.62F3F76E788E2F8F.title: "抽屉"
+	quest.635C82A2F15A3E21.quest_desc: ["充能赛特斯石英水晶现在不能直接拿来做福鲁伊克斯水晶"]
+	quest.635C82A2F15A3E21.quest_subtitle: "为什么生成水晶粉了"
+	quest.639783FE12AA4993.quest_desc: [
+		"你测试过程中可能会产生一些移动非常快的物理结构。这个时候，可以输入"
+		"/sable paused"
+		"来暂停物理模拟，并让它们停下来，接下来使用工具枪传送到这个结构旁边，你还可以直接删除它。"
+	]
+	quest.639783FE12AA4993.quest_subtitle: "蓝图与收拾残局"
+	quest.63B1F49D5A132AF9.quest_subtitle: "批量发酵"
+	quest.6415ED9A6143E23F.quest_desc: ["除了无限水，它还能销毁输入的流体。"]
+	quest.6415ED9A6143E23F.quest_subtitle: "无限水"
+	quest.6460EA3BE31C33D9.quest_subtitle: "第一个应力来源"
+	quest.646A9B89E7D5F171.quest_subtitle: "有了过滤，多流体储罐才能正式被应用"
+	quest.64CE8F735FCE6AE1.quest_desc: ["保留物品栏；岩浆像水那样转化为岩浆源；禁止幻翼生成。"]
+	quest.64CE8F735FCE6AE1.quest_subtitle: "把奖励都运行一遍"
+	quest.64CE8F735FCE6AE1.title: "游戏规则"
+	quest.64E754E35D37D2D8.quest_desc: [
+		"这个转速调节器通过特殊手段将目标转速调到了0，"
+		"对着它显示数字处长按呼出调节界面，就可以调整转速并启动采矿机了！"
+		"空手右键采矿机轴承，可以启动和停止采矿机。"
+	]
+	quest.64E754E35D37D2D8.quest_subtitle: "长按调节转速"
+	quest.65583F207526AA83.title: "任意石英粉"
+	quest.658AFFBC6A390283.quest_desc: ["计划在月球生成"]
+	quest.658AFFBC6A390283.title: "福鲁伊克斯汽油"
+	quest.659367C711A57B46.quest_desc: [""]
+	quest.659367C711A57B46.quest_subtitle: "科技大爆发"
+	quest.659367C711A57B46.title: "电路板"
+	quest.659CBBBAC2D59A43.quest_subtitle: "斧头右键世界中的原木"
+	quest.66547D7F3C4ED095.quest_desc: ["提供2048su应力；超级加热提供4096su应力。"]
+	quest.66547D7F3C4ED095.quest_subtitle: "这么弱？！"
+	quest.66A3ADBBE58FA358.quest_subtitle: "使用连接工具连接控制器与抽屉"
+	quest.6706F28CEEC4A914.quest_desc: ["手持做好的合成存储器shift+右键，就可以将存储组件拆出来。"]
+	quest.6706F28CEEC4A914.quest_subtitle: "下单需要它们"
+	quest.6706F28CEEC4A914.title: "合成存储器"
+	quest.6890721B1847FA48.title: "鼓风机"
+	quest.692C7BC7223EF273.quest_desc: [
+		"你不一定要拉满转速，因为128rpm和256rpm的生产速度可能是一样的。"
+		"{@pagebreak}"
+		"转速达到某一个值的时候，钻头挖掘的速度会明显变快，于是产率得到跳跃式增加。"
+		"对于辉绿岩，这个值是126rpm。"
+		"125rpm->3360~3520/h"
+		"126~256rpm->7500/h"
+		"以上数值是用显示链接器接黄铜隧道得到的。"
+	]
+	quest.692C7BC7223EF273.quest_subtitle: "还有一些其它的流体交互"
+	quest.692C7BC7223EF273.title: "6.0钻头机制不仅可以用于圆石"
+	quest.69DADAE84D81D9EB.quest_subtitle: "控制"
+	quest.6A84323C16937D1B.quest_subtitle: "隔断网络，不隔断能量传输"
+	quest.6BB61A20A98ECE6D.quest_subtitle: "跟物理体跳入虚空"
+	quest.6BB61A20A98ECE6D.title: "探访末地之海"
+	quest.6C70A9FFB4A2AE94.quest_desc: [
+		"开放容器"
+		"动力锯会遍历配方，当一个输入的物品有多种输出的可能的时候，它会选择第一个，下一次第二个……最后一个，第一个。"
+		"对它设置过滤以阻止这个倾向。"
+	]
+	quest.6CFD9D1B1915D3A1.quest_subtitle: "注意看箭头"
+	quest.6D0661B24F6D06CE.quest_subtitle: "挖这个不掉"
+	quest.6D0661B24F6D06CE.title: "别用动力钻头挖"
+	quest.6D097F287F9BFE82.quest_desc: ["让它能切出来右边的红石元件"]
+	quest.6D775059318ECF77.quest_desc: [
+		"如果你的结构卡了，可以便捷地移动它！"
+		"它当然会成为后续挑战的逃课手段，然而没有这个东西平时测试会比较难受。"
+		"自己决定要不要逃课吧。（制造出来不算）"
+	]
+	quest.6D775059318ECF77.quest_subtitle: "神力移动"
+	quest.6DF8E33EDEBE9980.quest_desc: [
+		"放进ME驱动器或者ME箱子中使用。"
+		"手持空的元件shift+右键，就可以将存储组件拆出来。"
+	]
+	quest.6DF8E33EDEBE9980.quest_subtitle: "塞进ME驱动器里"
+	quest.6DF8E33EDEBE9980.title: "物品/流体/化学品元件"
+	quest.6E651D90A3CEAF01.quest_desc: ["开放容器"]
+	quest.6E75FAED0BAF8D4D.quest_subtitle: "放在动力活塞后面"
+	quest.6EBDBBFDE321A594.quest_desc: [
+		"放在应力网络的任意位置，就能吸收多余的应力为自身的能量。"
+		"应力需求超过生产时，它会将存储的应力放出。"
+		"（仅在本整合包）适合应对瞬时应力需求量大的机器。"
+		"会导致应力表显示的应力供应虚高。"
+		"{@pagebreak}"
+		"你能带动256速的制动器吗？"
+	]
+	quest.6EBDBBFDE321A594.quest_subtitle: "应力存储"
+	quest.6FB1B310630C03D4.quest_subtitle: "跨维度连接网络"
+	quest.6FB1B310630C03D4.title: "量子环"
+	quest.7116F486FFBA4222.quest_subtitle: "便捷交互"
+	quest.713754DEDCABB164.title: "终端"
+	quest.7288BB4FAE8C2BB1.quest_desc: ["[ \"前往\", { \"text\": \"无限采矿\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"02AE894307BE87B7\" } }, \"章节查看矿机的组装方法。\" ]"]
+	quest.72C8573949A44341.quest_desc: [
+		"在你获取ME控制器之前，一个网络最多有8个频道，超过时网络会失效。大部分方块和组件会占用1个频道。"
+		"进入无线访问点GUI，将你的无线终端放进右上角槽位，就能绑定这个网络。"
+		"{@pagebreak}"
+		"将存储总线贴到物品保险库上，你就能通过终端直接访问保险库的内容！"
+		"为了外出时能方便地将物品存储到网络中，你可以将这些存储方块所在区块设定为强加载区块！"
+	]
+	quest.72C8573949A44341.quest_subtitle: "你后续发展的重要助力"
+	quest.73A2BDD0064188B1.quest_desc: ["陨石罗盘会指向最近的陨石"]
+	quest.743A85328F25C949.title: "形成需要下方的方块是基岩"
+	quest.759951B19DEBDE9B.quest_desc: ["后面的章节有一些 非常好拿 且 对你正在发展的章节 帮助非常大的奖励！"]
+	quest.759951B19DEBDE9B.quest_subtitle: "可能可以直接拿一些奖励"
+	quest.764624B8DA58238D.quest_subtitle: "小创造马达"
+	quest.764624B8DA58238D.title: "紧缩型引擎"
+	quest.766616E17A358EF9.quest_desc: [
+		"手持空的烈焰人燃烧室右键烈焰人或者烈焰人刷怪笼"
+		"{@pagebreak}"
+		"不需要插吸管（CCA）就能通入液体燃料并燃烧。"
+		"如果你想用固体燃料却没有动力臂，也可以试试动态结构中的机械手！"
+	]
+	quest.766616E17A358EF9.quest_subtitle: "是啊，烧什么"
+	quest.766AC93DBAEB43EF.quest_desc: [
+		"物理化它们然后带回你的基地！"
+		"后期你还可以用纸箱。"
+		"{@pagebreak}"
+		"纸箱右键套住方块，左键打掉就能拿起装了方块的纸箱；"
+		"对纸箱Shift+右键脱下纸箱。"
+	]
+	quest.766AC93DBAEB43EF.title: "采集工具"
+	quest.76E86999888CF0BD.quest_desc: ["手持恩特罗种子右键世界中的福鲁伊克斯块。"]
+	quest.76E86999888CF0BD.quest_subtitle: "像你做第一个安山机壳那样"
+	quest.77C2DA5E42C07511.quest_desc: ["将产物输出到前方的开放容器"]
+	quest.78FABF903D0B3007.quest_desc: [
+		"风帆产生向蒙皮那一面的推力"
+		"对称风帆不产生推力，通过施加阻力转向。"
+	]
+	quest.78FABF903D0B3007.quest_subtitle: "升力和阻力"
+	quest.7A5176E9980636C9.title: "熔融石英玻璃"
+	quest.7CF777E5AD31A03E.quest_desc: [
+		"冷冻液是一些前期物品高级配方和以后获取液态空气的必需品。"
+		"除此以外……"
+		"{@pagebreak}"
+		"TicksFrozen是记录实体在细雪中时间的nbt，以下称冷冻值。"
+		"实体在细雪中，冷冻值每tick+1，最多到达140，达到后每2s受到1点冷冻（minecraft:freeze）伤害；"
+		"在细雪以外（包括在冷冻液和冷冻配方的风中）冷冻值每tick-2。"
+		"[机械动力：龙+]在冷冻配方鼓风机的风中的实体每tick冷冻值+3，最多140。"
+		"{@pagebreak}"
+		"冷冻液中的冷冻值可以超过140。"
+		"玩家在冷冻液中："
+		"每tick冷冻值+9，然后x0.99，最终会到达594；"
+		"冷冻值到达140后每2s造成2点冷冻伤害。"
+		"&m想当冬泳怪鸽吗？&r"
+		"{@pagebreak}"
+		"其它实体在冷冻液中："
+		"每2s检测所有实体，如果是玩家或者物品就跳过。"
+		"冷冻值+360；"
+		"如果是女仆，冷冻值x0.7，最终会到达571；"
+		"其余的生物，冷冻值x1.5并且造成冷冻值/40的冷冻伤害；"
+		"如果冷冻值超过了int类型上限，这个实体会被代码杀（kill）"
+	]
+	quest.7CF777E5AD31A03E.quest_subtitle: "最强处死装置"
+	quest.7CF777E5AD31A03E.title: "冷冻液"
+	quest.7E1C22C477159E62.quest_desc: ["采矿机会消耗移动结构中的熔岩，获得超频效果，获得更高的效率。"]
+	quest.7E1C22C477159E62.title: "超频"
+	quest.7E6DF4F764696FD6.quest_subtitle: "维持网络中某些东西的数量"
+	quest.7EAF8A360F2537E4.title: "存储组件"
+	task.0500AB400FBFC5BF.title: "怪物相对中立"
+	task.0C3F52F2DB50BEA4.title: "树场"
+	task.0CA225A29356629B.title: "种植恩特罗水晶"
+	task.0FA9ED2F876C044E.title: "去皮原木"
+	task.1082CF998E5D211A.title: "启动采矿机"
+	task.14166143EDA6FFEE.title: "寻找浮空岛"
+	task.1474BD572BAC77D8.title: "任意石英粉"
+	task.15C17FF6E4EAAE37.title: "物品销毁"
+	task.1E650A9CB80CF602.title: "！？音乐？！"
+	task.1EBD1A182B6DA471.title: "是时候改造矿机了"
+	task.23E1A43248D83C35.title: "要不去干点别的事情？"
+	task.281428A3983E360E.title: "如何查看方块物理性质"
+	task.281A7B1197272153.title: "神秘方块"
+	task.2863BF7C1F5A5FD8.title: "任意抽屉"
+	task.2A552C74AEB2E69F.title: "内含Tweakeroo"
+	task.3195FBC8ABE52356.title: "第二章由此开始"
+	task.320BE1EF7193CF04.title: "观察矿床"
+	task.367BE7D99ABC79D0.title: "你随时可以开始后面的章节"
+	task.3784C907F10A6441.title: "再次获得无线终端"
+	task.3A040D0F880F771D.title: "寻找采矿机"
+	task.3D6EBAA4FA82E6EE.title: "挑战-接住陨石"
+	task.42465A15053A01A6.title: "被动过滤"
+	task.477F78D205C8C031.title: "挖掘陨石"
+	task.52B4094779BE502C.title: "游戏规则"
+	task.56718908A5F57EF9.title: "赛特斯石英簇"
+	task.5B8BCB4D1942D230.title: "下载voxy(Legacy)"
+	task.63D281AAE9BA2B2A.title: "快速展开产线(Legacy)"
+	task.673D8822323F6B8C.title: "或者你有你的想法"
+	task.683402D386BCBC62.title: "寻找陨石"
+	task.6D4A5293BC66AACC.title: "精准采集"
+	task.72420D31DF865D4E.title: "假如我直接飞"
+	task.74742F5B15A36BBC.title: "没有耐久"
+	task.78BD08FCB2369E41.title: "快速搭建存储网络"
+	task.7AAE000CACD6A88D.title: "两种矿脉"
+}

@@ -1,0 +1,106 @@
+# ====================
+# Minecraft 运行文件
+# ====================
+logs/
+crash-reports/
+saves/
+screenshots/
+resourcepacks/
+texturepacks/
+shaderpacks/
+backups/
+server.properties
+server.log
+launcher_profiles.json
+versions/
+cache/
+*.cache
+
+debug/
+Project Simulation-natives/
+natives-windows-x86_64/
+
+/Project Simulation.jar
+/Project Simulation.json
+/usercache.json
+/usernamecache.json
+# ====================
+# Mod 运行文件
+# ====================
+.mixin.out/
+.probe/
+.sable/
+ftbbackups3/
+downloads/
+data/
+local/
+oei/
+patchouli_books/
+tacz/
+tacz_backup/
+tlm_custom_pack/
+xaero/
+XaeroWaypoints_*/
+
+/patchouli_data.json
+/ponders_watched_azimuth.json
+/ponders_watched.json
+# ====================
+# 系统与隐藏文件
+# ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+
+# ====================
+# IDE 及开发工具
+# ====================
+.idea/
+.vscode/
+*.iml
+*.class
+*.project
+*.classpath
+.settings/
+*.code-workspace
+
+# ====================
+# 构建与编译输出
+# ====================
+.gradle/
+build/
+target/
+bin/
+out/
+*.log
+*.tmp
+*.bak
+*.old
+
+# ====================
+# 压缩包（通常为下载缓存）
+# ====================
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+
+# ====================
+# 其他临时/敏感文件
+# ====================
+*.lock
+*.pid
+*.cfg.bak
+/command_history.txt
+/hmclversion.cfg
+/log4j2.xml
+
+# ====================
+# 其他不知道干什么的文件
+# ====================
+datapacks/
+nodes/
+PCL/

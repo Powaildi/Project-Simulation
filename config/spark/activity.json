@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1784883255528,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/qnfPIygxmD"
+    }
+  }
+]

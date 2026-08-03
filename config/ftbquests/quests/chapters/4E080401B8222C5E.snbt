@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4E080401B8222C5E"
+	group: "7FA4C321DCF44059"
+	id: "4E080401B8222C5E"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [{
+		id: "48931365D2E83DB9"
+		tasks: [{
+			id: "555D18D258B76422"
+			item: { count: 1, id: "mekanism:metallurgic_infuser" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

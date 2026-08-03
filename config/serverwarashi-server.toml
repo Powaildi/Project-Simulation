@@ -1,0 +1,8 @@
+#Profiler auto-stop duration in seconds when no command duration is supplied.
+# Default: 900
+# Range: 1 ~ 86400
+perf_auto_stop_seconds = 900
+#Profiler sampling interval in microseconds.
+# Default: 1000
+# Range: 100 ~ 100000
+perf_sample_interval_us = 1000

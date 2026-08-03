@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6B6916B21A0B9243"
+	group: "5C60B2A5FE1D41C3"
+	icon: {
+		id: "minecraft:grass_block"
+	}
+	id: "6B6916B21A0B9243"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "103619ECEE085C73"
+			rewards: [
+				{
+					id: "298B9BEC059D3E5F"
+					item: {
+						count: 1
+						id: "create:wrench"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7379704C1EE65EA6"
+					item: {
+						count: 1
+						id: "create:goggles"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0127095534C87723"
+					item: {
+						count: 1
+						id: "create_fantasizing:tree_cutter"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7892889CA36C71CB"
+					item: {
+						count: 1
+						id: "artifacts:digging_claws"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "6D0ADD0D71133D0D"
+					item: {
+						components: {
+							"sophisticatedcore:number_of_inventory_slots": 108
+							"sophisticatedcore:number_of_upgrade_slots": 5
+							"sophisticatedcore:render_info_tag": {
+								upgradeItems: [
+									{
+										count: 1
+										id: "sophisticatedbackpacks:crafting_upgrade"
+									}
+									{
+										components: {
+											"sophisticatedcore:input_item": { }
+										}
+										count: 1
+										id: "sophisticatedbackpacks:stonecutter_upgrade"
+									}
+									{
+										count: 1
+										id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+									}
+									{
+										count: 1
+										id: "sophisticatedbackpacks:advanced_magnet_upgrade"
+									}
+									{
+										count: 1
+										id: "sophisticatedbackpacks:feeding_upgrade"
+									}
+								]
+							}
+							"sophisticatedcore:storage_uuid": [I;
+								487897390
+								604717989
+								-2016016224
+								-1991869993
+							]
+						}
+						count: 1
+						id: "sophisticatedbackpacks:diamond_backpack"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "3B59D43CF3D02F7B"
+					item: {
+						count: 1
+						id: "beyonddimensions:net_creater"
+					}
+					type: "item"
+				}
+				{
+					id: "1DBBF1DC9C091964"
+					item: {
+						count: 1
+						id: "minecraft:stone_hoe"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "457B5B45976A58D5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "create:propeller"
+			}
+			id: "622A7A64E2D34E9B"
+			rewards: [{
+				id: "01CBB200A6ABE760"
+				item: {
+					count: 1
+					id: "artifacts:bunny_hoppers"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "72420D31DF865D4E"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				id: "minecraft:diamond"
+			}
+			id: "2D84C696D048115A"
+			rewards: [{
+				id: "69A57068F240CA3D"
+				item: {
+					components: {
+						"minecraft:enchantments": {
+							levels: {
+								"minecraft:efficiency": 4
+								"minecraft:fortune": 3
+							}
+						}
+						"minecraft:unbreakable": {
+							show_in_tooltip: 0b
+						}
+					}
+					count: 1
+					id: "minecraft:diamond_pickaxe"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "74742F5B15A36BBC"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"!ftbquests:icon": { }
+					"ftbquests:entity_face": "minecraft:creeper"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "19C7F226F860613E"
+			rewards: [{
+				count: 16
+				id: "2AF7EC4A7BBF6CCF"
+				item: {
+					count: 1
+					id: "farmersdelight:pasta_with_meatballs"
+				}
+				team_reward: false
+				type: "item"
+			}]
+			tasks: [{
+				id: "0500AB400FBFC5BF"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "minecraft:command_block"
+			}
+			id: "64CE8F735FCE6AE1"
+			rewards: [
+				{
+					command: "/gamerule keepInventory true"
+					exclude_from_claim_all: true
+					icon: {
+						id: "minecraft:chest"
+					}
+					id: "724008BC0240B7A4"
+					permission_level: 3
+					team_reward: false
+					type: "command"
+				}
+				{
+					command: "/gamerule lavaSourceConversion true"
+					exclude_from_claim_all: true
+					icon: {
+						id: "minecraft:lava_bucket"
+					}
+					id: "264962170B7ECAB2"
+					permission_level: 3
+					type: "command"
+				}
+				{
+					command: "/gamerule doInsomnia false"
+					icon: {
+						components: {
+							"!ftbquests:icon": { }
+							"ftbquests:entity_face": "minecraft:phantom"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "660ECCB105D4EECF"
+					permission_level: 3
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "52B4094779BE502C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			id: "3A2BA0179D3427F6"
+			rewards: [
+				{
+					command: "/gamerule keepInventory false"
+					exclude_from_claim_all: true
+					id: "32095DF8D11F8610"
+					type: "command"
+				}
+				{
+					command: "/gamerule lavaSourceConversion false"
+					exclude_from_claim_all: true
+					id: "49934F13331C68F0"
+					type: "command"
+				}
+				{
+					command: "/gamerule doInsomnia true"
+					exclude_from_claim_all: true
+					icon: {
+						components: {
+							"!ftbquests:icon": { }
+							"ftbquests:entity_face": "minecraft:phantom"
+						}
+						id: "ftbquests:custom_icon"
+					}
+					id: "49ED97A16A824B05"
+					permission_level: 3
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "673D8822323F6B8C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "2ADE68F0135119C2"
+			tasks: [{
+				id: "2A552C74AEB2E69F"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			id: "0FCB2695748A8CD7"
+			rewards: [
+				{
+					id: "16DDD64E28A72DDC"
+					item: {
+						count: 1
+						id: "rocketnautics:music_disc_space"
+					}
+					type: "item"
+				}
+				{
+					id: "32DC3DEFC7A5303A"
+					item: {
+						count: 1
+						id: "minecraft:jukebox"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1E650A9CB80CF602"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "2FECC8CE4280FFE2"
+			invisible: true
+			tasks: [{
+				id: "5B8BCB4D1942D230"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+}

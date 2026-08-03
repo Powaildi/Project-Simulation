@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "35D5A88BB6D93F0B"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "create:cardboard_package_12x10"
+	}
+	id: "35D5A88BB6D93F0B"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [ ]
+}

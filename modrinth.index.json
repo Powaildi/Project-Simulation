@@ -1,0 +1,12 @@
+{
+  "game": "minecraft",
+  "formatVersion": 1,
+  "versionId": "0.0.3",
+  "name": "Project Simulation",
+  "summary": "",
+  "files": [],
+  "dependencies": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.236"
+  }
+}

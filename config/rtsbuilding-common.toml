@@ -1,0 +1,26 @@
+#Enable RTS Building survival progression, feature unlocks, home anchors, and progression radius limits.
+enableSurvivalProgression = false
+#When survival progression is enabled, share unlocked progression nodes and RTS home anchors with the player's FTB Team, or vanilla scoreboard team when FTB Teams is unavailable.
+shareSurvivalProgressionWithTeams = false
+#Skill material overrides. Format: node_path=minecraft:item:count,minecraft:item2:count. Example: ultimine=minecraft:diamond_pickaxe:1,minecraft:redstone_block:1
+progressionCostOverrides = []
+#Maximum RTS action radius in blocks. Used directly when survival progression is disabled, and by the Radius Max skill when survival progression is enabled.
+# Default: 128
+# Range: 48 ~ 512
+maxActionRadiusBlocks = 128
+#Enable the RTS blueprint library tab, local blueprint upload, and server-side blueprint placement.
+enableBlueprints = true
+#Maximum non-air blocks allowed in one RTS blueprint import, capture, or placement job.
+# Default: 20000
+# Range: 1 ~ 200000
+maxBlueprintBlocks = 20000
+#Render translucent block ghost models for placement previews and placement confirmation feedback.
+useBlockGhostPreview = true
+#Render translucent shrink-out block ghosts after server-confirmed block destruction.
+useDestroyBlockGhostAnimation = true
+#Render wireframe outlines for placement previews and placement confirmation feedback.
+useWireframePreview = false
+#Render shrink-out wireframe outlines after server-confirmed block destruction.
+useDestroyWireframeAnimation = false
+#Render merged skeleton borders for non-chain range destroy previews. Chain mining always uses the skeleton style.
+useRangeDestroySkeleton = true

@@ -1,0 +1,7 @@
+StartupEvents.registry('creative_mode_tab',e=>{
+    // let transmission = e.create('transmission')
+    // transmission.icon(()=>Item.of('create:creative_motor'))
+    // transmission.content()
+    //     ['bits_n_bobs:small_flanged_cogwheel', 'bits_n_bobs:large_flanged_cogwheel', 'create:chain_conveyor', 'minecraft:chain', 'create:copper_valve_handle', 'create:creative_motor', 'gnkinetics:creative_gear_motor', 'create:shaft', 'create:cogwheel', 'create:large_cogwheel', 'create:andesite_casing', 'create:brass_casing', 'create:gearbox', 'create:vertical_gearbox', 'create_connected:parallel_gearbox', 'create_connected:vertical_parallel_gearbox', 'create_connected:six_way_gearbox', 'create_connected:vertical_six_way_gearbox', 'create:encased_chain_drive', 'create_connected:encased_chain_cogwheel', 'create:clutch', 'create_connected:inverted_clutch', 'create:gearshift', 'create_connected:inverted_gearshift', 'create:sequenced_gearshift', 'create:rotation_speed_controller', 'create_connected:brass_gearbox', 'create_connected:vertical_brass_gearbox', 'createadditionallogistics:flexible_shaft', 'createadditionallogistics:lazy_shaft', 'createadditionallogistics:lazy_cogwheel', 'createadditionallogistics:lazy_large_cogwheel', 'create:speedometer', 'create:stressometer']
+    
+})

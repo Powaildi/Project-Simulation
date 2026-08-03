@@ -1,0 +1,399 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "267276FE11D1F343"
+	group: "6DDED6A143CA022F"
+	icon: {
+		id: "create:ochrum"
+	}
+	id: "267276FE11D1F343"
+	images: [{
+		height: 1.0d
+		id: "40019C825CA4D899"
+		image: "ftbquests:tasks/input_only"
+		rotation: 0.0d
+		width: 1.0d
+		x: -4.5d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1C722EBF1562310F"
+			rewards: [{
+				count: 4
+				id: "70DB6DEDD698FC4F"
+				item: {
+					count: 1
+					id: "create:blaze_cake"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "20AD8DC6BF68B103"
+				item: { count: 1, id: "dndesires:pumpkin_milkshake_bucket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "11BAC23AC3DC775A"
+			rewards: [{
+				count: 64
+				id: "0FC29A694511E0F3"
+				item: {
+					count: 1
+					id: "minecraft:glowstone_dust"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2EDE8DE37F5445F3"
+				item: { count: 1, id: "dndesires:glowberry_milkshake_bucket" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "5EA19F491D0A2DF3"
+			rewards: [{
+				count: 64
+				id: "7E783C713037C3A0"
+				item: {
+					count: 1
+					id: "create:electron_tube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7623F6D0D14E8E81"
+				item: { count: 1, id: "dndesires:strawberry_milkshake_bucket" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "10947D97090FDAF2"
+			rewards: [{
+				count: 64
+				id: "49C5DB20386508BE"
+				item: {
+					count: 1
+					id: "create:zinc_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FDDA8CC68BFAFD7"
+				item: { count: 1, id: "dndesires:vanilla_milkshake_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "41C5BE6A49BFCE68"
+			rewards: [{
+				count: 18
+				id: "4623989BE31D5E38"
+				item: {
+					count: 1
+					id: "create:steam_engine"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "79B7C748B9E6E897"
+				item: { count: 1, id: "dndesires:chocolate_milkshake_bucket" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C722EBF1562310F"]
+			id: "7C403EBBD882F304"
+			tasks: [{
+				id: "5DA4EC4132942E45"
+				item: { count: 1, id: "create:scorchia" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7C403EBBD882F304"
+				"743A85328F25C949"
+			]
+			dependency_requirement: "one_completed"
+			id: "60EA9D9D4801E43B"
+			tasks: [{
+				id: "18A2D4439AD86DAF"
+				item: { count: 1, id: "dndesires:breccia" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11BAC23AC3DC775A"]
+			id: "272D6253D4A83991"
+			tasks: [{
+				id: "36AB5691F4EA5714"
+				item: { count: 1, id: "minecraft:terracotta" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1E220BF067A4AABB"
+				"272D6253D4A83991"
+				"743A85328F25C949"
+			]
+			dependency_requirement: "one_completed"
+			id: "2E497ABD6707F951"
+			rewards: [{
+				count: 64
+				id: "7987B77DE73FADED"
+				item: {
+					count: 1
+					id: "minecraft:gold_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "696AB0DD95675FA2"
+				item: { count: 1, id: "create:ochrum" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5EA19F491D0A2DF3"]
+			id: "1DE8A4797B24DC99"
+			tasks: [{
+				id: "1F77209FA6AD31D1"
+				item: { count: 1, id: "minecraft:cobbled_deepslate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["10947D97090FDAF2"]
+			id: "066574C2BE85EEC8"
+			tasks: [{
+				id: "61786C625602BA13"
+				item: { count: 1, id: "minecraft:sandstone" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["41C5BE6A49BFCE68"]
+			id: "34947888663FD261"
+			tasks: [{
+				id: "2CF9C1C963FC7BC9"
+				item: { count: 1, id: "minecraft:granite" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1E220BF067A4AABB"
+				"1DE8A4797B24DC99"
+				"743A85328F25C949"
+			]
+			dependency_requirement: "one_completed"
+			id: "4B884FFD72DD3D24"
+			rewards: [{
+				count: 64
+				id: "425CE764FF6D9B0B"
+				item: {
+					count: 1
+					id: "minecraft:iron_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C18F4F97FA11F80"
+				item: { count: 1, id: "create:crimsite" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1E220BF067A4AABB"
+				"066574C2BE85EEC8"
+				"743A85328F25C949"
+			]
+			dependency_requirement: "one_completed"
+			id: "24BA0F3B2676E4E1"
+			rewards: [{
+				count: 64
+				id: "61B8F5DFD41D7377"
+				item: {
+					count: 1
+					id: "create:zinc_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "64DDFCFFA979A102"
+				item: { count: 1, id: "create:asurine" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1E220BF067A4AABB"
+				"34947888663FD261"
+				"743A85328F25C949"
+			]
+			dependency_requirement: "one_completed"
+			id: "094402CFF330E5B2"
+			rewards: [{
+				count: 64
+				id: "714CCC4F2051D1B7"
+				item: {
+					count: 1
+					id: "minecraft:waxed_oxidized_copper"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "612AEFC2D01EC216"
+				item: { count: 1, id: "create:veridium" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			disable_toast: true
+			id: "2B0A4EC343A2AB61"
+			tasks: [{
+				id: "33DC2C6BBD2C89AC"
+				item: { count: 1, id: "minecraft:lava_bucket" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			id: "615BD1A519693678"
+			shape: "none"
+			tasks: [{
+				id: "25512A5D7A933E7A"
+				item: { count: 1, id: "create:chute" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			disable_toast: true
+			id: "2CDB253624DF5677"
+			shape: "none"
+			tasks: [{
+				id: "2753772545B2CCB2"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			disable_toast: true
+			id: "743A85328F25C949"
+			tasks: [{
+				icon: {
+					id: "minecraft:bedrock"
+				}
+				id: "21A070DC6E36FE4C"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:bedrock"
+				type: "observation"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			disable_toast: true
+			id: "692C7BC7223EF273"
+			tasks: [{
+				id: "2D60E5EC21BFC4FF"
+				item: { count: 1, id: "create:mechanical_drill" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			id: "1E220BF067A4AABB"
+			rewards: [
+				{
+					id: "1D7D20BD67284508"
+					item: {
+						count: 1
+						id: "create:ochrum"
+					}
+					type: "item"
+				}
+				{
+					id: "72CA8CCFA6777491"
+					item: {
+						count: 1
+						id: "create:crimsite"
+					}
+					type: "item"
+				}
+				{
+					id: "4207975B99CAE3E0"
+					item: {
+						count: 1
+						id: "create:asurine"
+					}
+					type: "item"
+				}
+				{
+					id: "3F192D21F0F3DD43"
+					item: {
+						count: 1
+						id: "create:veridium"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "64CF6EF4854561B5"
+				item: { count: 1, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

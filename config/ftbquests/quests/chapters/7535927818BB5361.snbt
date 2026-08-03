@@ -1,0 +1,40 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7535927818BB5361"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "beyonddimensions:net_creater"
+	}
+	id: "7535927818BB5361"
+	images: [ ]
+	order_index: 5
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31B7A7AFA98F0204"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "119A1BF47ECEB50E"
+				item: { count: 1, id: "beyonddimensions:net_creater" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "0B1C1CC339570182"
+			size: 1.5d
+			tasks: [{
+				id: "0A75DF61C0AC3862"
+				item: { count: 1, id: "beyonddimensions:net_interface" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

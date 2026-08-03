@@ -1,0 +1,766 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2AA715C4FBF89DC9"
+	group: "6DDED6A143CA022F"
+	icon: {
+		id: "aeronautics:aviators_goggles"
+	}
+	id: "2AA715C4FBF89DC9"
+	images: [{
+		height: 1.0d
+		id: "39BD677D1A3AC867"
+		image: "minecraft:item/string"
+		rotation: 0.0d
+		width: 1.0d
+		x: 2.5d
+		y: 2.0d
+	}]
+	order_index: 1
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0530F866F0C5EDD2"
+			rewards: [
+				{
+					id: "497112B73C42A5F2"
+					item: {
+						count: 1
+						id: "simulated:honey_glue"
+					}
+					type: "item"
+				}
+				{
+					id: "3EE645848D78C54B"
+					item: {
+						count: 1
+						id: "minecraft:slime_ball"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				advancement: "simulated:applied_kinematics"
+				criterion: ""
+				id: "2EAB29DF16F14177"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "24B67411E9633D6D"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5E98993485D051C1"
+					item: { count: 1, id: "create:millstone" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75635C1C1CDB2432"
+					item: { count: 1, id: "create:crushing_wheel" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0530F866F0C5EDD2"
+				"24B67411E9633D6D"
+			]
+			dependency_requirement: "one_completed"
+			id: "3BDBB52B158BEBFA"
+			rewards: [{
+				count: 64
+				id: "41D5037677B690BC"
+				item: {
+					count: 1
+					id: "minecraft:charcoal"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6483B8C92BFF7C7E"
+				item: { count: 1, id: "minecraft:white_wool" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BDBB52B158BEBFA"]
+			id: "11DDBD0B1C6FEF9F"
+			tasks: [{
+				id: "134887A041DBBB5E"
+				item: { count: 1, id: "aeronautics:white_envelope" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0530F866F0C5EDD2"]
+			icon: {
+				id: "create:goggles"
+			}
+			id: "3FF5C9B379E26866"
+			shape: "hexagon"
+			tasks: [{
+				id: "281428A3983E360E"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BDBB52B158BEBFA"]
+			id: "78FABF903D0B3007"
+			rewards: [
+				{
+					count: 64
+					id: "79D72B0BED30F819"
+					item: {
+						count: 1
+						id: "create:white_sail"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0CF0C255520CB06C"
+					item: {
+						count: 1
+						id: "simulated:white_symmetric_sail"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "41155146F378E95E"
+					item: { count: 1, id: "create:white_sail" }
+					type: "item"
+				}
+				{
+					id: "38A1F11D936A21E3"
+					item: { count: 1, id: "simulated:white_symmetric_sail" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "3D4B9A068D12708C"
+			tasks: [{
+				id: "6F760E3EE1E4EF70"
+				item: { count: 1, id: "simulated:rope_coupling" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "2FCEB766890C113A"
+			tasks: [{
+				id: "050B2E2519D84D48"
+				item: { count: 1, id: "simulated:rope_winch" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "simulated:rope_connector"
+			}
+			id: "076EAA5866587B61"
+			tasks: [
+				{
+					id: "25F71D96D53BA912"
+					item: { count: 1, id: "simulated:rope_connector" }
+					type: "item"
+				}
+				{
+					id: "57E4F17C3500D50C"
+					item: { count: 1, id: "create_aeronautics_throwable_rope_connector:throwable_rope_connector" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			id: "1D07141C7211A806"
+			tasks: [
+				{
+					id: "7218562C9CC2B8E5"
+					item: { count: 1, id: "simulated:iron_handle" }
+					type: "item"
+				}
+				{
+					id: "5A2BF25AD0B48D6A"
+					item: { count: 1, id: "kineticgrip:grip_handle" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "0B1CC582366222D7"
+			tasks: [
+				{
+					id: "40A58C8B0D33FBDE"
+					item: { count: 1, id: "createpropulsion:solid_burner" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FDFC4CB18DF2CE9"
+					item: { count: 1, id: "createpropulsion:liquid_burner" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			id: "613F7DCF72C046DC"
+			tasks: [{
+				id: "2E1CDF35DBE3652C"
+				item: { count: 1, id: "createpropulsion:stirling_engine" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5489EACC0072DA0A"]
+			id: "1E3A8BA45D26C457"
+			tasks: [{
+				id: "340FE26B3413AD82"
+				item: { count: 1, id: "delighto_flight:cloud" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "769FF56595D739C3"
+			tasks: [{
+				id: "5A26054BE9333184"
+				item: { count: 1, id: "simulated:swivel_bearing" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			id: "03B68793A3855E06"
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "6664947D659544F2"
+				item: { count: 1, id: "aeronautics_utility_objects:damping_stress_bearing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1E3A8BA45D26C457"]
+			id: "16944825D416ECF6"
+			rewards: [
+				{
+					count: 32
+					id: "50241A9B3815B80D"
+					item: {
+						count: 1
+						id: "minecraft:dried_kelp_block"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "03E79BC7CCB00D12"
+					item: {
+						count: 1
+						id: "minecraft:leather"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "02457A06577A6171"
+				item: { count: 1, id: "delighto_flight:cloud_silk" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["16944825D416ECF6"]
+			id: "4279C7A6565AED0C"
+			tasks: [{
+				id: "50458D74F5853AEE"
+				item: { components: { "minecraft:stored_enchantments": { levels: { "minecraft:silk_touch": 1 } } }, count: 1, id: "minecraft:enchanted_book" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			id: "66547D7F3C4ED095"
+			tasks: [{
+				id: "7AD7C7071ACD9A4A"
+				item: { count: 1, id: "simulated:red_portable_engine" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"69DADAE84D81D9EB"
+				"457B5B45976A58D5"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "explorerscompass:explorerscompass"
+			}
+			id: "5489EACC0072DA0A"
+			rewards: [{
+				id: "7F860EB86EB1DF7B"
+				item: {
+					count: 1
+					id: "explorerscompass:explorerscompass"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "14166143EDA6FFEE"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E3A8BA45D26C457"
+				"457B5B45976A58D5"
+			]
+			dependency_requirement: "one_completed"
+			id: "57AB73CDF5473F5D"
+			tasks: [{
+				id: "083E0A88972E96FE"
+				item: { count: 1, id: "minecraft:powder_snow_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57AB73CDF5473F5D"]
+			id: "7CF777E5AD31A03E"
+			tasks: [{
+				id: "3FA82487921DBFC7"
+				item: { count: 1, id: "kubejs:cryogen_bucket" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5489EACC0072DA0A"]
+			id: "5F93F939BA212B92"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3EE55BF217CBB413"
+				item: { count: 1, id: "delighto_flight:cloud_berries" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0530F866F0C5EDD2"]
+			icon: {
+				id: "simulated:creative_physics_staff"
+			}
+			id: "6D775059318ECF77"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "49CCE390253DAD1B"
+					item: { count: 1, id: "simulated:creative_physics_staff" }
+					type: "item"
+				}
+				{
+					id: "20676EF2ED5CFA02"
+					item: { count: 1, id: "create_aeronautics_toolgun:magnetic_gun" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0530F866F0C5EDD2"]
+			icon: {
+				id: "create_aeronautics_toolgun:structure_tool"
+			}
+			id: "639783FE12AA4993"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1D1A0E844E946505"
+					item: { count: 1, id: "create_aeronautics_toolgun:structure_tool" }
+					type: "item"
+				}
+				{
+					id: "6368B05003A82EDC"
+					item: { count: 1, id: "create_aeronautics_toolgun:survival_structure_tool" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F93F939BA212B92"]
+			id: "061579E55CFCD5AF"
+			tasks: [{
+				id: "20FDB3A67B0BFDBA"
+				item: { count: 1, id: "touhou_little_maid:fall_protect_bauble" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11DDBD0B1C6FEF9F"]
+			id: "082BC4F3A23DF1A3"
+			rewards: [{
+				id: "763CC9F51BEC61AB"
+				item: {
+					count: 1
+					id: "simulated:throttle_lever"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "594DE523BE38AD7A"
+					item: { count: 1, id: "aeronautics:adjustable_burner" }
+					type: "item"
+				}
+				{
+					id: "37BA46AB2F039A74"
+					item: { count: 1, id: "aeronautics:steam_vent" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78FABF903D0B3007"]
+			id: "52DBE39A81CFB72F"
+			rewards: [{
+				count: 2
+				id: "15C291F04166EA23"
+				item: {
+					count: 1
+					id: "simulated:analog_transmission"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "15BFB6FD0E76910D"
+					item: { count: 1, id: "aeronautics:andesite_propeller" }
+					type: "item"
+				}
+				{
+					id: "774286BD284D9130"
+					item: { count: 1, id: "aeronautics:wooden_propeller" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DAF8B0F84CC0DE8"
+					item: { count: 1, id: "create:encased_fan" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0530F866F0C5EDD2"]
+			id: "2F10E89A968A75D9"
+			shape: "hexagon"
+			tasks: [{
+				id: "50D16BD0B7768537"
+				item: { count: 1, id: "simulated:contraption_diagram" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1E3A8BA45D26C457"
+				"457B5B45976A58D5"
+			]
+			dependency_requirement: "one_completed"
+			id: "1B26B34F4E8FB480"
+			tasks: [{
+				id: "4B9E109322481E8E"
+				item: { count: 1, id: "minecraft:wind_charge" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B26B34F4E8FB480"]
+			id: "03E1FF1EBAAC726E"
+			tasks: [
+				{
+					id: "5B36379E9CFE7034"
+					item: { count: 1, id: "create_fantasizing:transporter" }
+					type: "item"
+				}
+				{
+					id: "28E1875B141C0F0A"
+					item: { count: 1, id: "fluidlogistics:fluid_transporter" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"082BC4F3A23DF1A3"
+				"52DBE39A81CFB72F"
+			]
+			dependency_requirement: "one_started"
+			id: "69DADAE84D81D9EB"
+			tasks: [{
+				id: "50C8CA2CEEF279EA"
+				item: { count: 1, id: "simulated:steering_wheel" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			id: "1CD1C5B8A1C8234D"
+			rewards: [{
+				id: "1EBD5F3EDB8FCEE8"
+				item: {
+					count: 1
+					id: "createdieselgenerators:biodiesel_bucket"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "747E1F48C58344A4"
+					item: { count: 1, id: "createdieselgenerators:diesel_engine" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1D476CDE78BC1081"
+					item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0530F866F0C5EDD2"]
+			id: "2B7261FAA7E7B1C0"
+			tasks: [
+				{
+					id: "4CE73B6352EE066C"
+					item: { count: 1, id: "create_aeronautics_toolgun:portable_structure_container" }
+					type: "item"
+				}
+				{
+					id: "47F8C8F359B27516"
+					item: { count: 1, id: "create_aeronautics_toolgun:disposable_vehicle_container" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "764624B8DA58238D"
+			tasks: [
+				{
+					id: "038B895B6C303921"
+					item: { count: 1, id: "create_fantasizing:compact_wind_engine" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2ADF0912083A2356"
+					item: { count: 1, id: "create_fantasizing:sculk_engine" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B57B8575C8158A7"
+					item: { count: 1, id: "create_fantasizing:compact_hydraulic_engine" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			id: "5A729D081E0E7AA4"
+			tasks: [{
+				id: "72C78AE2B1382E89"
+				item: { count: 1, id: "simulated:altitude_sensor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			id: "01CEECF8C07D16E6"
+			tasks: [{
+				id: "68BFE1FB72C09EC8"
+				item: { count: 1, id: "simulated:velocity_sensor" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			id: "302A6A91A2FD5433"
+			tasks: [{
+				id: "0EFF3AAE77E24A5B"
+				item: { count: 1, id: "simulated:gimbal_sensor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			id: "2B87734AF29A0644"
+			tasks: [{
+				id: "7E67F776FC9090AC"
+				item: { count: 1, id: "simulated:optical_sensor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			id: "48B78D98881EA7F5"
+			tasks: [{
+				id: "392325D10A289A4E"
+				item: { count: 1, id: "simulated:laser_sensor" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			id: "2C5091F9E0EB15BA"
+			shape: "hexagon"
+			tasks: [{
+				id: "2DE6D13BFDC37E75"
+				item: { count: 1, id: "simulated:navigation_table" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			id: "1938EAA10FBC024C"
+			tasks: [{
+				id: "31D2FC895682673A"
+				item: { count: 1, id: "simulated:analog_transmission" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			id: "6A00B9E8A938A8CD"
+			tasks: [
+				{
+					id: "23FB07FD724ACE33"
+					item: { count: 1, id: "simulated:auger_shaft" }
+					type: "item"
+				}
+				{
+					id: "3EC13ED3D54564F3"
+					item: { count: 1, id: "simulated:auger_cog" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			id: "421869BF264ED814"
+			tasks: [{
+				id: "6A1A4E824D79828B"
+				item: { count: 1, id: "simulated:directional_gearshift" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			id: "23458774A95DDE68"
+			tasks: [{
+				id: "0F0FBD810B230F07"
+				item: { count: 1, id: "simulated:torsion_spring" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			id: "66E330D2E6AA5A20"
+			tasks: [{
+				id: "70336B4468669D6D"
+				item: { count: 1, id: "simulated:spring" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+	]
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "action": "modify_tab",
+        "tabs": ["simulated:main_tab"],
+        "add_items": [
+            {
+                "item": "kineticgrip:grip_handle"
+            }
+        ]
+    }
+    
+]

@@ -1,0 +1,6 @@
+{
+  "fluid": "kubejs:fluix_gasoline",
+  "burnTime": 20,
+  "superHeat": true,
+  "amountConsumedPerTick" : 1
+}

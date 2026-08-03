@@ -1,0 +1,148 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:lead_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ]
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.5,
+      "items": [
+        {
+          "item": "#c:nuggets/lead"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.05,
+      "items": [
+        {
+          "item": "#c:raw_materials/lead"
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "chance": 0.005,
+      "items": [
+        {
+          "item": "#c:storage_blocks/raw_lead"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:tuff"
+        },
+        {
+          "item": "create:crimsite"
+        },
+        {
+          "item": "create:limestone"
+        }
+      ],
+      "catalysts": [
+        "faint_shattering_resonance"
+      ],
+      "jei_slot_color": -5075058
+    },
+    {
+      "chance": 0.3,
+      "items": [
+        {
+          "item": "mekanism:lead_ore"
+        },
+        {
+          "item": "mekanism:deepslate_lead_ore"
+        },
+        {
+          "item": "#c:storage_blocks/raw_lead"
+        }
+      ],
+      "catalysts": [
+        "shattering_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -4229518
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        },
+        {
+          "item": "minecraft:amethyst_shard"
+        },
+        {
+          "item": "ae2:ender_dust"
+        }
+      ],
+      "catalysts": [
+        "faint_stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -7427662
+    },
+    {
+      "chance": 1.0E-5,
+      "items": [
+        {
+          "item": "create_rns:lead_deposit_block"
+        }
+      ],
+      "catalysts": [
+        "stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -9261889
+    }
+  ]
+}

@@ -127,6 +127,180 @@ ServerEvents.recipes(e=>{
         ]
     }).id('distillation/crude_oil/4_layer_superheated')
     //精炼油
+
     //液态空气
-    
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_air",
+            "amount": 1000
+            }
+        ],
+        "heat_requirement": "heated",
+        "processing_time": 180,
+        "results": [
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 800
+            }
+        ]
+    }).id('distillation/liquid_air')
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_air",
+            "amount": 1000
+            }
+        ],
+        "heat_requirement": "superheated",
+        "processing_time": 60,
+        "results": [
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 800
+            }
+        ]
+    }).id('distillation/liquid_air_superheated')
+    //液态下界空气
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_nether_air",
+            "amount": 2000
+            }
+        ],
+        "heat_requirement": "heated",
+        "processing_time": 1800,
+        "results": [
+            {
+            "id": "mekanism:sulfur_trioxide",
+            "amount": 200
+            },
+            {
+            "id": "mekanism:sulfur_dioxide",
+            "amount": 400
+            },
+            {
+            "id": "kubejs:nitrogen_dioxide",
+            "amount": 400
+            },
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 800
+            }
+        ]
+    }).id('distillation/nether_air')
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_nether_air",
+            "amount": 2000
+            }
+        ],
+        "heat_requirement": "superheated",
+        "processing_time": 600,
+        "results": [
+            {
+            "id": "mekanism:sulfur_trioxide",
+            "amount": 200
+            },
+            {
+            "id": "mekanism:sulfur_dioxide",
+            "amount": 400
+            },
+            {
+            "id": "kubejs:nitrogen_dioxide",
+            "amount": 400
+            },  
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 800
+            }
+        ]
+    }).id('distillation/nether_air_superheated')
+    //液态末地空气
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_end_air",
+            "amount": 1000
+            }
+        ],
+        "heat_requirement": "heated",
+        "processing_time": 240,
+        "results": [
+            {
+            "id": "mekanism:chlorine",
+            "amount": 100
+            },
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 600
+            },
+            {
+            "id": "mekanism:hydrofluoric_acid",
+            "amount": 100
+            },
+        ]
+    }).id('distillation/end_air')
+    e.custom({
+        "type": "createdieselgenerators:distillation",
+        "ingredients": [
+            {
+            "type": "fluid_stack",
+            "fluid": "kubejs:liquid_end_air",
+            "amount": 1000
+            }
+        ],
+        "heat_requirement": "superheated",
+        "processing_time": 80,
+        "results": [
+            {
+            "id": "mekanism:chlorine",
+            "amount": 100
+            },
+            {
+            "id": "mekanism:oxygen",
+            "amount": 200
+            },
+            {
+            "id": "kubejs:nitrogen",
+            "amount": 600
+            },
+            {
+            "id": "mekanism:hydrofluoric_acid",
+            "amount": 100
+            },
+        ]
+    }).id('distillation/end_air_superheated')
 })

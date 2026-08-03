@@ -1,0 +1,182 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:copper_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        },
+        {
+           "item": "minecraft:granite"
+        }
+      ]
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": [
+            "create:copper_nugget",
+            "#c:nuggets/copper"
+          ]
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.25,
+      "items": [
+        {
+          "item": "create:crushed_raw_copper"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.5,
+      "items": [
+        {
+          "item": [
+            "create:zinc_nugget",
+            "#c:nuggets/zinc"
+          ]
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:raw_copper"
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "chance": 0.05,
+      "items": [
+        {
+          "item": "minecraft:raw_copper_block"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:tuff"
+        },
+        {
+          "item": "minecraft:smooth_basalt"
+        },
+        {
+          "item": "create:veridium"
+        },
+        {
+          "item": "minecraft:clay"
+        }
+      ],
+      "catalysts": [
+        "faint_shattering_resonance"
+      ],
+      "jei_slot_color": -5075058
+    },
+    {
+      "chance": 0.6,
+      "items": [
+        {
+          "item": "minecraft:copper_ore"
+        },
+        {
+          "item": "minecraft:deepslate_copper_ore"
+        },
+        {
+          "item": "minecraft:raw_copper_block"
+        }
+      ],
+      "catalysts": [
+        "shattering_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -4229518
+    },
+    {
+      "chance": 0.5,
+      "items": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        },
+        {
+          "item": "minecraft:amethyst_cluster"
+        },
+        {
+          "item": "minecraft:emerald"
+        }
+      ],
+      "catalysts": [
+        "faint_stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -7427662
+    },
+    {
+      "chance": 1.0E-5,
+      "items": [
+        {
+          "item": "create_rns:copper_deposit_block"
+        }
+      ],
+      "catalysts": [
+        "stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -9261889
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "fluid": "kubejs:refined_oil",
+  "burnTime": 15,
+  "superHeat": false,
+  "amountConsumedPerTick" : 1
+}

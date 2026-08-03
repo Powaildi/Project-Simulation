@@ -1,0 +1,6 @@
+{
+  "fluid": "kubejs:wood_gas",
+  "burnTime": 10,
+  "superHeat": false,
+  "amountConsumedPerTick" : 1
+}

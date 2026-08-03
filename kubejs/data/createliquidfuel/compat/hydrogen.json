@@ -1,0 +1,6 @@
+{
+  "fluid": "mekanism:hydrogen",
+  "burnTime": 10,
+  "superHeat": true,
+  "amountConsumedPerTick" : 10
+}

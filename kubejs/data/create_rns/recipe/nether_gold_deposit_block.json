@@ -1,0 +1,152 @@
+{
+  "type": "create_rns:mining",
+  "dimension": "minecraft:the_nether",
+  "deposit_block": "create_rns:gold_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:netherrack"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:soul_sand"
+        },
+        {
+          "item": "minecraft:soul_soil"
+        },
+        {
+          "item": "minecraft:magma_block"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:gold_nugget"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.25,
+      "items": [
+        {
+          "item": "create:crushed_raw_gold"
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "chance": 0.25,
+      "items": [
+        {
+          "item": "minecraft:raw_gold"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "items": [
+        {
+          "item": "create:scoria"
+        },
+        {
+          "item": "create:ochrum"
+        }
+      ],
+      "catalysts": [
+        "faint_shattering_resonance"
+      ],
+      "jei_slot_color": -5075058
+    },
+    {
+      "chance": 0.3,
+      "items": [
+        {
+          "item": "minecraft:nether_gold_ore"
+        },
+        {
+          "item": "minecraft:raw_gold_block"
+        }
+      ],
+      "catalysts": [
+        "shattering_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -4229518
+    },
+    {
+      "chance": 0.1,
+      "items": [
+        {
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "item": "minecraft:ancient_debris"
+        }
+      ],
+      "catalysts": [
+        "faint_stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -7427662
+    },
+    {
+      "chance": 1.0E-5,
+      "items": [
+        {
+          "item": "create_rns:gold_deposit_block"
+        }
+      ],
+      "catalysts": [
+        "stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -9261889
+    }
+  ]
+}

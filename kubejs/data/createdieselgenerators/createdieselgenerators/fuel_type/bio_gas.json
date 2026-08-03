@@ -1,0 +1,20 @@
+{
+  "fluid": "ratatouille:bio_gas",
+  "sound_pitch": 0.7,
+  "normal": {
+    "speed": 96.0,
+    "strength": 8192.0,
+    "burn_rate": 0.2
+  },
+  "modular": {
+    "speed": 96.0,
+    "strength": 12288.0,
+    "burn_rate": 0.2
+  },
+  "huge": {
+    "speed": 192.0,
+    "strength": 65536.0,
+    "burn_rate": 0.8
+  },
+  "burner_multiplier": 0.7
+}

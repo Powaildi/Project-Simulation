@@ -1,0 +1,6 @@
+{
+  "fluid": "kubejs:lpg",
+  "burnTime": 30,
+  "superHeat": true,
+  "amountConsumedPerTick" : 3
+}

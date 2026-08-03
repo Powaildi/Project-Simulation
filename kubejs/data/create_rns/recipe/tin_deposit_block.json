@@ -1,0 +1,179 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:tin_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ]
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.5,
+      "items": [
+        {
+          "item": "#c:nuggets/tin"
+        }
+      ],
+      "catalysts": [
+        "overclock"
+      ]
+    },
+    {
+      "chance": 0.5,
+      "items": [
+        {
+          "item": [
+            "mekanism:nugget_osmium"
+          ]
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 0.05,
+      "items": [
+        {
+          "item": "#c:raw_materials/tin"
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 0.05,
+      "items": [
+        {
+          "item": "mekanism:raw_osmium"
+        }
+      ],
+      "catalysts": [
+        "faint_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "chance": 0.005,
+      "items": [
+        {
+          "item": "#c:storage_blocks/raw_tin"
+        }
+      ],
+      "catalysts": [
+        "resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:tuff"
+        },
+        {
+          "item": "minecraft:calcite"
+        },
+        {
+          "item": "create:limestone"
+        }
+      ],
+      "catalysts": [
+        "faint_shattering_resonance"
+      ],
+      "jei_slot_color": -5075058
+    },
+    {
+      "chance": 0.4,
+      "items": [
+        {
+          "item": "mekanism:tin_ore"
+        },
+        {
+          "item": "mekanism:deepslate_tin_ore"
+        },
+        {
+          "item": "mekanism:osmium_ore"
+        },
+        {
+          "item": "mekanism:deepslate_osmium_ore"
+        }
+      ],
+      "catalysts": [
+        "shattering_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -4229518
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "createpropulsion:platinum_nugget"
+        },
+        {
+          "item": "createaddition:electrum_nugget"
+        },
+        {
+          "item": "vintageimprovements:vanadium_nugget"
+        }
+      ],
+      "catalysts": [
+        "faint_stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -7427662
+    },
+    {
+      "chance": 1.0E-5,
+      "items": [
+        {
+          "item": "create_rns:tin_deposit_block"
+        }
+      ],
+      "catalysts": [
+        "stabilizing_resonance",
+        "overclock"
+      ],
+      "jei_slot_color": -9261889
+    }
+  ]
+}

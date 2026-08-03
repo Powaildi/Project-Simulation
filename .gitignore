@@ -32,7 +32,7 @@ natives-windows-x86_64/
 .sable/
 ftbbackups3/
 downloads/
-data/
+/data/
 local/
 oei/
 patchouli_books/
@@ -82,11 +82,7 @@ out/
 # ====================
 # 压缩包（通常为下载缓存）
 # ====================
-*.zip
-*.rar
-*.7z
-*.tar.gz
-*.tgz
+
 
 # ====================
 # 其他临时/敏感文件

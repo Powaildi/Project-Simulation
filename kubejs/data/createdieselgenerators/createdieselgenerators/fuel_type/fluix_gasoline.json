@@ -1,0 +1,20 @@
+{
+  "fluid": "kubejs:fluix_gasoline",
+  "sound_pitch": 1,
+  "normal": {
+    "speed": 128.0,
+    "strength": 65536.0,
+    "burn_rate": 0.1
+  },
+  "modular": {
+    "speed": 128.0,
+    "strength": 98304.0,
+    "burn_rate": 0.1
+  },
+  "huge": {
+    "speed": 256.0,
+    "strength": 1048576.0,
+    "burn_rate": 0.3
+  },
+  "burner_multiplier": 1.8
+}

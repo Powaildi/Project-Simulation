@@ -1,0 +1,6 @@
+{
+  "fluid": "minecraft:water",
+  "burnTime": 1,
+  "superHeat": true,
+  "amountConsumedPerTick" : 1001
+}

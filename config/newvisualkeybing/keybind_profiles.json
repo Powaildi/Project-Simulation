@@ -14,7 +14,7 @@
     "key.sophisticatedbackpacks.open_backpack": 0,
     "key.tacz.crawl.desc": 0,
     "gui.xaero_new_waypoint": 0,
-    "iris.keybind.reload": 0
+    "iris.keybind.reload": -1
   },
   "conflictIgnored": []
 }

@@ -1,0 +1,126 @@
+[
+    {
+        "matchItems": [
+            "farmersdelight:rice_bale"
+        ],
+        "resultItems": "kaleidoscope_cookery:straw_block"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:rice"
+        ],
+        "resultItems": "kaleidoscope_cookery:rice"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:rice_panicle"
+        ],
+        "resultItems": "kaleidoscope_cookery:rice_panicle"
+    },
+    {
+        "matchItems": [
+            "kaleidoscope_cookery:tomato_seed"
+        ],
+        "resultItems": "farmersdelight:tomato_seeds"
+    },
+    {
+        "matchItems": [
+            "farmersdelight:tomato"
+        ],
+        "resultItems": "kaleidoscope_cookery:tomato"
+    },
+    {
+            "matchItems": [
+                "create:wheat_flour"
+            ],
+            "resultItems": "kaleidoscope_cookery:flour"
+        },
+    {
+        "matchItems": [
+            "farmersdelight:wheat_dough",
+            "create:dough"
+        ],
+        "resultItems": "kaleidoscope_cookery:raw_dough"
+    },
+    {
+        "matchItems": [
+            "ratatouille:salt"
+        ],
+        "resultItems": "mekanism:salt"
+    },
+    {
+        "matchItems": [
+            "createaddition:copper_wire"
+        ],
+        "resultItems": "electroenergetics:copper_wire"
+    },
+    {
+        "matchItems": [
+            "createaddition:iron_wire"
+        ],
+        "resultItems": "electroenergetics:iron_wire"
+    },
+       {
+        "matchItems": [
+            "createaddition:electrum_wire"
+        ],
+        "resultItems": "electroenergetics:electrum_wire"
+    },
+    {
+        "matchItems": [
+            "createaddition:diamond_grit",
+            "appflux:diamond_dust"
+        ],
+        "resultItems": "mekanism:dust_diamond"
+    },
+    {
+        "matchItems": [
+            "appflux:emerald_dust"
+        ],
+        "resultItems": "mekanism:dust_emerald"
+    },
+    {
+        "matchItems": [
+            "create:powdered_obsidian"
+        ],
+        "resultItems": "mekanism:dust_obsidian"
+    },
+    {
+        "matchItems": [
+            "mekanism:sawdust"
+        ],
+        "resultItems": "createdieselgenerators:wood_chip"
+    },
+    {
+        "matchItems": [
+            "mekanism:dye_base"
+        ],
+        "resultItems": "minecraft:clay_ball"
+    },
+    {
+        "matchItems": [
+            "mynethersdelight:pepper_powder"
+        ],
+        "resultItems": "minecraft:blaze_powder"
+    },
+    {
+        "matchItems": [
+            "mekanism:ingot_steel"
+        ],
+        "resultItems": "createbigcannons:steel_ingot"
+    },
+    {
+        "matchItems": [
+            "createbigcannons:steel_scrap"
+        ],
+        "resultItems": "mekanism:nugget_steel"
+    },
+    
+    {
+        "matchItems": [
+            "createpropulsion:pine_resin"
+        ],
+        "resultItems": "minecraft:resin_clump"
+    }
+
+]

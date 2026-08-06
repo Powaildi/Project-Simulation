@@ -21,11 +21,11 @@ chunk_rebuild_scheduler = "culling"
 	# TNT lighting mode. May be off, simple or fancy.
 	tnt = "off"
 	# Enables dynamic lighting of the Warden's sonic boom attack particles.
-	sonic_boom = true
+	sonic_boom = false
 	# Creeper lighting mode. May be off, simple or fancy.
 	creeper = "simple"
 	# Enables dynamic lighting of Guardian's lasers. This also can be toggled off by disabling Guardian dynamic lighting.
-	guardian_laser = true
+	guardian_laser = false
 
 			[light_sources.settings.entities.minecraft]
 				zombie_horse = true
@@ -206,6 +206,7 @@ chunk_rebuild_scheduler = "culling"
 				throwable_rope_connector = true
 
 			[light_sources.settings.entities.bits_n_bobs]
+				cogwheel_chain_carriage_contraption = true
 				inert_stationary_contraption = true
 
 			[light_sources.settings.entities.delighto_flight]

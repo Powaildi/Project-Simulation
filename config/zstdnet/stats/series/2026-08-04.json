@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-04",
+  "buckets": [
+    {
+      "start": 1785858900000,
+      "metrics": {
+        "durationMillis": 28005,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    }
+  ]
+}

@@ -9,3 +9,8 @@ StartupEvents.registry('item', e => {
     e.create('steel_plate').displayName('钢板')
 
 })
+ItemEvents.modification(e=>{
+    e.modify('createbigcannons:steel_block',i=>{
+        i.setItemName(Text.translatable("tag.createbigcannons.block_steel"))
+    })
+})

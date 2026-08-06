@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-07",
+  "buckets": [
+    {
+      "start": 1786032000000,
+      "metrics": {
+        "durationMillis": 299999,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    },
+    {
+      "start": 1786032300000,
+      "metrics": {
+        "durationMillis": 300000,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    },
+    {
+      "start": 1786032600000,
+      "metrics": {
+        "durationMillis": 300000,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    },
+    {
+      "start": 1786032900000,
+      "metrics": {
+        "durationMillis": 147313,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    },
+    {
+      "start": 1786035900000,
+      "metrics": {
+        "durationMillis": 155004,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    },
+    {
+      "start": 1786036200000,
+      "metrics": {
+        "durationMillis": 242000,
+        "rawIngress": 0,
+        "rawEgress": 0,
+        "tcpIngress": 0,
+        "tcpEgress": 0,
+        "udpIngress": 0,
+        "udpEgress": 0
+      }
+    }
+  ]
+}

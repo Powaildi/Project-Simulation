@@ -1,0 +1,15 @@
+{
+  "active": true,
+  "runId": "1786036044372-8f6b12c2",
+  "runStartedAt": 1786036044372,
+  "lastSampleAt": 1786036441376,
+  "metrics": {
+    "durationMillis": 397004,
+    "rawIngress": 0,
+    "rawEgress": 0,
+    "tcpIngress": 0,
+    "tcpEgress": 0,
+    "udpIngress": 0,
+    "udpEgress": 0
+  }
+}

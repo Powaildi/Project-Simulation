@@ -40,5 +40,5 @@
         "../../.probe/@package/**/*.d.ts",
         "../../.probe/@side-only/client/**/*.d.ts",
         "../../.probe/@special/**/*.d.ts"
-,         "../server_scripts/functions/liquidfuel.js"    ]
+    ]
 }

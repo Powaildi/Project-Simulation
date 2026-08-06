@@ -2,32 +2,105 @@
     "tab.recreative.transmission": "常用方块：传动",
     "tab.recreative.machines":"常用方块：机器",
 
+    "item.kubejs.circuit":"电路板",
+    "item.kubejs.graphite":"石墨",
+    "item.kubejs.logistics_toolbox":"物流工具箱",
+    "item.kubejs.fluid_toolbox":"液流工具箱",
+    "item.kubejs.infinite_heat_bar":"无限加热燃料棒",
+    "item.kubejs.infinite_superheat_bar":"无限超级加热燃料棒",
+    "item.kubejs.steel_plate":"钢板",
 
+    "block.kubejs.uranium_chlorophyte":"叶绿铀石",
 
+    "fluid_type.kubejs.cryogen":"冷冻液",
+    "fluid_type.kubejs.bone_meal_diluent":"骨粉稀释液",
+    "fluid_type.kubejs.wood_gas":"液化木煤气",
+    "fluid_type.kubejs.lpg":"液化石油气",
+    "fluid_type.kubejs.refined_oil":"精炼油",
+    "fluid_type.kubejs.lube":"润滑油",
+    "fluid_type.kubejs.tar":"焦油",
+    "fluid_type.kubejs.molten_quartz":"熔融石英",
+    "fluid_type.kubejs.fluix_gasoline":"福鲁伊克斯汽油",
+    "fluid_type.kubejs.mercury":"水银",
+    "fluid_type.kubejs.liquid_air":"液态空气",
+    "fluid_type.kubejs.liquid_nether_air":"液态下界空气",
+    "fluid_type.kubejs.liquid_end_air":"液态末地空气",
+    "fluid_type.kubejs.void":"虚空流质",
+    "fluid_type.kubejs.carbon_dioxide":"二氧化碳",
+    "fluid_type.kubejs.nitrogen":"液氮",
+    "fluid_type.kubejs.nitrogen_dioxide":"液态二氧化氮",
+    "fluid_type.kubejs.nitric_acid":"硝酸",
+    "fluid_type.kubejs.ammonia":"液氨",
+    "fluid_type.kubejs.nitrogen_fertilizer":"氮肥",
 
+    "item.kubejs.cryogen_bucket":"桶装冷冻液",
+    "item.kubejs.bone_meal_diluent_bucket":"桶装骨粉稀释液",
+    "item.kubejs.wood_gas_bucket":"桶装液化木煤气",
+    "item.kubejs.lpg_bucket":"桶装液化石油气",
+    "item.kubejs.refined_oil_bucket":"桶装精炼油",
+    "item.kubejs.lube_bucket":"桶装润滑油",
+    "item.kubejs.tar_bucket":"桶装焦油",
+    "item.kubejs.molten_quartz_bucket":"桶装熔融石英",
+    "item.kubejs.fluix_gasoline_bucket":"桶装福鲁伊克斯汽油",
+    "item.kubejs.mercury_bucket":"桶装水银",
+    "item.kubejs.liquid_air_bucket":"桶装液态空气",
+    "item.kubejs.liquid_nether_air_bucket":"桶装液态下界空气",
+    "item.kubejs.liquid_end_air_bucket":"桶装液态末地空气",
+    "item.kubejs.void_bucket":"桶装虚空流质",
+    "item.kubejs.carbon_dioxide_bucket":"桶装二氧化碳",
+    "item.kubejs.nitrogen_bucket":"桶装液氮",
+    "item.kubejs.nitrogen_dioxide_bucket":"桶装液态二氧化氮",
+    "item.kubejs.nitric_acid_bucket":"桶装硝酸",
+    "item.kubejs.ammonia_bucket":"桶装液氨",
+    "item.kubejs.nitrogen_fertilizer_bucket":"桶装氮肥",
 
+    "chemical.kubejs.carbon_dioxide":"二氧化碳",
+    "chemical.kubejs.wood_gas":"木煤气",
+    "chemical.kubejs.petrol_gas":"石油气",
+    "chemical.kubejs.ammonia":"氨气",
+    "chemical.kubejs.nitrogen":"氮气",
+    "chemical.kubejs.nitrogen_dioxide":"二氧化氮",
+    "chemical.kubejs.nitric_acid":"硝酸",
+    "chemical.kubejs.nitrogen_fertilizer":"氮肥",
+    "chemical.kubejs.chlorophyte_fuel":"叶绿裂变燃料",
+    "chemical.kubejs.chlorophyte_waste":"叶绿废料",
+
+    
 
     "tooltip.dyebuckets":"流体源进行染色会消耗",
+
     "tooltip.convertable_wrenches":"丢弃以切换种类",
+
     "tooltip.infinite_heat_bar":"右键烈焰人燃烧室使用，拆除燃烧室返还。",
     "tooltip.infinite_heat_bar_texby":"材质 by 一饣λ",
     "tooltip.infinite_heat_bar_shift":"烈焰人宝宝 你看看这个烈焰棒好不好吃呀",
+
     "tooltip.ratatouille.spreader":"一次可以催熟更多作物！",
     "tooltip.ratatouille.spreader_shift_1":"每个催熟素催熟数量：5->32，且不会重复选取",
     "tooltip.ratatouille.spreader_shift_2":"根据可催熟的作物数量一次消耗更多催熟素",
+
     "tooltip.bits_n_bobs.flywheel_bearing":"提供更多应力！",
     "tooltip.bits_n_bobs.flywheel_bearing_shift":"应力量/角质量：5->4096",
+    "tooltip.bits_n_bobs.cogwheel_chain_carriage":"放在要带走的方块上，让它的钩子差不多对准\n本模组的锁链传动装置，然后右键！",
+
     "tooltip.createdieselgenerators.distillation_controller":"增大分馏塔面积可以增加并行数(1.3.15)",
     "tooltip.createdieselgenerators.distillation_controller_shift_1":"优先采用高度最高，加热等级最高的配方",
     "tooltip.createdieselgenerators.distillation_controller_shift_2":"修复了issue#366,368",
+    "tooltip.createdieselgenerators.pumpjack_hole":"可以用金属梁代替流体管道放在下方",
+
     "tooltip.mbd2.air_compressor":"配方之间间隔5t",
+
     "tooltip.create_fantasizing.alternative_chromatic_compound":"每次加载配方时，会从6种物品/流体中选5种进入配方，并打乱。",
+
     "tooltip.void_bucket":"不会推动实体",
     "tooltip.cryogen_bucket_1":"对接触的实体造成强大持久的冻伤效果",
     "tooltip.cryogen_bucket_2":"对玩家和女仆造成的伤害更少且不会指数增长",
     "tooltip.lava_bucket_1":"不再适合当烈焰人燃烧室燃料",
     "tooltip.lava_bucket_2":"岩浆只是自己很热而已，不含燃料",
-    "tooltip.water_bucket":"不要在意它的燃料属性"
+    "tooltip.water_bucket":"不要在意它的燃料属性",
 
-
+    "tooltip.natures_spirit.olives":"来自干燥疏灌丛平原",
+    "tooltip.natures_spirit.cheese_bucket":"手持棕色蘑菇右键装牛奶的炼药锅",
+    "tooltip.natures_spirit.coconut":"用骨粉催熟以变成发芽的椰子"
+    
 }

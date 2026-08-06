@@ -230,8 +230,8 @@ ServerEvents.recipes(e=>{
         ['minecraft:flowering_azalea',[Item.of('minecraft:oak_log',16),Item.of('minecraft:flowering_azalea_leaves',64)]],
         ['minecraft:brown_mushroom',[Item.of('minecraft:mushroom_stem',16),Item.of('minecraft:brown_mushroom_block',64)]],
         ['minecraft:red_mushroom',[Item.of('minecraft:mushroom_stem',16),Item.of('minecraft:red_mushroom_block',64)]],
-        ['minecraft:warped_fungus',[Item.of('minecraft:warped_stem',16),Item.of('minecraft:warped_wart_block',64),'kaleidoscope_nether:warped_fruit']],
-        ['minecraft:crimson_fungus',[Item.of('minecraft:crimson_stem',16),Item.of('minecraft:nether_wart_block',64),'kaleidoscope_nether:crimson_fruit']],
+        ['minecraft:warped_fungus',[Item.of('minecraft:warped_stem',16),Item.of('minecraft:warped_wart_block',64)]],
+        ['minecraft:crimson_fungus',[Item.of('minecraft:crimson_stem',16),Item.of('minecraft:nether_wart_block',64)]],
         //自然之灵
         ['natures_spirit:redwood_sapling',[Item.of('natures_spirit:redwood_log',16),Item.of('natures_spirit:redwood_leaves',64)]],
         ['natures_spirit:sugi_sapling',[Item.of('natures_spirit:sugi_log',16),Item.of('natures_spirit:sugi_leaves',64)]],
@@ -317,9 +317,16 @@ ServerEvents.recipes(e=>{
 
     //哭泣的黑曜石和恶魂之泪生产
     e.recipes.create.deploying('minecraft:crying_obsidian',['minecraft:obsidian',"farmersdelight:onion"])
+        .id('deploying/crying_obsidian')
     e.recipes.vintageimprovements.centrifugation(['minecraft:obsidian','minecraft:ghast_tear'],'minecraft:crying_obsidian',300)
+        .id('centrifugation/ghast_tear')
 
-    //
+    //嗅探兽蛋
+    e.recipes.create.compacting('minecraft:sniffer_egg',
+        ['minecraft:crimson_pressure_plate','minecraft:warped_pressure_plate',Fluid.of('ratatouille:egg_yolk',1000)])
+        .id('compacting/sniffer_egg')
+
+    //打包机加速器
     e.remove({id:'createadditionallogistics:crafting/logistics/package_accelerator'})
     e.shaped('createadditionallogistics:package_accelerator',[
         'A',
@@ -345,6 +352,36 @@ ServerEvents.recipes(e=>{
     corals.forEach(element=>{
         e.recipes.create.mixing(Item.of(element,5),[element,Fluid.of('createpropulsion:coral',100)])
             .id('mixing/'+element.replace(':','/'))
+    })
+    //模组矿物
+    let coral_to_ore = [
+        ['minecraft:horn_coral_block', 'mekanism:block_raw_uranium', 'vintageimprovements:uranium_sheet'],
+        ['minecraft:brain_coral_block', 'mekanism:block_raw_tin', 'vintageimprovements:tin_sheet'],
+        ['minecraft:tube_coral_block', 'mekanism:block_raw_osmium', 'vintageimprovements:osmium_sheet'],
+        ['minecraft:fire_coral_block', 'mekanism:block_raw_lead', 'vintageimprovements:lead_sheet'],
+        ['minecraft:bubble_coral_block', 'rocketnautics:raw_titanium_block', 'rocketnautics:titanium_sheet']
+    ]
+    coral_to_ore.forEach(element=>{
+        let [coral,ore,plate] = element
+        e.custom({
+            "type": "dndesires:hydraulic_compacting",
+            "heat_requirement": "superheated",
+            "ingredients": [
+                {"item": coral},
+                {"item": plate},
+                {
+                "type": "neoforge:single",
+                "amount": 500,
+                "fluid": "createpropulsion:oxidizer"
+                }
+            ],
+            "results": [
+                {
+                "count": 1,
+                "id": ore
+                }
+            ]
+        }).id('hydraulic_compacting/'+ore.replace(':','/'))
     })
 
 //神秘配方

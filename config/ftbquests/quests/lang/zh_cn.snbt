@@ -95,7 +95,9 @@
 		"智能线缆显示频道占用"
 	]
 	quest.0A5E2E86219B753F.title: "包层线缆和智能线缆"
+	quest.0AD7B62AF0C3772F.quest_subtitle: "吸取掉落物"
 	quest.0B1C1CC339570182.quest_desc: ["[ \"你至少在制造出\", { \"text\": \"ME扩展接口\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0C7FB0E13AD5BE48\" } }, \"以后才能制造！\" ]"]
+	quest.0B1C1CC339570182.quest_subtitle: "提供和吸收物质"
 	quest.0B1CC582366222D7.quest_desc: ["通入燃料后燃烧，相当于加热的烈焰人燃烧室。"]
 	quest.0B1CC582366222D7.quest_subtitle: "高炉cos烈焰人燃烧室"
 	quest.0B1CC582366222D7.title: "燃烧器"
@@ -146,6 +148,8 @@
 	]
 	quest.13998C57E753F87F.quest_subtitle: "对我弱小的应力来源造成了极大的打击"
 	quest.13998C57E753F87F.title: "动力合成器"
+	quest.15180D972A4A8A28.quest_desc: ["放在蓝图大炮周围4格，就能让大炮吸取网络中的物品并发射，除了火药。"]
+	quest.15180D972A4A8A28.quest_subtitle: "为蓝图大炮而生"
 	quest.15246B798AF9A52F.quest_desc: ["[ \"海洋可以离你的出生点4000格以上。如果你没有海带，请完成\", { \"text\": \"传动杆\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"294DA6134929C6BA\" } }, \"任务\" ]"]
 	quest.16944825D416ECF6.quest_desc: [
 		"云绸成为了重要的工材料！"
@@ -208,6 +212,7 @@
 	]
 	quest.259C4083619FD9B8.quest_subtitle: "一把抓住，顷刻炼化"
 	quest.25F1115E9916C61C.quest_desc: ["需要更好的工具"]
+	quest.26323D539543CF46.quest_subtitle: "让别人用"
 	quest.270B696D6B36D811.quest_desc: [
 		"你可能在别的包见过那个灰色的水龙头。"
 		"它是Supplemantaries的，然而这个包没有！"
@@ -268,10 +273,11 @@
 		"鼠标悬停在物品上，长按w直到出现思索界面。"
 	]
 	quest.30D12F139F33850F.quest_subtitle: "手持安山合金右键去皮原木方块"
-	quest.31B7A7AFA98F0204.quest_desc: ["无限的存储！不过你暂时不能通过接口让它与世界中的方块沟通。"]
+	quest.31B7A7AFA98F0204.quest_desc: ["无限的存储！不过你暂时不能通过接口让它与世界中的方块双向沟通，而是只进不出。"]
 	quest.31F0CE31EEACF0BD.quest_desc: ["普通镐挖掘会掉落损低一级的母岩，带精准采集的掉落本体（除了无瑕母岩，这个挖掘一定掉落低一级的）。"]
 	quest.31F0CE31EEACF0BD.title: "石英母岩"
 	quest.327172E392FDDA31.title: "无线红石"
+	quest.3305E1F485852A08.quest_subtitle: "设置管理员"
 	quest.33544FE083DAD503.quest_subtitle: "中间是另一个网络"
 	quest.337A0C9565DEDAEB.quest_desc: [
 		"按住~键挖矿会挖掉相邻的方块，最多64个。"
@@ -279,6 +285,8 @@
 		"同样按住~键，你对传动杆、传送带等进行套壳和拆壳时也会连锁。"
 		"{@pagebreak}"
 		"月光灯筒在饰品栏中时，默认按V键开关。"
+		"{@pagebreak}"
+		"去除了洞穴中的怪异音效？"
 	]
 	quest.337A0C9565DEDAEB.title: "连锁挖矿/连锁套壳"
 	quest.33F6A2180EABBB49.quest_desc: [
@@ -295,6 +303,8 @@
 	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
 	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
 	quest.37097B68F6CC04CF.quest_subtitle: "还可以给无线终端充能"
+	quest.38307E4620129ECB.quest_desc: ["非常适合收拾爆了一堆物品的情况！"]
+	quest.38307E4620129ECB.quest_subtitle: "推荐使用"
 	quest.398D70C6A7A9108D.quest_subtitle: "最好把多个矿床叠一起"
 	quest.398D70C6A7A9108D.title: "可以把矿床物理化带走"
 	quest.39C2795AFBF3BF50.quest_desc: [
@@ -356,6 +366,8 @@
 	quest.4B52FF34322B4E09.quest_subtitle: "给它们染色吧"
 	quest.4B6C5761E541D393.quest_desc: ["未完成"]
 	quest.4B6C5761E541D393.quest_subtitle: "召唤陨石，然后接住它，以获得丰厚奖励"
+	quest.4D0CD0B67A260396.quest_desc: ["放在存产物的箱子周围，将产物吸收到维度网络。"]
+	quest.4D0CD0B67A260396.quest_subtitle: "吸取周围容器"
 	quest.4EB08D6A562C58B9.quest_desc: [
 		"直接挖掘矿床不会掉落任何东西！"
 		"如果你的出生点并不好，建议重新开一个档。"
@@ -407,6 +419,8 @@
 		"一个移动接口可以与多个同类接口配对，只要它们中间隔1~2个方块。"
 		"如果你不想让它们对接，就给将世界中的那一个红石充能，这会阻止对接行为。"
 		"推荐给钻机对侧的接口充能，隔一段时间就停止充能，这对提高钻机效率相当重要！"
+		"{@pagebreak}"
+		"移动接口对接成功时，想象所有动态结构的物品/流体都在与它对接的接口中，这对你理解它有一些帮助。"
 		"{@pagebreak}"
 		"那么，有没有让钻机不用停下的方法呢？"
 	]

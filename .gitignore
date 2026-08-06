@@ -34,7 +34,7 @@ ftbbackups3/
 downloads/
 /data/
 local/
-oei/
+/oei/
 patchouli_books/
 tacz/
 tacz_backup/
@@ -90,6 +90,7 @@ out/
 *.lock
 *.pid
 *.cfg.bak
+*.hprof
 /command_history.txt
 /hmclversion.cfg
 /log4j2.xml

@@ -2020,6 +2020,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "79B71E3B5B51605C"
+					item: {
+						count: 1
+						id: "create:pulse_extender"
+					}
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			tasks: [{

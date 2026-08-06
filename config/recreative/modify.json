@@ -7,6 +7,12 @@
                 "item": "kineticgrip:grip_handle"
             }
         ]
+    },
+    {
+        "action": "modify_tab",
+        "tabs": ["gnkinetics:base_tab"],
+        "add_items": [
+            "gnkinetics:planetary_gear"
+        ]
     }
-    
 ]

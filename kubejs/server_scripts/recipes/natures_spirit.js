@@ -29,7 +29,7 @@ ServerEvents.recipes(e=>{
         [['4x minecraft:pink_dye',CreateItem.of('2x minecraft:pink_dye',0.5)],'natures_spirit:bleeding_heart'],
         [['4x minecraft:blue_dye',CreateItem.of('2x minecraft:blue_dye',0.5)],'natures_spirit:blue_bulbs'],
         [['4x minecraft:red_dye',CreateItem.of('2x minecraft:red_dye',0.5)],'natures_spirit:carnation'],
-        [['2x minecraft:white_dye',CreateItem.of('minecraft:light_gray_dye',0.5)],'natures_spirit:gardenia'],
+        [['4x minecraft:white_dye',CreateItem.of('minecraft:light_gray_dye',0.5)],'natures_spirit:gardenia'],
         [['2x minecraft:pink_dye',CreateItem.of('minecraft:pink_dye',0.5)],'natures_spirit:snapdragon'],
         [['2x minecraft:purple_dye',CreateItem.of('minecraft:purple_dye',0.5)],'natures_spirit:foxglove'],
         [['2x minecraft:orange_dye',CreateItem.of('minecraft:orange_dye',0.5)],'natures_spirit:begonia'],
@@ -85,6 +85,22 @@ ServerEvents.recipes(e=>{
     //黑硅岩
     e.recipes.create.crushing([Item.of('natures_spirit:pink_sand'),CreateItem.of('minecraft:quartz',0.5),CreateItem.of('extendedae:quartz_blend',0.25)],
     Ingredient.of('natures_spirit:chert')).id('crushing/natures_spirit/chert')
+    //黑硅岩矿石
+    let ores = [
+        ['minecraft:coal_ore','natures_spirit:chert_coal_ore'],
+        ['minecraft:iron_ore','natures_spirit:chert_iron_ore'],
+        ['minecraft:copper_ore','natures_spirit:chert_copper_ore'],
+        ['minecraft:gold_ore','natures_spirit:chert_gold_ore'],
+        ['minecraft:redstone_ore','natures_spirit:chert_redstone_ore'],
+        ['minecraft:emerald_ore','natures_spirit:chert_emerald_ore'],
+        ['minecraft:lapis_ore','natures_spirit:chert_lapis_ore'],
+        ['minecraft:diamond_ore','natures_spirit:chert_diamond_ore']
+    ]
+    ores.forEach(element => {
+        let [mc,ns] = element
+        e.replaceInput({input:mc},mc,Ingredient.of([mc,ns]))
+        e.stonecutting(ns,mc).id('stonecutting/'+ns.replace(':','/'))
+    })
 
     //椰子
     e.recipes.create.emptying([Fluid.of('create:potion',1000,{"create:potion_fluid_bottle_type":"regular","minecraft:potion_contents":{potion:"minecraft:mundane"}}),'2x natures_spirit:coconut_half'],
@@ -92,5 +108,9 @@ ServerEvents.recipes(e=>{
     e.recipes.create.compacting(['minecraft:sugar','farmersdelight:straw'],Item.of('natures_spirit:coconut_half'))
         .id('compacting/natures_spirit/coconut_half')
 
+    //白垩岩
+    e.replaceInput({id:'natures_spirit:white_chalk'},'natures_spirit:chalk_powder','minecraft:bone_meal')
+
+    
     
 })

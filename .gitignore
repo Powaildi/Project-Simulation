@@ -41,6 +41,8 @@ tacz_backup/
 tlm_custom_pack/
 xaero/
 XaeroWaypoints_*/
+zstdnet/
+/patched_shaders/
 
 /patchouli_data.json
 /ponders_watched_azimuth.json

@@ -50,6 +50,25 @@
     },
     {
         "matchItems": [
+            "createdeco:andesite_sheet"
+        ],
+        "resultItems": "vintageimprovements:andesite_sheet"
+    },
+    {
+        "matchItems": [
+            "createdeco:zinc_sheet",
+            "vintageimprovements:zinc_sheet"
+        ],
+        "resultItems": "createaddition:zinc_sheet"
+    },
+    {
+        "matchItems": [
+            "vintageimprovements:platinum_sheet"
+        ],
+        "resultItems": "createpropulsion:platinum_sheet"
+    },
+    {
+        "matchItems": [
             "createaddition:copper_wire"
         ],
         "resultItems": "electroenergetics:copper_wire"

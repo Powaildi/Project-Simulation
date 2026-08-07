@@ -1,0 +1,29 @@
+ServerEvents.recipes(e=>{
+//CC&A
+    //删除吸管和cca的吸管烈焰人燃烧室
+    e.remove({output:'createaddition:straw'})
+    e.remove({type:'createaddition:liquid_burning'})
+//电力学
+    //去除3粒合线配方
+    e.remove({id:'electroenergetics:crafting/copper_wire'})
+    e.remove({id:'electroenergetics:crafting/electrum_wire'})
+    e.remove({id:'electroenergetics:crafting/iron_wire'})
+    //变压器铁片
+    e.remove({id:'electroenergetics:stonecutting/transformer_core_lamination'})
+    e.recipes.vintageimprovements.turning('electroenergetics:transformer_core_lamination',Item.of('create:iron_sheet'),40)
+    //去除植物油配方
+    e.remove({id:'electroenergetics:compacting/plant_oil'})
+//经典改进
+    //清除硫
+    e.remove({id:"vintageimprovements:pressurizing/sulfur_dioxide"})
+    e.replaceOutput({output:'vintageimprovements:sulfur_chunk'},'vintageimprovements:sulfur_chunk','mekanism:dust_sulfur')
+    e.shapeless('minecraft:sulfur',Item.of('mekanism:dust_sulfur',9))
+    e.shapeless(Item.of('mekanism:dust_sulfur',9),['minecraft:sulfur'])
+    //替换铁弹簧，以让它们在JEI中能同时看到
+    e.replaceInput({input:'vintageimprovements:iron_spring'},'vintageimprovements:iron_spring','simulated:spring')
+    e.replaceOutput({output:'vintageimprovements:iron_spring'},'vintageimprovements:iron_spring','simulated:spring')
+    
+//下界乐事
+    //清理需要辣椒粉增殖烈焰粉的配方
+    e.remove({output:'minecraft:blaze_powder',input:'minecraft:blaze_powder'})
+})

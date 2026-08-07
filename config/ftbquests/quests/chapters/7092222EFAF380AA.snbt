@@ -24,7 +24,6 @@
 			image: "minecraft:textures/gui/sprites/world_list/warning_highlighted.png"
 			order: 1
 			rotation: 0.0d
-			text_on_image: 1b
 			text_shadow: 1b
 			text_v_align: "start"
 			width: 1.0d
@@ -37,7 +36,6 @@
 			id: "3FB9428AA14AA8E3"
 			image: "minecraft:item/light_05"
 			rotation: 0.0d
-			text_on_image: 1b
 			text_shadow: 1b
 			text_v_align: "start"
 			width: 1.0d
@@ -94,7 +92,7 @@
 			dependencies: ["4EB08D6A562C58B9"]
 			id: "64E754E35D37D2D8"
 			rewards: [{
-				count: 16
+				count: 3
 				id: "615B14059E1479E5"
 				item: {
 					count: 1
@@ -1997,6 +1995,7 @@
 					type: "item"
 				}
 				{
+					count: 2
 					id: "69D461403E2CBE06"
 					item: {
 						count: 1

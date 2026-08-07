@@ -369,6 +369,7 @@
 	quest.4D0CD0B67A260396.quest_desc: ["放在存产物的箱子周围，将产物吸收到维度网络。"]
 	quest.4D0CD0B67A260396.quest_subtitle: "吸取周围容器"
 	quest.4EB08D6A562C58B9.quest_desc: [
+		"我在世界出生点放置了一个铁矿床，它应该对你有不小的帮助！"
 		"直接挖掘矿床不会掉落任何东西！"
 		"如果你的出生点并不好，建议重新开一个档。"
 	]
@@ -389,7 +390,7 @@
 	quest.4EE3A928F6B4335F.quest_subtitle: "未完成"
 	quest.4F125AA018CE5F16.quest_desc: [
 		"[ \"试试去\", { \"text\": \"寻找陨石\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"73A2BDD0064188B1\" } } ]"
-		"如果你还没有改造过矿机，那么最后右键采矿机轴承把它停了，以免物品溢出！"
+		"[ \"如果你还没有\", { \"text\": \"改造过矿机\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7288BB4FAE8C2BB1\" } }, \"，那么最好在离开前右键采矿机轴承把它停了，以免物品溢出！\" ]"
 	]
 	quest.4F1441AFE9D49275.quest_desc: ["每个面提供32个频道"]
 	quest.4F1441AFE9D49275.quest_subtitle: "网络的中心"
@@ -552,7 +553,10 @@
 	quest.6FB1B310630C03D4.title: "量子环"
 	quest.7116F486FFBA4222.quest_subtitle: "便捷交互"
 	quest.713754DEDCABB164.title: "终端"
-	quest.7288BB4FAE8C2BB1.quest_desc: ["[ \"前往\", { \"text\": \"无限采矿\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"02AE894307BE87B7\" } }, \"章节查看矿机的组装方法。\" ]"]
+	quest.7288BB4FAE8C2BB1.quest_desc: [
+		"[ \"前往\", { \"text\": \"无限采矿\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"02AE894307BE87B7\" } }, \"章节查看矿机的组装方法。\" ]"
+		"或者直接查看采矿机轴承的思索！"
+	]
 	quest.72C8573949A44341.quest_desc: [
 		"在你获取ME控制器之前，一个网络最多有8个频道，超过时网络会失效。大部分方块和组件会占用1个频道。"
 		"进入无线访问点GUI，将你的无线终端放进右上角槽位，就能绑定这个网络。"

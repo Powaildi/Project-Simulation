@@ -762,5 +762,25 @@
 			x: 2.0d
 			y: -4.0d
 		}
+		{
+			id: "1D42056A24085A81"
+			invisible: true
+			rewards: [{
+				count: 4
+				id: "4317333DBD90F172"
+				item: {
+					count: 1
+					id: "minecraft:heavy_core"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "74392C6AD0327A87"
+				item: { count: 1, id: "minecraft:mace" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -2.5d
+		}
 	]
 }

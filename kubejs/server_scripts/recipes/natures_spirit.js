@@ -4,7 +4,7 @@ ServerEvents.recipes(e=>{
     let milling = [
         [['2x minecraft:pink_dye',CreateItem.of('minecraft:pink_dye',0.5)],'minecraft:cherry_leaves'],
         [['4x minecraft:pink_dye',CreateItem.of('2x minecraft:pink_dye',0.5)],'minecraft:cactus_flower'],
-        [['2x minecraft:pink_dye',CreateItem.of('minecraft:pink_dye',0.5)],'delighto_flight:lotus_flower'],
+        [['2x minecraft:pink_dye',CreateItem.of('delighto_flight:lotus_seeds',0.5)],'delighto_flight:lotus_flower'],
 
         [['2x minecraft:white_dye',CreateItem.of('minecraft:pink_dye',0.5)],'natures_spirit:white_wisteria_leaves'],
         [['2x minecraft:blue_dye',CreateItem.of('minecraft:light_blue_dye',0.5)],'natures_spirit:blue_wisteria_leaves'],

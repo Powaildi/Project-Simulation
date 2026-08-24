@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "instance_id": "local:8814461b-82d2-49d7-b580-c0b49a90183a",
+  "path": "Project Simulation",
+  "generated_at": "2026-08-23T15:20:14.798299400Z",
+  "name": "Project Simulation",
+  "icon_path": null,
+  "update_channel": "release",
+  "symlink_target": "E:\\1.21Minecraft\\versions\\Project Simulation",
+  "groups": [],
+  "content_set": {
+    "source_kind": "local",
+    "game_version": "1.21.1",
+    "protocol_version": 767,
+    "loader": "neoforge",
+    "loader_version": "21.1.248"
+  },
+  "link": "unmanaged",
+  "launch_overrides": {
+    "hooks": {
+      "pre_launch": null,
+      "wrapper": null,
+      "post_exit": null
+    }
+  }
+}

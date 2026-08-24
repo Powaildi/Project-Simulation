@@ -20,3 +20,8 @@ developerMode = false
 enableUiAnimations = true
 #Show the RTS plugin button on the vanilla inventory screen.
 showInventoryRtsButton = true
+
+[diagnostics]
+	#RTS operation diagnostics. BASIC records bounded lifecycle events; VERBOSE keeps additional detail.
+	#Allowed Values: OFF, BASIC, VERBOSE
+	level = "BASIC"

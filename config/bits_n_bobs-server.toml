@@ -4,8 +4,8 @@ flywheelBearingStorageCapability = true
 #.
 #(This block is in development, and disabled in feature flags by default) Multiplier for the kinetic storage capacity of flywheels mounted on flywheel bearings (if enabled). Values higher than one increase capacity. It is not recommended to set the value to 0, as you should disable the storage feature entirely.
 # Default: 1.0
-# Range: 0.0 ~ 100.0
-flywheelStorageFactor = 100.0
+# Range: 0.0 ~ 1000000.0
+flywheelStorageFactor = 2000.0
 #.
 #Multiplier for the number of chains required for a cogwheel chain. Minimum cost is always 1 chain, unless this value is set to 0. Does not affect the number of chains returned by existing chain drives.
 # Default: 1.0
@@ -26,3 +26,13 @@ cogwheelMaxBounds = 64
 # Default: 64
 # Range: 1 ~ 256
 cogwheelMaxNodeCount = 64
+#.
+#Stress units per tick per angular mass the flywheel can transfer. Higher values let a flywheel with a large storage factor fill and drain faster. Default 5 matches pre-config behaviour.
+# Default: 5.0
+# Range: 0.10000000149011612 ~ 1000000.0
+flywheelTransferCapacityPerAngularMass = 4096.0
+#.
+#Multiplier of Create's maxRotationSpeed (default 256) for the flywheel bearing's maximum RPM when storage is enabled. 0.25 -> 64 RPM (legacy default), 1.0 -> 256 RPM, 4.0 -> 1024 RPM.
+# Default: 0.25
+# Range: 0.10000000149011612 ~ 64.0
+flywheelMaxRpmFactor = 0.25

@@ -43,6 +43,8 @@ xaero/
 XaeroWaypoints_*/
 zstdnet/
 /patched_shaders/
+ESM/
+enxv_aeronautics_structures/
 
 /patchouli_data.json
 /ponders_watched_azimuth.json

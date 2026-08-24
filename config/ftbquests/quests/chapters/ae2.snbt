@@ -9,6 +9,7 @@
 	id: "4E86CA3348BC5844"
 	images: [
 		{
+			click_action: "custom_event:"
 			height: 1.0d
 			id: "3714FCBF5C88A05D"
 			image: "minecraft:textures/gui/sprites/world_list/error_highlighted.png"
@@ -593,6 +594,14 @@
 		}
 		{
 			id: "658AFFBC6A390283"
+			rewards: [{
+				id: "7E7EB48AA96F12D0"
+				item: {
+					count: 1
+					id: "delighto_flight:charged_rose_tea"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "1A41E596B89E964E"

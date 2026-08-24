@@ -8,7 +8,10 @@ ServerEvents.recipes(e=>{
     //焦油用途
     e.replaceInput({id:'createdieselgenerators:crafting/asphalt_block'},'createdieselgenerators:crude_oil_bucket',
         Ingredient.of(['kubejs:tar_bucket','createdieselgenerators:crude_oil_bucket']))
-
+    e.recipes.create.mixing('4x createdieselgenerators:asphalt_block',
+        ['2x minecraft:gravel','2x minecraft:sand',Fluid.of('kubejs:tar',100)])
+        .id('mixing/createdieselgenerators/asphalt_block')
+    
     //批量发酵
 
     //分馏

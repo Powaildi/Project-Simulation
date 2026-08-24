@@ -13,4 +13,7 @@ ItemEvents.modification(e=>{
     e.modify('createbigcannons:steel_block',i=>{
         i.setItemName(Text.translatable("tag.createbigcannons.block_steel"))
     })
+    e.modify('kubejs:tar_bucket',i=>{
+        i.setCraftingRemainder('minecraft:bucket')
+    })
 })

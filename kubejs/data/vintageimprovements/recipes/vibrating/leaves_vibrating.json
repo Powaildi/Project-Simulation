@@ -5,7 +5,10 @@
     }
   ],
 	"results": [
-        
+      {
+        "item":"minecraft:rose_bush",
+        "count":1
+      }
 	],
   "processingTime": 8
 }

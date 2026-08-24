@@ -7,15 +7,15 @@
  * @returns {any[]} 返回原数组本身，方便进行链式调用
  */
 function shuffle(arr,times) {
-  const len = arr.length;
-  //console.log(times) 
-  for (let t = 0; t < times; t++) {
-    for (let i = len - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]]; // 直接交换
+    const len = arr.length;
+    //console.log(times) 
+    for (let t = 0; t < times; t++) {
+        for (let i = len - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]]; // 直接交换
+        }
     }
-  }
-  return arr; // 返回原数组，方便链式调用
+    return arr; // 返回原数组，方便链式调用
 }
 
 
@@ -53,4 +53,16 @@ ServerEvents.recipes(e=>{
         e.recipes.create.filling(ti,[ti,Fluid.of(candidates2[4],250)])
         ])
         .transitionalItem(ti).id('sequenced_assembly/alternative_chromatic_compound_liquid')
+    
+    //传统炼钢劣化
+    e.remove({output:'mekanism:enriched_iron'})
+    e.recipes.mekanism.metallurgic_infusing('mekanism:enriched_iron','createbigcannons:steel_block','648x mekanism:carbon',false)
+        .id('metallurgic_infusing/mekanism/enriched_iron')
+    e.remove({input:'mekanism:dust_steel'})
+    e.recipes.create.compacting('createbigcannons:steel_ingot','10x mekanism:dust_steel').superheated()
+        .id('compacting/createbigcannons/steel_ingot/from_dust')
+    //移除cbc的炼钢配方
+    e.remove({id:'createbigcannons:mixing/alloy_steel'})
+    //反应堆玻璃
+    e.replaceInput({id:'mekanismgenerators:reactor/glass'},'mekanism:enriched_iron','createbigcannons:steel_ingot')
 })

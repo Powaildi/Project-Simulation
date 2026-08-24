@@ -56,4 +56,4 @@ magneticStabilizerStrength = 50.0
 	# - CUBE: Classic Minecraft cube-shaped planets.
 	# - SPHERE: Smooth sphere-shaped planets.
 	#Allowed Values: CUBE, SPHERE
-	planetShape = "CUBE"
+	planetShape = "SPHERE"

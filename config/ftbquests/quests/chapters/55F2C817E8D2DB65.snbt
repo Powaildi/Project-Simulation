@@ -8,6 +8,7 @@
 	}
 	id: "55F2C817E8D2DB65"
 	images: [{
+		click_action: "custom_event:"
 		height: 1.0d
 		id: "3D39348AF7244CFD"
 		image: "minecraft:textures/gui/sprites/world_list/warning_highlighted.png"
@@ -72,6 +73,26 @@
 			}]
 			x: 5.0d
 			y: -1.0d
+		}
+		{
+			id: "5C7F236D1099080B"
+			tasks: [{
+				id: "10D9353D8A7CCEE0"
+				item: { count: 1, id: "dndesires:gold_mixer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			id: "06DA3B2886BCA3E1"
+			tasks: [{
+				id: "708AEAF052604F73"
+				item: { count: 1, id: "dndesires:hydraulic_press" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
 		}
 	]
 }

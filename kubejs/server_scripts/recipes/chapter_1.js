@@ -27,7 +27,14 @@ ServerEvents.recipes(e=>{
         'create:electron_tube','kubejs:circuit')
     e.replaceInput({id:'functionalstorage:storage_controller'},'minecraft:comparator','kubejs:circuit')
     e.replaceInput({id:'functionalstorage:framed_storage_controller'},'minecraft:comparator','kubejs:circuit')
-    
+
+    //液化木煤气
+    e.recipes.vintageimprovements.pressurizing('minecraft:charcoal',Ingredient.of('#minecraft:logs'),125,Fluid.of('kubejs:wood_gas',250))
+        .heated()
+        .id('pressurizing/wood_gas')
+    e.recipes.vintageimprovements.pressurizing(['minecraft:charcoal',Fluid.of('kubejs:tar',100)],Ingredient.of('#minecraft:logs'),60,Fluid.of('kubejs:wood_gas',250))
+        .superheated()
+        .id('pressurizing/wood_gas_superheated')
     //沉重核心
     e.recipes.create.mechanical_crafting('minecraft:heavy_core',[
         ' ABA ',
@@ -50,6 +57,15 @@ ServerEvents.recipes(e=>{
         '2x delighto_flight:cloud',
         'minecraft:breeze_rod'
     ],90).id('mixing/wind_charge')
+    //烈焰粉
+    e.recipes.create.mixing('5x minecraft:blaze_powder',['minecraft:blaze_powder','minecraft:wind_charge','4x create:cinder_flour'],125)
+        .id('mixing/blaze_powder')
+    e.recipes.create.compacting('10x minecraft:blaze_powder',['mynethersdelight:bullet_pepper','minecraft:wind_charge','4x create:cinder_flour'])
+        .heated().id('compacting/blaze_powder')
+
+    //余烬面粉
+    e.recipes.create.mixing('16x create:cinder_flour',[Fluid.of('create_dragons_plus:red_dye',500),'4x kaleidoscope_cookery:flour'],60)
+        .heated().id('mixing/create/cinder_flour')
 
     //运输器、传输器
     e.shaped('fluidlogistics:fluid_transporter',[
@@ -101,6 +117,22 @@ ServerEvents.recipes(e=>{
 
     
 
+    //糖
+    e.recipes.create.compacting('minecraft:sugar','minecraft:beetroot').heated()
+        .id('compacting/sugar_from_beetroot')
+    //红石构件
+    ti = 'vintageimprovements:incomplete_redstone_module'
+    e.recipes.create.sequenced_assembly('vintageimprovements:redstone_module','create:brass_sheet',[
+        e.recipes.create.deploying(ti,[ti,'minecraft:redstone']),
+        e.recipes.vintageimprovements.vibrating(ti,ti),
+        e.recipes.create.pressing(ti,ti),
+        e.recipes.create.deploying(ti,[ti,'create:transmitter']),
+        e.recipes.create.deploying(ti,[ti,'create:electron_tube']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:iron_nugget'])
+    ])
+    .transitionalItem(ti).id('vintageimprovements:sequenced_assembly/redstone_module')
+    //.id('sequenced_assembly/vintageimprovements/redstone_module')
+    
     //四大金属岩石
     let stonemetals = [
         ['create:crimsite','create:iron_sheet','create:crushed_raw_iron',Fluid.of('minecraft:lava',250),'minecraft:iron_ingot'],
@@ -128,12 +160,31 @@ ServerEvents.recipes(e=>{
             "processing_time": 10,
             "results": [
                 {
-                "amount": 2,
+                "count": 2,
                 "id": metal
                 }
             ]
             }
         ).id('melting/'+stone.replace(':','/'))
     })
-
+    //碎矿增产
+    let crushed = [
+        ['rocketnautics:crushed_raw_titanium','rocketnautics:titanium_nugget'],
+        ['create:crushed_raw_iron','minecraft:iron_nugget'],
+        ['create:crushed_raw_gold','minecraft:gold_nugget'],
+        ['create:crushed_raw_copper','create:copper_nugget'],
+        ['create:crushed_raw_zinc','create:zinc_nugget'],
+        ['create:crushed_raw_osmium','mekanism:nugget_osmium'],
+        ['create:crushed_raw_platinum','createpropulsion:platinum_nugget'],
+        ['create:crushed_raw_silver','mekmm:nugget_silver'],
+        ['create:crushed_raw_tin','mekanism:nugget_tin'],
+        ['create:crushed_raw_lead','mekanism:nugget_lead'],
+        ['create:crushed_raw_uranium','mekanism:nugget_uranium']
+                   
+    ]
+    crushed.forEach(element =>{
+        let [crushed,nugget] = element
+        e.recipes.vintageimprovements.vibrating('15x '+nugget,crushed,67)
+            .id('vibrating/'+crushed.replace(':','/'))
+    })
 })

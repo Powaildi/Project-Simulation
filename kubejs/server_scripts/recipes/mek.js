@@ -59,8 +59,45 @@ ServerEvents.recipes(e=>{
         e.recipes.mekanism.sawing(a,b,1,input).id('sawing/'+input.replace(':','/'))
     })
 
+    //气液转化
+    let converting = [
+        ['kubejs:wood_gas','kubejs:wood_gas'],
+        ['kubejs:petrol_gas','kubejs:lpg'],
+        ['kubejs:nitrogen','kubejs:nitrogen'],
+        ['kubejs:nitrogen_dioxide','kubejs:nitrogen_dioxide'],
+        ['kubejs:nitrogen_fertilizer','kubejs:nitrogen_fertilizer'],
+        ['kubejs:ammonia','kubejs:ammonia'],
+        ['kubejs:carbon_dioxide','kubejs:carbon_dioxide']
+    ]
+    converting.forEach(element=>{
+        let [gas,fluid] = element
+        e.recipes.mekanism.rotary('1x '+gas,Fluid.of(fluid,1),'1x '+gas,Fluid.of(fluid,1))
+    })
+    
+    
+    // e.custom({
+    //     "type":"mekanism:rotary",
+    //     "chemical_input":{
+    //         "amount":1,
+    //         "chemical":"mekanism:hydrogen_chloride"
+    //     },
+    //     "chemical_output":{
+    //         "amount":1,
+    //         "id":"mekanism:hydrogen_chloride"
+    //     },
+    //     "fluid_input":{
+    //         "amount":1,
+    //         "tag":"c:hydrogen_chloride"
+    //     },
+    //     "fluid_output":{
+    //         "amount":1,
+    //         "id":"mekanism:hydrogen_chloride"
+    //     }
+    // })
     //火把改出木炭
     e.replaceOutput({id:'mekanism:sawing/torch'},'minecraft:coal','minecraft:charcoal')
+
+    
 
     //融合机染料产出改变
     let combines = e.findRecipes({type:'mekanism:combining',output:Ingredient.of('#c:dyes')})
@@ -75,12 +112,5 @@ ServerEvents.recipes(e=>{
         
     })
 
-    //染料基础
-    e.remove({id:'mekanism:dye_base'})
-
-    //太阳能发电机简化
-    e.replaceInput({id:'mekanismgenerators:generator/solar'},'mekanismgenerators:solar_panel','ae2:printed_silicon')
-
-    //灌注合金，强化合金，原子合金
-    e.replaceInput({id:'mekanism:metallurgic_infusing/alloy/infused'},'minecraft:copper_ingot','create:andesite_alloy')
+    
 })

@@ -1,6 +1,10 @@
 {
-    "tab.recreative.transmission": "常用方块：传动",
-    "tab.recreative.machines":"常用方块：机器",
+    "tab.transmission": "常用方块：传动",
+    "tab.machines":"常用方块：机器",
+    "tab.logistic":"常用方块：物流",
+    "tab.structure":"常用方块：动态结构",
+    "tab.tools":"常用工具",
+    "tab.aero":"航空学附属",
 
     "item.kubejs.circuit":"电路板",
     "item.kubejs.graphite":"石墨",
@@ -11,6 +15,10 @@
     "item.kubejs.steel_sheet":"钢板",
 
     "block.kubejs.uranium_chlorophyte":"叶绿铀石",
+
+    "block.mbd2.air_compressor":"空气压缩机",
+    "block.mbd2.assembler":"自动化组装机（WIP）",
+    "block.mbd2.sprinkler":"喷灌器",
 
     "fluid_type.kubejs.cryogen":"冷冻液",
     "fluid_type.kubejs.bone_meal_diluent":"骨粉稀释液",
@@ -80,7 +88,7 @@
     "tooltip.ratatouille.spreader_shift_2":"根据可催熟的作物数量一次消耗更多催熟素",
 
     "tooltip.bits_n_bobs.flywheel_bearing":"提供更多应力！",
-    "tooltip.bits_n_bobs.flywheel_bearing_shift":"应力量/角质量：5->4096",
+    "tooltip.bits_n_bobs.flywheel_bearing_shift":"应力量/角质量：5->4096(上限100->1x10^6，可在配置更改，不要设置太高！)",
     "tooltip.bits_n_bobs.cogwheel_chain_carriage":"放在要带走的方块上，让它的钩子差不多对准\n本模组的锁链传动装置，然后右键！",
 
     "tooltip.createdieselgenerators.distillation_controller":"增大分馏塔面积可以增加并行数(1.3.15)",
@@ -101,6 +109,8 @@
 
     "tooltip.natures_spirit.olives":"来自干燥疏灌丛平原",
     "tooltip.natures_spirit.cheese_bucket":"手持棕色蘑菇右键装牛奶的炼药锅",
-    "tooltip.natures_spirit.coconut":"用骨粉催熟以变成发芽的椰子"
-    
+    "tooltip.natures_spirit.coconut":"用骨粉催熟以变成发芽的椰子",
+
+    "tooltip.paint":"颜料的混合搅拌配方已经从JEI中隐藏！",
+    "tooltip.vessel":"没有可以思考的心智，\n没有可以屈服的意志，\n没有为苦难哭泣的声音"
 }

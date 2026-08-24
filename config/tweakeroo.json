@@ -461,7 +461,7 @@
       }
     },
     "disableBatSpawning": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
@@ -575,7 +575,7 @@
       }
     },
     "disableInventoryEffectRendering": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
@@ -707,13 +707,13 @@
       }
     },
     "disableVillagerTradeLocking": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
     },
     "disableWallUnsprint": {
-      "enabled": false,
+      "enabled": true,
       "hotkey": {
         "keys": ""
       }
@@ -910,7 +910,7 @@
     "tweakHotbarSwap": false,
     "§6tweakInventoryPreview§r": false,
     "tweakItemUnstackingProtection": false,
-    "tweakLavaVisibility": false,
+    "tweakLavaVisibility": true,
     "tweakMapPreview": false,
     "tweakMovementKeysLast": false,
     "tweakPeriodicAttack": false,

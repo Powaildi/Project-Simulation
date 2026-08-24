@@ -44,11 +44,11 @@
 		# Range: 0.0 ~ 64.0
 		trackSpringForceCoefficient = 0.4
 		#Legacy multiplier applied on top of the physically-derived track damping rate.
-		# Default: 0.08
+		# Default: 0.15
 		# Range: 0.0 ~ 32.0
 		trackDampingForceCoefficient = 0.08
 		#Maximum suspension damping force magnitude per node, expressed as a multiple of the node's effective gravity load.
-		# Default: 0.03
+		# Default: 0.05
 		# Range: 0.0 ~ 16.0
 		suspensionDampingForceLimitG = 0.03
 		#Maximum total suspension support force magnitude applied by each grounded suspension-track node, expressed as a multiple of that node's allocated sprung gravity load.

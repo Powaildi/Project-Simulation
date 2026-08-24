@@ -30,6 +30,15 @@
 				item: { count: 1, id: "create:railway_casing" }
 				type: "item"
 			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "46DA82F7690C2145"
+			tasks: [{
+				id: "389316D7CA06CE43"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}

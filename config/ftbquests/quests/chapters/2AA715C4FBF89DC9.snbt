@@ -533,6 +533,15 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "1B26B34F4E8FB480"
+			rewards: [{
+				count: 32
+				id: "3DD26BAA075BFF29"
+				item: {
+					count: 1
+					id: "minecraft:blaze_rod"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B9E109322481E8E"
 				item: { count: 1, id: "minecraft:wind_charge" }
@@ -765,15 +774,34 @@
 		{
 			id: "1D42056A24085A81"
 			invisible: true
-			rewards: [{
-				count: 4
-				id: "4317333DBD90F172"
-				item: {
-					count: 1
-					id: "minecraft:heavy_core"
+			rewards: [
+				{
+					count: 4
+					id: "4317333DBD90F172"
+					item: {
+						count: 1
+						id: "minecraft:heavy_core"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7626FC095748F6D7"
+					item: {
+						count: 1
+						id: "kubejs:infinite_heat_bar"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "27EED7F79AD962D0"
+					item: {
+						count: 1
+						id: "createbigcannons:steel_block"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "74392C6AD0327A87"
 				item: { count: 1, id: "minecraft:mace" }

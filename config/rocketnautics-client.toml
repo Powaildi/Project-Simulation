@@ -30,7 +30,7 @@ hasShownWorldBorderWarning = true
 	# Range: 0 ~ 10000
 	orbitPredictionSteps = 1000
 	#Enable custom sky rendering (nebula, stars, planet beneath, custom sun/moon etc). Disable to return to standard Minecraft sky.
-	enableCustomSky = true
+	enableCustomSky = false
 	#Enable merging of adjacent thruster plumes into a single larger plume cluster
 	enablePlumeMerging = true
 	#Distance threshold in blocks within which adjacent engine plumes are clustered and merged

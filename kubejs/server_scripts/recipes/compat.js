@@ -22,8 +22,22 @@ ServerEvents.recipes(e=>{
     //替换铁弹簧，以让它们在JEI中能同时看到
     e.replaceInput({input:'vintageimprovements:iron_spring'},'vintageimprovements:iron_spring','simulated:spring')
     e.replaceOutput({output:'vintageimprovements:iron_spring'},'vintageimprovements:iron_spring','simulated:spring')
-    
+    //让其它被替换的物品能同时看到
+    e.replaceInput({input:'vintageimprovements:andesite_sheet'},'vintageimprovements:andesite_sheet','createdeco:andesite_sheet')
+    e.replaceOutput({output:'vintageimprovements:andesite_sheet'},'vintageimprovements:andesite_sheet','createdeco:andesite_sheet')
+
 //下界乐事
     //清理需要辣椒粉增殖烈焰粉的配方
     e.remove({output:'minecraft:blaze_powder',input:'minecraft:blaze_powder'})
+//云端之乐
+    //充能玫瑰茶
+    e.recipes.create.filling(Item.of('delighto_flight:charged_rose_tea',1),
+        [Fluid.of('delighto_flight:charged_rose_tea',250),'minecraft:glass_bottle'])
+        .id('filling/delighto_flight/charged_rose_tea')
+    e.recipes.create.emptying([Fluid.of('delighto_flight:charged_rose_tea',250),'minecraft:glass_bottle'],
+        Item.of('delighto_flight:charged_rose_tea',1))
+        .id('emptying/delighto_flight/charged_rose_tea')
+//森罗物语
+    //清除机械动力的面团配方
+    e.remove({id:'create:crafting/appliances/dough'})
 })

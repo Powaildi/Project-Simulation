@@ -60,6 +60,16 @@
 	# Default: 180
 	# Range: 1 ~ 8192
 	maxStoragePageSize = 180
+	#Maximum linked storage endpoints retained for one player. Batch linking deduplicates endpoints from the same AE2 or Refined Storage network.
+	# Default: 200
+	# Range: 1 ~ 4096
+	maxLinkedStorages = 200
+	#Allow the cross-dimension storage plugin to wake and access linked storage in other dimensions.
+	enableCrossDimensionStorage = true
+	#Maximum short-lived cross-dimension storage chunk tickets retained for one player.
+	# Default: 32
+	# Range: 1 ~ 256
+	maxCrossDimensionAwakeChunks = 32
 
 [placement]
 	#Maximum queued remote placement targets processed per player per server tick.
@@ -106,3 +116,8 @@
 	# Default: 0
 	# Range: 0 ~ 1
 	configRevision = 1
+
+[diagnostics]
+	#RTS operation diagnostics. VERBOSE adds one-second task progress samples; gameplay is unchanged.
+	#Allowed Values: OFF, BASIC, VERBOSE
+	level = "BASIC"

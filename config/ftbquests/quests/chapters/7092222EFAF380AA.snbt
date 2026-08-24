@@ -18,7 +18,7 @@
 			y: 0.75d
 		}
 		{
-			click_action: "none:"
+			click_action: "custom_event:"
 			height: 1.0d
 			id: "7540D97F5BFC3A51"
 			image: "minecraft:textures/gui/sprites/world_list/warning_highlighted.png"
@@ -31,7 +31,7 @@
 			y: 0.0d
 		}
 		{
-			click_action: "none:"
+			click_action: "show_recipe:createdieselgenerators:burner"
 			height: 1.0d
 			id: "3FB9428AA14AA8E3"
 			image: "minecraft:item/light_05"
@@ -910,6 +910,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "6483E19A23402D95"
+					item: {
+						count: 1
+						id: "fluidlogistics:infinite_fluid_tank"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "4E233981D9A8A6F4"
@@ -1735,6 +1743,15 @@
 		{
 			dependencies: ["30A53B64763061C9"]
 			id: "6D097F287F9BFE82"
+			rewards: [{
+				count: 32
+				id: "4B1A89920A4BDF2A"
+				item: {
+					count: 1
+					id: "vintageimprovements:redstone_module"
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "53C9C48D79D151FD"
@@ -2429,6 +2446,59 @@
 				type: "item"
 			}]
 			x: 14.5d
+			y: -1.0d
+		}
+		{
+			id: "757D007D46FCA353"
+			shape: "hexagon"
+			tasks: [{
+				id: "3C79A3B7CD3C0AF9"
+				item: { count: 1, id: "create:super_glue" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			id: "0AD3077C75702165"
+			shape: "hexagon"
+			tasks: [{
+				id: "4FB126524E20C3E0"
+				item: { count: 1, id: "simulated:honey_glue" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			id: "7770631C27195280"
+			invisible: true
+			rewards: [
+				{
+					count: 3
+					id: "4E4ABAB117AD8AB1"
+					item: {
+						count: 1
+						id: "kubejs:infinite_heat_bar"
+					}
+					type: "item"
+				}
+				{
+					id: "3543B9DD5EF99DAF"
+					item: {
+						count: 1
+						id: "create_fantasizing:compact_hydraulic_engine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "create_connected:overpowered_brake_0"
+				criterion: ""
+				id: "0C2672BB086790F3"
+				type: "advancement"
+			}]
+			x: 19.5d
 			y: -1.0d
 		}
 	]

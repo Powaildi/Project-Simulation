@@ -19,6 +19,8 @@
   "scrapBucket": {
     "itemsPerNugget": 64,
     "mbPerNugget": 2000,
+    "itemProductionEfficiencies": [],
+    "fluidProductionEfficiencies": [],
     "generateExperienceNuggets": true,
     "brassScrapBucketProduceItem": "create:experience_nugget",
     "itemTransferAmount": 64,

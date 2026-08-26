@@ -169,8 +169,9 @@ let machines =[
         'ratatouille:mechanical_demolder', 
         'ratatouille:spreader', 
         'ratatouille:frozen_block', 
-        'ratatouille:compost_tower', 
-        'dndesires:industrial_fan', 
+        'ratatouille:compost_tower',
+        'createdieselgenerators:bulk_fermenter',
+
         
         'create_power_loader:andesite_chunk_loader', 
         'create_power_loader:brass_chunk_loader', 
@@ -180,8 +181,9 @@ let machines =[
         'createoreexcavation:drilling_machine', 
         'createoreexcavation:extractor', 
         'createoreexcavation:sample_drill', 
-        'mbd2:air_compressor', 
+        'dndesires:industrial_fan',
 
+        'mbd2:air_compressor',
         'mbd2:assembler', 
         'mbd2:sprinkler'
     ]
@@ -230,18 +232,18 @@ let logistic = [
         'fluidlogistics:fluid_transporter',
         'fluidlogistics:smart_faucet', 
         'fluidlogistics:faucet', 
-        'fluidlogistics:multi_fluid_access_port', 
+        'create:copper_casing',
         'fluidlogistics:multi_fluid_tank', 
         'fluidlogistics:horizontal_multi_fluid_tank',
         'fluidlogistics:fluid_packager', 
         'fluidlogistics:fluid_repackager', 
         'fluidlogistics:copper_frogport', 
 
-        'create_fantasizing:transporter', 
+        'create_fantasizing:transporter',
         'fluidlogistics:smart_hopper', 
         'fluidlogistics:water_containing_copper_casing', 
         'fluidlogistics:mechanical_fluid_gun', 
-        'create:creative_crate', 
+        'fluidlogistics:multi_fluid_access_port',
         'create:creative_fluid_tank', 
         'dndesires:roll_table',
         'createimp:andesite_scrap_bucket', 
@@ -251,7 +253,7 @@ let logistic = [
         'createutilities:void_chest', 
         'createutilities:void_battery', 
         'createutilities:void_tank',
-        'fluidlogistics:infinite_fluid_tank',
+        'create:creative_crate',
         'mekanism:basic_logistical_transporter', 
         'mekanism:advanced_logistical_transporter', 
         'mekanism:elite_logistical_transporter', 

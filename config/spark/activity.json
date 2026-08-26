@@ -5,6 +5,45 @@
       "name": "Powaildi",
       "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
     },
+    "time": 1787643134366,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/406AWCOf8G"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1787636603450,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/dMNbvmtanl"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1787631253174,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/mOEqFF4Y7A"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
     "time": 1785858238719,
     "type": "Heap dump summary",
     "data": {

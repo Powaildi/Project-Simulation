@@ -1,13 +1,15 @@
-StartupEvents.registry('block', event => {
-    //注册 方块
-    event.create('uranium_chlorophyte').displayName("block.uranium_chlorophyte")
+StartupEvents.registry('block', e => {
+
+    e.create('chlorophyte').displayName("叶绿矿")
+    e.create('frankenstein').displayName("未苏醒的烈焰人燃烧室").fullBlock(false).notSolid()
+        .parentModel('create:block/blaze_burner/block_with_blaze').renderType('cutout')
 
 })
 BlockEvents.modification(e=>{
     e.modify('aero_reformation:end_rod_seat',b=>{
         b.setLightEmission(15)
     })
-    e.modify('kubejs:uranium_chlorophyte',b=>{
+    e.modify('kubejs:chlorophyte',b=>{
         b.setLightEmission(4)
     })
     e.modify('createbigcannons:steel_block',b=>{

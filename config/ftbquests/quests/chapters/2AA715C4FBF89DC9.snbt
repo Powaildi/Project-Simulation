@@ -7,18 +7,27 @@
 		id: "aeronautics:aviators_goggles"
 	}
 	id: "2AA715C4FBF89DC9"
-	images: [{
-		height: 1.0d
-		id: "39BD677D1A3AC867"
-		image: "minecraft:item/string"
-		rotation: 0.0d
-		width: 1.0d
-		x: 2.5d
-		y: 2.0d
-	}]
+	images: [
+		{
+			height: 1.0d
+			id: "39BD677D1A3AC867"
+			image: "minecraft:item/string"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			id: "59488169F5628197"
+			image: "create:textures/particle/soul_base_6.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.0d
+			y: -2.5d
+		}
+	]
 	order_index: 1
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -54,6 +63,15 @@
 		}
 		{
 			id: "24B67411E9633D6D"
+			rewards: [{
+				count: 4
+				id: "7778FC80EFCC188D"
+				item: {
+					count: 1
+					id: "minecraft:white_wool"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -377,6 +395,14 @@
 		{
 			dependencies: ["57AB73CDF5473F5D"]
 			id: "7CF777E5AD31A03E"
+			rewards: [{
+				id: "49660A5AD307D2AC"
+				item: {
+					count: 1
+					id: "ratatouille:frozen_block"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3FA82487921DBFC7"
 				item: { count: 1, id: "kubejs:cryogen_bucket" }
@@ -553,6 +579,26 @@
 		{
 			dependencies: ["1B26B34F4E8FB480"]
 			id: "03E1FF1EBAAC726E"
+			rewards: [
+				{
+					count: 16
+					id: "4D20B3CD35AAF48A"
+					item: {
+						count: 1
+						id: "mekanism:basic_mechanical_pipe"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2D7A010D7A72D515"
+					item: {
+						count: 1
+						id: "mekanism:basic_logistical_transporter"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "5B36379E9CFE7034"

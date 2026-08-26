@@ -14,9 +14,8 @@ BlockEvents.rightClicked('create:blaze_burner',e=>{
     }
     //播放声音应该使用player.playNotifySound，而不是player.playSound
     e.player.playNotifySound('minecraft:entity.blaze.shoot','blocks',0.2,0.1)
-    item.setCount(item.getCount()-1)
     block.setEntityData({isCreative:1})
-    
+    item.consume(1,player)//这里会直接断开
 })
 
 //废弃代码，因为用扳手拆就不掉，已在数据包实现

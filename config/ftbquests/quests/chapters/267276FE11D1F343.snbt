@@ -17,8 +17,6 @@
 		y: 0.0d
 	}]
 	order_index: 2
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -161,15 +159,25 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "2E497ABD6707F951"
-			rewards: [{
-				count: 64
-				id: "7987B77DE73FADED"
-				item: {
-					count: 1
-					id: "minecraft:gold_ingot"
+			rewards: [
+				{
+					count: 64
+					id: "7987B77DE73FADED"
+					item: {
+						count: 1
+						id: "minecraft:gold_ingot"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "06BBFF2FE272970C"
+					item: {
+						count: 1
+						id: "minecraft:pumpkin"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "696AB0DD95675FA2"
 				item: { count: 1, id: "create:ochrum" }
@@ -219,15 +227,25 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "4B884FFD72DD3D24"
-			rewards: [{
-				count: 64
-				id: "425CE764FF6D9B0B"
-				item: {
-					count: 1
-					id: "minecraft:iron_block"
+			rewards: [
+				{
+					count: 64
+					id: "425CE764FF6D9B0B"
+					item: {
+						count: 1
+						id: "minecraft:iron_block"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1DEB849817FEF9C1"
+					item: {
+						count: 1
+						id: "minecraft:sweet_berries"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "5C18F4F97FA11F80"
 				item: { count: 1, id: "create:crimsite" }
@@ -244,15 +262,33 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "24BA0F3B2676E4E1"
-			rewards: [{
-				count: 64
-				id: "61B8F5DFD41D7377"
-				item: {
-					count: 1
-					id: "create:zinc_ingot"
+			rewards: [
+				{
+					count: 64
+					id: "61B8F5DFD41D7377"
+					item: {
+						count: 1
+						id: "create:zinc_ingot"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "66C4A52690816CB1"
+					item: {
+						count: 1
+						id: "minecraft:dandelion"
+					}
+					type: "item"
+				}
+				{
+					id: "173827E345900A40"
+					item: {
+						count: 1
+						id: "minecraft:blue_orchid"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "64DDFCFFA979A102"
 				item: { count: 1, id: "create:asurine" }
@@ -269,15 +305,33 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "094402CFF330E5B2"
-			rewards: [{
-				count: 64
-				id: "714CCC4F2051D1B7"
-				item: {
-					count: 1
-					id: "minecraft:waxed_oxidized_copper"
+			rewards: [
+				{
+					count: 64
+					id: "714CCC4F2051D1B7"
+					item: {
+						count: 1
+						id: "minecraft:waxed_oxidized_copper"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "64700F66942FCC67"
+					item: {
+						count: 1
+						id: "minecraft:cocoa_beans"
+					}
+					type: "item"
+				}
+				{
+					id: "14430E9C3616B39A"
+					item: {
+						count: 1
+						id: "minecraft:jungle_sapling"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "612AEFC2D01EC216"
 				item: { count: 1, id: "create:veridium" }

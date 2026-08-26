@@ -16,4 +16,18 @@ ItemEvents.modification(e=>{
     e.modify('kubejs:tar_bucket',i=>{
         i.setCraftingRemainder('minecraft:bucket')
     })
+    e.modify('createdieselgenerators:gasoline_bucket',i=>{
+        i.setFood(20,1)
+        i.modifyFood(builder=>{
+            builder.usingConvertsTo('minecraft:bucket')
+        })
+    })
+    e.modify('minecraft:dirt',i=>{
+        i.setFood(4,0.25)
+        i.modifyFood(builder=>{
+            builder.saturation(0.25)
+            builder.effect('minecraft:nausea',200,1,0.25)
+            builder.eatSeconds(10)
+        })
+    })
 })

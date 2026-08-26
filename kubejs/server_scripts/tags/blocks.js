@@ -7,8 +7,7 @@ ServerEvents.tags('block',e=>{
     ])
     e.add('create_dragons_plus:passive_block_freezers','kubejs:cryogen')
     e.add('minecraft:wither_immune','kubejs:cryogen')
-    e.add('minecraft:wither_immune','kubejs:cryogen')
-    e.add('ae2:whitelisted/facades','natures_spirit:white_paper_lantern')
+    e.add('minecraft:dragon_immune','kubejs:cryogen')
 
     e.add('createdieselgenerators:pumpjack_pipe','create:metal_girder')
 })

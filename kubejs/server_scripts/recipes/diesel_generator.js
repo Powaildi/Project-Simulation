@@ -1,8 +1,4 @@
 ServerEvents.recipes(e=>{
-    //去除剪线配方
-    e.remove({type:'createdieselgenerators:wire_cutting'})
-    //去除植物油配方
-    e.remove({id:'createdieselgenerators:compacting/plant_oil'})
     //改变大发酵罐配方
     e.replaceInput({id:'createdieselgenerators:crafting/bulk_fermenter'},'create:andesite_alloy','createdeco:industrial_iron_sheet')
     //焦油用途
@@ -12,9 +8,94 @@ ServerEvents.recipes(e=>{
         ['2x minecraft:gravel','2x minecraft:sand',Fluid.of('kubejs:tar',100)])
         .id('mixing/createdieselgenerators/asphalt_block')
     
-    //批量发酵
+//工作盆发酵
+    e.custom({
+        "type": "createdieselgenerators:basin_fermenting",
+        "ingredients": [
+            {"item": 'minecraft:bone_meal'},
+            {"item": 'minecraft:bone_meal'},
+            {"item": 'minecraft:bone_meal'},
+            {
+            "type": "fluid_stack",
+            "fluid": "create:potion",
+            "components": {
+                "minecraft:potion_contents": {
+                "potion": "minecraft:mundane"
+                }
+            },
+            "amount": 50
+            }
+        ],
+        "processing_time": 60,
+        "results": [
+            {"id": 'minecraft:bone',"count":3}
+        ]
+    }).id('basin_fermenting/bone')
+//   "heat_requirement": "heated",
+    //乙醇
+    e.remove({id:'createdieselgenerators:basin_fermenting/fermentable'})
+    e.remove({id:'createdieselgenerators:bulk_fermenting/fermentable'})
 
-    //分馏
+    e.custom({
+        "type": "createdieselgenerators:basin_fermenting",
+        "ingredients": [
+            {"tag": 'createdieselgenerators:fermentable'},
+            {"item": 'createdieselgenerators:wood_chip'},
+            {
+            "type": "fluid_stack",
+            "fluid": "minecraft:water",
+            "amount": 200
+            }
+        ],
+        "processing_time": 400,
+        "results": [
+            {
+            "id": "createdieselgenerators:ethanol",
+            "amount": 200
+            }
+        ]
+    }).id('basin_fermenting/ethanol')
+    
+//批量发酵
+    e.custom({
+        "type": "createdieselgenerators:bulk_fermenting",
+        "ingredients": [
+            {"tag": 'createdieselgenerators:fermentable'},
+            {"item": 'createdieselgenerators:wood_chip'},
+            {
+            "type": "fluid_stack",
+            "fluid": "minecraft:water",
+            "amount": 300
+            }
+        ],
+        "processing_time": 300,
+        "results": [
+            {
+            "id": "createdieselgenerators:ethanol",
+            "amount": 300
+            }
+        ]
+    }).id('bulk_fermenting/ethanol')
+
+// {
+//   "type": "createdieselgenerators:bulk_fermenting",
+//   "ingredients": [
+//     {
+//       "tag": "createdieselgenerators:fermentable"
+//     },
+//     {
+//       "item": "minecraft:bone_meal"
+//     }
+//   ],
+//   "processing_time": 400,
+//   "results": [
+//     {
+//       "id": "createdieselgenerators:ethanol",
+//       "amount": 400
+//     }
+//   ]
+// }
+//分馏
     //3层
     e.custom({
         "type": "createdieselgenerators:distillation",

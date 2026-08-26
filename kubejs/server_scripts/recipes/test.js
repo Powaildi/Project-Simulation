@@ -12,3 +12,8 @@ PlayerEvents.chat(e=>{
     console.log("['"+ids.join("','")+"']")
     
 })
+ServerEvents.recipes(e=>{
+    // e.forEachRecipe({id:'kubejs:mixing/create/cinder_flour'},recipe=>{
+    //     console.log(recipe.originalJson)
+    // })
+})

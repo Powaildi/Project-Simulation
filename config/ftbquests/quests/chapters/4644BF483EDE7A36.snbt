@@ -9,26 +9,125 @@
 	id: "4644BF483EDE7A36"
 	images: [ ]
 	order_index: 4
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
-	quests: [{
-		icon: {
-			components: {
-				"ftbquests:icon": "aeronautics:fluid/levitite_blend_still"
+	quests: [
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "aeronautics:fluid/levitite_blend_still"
+				}
+				id: "ftbquests:custom_icon"
 			}
-			id: "ftbquests:custom_icon"
+			id: "6BB61A20A98ECE6D"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				advancement: "simulated:call_of_the_void"
+				criterion: ""
+				id: "1678DA5B1AB1BCCE"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
-		id: "6BB61A20A98ECE6D"
-		shape: "gear"
-		size: 2.0d
-		tasks: [{
-			advancement: "simulated:call_of_the_void"
-			criterion: ""
-			id: "1678DA5B1AB1BCCE"
-			type: "advancement"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+		{
+			dependencies: ["6BB61A20A98ECE6D"]
+			id: "1644590435E69818"
+			tasks: [{
+				id: "7F1731C578BE03DB"
+				item: { count: 1, id: "kubejs:void_bucket" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1644590435E69818"]
+			id: "27E059FAB459A097"
+			tasks: [{
+				id: "0C105E88A5DAE35B"
+				item: { count: 1, id: "createutilities:void_steel_ingot" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27E059FAB459A097"]
+			icon: {
+				id: "createutilities:graviton_tube"
+			}
+			id: "395EAF19D426160B"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2D386FBB671ED725"
+					item: { count: 1, id: "createutilities:graviton_tube" }
+					type: "item"
+				}
+				{
+					id: "206527576A862C00"
+					item: { count: 1, id: "createutilities:void_casing" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["395EAF19D426160B"]
+			id: "6167A3C92221DD6B"
+			tasks: [{
+				id: "5F72788FACD62E57"
+				item: { count: 1, id: "createutilities:void_tank" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["395EAF19D426160B"]
+			id: "5078E9C78BB0DB21"
+			tasks: [{
+				id: "6743007E0CA6487C"
+				item: { count: 1, id: "createutilities:void_chest" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["395EAF19D426160B"]
+			id: "33C1CBA7B7C8F568"
+			tasks: [{
+				id: "51273D0DF2D592F2"
+				item: { count: 1, id: "createutilities:void_battery" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["395EAF19D426160B"]
+			id: "731D8DB7FDB11A36"
+			tasks: [{
+				id: "19D870F14752A1D9"
+				item: { count: 1, id: "createutilities:void_motor" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["395EAF19D426160B"]
+			id: "36E039DE3734D012"
+			tasks: [{
+				id: "0A2B997A5C394A09"
+				item: { count: 1, id: "functionalstorage:ender_drawer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+	]
 }

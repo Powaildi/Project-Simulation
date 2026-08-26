@@ -2,6 +2,7 @@
 	chapter.1642F9C1277277FB.title: "不止农业"
 	chapter.267276FE11D1F343.title: "无限产矿"
 	chapter.2AA715C4FBF89DC9.title: "向天空奔去"
+	chapter.2F59F0F0EB7C043A.title: "章末小结-我是章末小结厨"
 	chapter.35D5A88BB6D93F0B.title: "包裹物流"
 	chapter.4644BF483EDE7A36.title: "末影传输"
 	chapter.4E080401B8222C5E.title: "通用机械"
@@ -24,6 +25,7 @@
 	quest.0098EF300945C17B.title: "能源元件和感应卡"
 	quest.00F2BB5FD1262BE2.quest_subtitle: "无线终端！"
 	quest.0107F8C53691ABA4.title: "升级卡"
+	quest.017DD7975DA2929F.quest_subtitle: "超级燃烧之三"
 	quest.0199D2B8C04D51A1.quest_desc: [
 		"每个轴有两个方向，用扳手旋转；"
 		"红石充能后停止起重机移动，并将应力传到起重机取物器。"
@@ -65,6 +67,7 @@
 		"分子装配室可以单走，这种情况下可以直接放一个样板进去，它也能进行合成。"
 	]
 	quest.040DF246743F2681.quest_subtitle: "下单和自动合成"
+	quest.05080367636F746B.quest_subtitle: "超级燃烧之一"
 	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
 	quest.058A306939F2A867.quest_desc: [""]
 	quest.058A306939F2A867.quest_subtitle: "动态结构"
@@ -80,9 +83,9 @@
 		"允许软管滑轮直接填充无限流体池。"
 		"{@pagebreak}"
 		"软管滑轮不需要一直通入应力。"
-		"让软管头停留在上，输入流体填充流体池；"
+		"让软管头停留在空中，输入流体即可填充流体池到软管头所在格；"
 		"填满后让软管头沉底，即可无限抽出。"
-		"支持无限抽出的流体：水、熔岩、巧克力"
+		"支持无限抽出的流体：水、熔岩、巧克力、蜂蜜、冷冻液"
 	]
 	quest.0983EC4C5B82647D.quest_subtitle: "无限抽取！"
 	quest.09FC03E3ABD3DEE7.quest_desc: [
@@ -154,6 +157,7 @@
 	quest.15180D972A4A8A28.quest_desc: ["放在蓝图大炮周围4格，就能让大炮吸取网络中的物品并发射，除了火药。"]
 	quest.15180D972A4A8A28.quest_subtitle: "为蓝图大炮而生"
 	quest.15246B798AF9A52F.quest_desc: ["[ \"海洋可以离你的出生点4000格以上。如果你没有海带，请完成\", { \"text\": \"传动杆\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"294DA6134929C6BA\" } }, \"任务\" ]"]
+	quest.1644590435E69818.quest_desc: ["让空气压缩机接触末地之海，并通入冷冻液"]
 	quest.16944825D416ECF6.quest_desc: [
 		"云绸成为了重要的工材料！"
 		"它可以在一些配方中代替海带和皮革。"
@@ -230,6 +234,8 @@
 		"{@pagebreak}"
 		"水龙头不能对传送带上的物品注液，那是注液器和智能水龙头才能干的事情。"
 	]
+	quest.29B0B67CB6D44B5D.quest_desc: ["后续内容正在制作"]
+	quest.29B0B67CB6D44B5D.quest_subtitle: "通用机械的大门向你打开"
 	quest.2ADE68F0135119C2.quest_desc: [
 		"按x+c打开配置"
 		"按F4灵魂出窍"
@@ -253,6 +259,7 @@
 		"现在，你要处理的力就不是一定过重心的了！"
 	]
 	quest.2F10E89A968A75D9.quest_subtitle: "受力分析"
+	quest.2F37B57B77744D92.quest_subtitle: "超级燃烧之二"
 	quest.2FECC8CE4280FFE2.quest_desc: [
 		"[{\"text\":\"下载Neo-Voxy的源码并自行构建\",\"color\":\"blue\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/NHblock-Johnsnow/neo-voxy\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"点击打开 GitHub 仓库\"}}]"
 		"你必须从源代码构建。请自行配置代理，并且学习如何构建模组。构建的过程需要十几分钟到数小时，如果不配置代理几乎一定失败。请耐心等待。"
@@ -344,6 +351,7 @@
 		"依靠传送带传动的其他传动元件不会受到影响，各走各的。"
 		"更多的修改，详见Wheels Upon Chairs的配置文件。"
 	]
+	quest.3D8FEA109DE83181.title: "抽油机"
 	quest.3E3DE48243CBFD65.title: "破坏核心和成型核心"
 	quest.3EFEB4F6AA3160A3.quest_subtitle: "复制配置"
 	quest.3F268AF2847961FD.quest_subtitle: "试试用它来制作安山合金"
@@ -354,6 +362,12 @@
 	]
 	quest.3FF5C9B379E26866.quest_subtitle: "佩戴工程师护目镜"
 	quest.403E0FC8B877BB82.quest_subtitle: "制作冲压机的模版"
+	quest.40D3B6819181FFD5.quest_desc: [
+		"恭喜你完成第一章！"
+		"如果有想法，还可以继续游玩，做出钢锭就算毕业。"
+		"如果发现有什么需要改进的地方，随时在群里和我说。"
+	]
+	quest.40D3B6819181FFD5.title: "第一章完全完成"
 	quest.4279C7A6565AED0C.quest_subtitle: "丝绸之触"
 	quest.4279C7A6565AED0C.title: "精准采集"
 	quest.43C16273D16F3372.quest_subtitle: "一次出一组，可过滤和调整数量"
@@ -361,6 +375,7 @@
 		"动力泵每4rpm就提供10mB/t流速；"
 		"流体泵应力需求和传输速度都翻倍。"
 	]
+	quest.456E24408BCEC751.quest_subtitle: "毕业啦"
 	quest.4600A08AC1E40CFF.quest_desc: [
 		"向动力锯扔4个铁板能得到它们（动力锯会遍历配方）。"
 		"有铸模的工作盆有视觉改变，并可以额外执行需要它们的配方。"
@@ -454,6 +469,7 @@
 	quest.55EBEE3B63D35B7B.quest_desc: ["5x5x10 -> 7x7x10"]
 	quest.55EBEE3B63D35B7B.quest_subtitle: "可以让钻井范围增大"
 	quest.55EBEE3B63D35B7B.title: "在钻头上放置3x3铁块"
+	quest.56121645E6D976C4.title: "万向节"
 	quest.56C5E859D3CB0D82.quest_desc: ["被套壳以后，用扳手右键传动杆的两面，可以开关应力在这两个面的传输。"]
 	quest.592125B9214B82AA.title: "破坏面板和成型面板"
 	quest.5A1E0FBBF949AECD.quest_subtitle: "2FE/t -> 1AE/t"
@@ -464,6 +480,12 @@
 	quest.5CC134B6078D71D1.quest_subtitle: "掉落赛特斯石英粉"
 	quest.5CC134B6078D71D1.title: "未长成的晶簇"
 	quest.5D0D6FED1CA0E542.quest_subtitle: "前期液体燃料"
+	quest.5D27744F84C8FAE1.quest_desc: [
+		"右键复制，左键粘贴。"
+		"放入蓝图大炮右上角产生材料清单。"
+		"将部分集齐的材料放入蓝图大炮旁边的箱子后重复这一操作，就会自动勾选集齐的材料。"
+		"还可以丢给仓库管理员，让ta发送材料。"
+	]
 	quest.5D27744F84C8FAE1.quest_subtitle: "快速复制配置，或者产生材料清单"
 	quest.5D91D787AFB7CE93.quest_desc: ["如果你一时到达不了下界要塞，或许你可以用这些来应急，以及通过别的方法制造一些。"]
 	quest.5E1A14E5C549DDAA.title: "无限的存储"
@@ -498,7 +520,6 @@
 		"来暂停物理模拟，并让它们停下来，接下来使用工具枪传送到这个结构旁边，你还可以直接删除它。"
 	]
 	quest.639783FE12AA4993.quest_subtitle: "蓝图与收拾残局"
-	quest.63B1F49D5A132AF9.quest_subtitle: "批量发酵"
 	quest.6415ED9A6143E23F.quest_desc: ["除了无限水，它还能销毁输入的流体。"]
 	quest.6415ED9A6143E23F.quest_subtitle: "无限水"
 	quest.6460EA3BE31C33D9.quest_subtitle: "第一个应力来源"
@@ -549,6 +570,8 @@
 		"动力锯会遍历配方，当一个输入的物品有多种输出的可能的时候，它会选择第一个，下一次第二个……最后一个，第一个。"
 		"对它设置过滤以阻止这个倾向。"
 	]
+	quest.6C8CBF1BCEDB1102.quest_desc: ["选择你要提交的任务，然后向它输入目标物质，满足数量时任务会完成。"]
+	quest.6C8CBF1BCEDB1102.quest_subtitle: "适合大量提交"
 	quest.6CFD9D1B1915D3A1.quest_subtitle: "注意看箭头"
 	quest.6D0661B24F6D06CE.quest_subtitle: "挖这个不掉"
 	quest.6D0661B24F6D06CE.title: "别用动力钻头挖"
@@ -625,6 +648,7 @@
 		"对纸箱Shift+右键脱下纸箱。"
 	]
 	quest.766AC93DBAEB43EF.title: "采集工具"
+	quest.76936538698D00F8.title: "气压杆"
 	quest.76E86999888CF0BD.quest_desc: ["手持恩特罗种子右键世界中的福鲁伊克斯块。"]
 	quest.76E86999888CF0BD.quest_subtitle: "像你做第一个安山机壳那样"
 	quest.77C2DA5E42C07511.quest_desc: ["将产物输出到前方的开放容器"]
@@ -697,4 +721,5 @@
 	task.74742F5B15A36BBC.title: "没有耐久"
 	task.78BD08FCB2369E41.title: "快速搭建存储网络"
 	task.7AAE000CACD6A88D.title: "两种矿脉"
+	task.7FAC5CA0B823656A.title: "恭喜你完成第一章"
 }

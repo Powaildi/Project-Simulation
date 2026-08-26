@@ -1,10 +1,5 @@
 
 ServerEvents.recipes(e=>{
-    //去除生物燃料配方
-    e.remove({output:'mekanism:bio_fuel'})
-    e.remove({output:'mekanism:block_bio_fuel'})
-    e.replaceInput({input:'mekanism:block_bio_fuel'},'mekanism:block_bio_fuel','createaddition:biomass_pellet_block')
-    
     //纸箱
     e.shaped('mekanism:cardboard_box',[
         ' A ',
@@ -12,7 +7,7 @@ ServerEvents.recipes(e=>{
         ' A '
     ],{
         A:'create:cardboard',
-        B:'mekanism:pellet_antimatter'
+        B:'minecraft:nether_star'
     }).id('mekanism:cardboard_box')
 
     let rolling = [
@@ -65,6 +60,7 @@ ServerEvents.recipes(e=>{
         ['kubejs:petrol_gas','kubejs:lpg'],
         ['kubejs:nitrogen','kubejs:nitrogen'],
         ['kubejs:nitrogen_dioxide','kubejs:nitrogen_dioxide'],
+        ['kubejs:nitric_acid','kubejs:nitric_acid'],
         ['kubejs:nitrogen_fertilizer','kubejs:nitrogen_fertilizer'],
         ['kubejs:ammonia','kubejs:ammonia'],
         ['kubejs:carbon_dioxide','kubejs:carbon_dioxide']
@@ -73,27 +69,20 @@ ServerEvents.recipes(e=>{
         let [gas,fluid] = element
         e.recipes.mekanism.rotary('1x '+gas,Fluid.of(fluid,1),'1x '+gas,Fluid.of(fluid,1))
     })
-    
-    
-    // e.custom({
-    //     "type":"mekanism:rotary",
-    //     "chemical_input":{
-    //         "amount":1,
-    //         "chemical":"mekanism:hydrogen_chloride"
-    //     },
-    //     "chemical_output":{
-    //         "amount":1,
-    //         "id":"mekanism:hydrogen_chloride"
-    //     },
-    //     "fluid_input":{
-    //         "amount":1,
-    //         "tag":"c:hydrogen_chloride"
-    //     },
-    //     "fluid_output":{
-    //         "amount":1,
-    //         "id":"mekanism:hydrogen_chloride"
-    //     }
-    // })
+    //二氧化碳
+    e.recipes.mekanism.chemical_infusing('1x kubejs:carbon_dioxide','1x mekanism:oxygen','1x mekanism:carbon')
+    //氮气类合成
+    e.recipes.mekanism.chemical_infusing('2x kubejs:nitrogen_dioxide','2x mekanism:oxygen','1x kubejs:nitrogen')
+    e.recipes.mekanism.chemical_infusing('2x kubejs:ammonia','3x mekanism:hydrogen','1x kubejs:nitrogen')
+    e.recipes.mekanism.chemical_infusing('1x kubejs:nitric_acid','1x kubejs:nitrogen_dioxide','1x mekanism:water_vapor')
+    //氮肥
+    e.recipes.mekanism.chemical_infusing('4x kubejs:nitrogen_fertilizer','1x kubejs:nitric_acid','1x kubejs:ammonia')
+    e.recipes.mekanism.chemical_infusing('2x kubejs:nitrogen_fertilizer','1x mekanism:hydrogen_chloride','1x kubejs:ammonia')
+    e.recipes.mekanism.chemical_infusing('2x kubejs:nitrogen_fertilizer','1x mekanism:sulfuric_acid','1x kubejs:ammonia')
+    //营养液
+    e.recipes.mekanism.chemical_infusing('2x mekmm:nutrient_solution','1x kubejs:nitrogen_fertilizer','1x mekmm:nutritional_paste')
+    e.recipes.mekanism.chemical_infusing('2x mekmm:nutrient_solution','1x kubejs:nitrogen_fertilizer','1x kubejs:carbon_dioxide')
+
     //火把改出木炭
     e.replaceOutput({id:'mekanism:sawing/torch'},'minecraft:coal','minecraft:charcoal')
 

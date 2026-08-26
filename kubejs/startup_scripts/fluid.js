@@ -21,11 +21,11 @@ StartupEvents.registry('fluid',e=>{
     e.create('refined_oil','kubejs:thick').displayName('精炼油').tint('yellow').renderType('solid')
         .stillTexture('createdieselgenerators:block/diesel_still').flowingTexture('createdieselgenerators:block/diesel_flow')
         .levelDecreasePerBlock(2)
-    e.create('lube','kubejs:thick').displayName('润滑油').tint('#7EEB5D').renderType('solid')
+    e.create('lube','kubejs:thick').displayName('润滑油').tint('#7EEB5D').renderType('translucent')
         .stillTexture('createdieselgenerators:block/ethanol_still').flowingTexture('createdieselgenerators:block/ethanol_flow')
         .levelDecreasePerBlock(2)
-    e.create('tar','kubejs:thick').displayName('焦油').tint('#2C2114').renderType('solid')
-        .stillTexture('createdieselgenerators:block/ethanol_still').flowingTexture('createdieselgenerators:block/ethanol_flow')
+    e.create('tar','kubejs:thick').displayName('焦油').tint('#100A02').renderType('solid')
+        .stillTexture('createdieselgenerators:block/diesel_still').flowingTexture('createdieselgenerators:block/diesel_flow')
         .levelDecreasePerBlock(2)
     e.create('molten_quartz','kubejs:thick').displayName('熔融石英').tint('#DEDFD6')
     .type(b=>{
@@ -72,33 +72,42 @@ StartupEvents.registry('fluid',e=>{
     e.create('nitrogen_fertilizer','kubejs:thin').displayName('氮肥').tint('#EBE84F').renderType('translucent')
         .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
     
+    e.create('molten_copper','kubejs:thick').displayName('熔融铜').tint('#FF6C40')
+    e.create('molten_iron','kubejs:thick').displayName('熔融铁').tint('#FFD8D8')
+    e.create('molten_gold','kubejs:thick').displayName('熔融金').tint('#FFF860')
+    e.create('molten_zinc','kubejs:thick').displayName('熔融锌').tint('#0EFF97')
+    e.create('molten_tin','kubejs:thick').displayName('熔融锡').tint('#FBFBF4')
+    e.create('molten_silver','kubejs:thick').displayName('熔融银').tint('#E0ECF8')
+    e.create('molten_brass','kubejs:thick').displayName('熔融黄铜').tint('#FCE892')
+    e.create('molten_industrial_iron','kubejs:thick').displayName('熔融工业铁').tint('#95A1FF')
+
+    e.create('incomplete_steel','kubejs:thin').displayName('半成品钢').tint('#FFEBBB')
 })
 BlockEvents.modification(e=>{
-    e.modify('kubejs:cryogen',b=>{
-        b.setLightEmission(4)
-    })
-    e.modify('kubejs:molten_quartz',b=>{
-        b.setLightEmission(15)
-    })
-    e.modify('kubejs:fluix_gasoline',b=>{
-        b.setLightEmission(10)
-    })
-    e.modify('kubejs:mercury',b=>{
-        b.setLightEmission(2)
-    })
-    e.modify('kubejs:void',b=>{
-        b.setLightEmission(2)
-    })
-    e.modify('createbigcannons:molten_bronze',b=>{
-        b.setLightEmission(15)
-    })
-    e.modify('createbigcannons:molten_cast_iron',b=>{
-        b.setLightEmission(15)
-    })
-    e.modify('createbigcannons:molten_steel',b=>{
-        b.setLightEmission(15)
-    })
-    e.modify('createbigcannons:molten_nethersteel',b=>{
-        b.setLightEmission(15)
+    let set_light_emission = [
+        ['kubejs:cryogen',4],
+        ['kubejs:molten_quartz',15],
+        ['kubejs:fluix_gasoline',10],
+        ['kubejs:mercury',2],
+        ['kubejs:void',2],
+        ['createbigcannons:molten_bronze',15],
+        ['createbigcannons:molten_cast_iron',15],
+        ['createbigcannons:molten_steel',15],
+        ['createbigcannons:molten_nethersteel',15],
+        ['kubejs:molten_copper',15],
+        ['kubejs:molten_iron',15],
+        ['kubejs:molten_gold',15],
+        ['kubejs:molten_zinc',15],
+        ['kubejs:molten_tin',15],
+        ['kubejs:molten_silver',15],
+        ['kubejs:molten_brass',15],
+        ['kubejs:molten_industrial_iron',15],
+        ['kubejs:incomplete_steel',15]
+    ]
+    set_light_emission.forEach(element=>{
+        let [id,level] = element
+        e.modify(id,b=>{
+            b.setLightEmission(level)
+        })
     })
 })

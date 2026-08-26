@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2F59F0F0EB7C043A"
+	group: "6DDED6A143CA022F"
+	icon: {
+		id: "gnkinetics:brass_gear"
+	}
+	id: "2F59F0F0EB7C043A"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0D5A2892907C416D"
+				"199A910195C59E78"
+				"356151D180C57D0A"
+				"5704A98DD6F5CA4F"
+				"15DCE596B99734B8"
+				"03705C3D65D13641"
+				"42F3D01A34911A62"
+				"6C8CBF1BCEDB1102"
+			]
+			id: "40D3B6819181FFD5"
+			rewards: [
+				{
+					count: 9
+					id: "10E25FEE6128DE90"
+					item: {
+						count: 1
+						id: "kubejs:infinite_heat_bar"
+					}
+					type: "item"
+				}
+				{
+					id: "3E555E6522E9A104"
+					item: {
+						count: 1
+						id: "createdieselgenerators:biodiesel_bucket"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DF0D1819944E389"
+					item: {
+						count: 1
+						id: "mekanism:hdpe_sheet"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "20D70AB8567CE792"
+					item: {
+						count: 1
+						id: "create:precision_mechanism"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6BE0628D36E7B740"
+					item: {
+						count: 1
+						id: "create:factory_gauge"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "05D384BCAA58C627"
+					item: {
+						count: 1
+						id: "create:packager"
+					}
+					type: "item"
+				}
+				{
+					id: "041D7D4F3E252737"
+					item: {
+						count: 1
+						id: "create_aeronautics_toolgun:magnetic_gun"
+					}
+					type: "item"
+				}
+				{
+					id: "1698DC740FB021A0"
+					item: {
+						count: 1
+						id: "fluidlogistics:infinite_fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "7FAC5CA0B823656A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "6C8CBF1BCEDB1102"
+			rewards: [{
+				id: "5CE604FB2FD002C4"
+				item: {
+					count: 1
+					id: "farmersdelight:apple_pie"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "75CB2496A83473B1"
+				item: { count: 1, id: "ftbquests:screen_1" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "199A910195C59E78"
+			rewards: [{
+				count: 64
+				id: "23E90CF68E8CC7D5"
+				item: {
+					count: 1
+					id: "dndesires:overburden_casing"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 1024L
+				id: "38CE4C770CA54F5D"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "5704A98DD6F5CA4F"
+			rewards: [{
+				count: 4
+				id: "3531F4BE59F5D454"
+				item: {
+					count: 1
+					id: "ae2:flawless_budding_quartz"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 1024L
+				id: "1C3538CEC67C3C94"
+				item: { count: 1, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			id: "0D5A2892907C416D"
+			rewards: [{
+				id: "7EBE2D2E367FBEB0"
+				item: {
+					count: 1
+					id: "mbd2:sprinkler"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 1024L
+				id: "346AF82404C727F8"
+				item: { count: 1, id: "delighto_flight:cloud_silk" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "15DCE596B99734B8"
+			rewards: [{
+				id: "71410FF0CF3CA448"
+				item: {
+					count: 1
+					id: "ae2:growth_accelerator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 128L
+				id: "7EC0B5A44F170718"
+				item: { count: 1, id: "kubejs:circuit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "03705C3D65D13641"
+			rewards: [{
+				id: "5418FA1D5A2508C3"
+				item: {
+					count: 1
+					id: "mbd2:air_compressor"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				fluid: {
+					amount: 256000
+					id: "kubejs:cryogen"
+				}
+				id: "1A98E6234F3D3070"
+				type: "fluid"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "356151D180C57D0A"
+			rewards: [{
+				count: 64
+				id: "1882984E3EE93BD3"
+				item: {
+					count: 1
+					id: "create_rns:zinc_deposit_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 1024L
+				id: "7F5ED8C3501F4FCD"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			id: "42F3D01A34911A62"
+			rewards: [{
+				id: "5DBFD6D91708AAB3"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				fluid: {
+					amount: 256000
+					id: "kubejs:wood_gas"
+				}
+				id: "01E1979A317BFA8F"
+				type: "fluid"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

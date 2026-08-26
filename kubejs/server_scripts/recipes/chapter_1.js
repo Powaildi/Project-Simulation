@@ -21,6 +21,13 @@ ServerEvents.recipes(e=>{
         e.recipes.create.deploying(ti,[ti,'minecraft:iron_nugget'])
     ])
     .transitionalItem(ti).loops(3).id('sequenced_assembly/circuit')
+    e.recipes.create.sequenced_assembly('kubejs:circuit','create:brass_sheet',[
+        e.recipes.create.deploying(ti,[ti,'ae2:printed_silicon']),
+        e.recipes.create.deploying(ti,[ti,'electroenergetics:copper_wire']),
+        e.recipes.create.deploying(ti,[ti,'create:electron_tube']),
+        e.recipes.create.filling(ti,[ti,Fluid.of('kubejs:cryogen',100)]),
+    ])
+    .transitionalItem(ti).id('sequenced_assembly/circuit_advanced')
 
     //电路板配方替换
     e.replaceInput({input:'create:electron_tube',not:[{type:'create:sequenced_assembly'},{id:'create:crafting/kinetics/nixie_tube'}]},
@@ -80,6 +87,8 @@ ServerEvents.recipes(e=>{
     //云系列处理
     e.recipes.vintageimprovements.vacuumizing('4x delighto_flight:cloud',Fluid.of('create_fantasizing:powder_snow',500),60)
         .id('vacuumizing/delighto_flight/cloud')
+    e.recipes.vintageimprovements.vacuumizing('16x delighto_flight:cloud',Fluid.of('create_fantasizing:powder_snow',1000),60).secondaryFluidInput(Fluid.of('kubejs:cryogen',100))
+        .id('vacuumizing/delighto_flight/cloud_2')
     e.recipes.vintageimprovements.vacuumizing([Fluid.of('create_fantasizing:powder_snow',250)],'delighto_flight:cloud',60)
         .id('vacuumizing/create_fantasizing/powder_snow')
     e.recipes.create.mixing(Fluid.of('create_fantasizing:powder_snow',1000),'minecraft:snow_block',125)
@@ -114,7 +123,12 @@ ServerEvents.recipes(e=>{
     ]).id('deploying/silk_touch')
 
     //冷冻液
-
+    e.recipes.create.mixing([Fluid.of('kubejs:cryogen',100),'ratatouille:frozen_block'],
+        [Fluid.of('minecraft:water',100),'ratatouille:frozen_block'],60)
+        .id('mixing/cryogen')
+    e.recipes.vintageimprovements.vacuumizing(Fluid.of('kubejs:cryogen',250),
+        [Fluid.of('minecraft:water',200)],60).secondaryFluidInput(Fluid.of('create_fantasizing:powder_snow',100))
+        .id('vacuumizing/cryogen')
     
 
     //糖
@@ -133,58 +147,5 @@ ServerEvents.recipes(e=>{
     .transitionalItem(ti).id('vintageimprovements:sequenced_assembly/redstone_module')
     //.id('sequenced_assembly/vintageimprovements/redstone_module')
     
-    //四大金属岩石
-    let stonemetals = [
-        ['create:crimsite','create:iron_sheet','create:crushed_raw_iron',Fluid.of('minecraft:lava',250),'minecraft:iron_ingot'],
-        ['create:veridium','create:copper_sheet','create:crushed_raw_copper',Fluid.of('minecraft:water',250),'minecraft:copper_ingot'],
-        ['create:ochrum','create:golden_sheet','create:crushed_raw_gold',Fluid.of('minecraft:lava',250),'minecraft:gold_ingot'],
-        ['create:asurine','createaddition:zinc_sheet','create:crushed_raw_zinc',Fluid.of('minecraft:water',250),'create:zinc_ingot']
-    ]
-    stonemetals.forEach(element =>{
-        let [stone,plate,ore,fluid,metal] = element
-        //改变粉碎产率
-        e.replaceOutput({input:stone},ore,CreateItem.of(ore,1))
-        //再生
-        e.recipes.create.compacting('2x '+ stone,['2x minecraft:gravel',plate,fluid])
-            .id('compacting/'+stone.replace(':','/'))
-        //再生2
-        e.custom(
-            {
-            "type": "createbigcannons:melting",
-            "heat_requirement": "heated",
-            "ingredients": [
-                {
-                "item": stone
-                }
-            ],
-            "processing_time": 10,
-            "results": [
-                {
-                "count": 2,
-                "id": metal
-                }
-            ]
-            }
-        ).id('melting/'+stone.replace(':','/'))
-    })
-    //碎矿增产
-    let crushed = [
-        ['rocketnautics:crushed_raw_titanium','rocketnautics:titanium_nugget'],
-        ['create:crushed_raw_iron','minecraft:iron_nugget'],
-        ['create:crushed_raw_gold','minecraft:gold_nugget'],
-        ['create:crushed_raw_copper','create:copper_nugget'],
-        ['create:crushed_raw_zinc','create:zinc_nugget'],
-        ['create:crushed_raw_osmium','mekanism:nugget_osmium'],
-        ['create:crushed_raw_platinum','createpropulsion:platinum_nugget'],
-        ['create:crushed_raw_silver','mekmm:nugget_silver'],
-        ['create:crushed_raw_tin','mekanism:nugget_tin'],
-        ['create:crushed_raw_lead','mekanism:nugget_lead'],
-        ['create:crushed_raw_uranium','mekanism:nugget_uranium']
-                   
-    ]
-    crushed.forEach(element =>{
-        let [crushed,nugget] = element
-        e.recipes.vintageimprovements.vibrating('15x '+nugget,crushed,67)
-            .id('vibrating/'+crushed.replace(':','/'))
-    })
+    
 })

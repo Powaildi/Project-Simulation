@@ -60,6 +60,8 @@ ItemEvents.modifyTooltips(e=>{
     
     e.add(['railways:paint_brush','railways:empty_paint_pitcher'],Text.red(Text.translatable("tooltip.paint")))
     e.add(['#dndecor:containers_decor','createpropulsion:platinum_fluid_vessel'],{shift:true},Text.white(Text.translatable("tooltip.vessel")))
+
+    e.add('#minecraft:small_flowers',Text.green(Text.translatable("tooltip.small_flowers")))
 })
 // Text.translatable("tooltip.")
 

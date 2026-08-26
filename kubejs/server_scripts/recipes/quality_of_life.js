@@ -1,6 +1,6 @@
 
 ServerEvents.recipes(e=>{
-
+    let ti
 //原版
     //下界之星配方
     e.recipes.create.mechanical_crafting('minecraft:nether_star',[
@@ -26,13 +26,50 @@ ServerEvents.recipes(e=>{
     e.recipes.create.compacting('minecraft:sniffer_egg',
         ['minecraft:crimson_pressure_plate','minecraft:warped_pressure_plate',Fluid.of('ratatouille:egg_yolk',1000)])
         .id('compacting/sniffer_egg')
+    //粘液块
+    e.recipes.create.mixing('minecraft:slime_block',
+        ['4x kaleidoscope_cookery:flour',Fluid.of('create_dragons_plus:lime_dye',1000)],90)
+        .id('mixing/slime_block')
+    //附魔书
 
     
 //机械动力
     //链式传动箱
-    e.shapeless('4x create:encased_chain_drive',['create:andesite_casing','minecraft:chain']).id('crafting/create/encased_chain_drive')
-
-    
+    e.shapeless('4x create:encased_chain_drive',['create:andesite_casing','minecraft:chain'])
+        .id('crafting/create/encased_chain_drive')
+    //圆石
+    e.recipes.create.mixing('16x minecraft:cobblestone',[Fluid.of('minecraft:water',250),Fluid.of('minecraft:lava',250)],90)
+        .id('mixing/cobblestone')
+    //黑曜石
+    e.recipes.create.mixing('minecraft:obsidian',[Fluid.of('kubejs:cryogen',100),Fluid.of('minecraft:lava',250)],60)
+        .id('mixing/obsidian')
+    //坚固板
+    e.recipes.create.compacting('2x create:sturdy_sheet','minecraft:obsidian')
+        .heated().id('compacting/create/sturdy_sheet')
+    //烈焰人燃烧室
+    ti = 'create:empty_blaze_burner'
+    e.recipes.create.sequenced_assembly('kubejs:frankenstein','create:empty_blaze_burner',[
+        e.recipes.create.deploying(ti,[ti,'minecraft:magma_cream']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:blaze_rod']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:blaze_rod']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:blaze_rod']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:blaze_rod'])
+    ],ti).id('sequenced_assembly/blaze_burner')
+    e.custom({
+        "type": "createaddition:charging",
+        "energy": 36000,
+        "ingredients": [
+            {
+            "item": 'kubejs:frankenstein'
+            }
+        ],
+        "max_charge_rate": 7200,
+        "results": [
+            {
+            "id": 'create:blaze_burner'
+            }
+        ]
+    }).id('charging/blaze_burner_awakening')
 //龙+
     //染料配方
     // let dye_recipes = e.findRecipes({id:/.*dye_from_item$/})
@@ -43,8 +80,22 @@ ServerEvents.recipes(e=>{
     // })
     //e.remove({id:/^dye_fluid_coloring/})
 
-
+//CC&A
+    e.remove({id:'createaddition:mechanical_crafting/tesla_coil'})
+    e.shaped('createaddition:tesla_coil',[
+        'AAA',
+        'BCB',
+        'DED'
+    ],{
+        A:'createaddition:copper_spool',
+        B:'createaddition:capacitor',
+        C:'create:andesite_alloy',
+        D:'create:brass_sheet',
+        E:'create:brass_casing'
+    }).id('crafting/createaddition/tesla_coil')
 //航空学
+    //引擎组件
+    e.remove({id:'simulated:sequenced_assembly/engine_assembly'})
     //引擎
     e.replaceInput({id:'simulated:red_portable_engine'},'simulated:engine_assembly','createdieselgenerators:engine_piston')
 
@@ -54,7 +105,7 @@ ServerEvents.recipes(e=>{
         .id('compacting/minecraft/resin_clump')
     
     //序列装配改变并提高概率
-    let ti = 'simulated:incomplete_gyroscopic_mechanism'
+    ti = 'simulated:incomplete_gyroscopic_mechanism'
     e.recipes.create.sequenced_assembly('simulated:gyroscopic_mechanism','create:iron_sheet',[
         e.recipes.vintageimprovements.curving(ti,ti,10,1,0),
         e.recipes.create.deploying(ti,[ti,'create:shaft']),
@@ -62,7 +113,7 @@ ServerEvents.recipes(e=>{
         e.recipes.create.deploying(ti,[ti,'simulated:incomplete_gyroscopic_mechanism[create:sequenced_assembly={id:"simulated:sequenced_assembly/gyroscopic_mechanism",progress:0.5f,step:3}]']),
         //e.recipes.create.deploying(ti,[ti,ti]),
         e.recipes.create.deploying(ti,[ti,'create:brass_nugget']),
-        e.recipes.create.filling(ti,[ti,Fluid.of('kubejs:lube',100)])
+        e.recipes.create.filling(ti,[ti,Fluid.of('createaddition:seed_oil',100)])
     ],ti).id('simulated:sequenced_assembly/gyroscopic_mechanism')
     //革新
     ti = 'aero_reformation:incomplete_rcs_thruster'
@@ -286,6 +337,17 @@ ServerEvents.recipes(e=>{
 
     //荧石粉代替氟石粉
     e.replaceInput({input:'mekanism:dust_fluorite'},'mekanism:dust_fluorite',Ingredient.of(['mekanism:dust_fluorite','minecraft:glowstone_dust']))
+
+    //碎矿洗涤
+    e.recipes.create.splashing(['9x mekanism:nugget_tin',CreateItem.of('minecraft:glowstone_dust',0.5)],'create:crushed_raw_tin' )
+        .id('create:splashing/mekanism/crushed_raw_tin')
+    e.recipes.create.splashing(['9x mekmm:nugget_silver',CreateItem.of('minecraft:prismarine_crystals',0.25)],'create:crushed_raw_silver' )
+        .id('splashing/mekmm/crushed_raw_silver')
+    e.recipes.create.splashing(['9x mekanism:nugget_lead',CreateItem.of('ae2:ender_dust',0.15)],'create:crushed_raw_lead' )
+        .id('create:splashing/mekanism/crushed_raw_lead')
+    e.recipes.create.splashing(['9x mekanism:nugget_uranium',CreateItem.of('mekanism:dust_sulfur',0.5)],'create:crushed_raw_uranium' )
+        .id('create:splashing/mekanism/crushed_raw_uranium')
+    
 //AE2
     e.recipes.create.item_application('extendedae:entro_budding_fully',['ae2:fluix_block','extendedae:entro_seed'])
         .id('item_application/extendedae/entro_budding_fully')

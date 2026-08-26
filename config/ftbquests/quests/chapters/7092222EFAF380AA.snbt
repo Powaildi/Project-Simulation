@@ -42,10 +42,17 @@
 			x: 15.5d
 			y: 0.0d
 		}
+		{
+			height: 1.0d
+			id: "553C18F5C34AB5CE"
+			image: "create:textures/particle/soul_base_6.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 17.5d
+			y: -2.0d
+		}
 	]
 	order_index: 0
-	quest_enhance_decorative_lines: [ ]
-	quest_enhance_hidden_dependency_lines: [ ]
 	quest_links: [ ]
 	quests: [
 		{
@@ -911,6 +918,22 @@
 					type: "item"
 				}
 				{
+					id: "3D018666E20D6AB9"
+					item: {
+						count: 1
+						id: "create:honey_bucket"
+					}
+					type: "item"
+				}
+				{
+					id: "7063C9B2DD16642B"
+					item: {
+						count: 1
+						id: "kubejs:cryogen_bucket"
+					}
+					type: "item"
+				}
+				{
 					id: "6483E19A23402D95"
 					item: {
 						count: 1
@@ -1353,15 +1376,25 @@
 				id: "create:basin"
 			}
 			id: "09FC03E3ABD3DEE7"
-			rewards: [{
-				count: 16
-				id: "0B09795A25001CDB"
-				item: {
-					count: 1
-					id: "create:basin"
+			rewards: [
+				{
+					count: 16
+					id: "0B09795A25001CDB"
+					item: {
+						count: 1
+						id: "create:basin"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "53E8E6DC2450A3B4"
+					item: {
+						count: 1
+						id: "create:filter"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "40B6CA4128ADE89B"
@@ -1494,6 +1527,14 @@
 		{
 			dependencies: ["2759DC523F0FC7F5"]
 			id: "6C70A9FFB4A2AE94"
+			rewards: [{
+				id: "15BB714C2F62FD09"
+				item: {
+					count: 1
+					id: "create:filter"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7EDBB759EBA0CCCF"
 				item: { count: 1, id: "create:mechanical_saw" }
@@ -1623,6 +1664,25 @@
 		{
 			dependencies: ["18AF1E7313E93E59"]
 			id: "30A53B64763061C9"
+			rewards: [
+				{
+					count: 4
+					id: "554C63B4FBB65712"
+					item: {
+						count: 1
+						id: "create:basin"
+					}
+					type: "item"
+				}
+				{
+					id: "6CBFB9B7939221C3"
+					item: {
+						count: 1
+						id: "vintageimprovements:redstone_module"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3C284336D7A440C6"
 				item: { count: 1, id: "vintageimprovements:centrifuge" }
@@ -1796,6 +1856,7 @@
 				{
 					id: "03C01A49927BD5C8"
 					item: { count: 1, id: "vintageimprovements:grinder_belt" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1805,6 +1866,14 @@
 		{
 			dependencies: ["076B26BC1D242E98"]
 			id: "6137E43860EFCB87"
+			rewards: [{
+				id: "17F7F58AC5112261"
+				item: {
+					count: 1
+					id: "create_enchantment_industry:mechanical_grindstone"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "161E1DE620F3BDDC"
@@ -2055,6 +2124,14 @@
 		}
 		{
 			id: "5D27744F84C8FAE1"
+			rewards: [{
+				id: "5D7A59C9ACCE20E1"
+				item: {
+					count: 1
+					id: "create:stock_ticker"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "5409AD4198EA4B3F"
@@ -2126,12 +2203,23 @@
 		}
 		{
 			dependencies: ["13998C57E753F87F"]
+			icon: {
+				id: "vintageimprovements:helve_hammer"
+			}
 			id: "32C1EFB075E6E149"
-			tasks: [{
-				id: "3AE716D7ACADD7BE"
-				item: { count: 1, id: "vintageimprovements:helve_hammer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3AE716D7ACADD7BE"
+					item: { count: 1, id: "vintageimprovements:helve_hammer" }
+					type: "item"
+				}
+				{
+					id: "34696342B534ABCC"
+					item: { count: 1, id: "vintageimprovements:helve_hammer_slot_cover" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 18.0d
 			y: -4.0d
 		}
@@ -2145,6 +2233,15 @@
 				id: "vintageimprovements:lathe"
 			}
 			id: "403E0FC8B877BB82"
+			rewards: [{
+				count: 16
+				id: "36EC3FD67F5EACE9"
+				item: {
+					count: 1
+					id: "vintageimprovements:recipe_card"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "56BB6186741BE94F"
@@ -2209,17 +2306,6 @@
 				}
 			]
 			x: 9.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["070C1AF80BD8C2E3"]
-			id: "63B1F49D5A132AF9"
-			tasks: [{
-				id: "0ACDCEEE26B1B68F"
-				item: { count: 1, id: "createdieselgenerators:bulk_fermenter" }
-				type: "item"
-			}]
-			x: 8.5d
 			y: 7.0d
 		}
 		{
@@ -2434,7 +2520,7 @@
 				item: { count: 1, id: "bits_n_bobs:flywheel_bearing" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 18.0d
 			y: -1.0d
 		}
 		{
@@ -2471,12 +2557,13 @@
 			y: 6.0d
 		}
 		{
-			id: "7770631C27195280"
+			dependencies: ["6EBDBBFDE321A594"]
+			id: "2FD5CB74123F821E"
 			invisible: true
 			rewards: [
 				{
 					count: 3
-					id: "4E4ABAB117AD8AB1"
+					id: "7C3144146CE0674C"
 					item: {
 						count: 1
 						id: "kubejs:infinite_heat_bar"
@@ -2484,7 +2571,7 @@
 					type: "item"
 				}
 				{
-					id: "3543B9DD5EF99DAF"
+					id: "57271E7B304E7FF2"
 					item: {
 						count: 1
 						id: "create_fantasizing:compact_hydraulic_engine"
@@ -2495,11 +2582,11 @@
 			tasks: [{
 				advancement: "create_connected:overpowered_brake_0"
 				criterion: ""
-				id: "0C2672BB086790F3"
+				id: "411A5E507BF16968"
 				type: "advancement"
 			}]
-			x: 19.5d
-			y: -1.0d
+			x: 17.5d
+			y: -2.0d
 		}
 	]
 }

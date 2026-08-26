@@ -138,45 +138,45 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:salmon": false
-			"touhou_little_maid:maid": true
-			"minecraft:pig": true
-			"minecraft:phantom": true
-			"minecraft:donkey": true
-			"minecraft:rabbit": true
-			"artifacts:mimic": true
-			"minecraft:skeleton": true
-			"minecraft:trader_llama": true
-			"minecraft:glow_squid": true
-			"minecraft:iron_golem": true
-			"minecraft:witch": true
-			"minecraft:pufferfish": false
-			"minecraft:cat": true
-			"minecraft:villager": true
-			"minecraft:parrot": true
-			"minecraft:horse": true
-			"minecraft:turtle": true
-			"minecraft:creeper": true
 			"minecraft:wolf": true
-			"minecraft:enderman": true
-			"minecraft:fox": true
 			"minecraft:chicken": true
-			"minecraft:goat": true
-			"minecraft:bat": true
-			"minecraft:axolotl": true
-			"minecraft:squid": true
+			"minecraft:enderman": true
 			"minecraft:ocelot": true
-			"minecraft:cod": false
-			"minecraft:stray": true
-			"touhou_little_maid:fairy": true
-			"minecraft:polar_bear": true
 			"minecraft:zombie_villager": true
+			"minecraft:cow": true
+			"minecraft:stray": true
+			"artifacts:mimic": true
+			"minecraft:fox": true
+			"minecraft:squid": true
+			"minecraft:phantom": true
+			"minecraft:pufferfish": false
+			"minecraft:bat": true
+			"minecraft:sheep": true
+			"minecraft:salmon": false
+			"minecraft:goat": true
+			"minecraft:donkey": true
+			"minecraft:cat": true
+			"minecraft:parrot": true
+			"touhou_little_maid:fairy": true
+			"minecraft:trader_llama": true
+			"minecraft:pig": true
+			"minecraft:horse": true
 			"minecraft:zombie": true
 			"minecraft:wandering_trader": true
-			"minecraft:sheep": true
-			"minecraft:spider": true
+			"minecraft:villager": true
+			"minecraft:rabbit": true
+			"minecraft:iron_golem": true
+			"minecraft:creeper": true
+			"minecraft:polar_bear": true
+			"minecraft:axolotl": true
+			"minecraft:witch": true
+			"minecraft:glow_squid": true
+			"minecraft:turtle": true
+			"minecraft:cod": false
 			"minecraft:drowned": true
-			"minecraft:cow": true
+			"touhou_little_maid:maid": true
+			"minecraft:spider": true
+			"minecraft:skeleton": true
 			"minecraft:tropical_fish": false
 		}
 		

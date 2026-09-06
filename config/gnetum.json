@@ -382,6 +382,12 @@
       },
       "pass": 3
     },
+    "zstdnet": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "create_aeronautics_automated_logistics": {
       "enabled": {
         "value": "AUTO"

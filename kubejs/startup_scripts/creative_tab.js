@@ -143,10 +143,10 @@ let machines =[
         'vintageimprovements:laser',
 
         'create:nozzle',
-        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bowl"]', 
-        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]', 
-        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:chain"]', 
-        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bar"]', 
+        'createdieselgenerators:distillation_controller',
+        'createdieselgenerators:bulk_fermenter',
+        'createdieselgenerators:basin_lid', 
+        'createbigcannons:basin_foundry_lid', 
         'vintageimprovements:convex_curving_head', 
         'vintageimprovements:concave_curving_head', 
         'vintageimprovements:w_shaped_curving_head', 
@@ -157,8 +157,8 @@ let machines =[
         'dndesires:hydraulic_press', 
         'dndesires:gold_mixer', 
         'fluidlogistics:copper_basin', 
-        'createdieselgenerators:basin_lid', 
-        'createbigcannons:basin_foundry_lid', 
+        'create_power_loader:andesite_chunk_loader', 
+        'create_power_loader:brass_chunk_loader', 
         'create:mechanical_crafter', 
         'createimp:batch_mechanical_crafter',
 
@@ -170,19 +170,20 @@ let machines =[
         'ratatouille:spreader', 
         'ratatouille:frozen_block', 
         'ratatouille:compost_tower',
-        'createdieselgenerators:bulk_fermenter',
+        'ratatouille:irrigation_tower',
 
-        
-        'create_power_loader:andesite_chunk_loader', 
-        'create_power_loader:brass_chunk_loader', 
         'create_integrated_farming:fishing_net', 
         'create_integrated_farming:chicken_roost', 
         'create_integrated_farming:vacuum_harvester', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bowl"]', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:chain"]', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bar"]', 
         'createoreexcavation:drilling_machine', 
-        'createoreexcavation:extractor', 
+        'createoreexcavation:extractor',
+
         'createoreexcavation:sample_drill', 
         'dndesires:industrial_fan',
-
         'mbd2:air_compressor',
         'mbd2:assembler', 
         'mbd2:sprinkler'
@@ -538,6 +539,10 @@ modifying.forEach(element=>{
     StartupEvents.modifyCreativeTab(resourceLocation,e=>{
         list.forEach((item,index,array)=>{
             if(index == 0)return
+            Item.findItem(item.split('[')[0]).ifError(()=>{
+                item = `minecraft:light_gray_stained_glass_pane[custom_name='"#${index}:${item}"']`
+                array[index] = item
+            })
             e.addAfter(array[index-1],item)
         })
     })

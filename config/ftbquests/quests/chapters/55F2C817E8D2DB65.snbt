@@ -289,6 +289,14 @@
 		{
 			dependencies: ["456E24408BCEC751"]
 			id: "29B0B67CB6D44B5D"
+			rewards: [{
+				id: "129ACB36E9C4DE72"
+				item: {
+					count: 1
+					id: "mekmm:planting_station"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1969CDCA05D7769A"
 				item: { count: 1, id: "mekanism:steel_casing" }
@@ -388,11 +396,10 @@
 			dependencies: ["5052189BAE862825"]
 			id: "456E24408BCEC751"
 			rewards: [{
-				count: 32
-				id: "716F6B05ED196EFF"
+				id: "3E99C9702F1E4E30"
 				item: {
 					count: 1
-					id: "mekanism:block_steel"
+					id: "kubejs:infinite_superheat_bar"
 				}
 				type: "item"
 			}]
@@ -580,19 +587,28 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["4FD590696D0A11F2"]
+			dependencies: [
+				"4FD590696D0A11F2"
+				"3C99CE791448EA97"
+			]
 			id: "12F132BF5D271CD8"
 			tasks: [{
 				id: "1AB35FB163DCAD6E"
 				item: { count: 1, id: "create:factory_gauge" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["003ACCCFF7BC6569"]
 			id: "36CE9ED59BC646AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1526502C64D08AA2"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "4ADFAD11E090F26A"
 				item: { count: 1, id: "kubejs:liquid_air_bucket" }
@@ -604,6 +620,12 @@
 		{
 			dependencies: ["36CE9ED59BC646AD"]
 			id: "4150DF097AEA7093"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4ADD1EAF77F1F1C6"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "70E167B2A338C03B"
 				item: { count: 1, id: "mekanism:oxygen_bucket" }
@@ -652,6 +674,15 @@
 		{
 			dependencies: ["456E24408BCEC751"]
 			id: "07E55A95A07852CE"
+			rewards: [{
+				count: 64
+				id: "233297BA43D40D40"
+				item: {
+					count: 1
+					id: "mekanism:advanced_mechanical_pipe"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3730EAD8BD2ECF95"
 				item: { count: 1, id: "mekanism:basic_mechanical_pipe" }
@@ -663,6 +694,15 @@
 		{
 			dependencies: ["456E24408BCEC751"]
 			id: "1E13F9E28D976F4B"
+			rewards: [{
+				count: 64
+				id: "14C8679F8EAD9E0C"
+				item: {
+					count: 1
+					id: "mekanism:advanced_logistical_transporter"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "256C8EA32D59A05C"
 				item: { count: 1, id: "mekanism:basic_logistical_transporter" }
@@ -674,6 +714,15 @@
 		{
 			dependencies: ["456E24408BCEC751"]
 			id: "45C81DDD1FB5CD59"
+			rewards: [{
+				count: 64
+				id: "32FCC8D1AD2C0458"
+				item: {
+					count: 1
+					id: "mekanism:advanced_pressurized_tube"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "030C48F7CB39D487"
 				item: { count: 1, id: "mekanism:basic_pressurized_tube" }
@@ -685,6 +734,15 @@
 		{
 			dependencies: ["456E24408BCEC751"]
 			id: "73732E3CCED6D9A5"
+			rewards: [{
+				count: 64
+				id: "265B02F90A514866"
+				item: {
+					count: 1
+					id: "mekanism:advanced_universal_cable"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CE0886F282FA65E"
 				item: { count: 1, id: "mekanism:basic_universal_cable" }
@@ -694,13 +752,14 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["12F132BF5D271CD8"]
 			id: "3F6F0103BB774954"
 			tasks: [{
 				id: "6E780270432A0514"
 				item: { count: 1, id: "createimp:template_panel" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: 4.0d
 		}
 		{
@@ -736,6 +795,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["3C99CE791448EA97"]
 			id: "268A900DE2FABFC8"
 			tasks: [{
 				id: "2BD7B3A69F392A29"
@@ -756,23 +816,25 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["3C99CE791448EA97"]
 			id: "5F5572D83536559F"
 			tasks: [{
 				id: "10F7C3CBC9F1C603"
 				item: { count: 1, id: "create:redstone_requester" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["3C99CE791448EA97"]
 			id: "07C1CECB823DBF51"
 			tasks: [{
 				id: "6EF47B5B14146C27"
 				item: { count: 1, id: "createimp:work_warehouse" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -878,6 +940,101 @@
 			}]
 			x: -1.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["29B0B67CB6D44B5D"]
+			id: "254F3EF65709AF93"
+			rewards: [{
+				count: 32
+				id: "099AD733ED4DB2A9"
+				item: {
+					count: 1
+					id: "mekanism:block_steel"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "20659418FAE86B79"
+				item: { count: 1, id: "mekanism:enrichment_chamber" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["456E24408BCEC751"]
+			hide_until_deps_complete: true
+			id: "1B15DAA931F356C8"
+			invisible: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4213E699559F5E46"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D8A7558882D6C55"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "191DA3ED85CF2CC5"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EF3A06BC9D76BD3"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "04D01D8921A71417"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A6C82C08981926F"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6ADBE07C5E65FAF0"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "01A5051BAD83504A"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CF0C4F36E76BDFD"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58D7C3425D020C86"
+					table_id: 7330627440131725180L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "74233A1AA87D421F"
+				item: { count: 1, id: "mekanism:enriched_iron" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
 		}
 	]
 }

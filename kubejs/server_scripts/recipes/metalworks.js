@@ -4,7 +4,9 @@ ServerEvents.recipes(e=>{
         ['create:crimsite','create:iron_sheet','create:crushed_raw_iron',Fluid.of('minecraft:lava',250),'minecraft:iron_ingot'],
         ['create:veridium','create:copper_sheet','create:crushed_raw_copper',Fluid.of('minecraft:water',250),'minecraft:copper_ingot'],
         ['create:ochrum','create:golden_sheet','create:crushed_raw_gold',Fluid.of('minecraft:lava',250),'minecraft:gold_ingot'],
-        ['create:asurine','createaddition:zinc_sheet','create:crushed_raw_zinc',Fluid.of('minecraft:water',250),'create:zinc_ingot']
+        ['create:asurine','createaddition:zinc_sheet','create:crushed_raw_zinc',Fluid.of('minecraft:water',250),'create:zinc_ingot'],
+        //论外
+        ['dndesires:breccia','create:cinder_flour','minecraft:air',Fluid.of('minecraft:lava',250),'minecraft:cinnabar']
     ]
     stonemetals.forEach(element =>{
         let [stone,plate,ore,fluid,metal] = element
@@ -32,8 +34,12 @@ ServerEvents.recipes(e=>{
             ]
             }
         ).id('melting/'+stone.replace(':','/'))
+        //液压机产石
+        e.forEachRecipe({type:'dndesires:hydraulic_compacting',output:stone},recipe=>{
+            recipe.json.get('results').get(0).getAsJsonObject().add('count',32)
+        })
     })
-
+    
     //模组矿物
     let coral_to_ore = [
         ['minecraft:horn_coral_block', 'mekanism:block_raw_uranium', 'vintageimprovements:uranium_sheet'],
@@ -53,7 +59,7 @@ ServerEvents.recipes(e=>{
                 {"item": plate},
                 {
                 "type": "neoforge:single",
-                "amount": 500,
+                "amount": 50,
                 "fluid": "createpropulsion:oxidizer"
                 }
             ],

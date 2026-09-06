@@ -741,6 +741,12 @@
 			dependencies: ["13998C57E753F87F"]
 			hide_dependent_lines: true
 			id: "08C6A7A19C537F32"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "059F16FF5FAB43C3"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "69F3C397279E8EA0"
 				item: { count: 1, id: "minecraft:heavy_core" }
@@ -1068,6 +1074,12 @@
 		{
 			dependencies: ["77C2DA5E42C07511"]
 			id: "18AF1E7313E93E59"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "032B4E603E8DF35A"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "58D7AB1381F10397"
 				item: { count: 1, id: "simulated:spring" }
@@ -1231,6 +1243,12 @@
 		{
 			dependencies: ["076B26BC1D242E98"]
 			id: "2B7215A26804797F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A75A1B08523120F"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "7A355B9646DC1B6D"
 				item: { count: 1, id: "create:polished_rose_quartz" }
@@ -1348,6 +1366,12 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "646A9B89E7D5F171"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72F2219B8DFC24AD"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "3E1A02836E541A02"
@@ -2007,7 +2031,7 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["7FC66E37182BFEE2"]
+			dependencies: ["659367C711A57B46"]
 			hide_dependency_lines: true
 			id: "0FDBEEB0856F1D1A"
 			tasks: [{
@@ -2371,6 +2395,12 @@
 		{
 			dependencies: ["56C5E859D3CB0D82"]
 			id: "1FC02254EFFE1CE0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B31CEE81CED05C1"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "7C167EF0CD7982CD"

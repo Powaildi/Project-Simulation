@@ -73,7 +73,7 @@ ServerEvents.recipes(e=>{
         .id('deploying/gnkinetics/large_industrial_gear')
     
     //纸浆
-    e.recipes.create.mixing('create:pulp',['4x createdieselgenerators:wood_chip',Fluid.of('minecraft:water',250)])
+    e.recipes.create.mixing('create:pulp',['4x createdieselgenerators:wood_chip',Fluid.of('minecraft:water',250)],90)
         .id('mixing/create/pulp')
 
     //过重负担机壳
@@ -114,6 +114,11 @@ ServerEvents.recipes(e=>{
         }).id('crafting/createphantom/phantomport')
     }
 
+    //骨粉稀释液
+    e.recipes.create.mixing(Fluid.of('kubejs:bone_meal_diluent',500),
+        [Fluid.of('minecraft:water',500),'4x minecraft:bone_meal'],90)
+        .id('mixing/bone_meal_diluent')
+        
     //树木肥料
     e.shapeless('create:tree_fertilizer',[Ingredient.of('#minecraft:flowers',2),'minecraft:moss_block','minecraft:bone_meal'])
         .id('crafting/appliances/tree_fertilizer')
@@ -190,8 +195,10 @@ ServerEvents.recipes(e=>{
         F: 'ae2:fluix_crystal'
     })
     //部分配方材料替换
+        //变简单
     e.replaceInput({id:'ae2:network/cables/glass_fluix'},'ae2:fluix_crystal','ae2:fluix_dust')
-    e.replaceInput({id:'ae2:materials/cardspeed'},'ae2:fluix_crystal','ae2:fluix_dust')
+    //e.replaceInput({id:'ae2:materials/cardspeed'},'ae2:fluix_crystal','ae2:fluix_dust')
+        //变难
     //e.replaceInput({type:'minecraft:crafting_shaped',mod:'ae2'},'minecraft:iron_ingot','mekanism:hdpe_sheet')
 //ExtendedAE
     //恩特罗注入锭搅拌配方
@@ -236,7 +243,7 @@ ServerEvents.recipes(e=>{
         'minecraft:tube_coral_fan','minecraft:brain_coral_fan','minecraft:bubble_coral_fan','minecraft:fire_coral_fan','minecraft:horn_coral_fan'
     ]
     corals.forEach(element=>{
-        e.recipes.create.mixing(Item.of(element,5),[element,Fluid.of('createpropulsion:coral',125)])
+        e.recipes.create.mixing(Item.of(element,5),[element,Fluid.of('createpropulsion:coral',125)],90)
             .id('mixing/'+element.replace(':','/'))
     })
     //重写硫酸
@@ -258,7 +265,7 @@ ServerEvents.recipes(e=>{
     //硫酸
     e.recipes.vintageimprovements.pressurizing([Fluid.of('mekanism:sulfuric_acid',250)],
         [Fluid.of('minecraft:water',250)],90).secondaryFluidInput(Fluid.of('mekanism:sulfur_trioxide',250))
-        .superheated().id('pressurizing/sulfuric_acid_0')
+        .id('pressurizing/sulfuric_acid_0')
 
 //变难配方
     //高温熔炼触媒

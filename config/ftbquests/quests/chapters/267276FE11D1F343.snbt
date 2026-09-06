@@ -117,6 +117,12 @@
 		{
 			dependencies: ["1C722EBF1562310F"]
 			id: "7C403EBBD882F304"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BB97328CCC33C8C"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5DA4EC4132942E45"
 				item: { count: 1, id: "create:scorchia" }
@@ -129,9 +135,18 @@
 			dependencies: [
 				"7C403EBBD882F304"
 				"743A85328F25C949"
+				"1E220BF067A4AABB"
 			]
 			dependency_requirement: "one_completed"
 			id: "60EA9D9D4801E43B"
+			rewards: [{
+				id: "61CB97792EFB42FB"
+				item: {
+					count: 1
+					id: "dndesires:hydraulic_press"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "18A2D4439AD86DAF"
 				item: { count: 1, id: "dndesires:breccia" }
@@ -143,6 +158,12 @@
 		{
 			dependencies: ["11BAC23AC3DC775A"]
 			id: "272D6253D4A83991"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B4EA3920D04CBA7"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "36AB5691F4EA5714"
 				item: { count: 1, id: "minecraft:terracotta" }
@@ -189,6 +210,12 @@
 		{
 			dependencies: ["5EA19F491D0A2DF3"]
 			id: "1DE8A4797B24DC99"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "490104044ADC777A"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "1F77209FA6AD31D1"
 				item: { count: 1, id: "minecraft:cobbled_deepslate" }
@@ -200,6 +227,12 @@
 		{
 			dependencies: ["10947D97090FDAF2"]
 			id: "066574C2BE85EEC8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3061CDC1200BBC9A"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "61786C625602BA13"
 				item: { count: 1, id: "minecraft:sandstone" }
@@ -211,6 +244,12 @@
 		{
 			dependencies: ["41C5BE6A49BFCE68"]
 			id: "34947888663FD261"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "475DD83B44B9B176"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "2CF9C1C963FC7BC9"
 				item: { count: 1, id: "minecraft:granite" }
@@ -378,6 +417,12 @@
 		{
 			disable_toast: true
 			id: "743A85328F25C949"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21ED570EC106070D"
+				table_id: 7330627440131725180L
+				type: "loot"
+			}]
 			tasks: [{
 				icon: {
 					id: "minecraft:bedrock"
@@ -448,6 +493,69 @@
 			}]
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			id: "1BBAE422F5976F49"
+			tasks: [{
+				id: "6E14AE4F9AD6B424"
+				item: { count: 1, id: "create:chocolate_bucket" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "0A882688DA53CEAC"
+			tasks: [{
+				id: "38F71929917C8F33"
+				item: { count: 1, id: "create:honey_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BBAE422F5976F49"]
+			id: "2212292149E71F91"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2A917954D6E456E2"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4243AAEFAAB9E955"
+				item: { count: 1, id: "create:scoria" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0A882688DA53CEAC"]
+			id: "112446B39AEC8A21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A4C0B4F54033C53"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
+			tasks: [{
+				id: "072462F54405131C"
+				item: { count: 1, id: "create:limestone" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			id: "6C664D445C80C5BC"
+			tasks: [{
+				id: "7FB730AE990DB45A"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
 		}
 	]
 }

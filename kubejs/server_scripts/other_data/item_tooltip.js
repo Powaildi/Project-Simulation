@@ -58,7 +58,7 @@ ItemEvents.modifyTooltips(e=>{
     e.add('natures_spirit:cheese_bucket',Text.yellow(Text.translatable("tooltip.natures_spirit.cheese_bucket")))
     e.add('natures_spirit:coconut',Text.green(Text.translatable("tooltip.natures_spirit.coconut")))
     
-    e.add(['railways:paint_brush','railways:empty_paint_pitcher'],Text.red(Text.translatable("tooltip.paint")))
+    //e.add(['railways:paint_brush','railways:empty_paint_pitcher'],Text.red(Text.translatable("tooltip.paint")))
     e.add(['#dndecor:containers_decor','createpropulsion:platinum_fluid_vessel'],{shift:true},Text.white(Text.translatable("tooltip.vessel")))
 
     e.add('#minecraft:small_flowers',Text.green(Text.translatable("tooltip.small_flowers")))

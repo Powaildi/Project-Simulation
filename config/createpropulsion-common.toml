@@ -50,16 +50,16 @@
 	ionMultiblock3xThrustMultiplier = 1.4
 
 ["Creative Thruster"]
+	#Maximum thrust (kN) the scroll can reach on a creative thruster.
+	#Default tuned for 1000-unit thrust scale parity with Sable physics.
+	# Default: 10000.0
+	# Range: 10.0 ~ 1000000.0
+	creativeThrusterMaxThrust = 1000000.0
 	#Starting thrust value (kN) when a creative thruster is placed.
 	#Default tuned for 1000-unit thrust scale parity with Sable physics.
 	# Default: 666.666666667
 	# Range: 1.0 ~ 1000000.0
 	creativeThrusterBaseThrust = 666.666666667
-	#Maximum thrust (kN) the scroll can reach on a creative thruster.
-	#Default tuned for 1000-unit thrust scale parity with Sable physics.
-	# Default: 10000.0
-	# Range: 10.0 ~ 1000000.0
-	creativeThrusterMaxThrust = 10000.0
 	#Maximum thrust (kN) the scroll can reach on a 2x2x2 creative thruster multiblock.
 	# Default: 100000.0
 	# Range: 10.0 ~ 1.0E8

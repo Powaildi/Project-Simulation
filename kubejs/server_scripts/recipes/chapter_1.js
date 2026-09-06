@@ -99,11 +99,12 @@ ServerEvents.recipes(e=>{
     e.remove({id:'create:milling/wool'})
     e.recipes.create.milling(['5x minecraft:string',CreateItem.of('minecraft:string',0.5)],Ingredient.of('#minecraft:wool'),80)
         .id('milling/wool_manual_only')
-
     e.remove({id:'create:crushing/wool'})
     e.recipes.create.crushing(['7x minecraft:string',CreateItem.of('minecraft:string',0.5)],Ingredient.of('#minecraft:wool'),35)
         .id('crushing/wool')
-
+    e.shapeless('4x minecraft:string',Ingredient.of('#minecraft:wool'))
+        .id('crafting/wool_to_string')
+        
     e.recipes.create.deploying('4x delighto_flight:cloud_silk',['delighto_flight:cloud','minecraft:white_wool'])
         .id('deploying/cloud_silk')
 

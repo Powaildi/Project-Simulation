@@ -14,7 +14,10 @@
     "key.sophisticatedbackpacks.open_backpack": 0,
     "key.tacz.crawl.desc": 0,
     "gui.xaero_new_waypoint": 0,
-    "iris.keybind.reload": -1
+    "iris.keybind.reload": -1,
+    "create_mobile_packages.keyinfo.open_player_networks_screen": 0,
+    "key.mekanism.key_hud": -1,
+    "key.curios.open.desc": -1
   },
   "conflictIgnored": []
 }

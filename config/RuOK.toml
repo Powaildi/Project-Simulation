@@ -8,7 +8,7 @@ whiteListedEntities = []
 BlackTagListEntity = []
 WhiteTagListEntity = []
 isAlwaysShowItemCount = true
-startTime = 52.023
+startTime = 58.855
 Hud = false
 HudRXTX = false
 HudFPS = false
@@ -49,7 +49,7 @@ CullMode = "COMPATIBILITY"
 ParticleFastCollision = false
 ParticleLazyBrightness = false
 CullBlockEntity = false
-CullEntity = true
+CullEntity = false
 CullParticle = false
 
 [[HudTextConfig]]

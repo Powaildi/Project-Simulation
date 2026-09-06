@@ -30,8 +30,26 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing('minecraft:slime_block',
         ['4x kaleidoscope_cookery:flour',Fluid.of('create_dragons_plus:lime_dye',1000)],90)
         .id('mixing/slime_block')
+    //钻石
+    e.recipes.vintageimprovements.pressurizing('minecraft:diamond','kubejs:graphite',125)
+        .superheated().id('pressurizing/diamond')
     //附魔书
-
+    //忠诚
+    e.recipes.create.mixing('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:loyalty":1}}]',
+        [Item.of('create:peculiar_bell',7),Item.of('minecraft:basalt',34),Item.of('create:scoria',8)])
+        .id('mixing/enchanted_book/loytalty_silksong')
+    //时运
+    e.recipes.create.deploying('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:fortune":1}}]',
+        ['minecraft:book','minecraft:diamond'])
+        .id('deploying/enchanted_book/fortune')
+    //抢夺
+    e.recipes.create.deploying('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:looting":1}}]',
+        ['minecraft:book','minecraft:emerald'])
+        .id('deploying/enchanted_book/looting')
+    //横扫之刃
+    e.recipes.create.deploying('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:sweeping_edge":1}}]',
+        ['minecraft:book','minecraft:iron_sword'])
+        .id('deploying/enchanted_book/sweeping_edge')
     
 //机械动力
     //链式传动箱
@@ -209,35 +227,36 @@ ServerEvents.recipes(e=>{
 
 //汽鸣铁道
     //重写锅炉配方
-    let boiler_recipes = e.recipeStream({mod:'railways',type:'create:mechanical_crafting'})
-    boiler_recipes.forEach(recipe=>{
-        let result = recipe.getOriginalRecipeResult()
-        let id = recipe.getId()
-        let metal = recipe.getOriginalRecipeIngredients().get(2).asStack().getItems().pop()
-        e.shaped(result,[
-            'ABA',
-            'BCB',
-            'ABA'
-        ],{
-            A:metal,
-            B:'minecraft:blaze_rod',
-            C:'minecraft:bucket'
-        }).id('crafting/' + result.id.replace(':','/'))
-        recipe.remove()
-    })
-    //重写列车长帽配方
-    let cap_recipes = e.recipeStream({output:'#railways:conductor_caps'})
-    cap_recipes.forEach(recipe=>{
-        let result = recipe.getOriginalRecipeResult()
-        let id = recipe.getId()
-        let wool = recipe.json.get('ingredient')
-        if(wool == null)return
-        e.shapeless(result,[
-            wool,'minecraft:string','create:precision_mechanism'
-        ]).id('crafting/' + result.id.replace(':','/'))
-        recipe.remove()
-    })
-
+    if(Platform.isLoaded('railways')){
+        let boiler_recipes = e.recipeStream({mod:'railways',type:'create:mechanical_crafting'})
+        boiler_recipes.forEach(recipe=>{
+            let result = recipe.getOriginalRecipeResult()
+            let id = recipe.getId()
+            let metal = recipe.getOriginalRecipeIngredients().get(2).asStack().getItems().pop()
+            e.shaped(result,[
+                'ABA',
+                'BCB',
+                'ABA'
+            ],{
+                A:metal,
+                B:'minecraft:blaze_rod',
+                C:'minecraft:bucket'
+            }).id('crafting/' + result.id.replace(':','/'))
+            recipe.remove()
+        })
+        //重写列车长帽配方
+        let cap_recipes = e.recipeStream({output:'#railways:conductor_caps'})
+        cap_recipes.forEach(recipe=>{
+            let result = recipe.getOriginalRecipeResult()
+            let id = recipe.getId()
+            let wool = recipe.json.get('ingredient')
+            if(wool == null)return
+            e.shapeless(result,[
+                wool,'minecraft:string','create:precision_mechanism'
+            ]).id('crafting/' + result.id.replace(':','/'))
+            recipe.remove()
+        })
+    }
 //火炮
     //移动火炮铸模配方
     let transfer = [
@@ -301,6 +320,10 @@ ServerEvents.recipes(e=>{
     e.recipes.create.deploying('createlazytick:clock',['minecraft:clock','create:brass_sheet'])
         .id('deploying/createlazytick/clock')
 
+    //角砾岩粉碎
+    e.recipes.create.crushing(['2x create:cinder_flour',CreateItem.of('mekanism:dust_sulfur')],'dndesires:breccia')
+        .id('crushing/dndesires/breccia')
+
     
 //齿轮与麦穗
     e.recipes.create.mixing([Fluid.of('create:chocolate',500)],
@@ -355,5 +378,9 @@ ServerEvents.recipes(e=>{
 //神秘配方
     e.recipes.create.mixing('minecraft:stick',[Item.of('minecraft:stick',2)])
         .id('mixing/gunmu')
+    e.recipes.create.sequenced_assembly('minecraft:diamond','minecraft:coal_block',[
+        e.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block')
+    ])
+    .transitionalItem('minecraft:coal_block').loops(114514).id('sequenced_assembly/diamond_114514')    
     
 })

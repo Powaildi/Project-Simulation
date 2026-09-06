@@ -2,12 +2,12 @@
   "version": 1,
   "combos": [
     {
-      "mappingName": "gui.xaero_instant_waypoint",
-      "action": "快速路径点",
-      "category": "Xaero\u0027s Minimap",
+      "mappingName": "key.rtsbuilding.toggle_rts",
+      "action": "切换俯视建造模式",
+      "category": "key.categories.rtsbuilding",
       "firstKey": "key.keyboard.left.control",
-      "secondKey": "key.keyboard.keypad.add",
-      "updatedAt": "2026-07-31T11:55:53.774120400"
+      "secondKey": "key.keyboard.g",
+      "updatedAt": "2026-08-26T21:48:18.791034300"
     }
   ]
 }

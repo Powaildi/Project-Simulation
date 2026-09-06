@@ -138,46 +138,46 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:wolf": true
-			"minecraft:chicken": true
-			"minecraft:enderman": true
-			"minecraft:ocelot": true
-			"minecraft:zombie_villager": true
-			"minecraft:cow": true
-			"minecraft:stray": true
-			"artifacts:mimic": true
-			"minecraft:fox": true
-			"minecraft:squid": true
-			"minecraft:phantom": true
+			"minecraft:witch": true
 			"minecraft:pufferfish": false
-			"minecraft:bat": true
-			"minecraft:sheep": true
-			"minecraft:salmon": false
-			"minecraft:goat": true
-			"minecraft:donkey": true
+			"minecraft:phantom": true
+			"minecraft:enderman": true
+			"minecraft:pig": true
+			"minecraft:rabbit": true
 			"minecraft:cat": true
+			"minecraft:cow": true
+			"minecraft:iron_golem": true
+			"artifacts:mimic": true
+			"minecraft:polar_bear": true
+			"minecraft:salmon": false
+			"minecraft:turtle": true
+			"minecraft:spider": true
+			"minecraft:drowned": true
+			"minecraft:glow_squid": true
+			"minecraft:squid": true
+			"minecraft:trader_llama": true
 			"minecraft:parrot": true
 			"touhou_little_maid:fairy": true
-			"minecraft:trader_llama": true
-			"minecraft:pig": true
-			"minecraft:horse": true
-			"minecraft:zombie": true
-			"minecraft:wandering_trader": true
+			"minecraft:donkey": true
+			"minecraft:bat": true
+			"minecraft:fox": true
+			"minecraft:goat": true
+			"minecraft:sheep": true
 			"minecraft:villager": true
-			"minecraft:rabbit": true
-			"minecraft:iron_golem": true
-			"minecraft:creeper": true
-			"minecraft:polar_bear": true
-			"minecraft:axolotl": true
-			"minecraft:witch": true
-			"minecraft:glow_squid": true
-			"minecraft:turtle": true
-			"minecraft:cod": false
-			"minecraft:drowned": true
-			"touhou_little_maid:maid": true
-			"minecraft:spider": true
-			"minecraft:skeleton": true
 			"minecraft:tropical_fish": false
+			"minecraft:horse": true
+			"minecraft:skeleton": true
+			"minecraft:wandering_trader": true
+			"touhou_little_maid:maid": true
+			"minecraft:axolotl": true
+			"minecraft:chicken": true
+			"minecraft:zombie": true
+			"minecraft:zombie_villager": true
+			"minecraft:creeper": true
+			"minecraft:ocelot": true
+			"minecraft:wolf": true
+			"minecraft:stray": true
+			"minecraft:cod": false
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

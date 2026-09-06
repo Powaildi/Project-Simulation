@@ -180,6 +180,7 @@
 		"Mob Neutralizer 改变了怪物对你的探测范围，"
 		"只要你不打它们或者激怒它们或者靠太近，它们就不会打你！"
 	]
+	quest.1B15DAA931F356C8.quest_subtitle: "补偿"
 	quest.1B26B34F4E8FB480.quest_desc: [
 		"风弹可以用于增殖烈焰粉，"
 		"烈焰粉可以制成烈焰棒，"
@@ -501,7 +502,6 @@
 	]
 	quest.5F93F939BA212B92.quest_subtitle: "创造飞行"
 	quest.60A8C8E612262147.quest_subtitle: "小型动态结构首选缓存"
-	quest.60EA9D9D4801E43B.quest_subtitle: "暂时无作用"
 	quest.6137E43860EFCB87.title: "砂轮分液池"
 	quest.613F7DCF72C046DC.quest_desc: ["放在燃烧器或者烈焰人燃烧室上面，燃烧器燃烧时提供4096su应力，可以调整方向和转速。"]
 	quest.613F7DCF72C046DC.quest_subtitle: "提供4096su应力"
@@ -565,6 +565,7 @@
 	quest.6A84323C16937D1B.quest_subtitle: "隔断网络，不隔断能量传输"
 	quest.6BB61A20A98ECE6D.quest_subtitle: "跟物理体跳入虚空"
 	quest.6BB61A20A98ECE6D.title: "探访末地之海"
+	quest.6C664D445C80C5BC.title: "类似正常刷石机"
 	quest.6C70A9FFB4A2AE94.quest_desc: [
 		"开放容器"
 		"动力锯会遍历配方，当一个输入的物品有多种输出的可能的时候，它会选择第一个，下一次第二个……最后一个，第一个。"
@@ -686,6 +687,10 @@
 	quest.7E1C22C477159E62.title: "超频"
 	quest.7E6DF4F764696FD6.quest_subtitle: "维持网络中某些东西的数量"
 	quest.7EAF8A360F2537E4.title: "存储组件"
+	reward_table.1F0DEC7FABA05ED2.title: "Later"
+	reward_table.313E5583C983D8B5.title: "Mid_High"
+	reward_table.5729B203CA6FA43A.title: "Mid_Low"
+	reward_table.65BB9ED145C8577C.title: "Starter"
 	task.0500AB400FBFC5BF.title: "怪物相对中立"
 	task.0C3F52F2DB50BEA4.title: "树场"
 	task.0CA225A29356629B.title: "种植恩特罗水晶"
@@ -722,4 +727,5 @@
 	task.78BD08FCB2369E41.title: "快速搭建存储网络"
 	task.7AAE000CACD6A88D.title: "两种矿脉"
 	task.7FAC5CA0B823656A.title: "恭喜你完成第一章"
+	task.7FB730AE990DB45A.title: "这一行无额外要求"
 }

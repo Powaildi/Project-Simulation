@@ -16,7 +16,7 @@ fullscreen:false
 gamma:0.5
 graphicsMode:1
 guiScale:4
-maxFps:260
+maxFps:120
 mipmapLevels:4
 narrator:0
 particles:0

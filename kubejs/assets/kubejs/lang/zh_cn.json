@@ -20,6 +20,7 @@
     "block.mbd2.air_compressor":"空气压缩机",
     "block.mbd2.assembler":"自动化组装机（WIP）",
     "block.mbd2.sprinkler":"喷灌器",
+    "block.mbd2.ant_nest":"蚂蚁窝",
 
     "fluid_type.kubejs.cryogen":"冷冻液",
     "fluid_type.kubejs.bone_meal_diluent":"骨粉稀释液",

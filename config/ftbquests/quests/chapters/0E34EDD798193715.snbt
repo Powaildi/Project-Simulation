@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0E34EDD798193715"
+	group: "7FA4C321DCF44059"
+	icon: {
+		id: "create_fantasizing:alternative_chromatic_compound"
+	}
+	id: "0E34EDD798193715"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "00C3882ABB5ADD7D"
+			size: 1.5d
+			tasks: [{
+				id: "187C3A70FCAA9C08"
+				item: { count: 1, id: "create_fantasizing:alternative_chromatic_compound" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00C3882ABB5ADD7D"]
+			id: "123570BC4D8564DC"
+			tasks: [{
+				id: "01E104EF256824D5"
+				item: { components: { "minecraft:fire_resistant": { } }, count: 1, id: "create:shadow_steel" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00C3882ABB5ADD7D"]
+			id: "60A2EBBE4EA7D6E7"
+			tasks: [{
+				id: "3DD65E98DE7C5CC2"
+				item: { components: { "minecraft:fire_resistant": { } }, count: 1, id: "create:refined_radiance" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["123570BC4D8564DC"]
+			id: "0F810D5F126E7B41"
+			tasks: [{
+				id: "05AD14D6C8B62DAF"
+				item: { count: 1, id: "create_fantasizing:shadow_steel_tunnel" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60A2EBBE4EA7D6E7"]
+			id: "78D3269A290C3F86"
+			tasks: [{
+				id: "09AEC9ECB3802C8A"
+				item: { count: 1, id: "create_fantasizing:refined_radiance_tunnel" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0F810D5F126E7B41"
+				"78D3269A290C3F86"
+			]
+			id: "6587CD058FF31E77"
+			size: 1.5d
+			tasks: [{
+				id: "5362902F62B0A3B7"
+				item: { count: 1, id: "create_fantasizing:taiji_chipset" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6587CD058FF31E77"]
+			id: "2324794C4F63BE2A"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "51F0F7A8BDE04DB6"
+				item: { count: 1, id: "create_fantasizing:yin_yang_engine" }
+				type: "item"
+			}]
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6587CD058FF31E77"]
+			id: "73EC1CCE9B735B71"
+			rewards: [
+				{
+					id: "00228A03E7F31EF3"
+					item: {
+						count: 1
+						id: "minecraft:note_block"
+					}
+					type: "item"
+				}
+				{
+					id: "6DB868E87D575DF7"
+					item: {
+						count: 1
+						id: "minecraft:armor_stand"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "415EFD082E22EFFE"
+				item: { count: 1, id: "mbd2:ant_nest" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+}

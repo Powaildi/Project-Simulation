@@ -29,4 +29,13 @@ ServerEvents.recipes(e=>{
         E:'create:fluid_pipe',
         F:'create:fluid_tank'
     }).id('crafting/mbd2/air_compressor')
+    e.shaped('mbd2:ant_nest',[
+        'A',
+        'B',
+        'C'
+    ],{
+        A:'create:transmitter',
+        B:'minecraft:packed_mud',
+        C:'create_fantasizing:taiji_chipset'
+    })
 })

@@ -18,9 +18,10 @@ MBDMachineEvents.onTick('mbd2:ant_nest',e=>{
         stop = note_block.properties.get('powered') == 'true' 
     }
     if(server.tickCount%move_cooldown)return//实现冷却
-
+    
     machine.asBlockEntity().persistentData.putBoolean('stop',stop)
     machine.asBlockEntity().persistentData.putInt('cd',move_cooldown)
+    machine.setMachineState(stop? 'suspend':'working')
 })
 BlockEvents.rightClicked('mbd2:ant_nest',e=>{
     let {block,item} = e

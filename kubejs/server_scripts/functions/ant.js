@@ -1,6 +1,5 @@
 
 
-
 const common_convertable = [
     //这些转化不会复制属性
     //工业平台
@@ -77,6 +76,9 @@ MEJSEvents.entityTick(e=>{
     let turn_mode = (() => {
         //空气
         if(blockid=='minecraft:air')return 3
+        //细雪
+        let TicksFrozen = ant.getTicksFrozen()
+        if(TicksFrozen == 140)return 4
     //黑白转向规则
         //普通匹配
         let index = common_convertable.indexOf(blockid)
@@ -91,12 +93,16 @@ MEJSEvents.entityTick(e=>{
         if(index != -1){
             turn_mode = index%2
             //瘫痪机制:需要借助TicksFrozen
-            let TicksFrozen = ant.getTicksFrozen()
-            if(TicksFrozen <= converting_fatigue_max*2){
+            let fatigue_multiplier = ant.persistentData.getInt('paralyzed') || 2
+            if(TicksFrozen <= converting_fatigue_max * fatigue_multiplier){
                 //转化方块
                 on_block.setBlockState(high_value_convertable[index^1])
                 //添加的TicksFrozen即为冷却
                 ant.setTicksFrozen(TicksFrozen+high_value_convertable[index+2]*2)//这里*2是因为TicksFrozen每tick减少2
+                ant.persistentData.putInt('paralyzed',2)
+            }else{
+                ant.persistentData.putInt('paralyzed',1)
+                return 4
             }
             return turn_mode
         }
@@ -171,6 +177,10 @@ MEJSEvents.entityTick(e=>{
     break
     case(3)://计划为冰
     break
+    case(4)://瘫痪
+    level.spawnParticles('minecraft:snowflake',false,ant.xo,ant.yo+1,ant.zo,0.2,0.5,0.2,1,0)
+    return
+    break
     case(-1):
     ant.setRotation(ant.yRotO%360+180,0)//同边界
     break
@@ -189,6 +199,14 @@ EntityEvents.spawned('minecraft:armor_stand',e=>{
     let name = entity.getName().string
     if(name.indexOf('Ant') == -1)return
     let nestpos = name.split(' ').slice(1).map(Number)
+    if(nestpos[0] == undefined){
+        //重加载
+        if(entity.persistentData.get('nestpos') || false)return
+        //非正规途径生成
+        entity.block.popItem('minecraft:armor_stand')
+        e.cancel()
+        return
+    }
     entity.setCustomName('Ant')
     entity.persistentData.putIntArray('nestpos',nestpos)
     entity.mergeNbt(

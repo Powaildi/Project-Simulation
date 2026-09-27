@@ -101,7 +101,7 @@
 		#Higher = shallower penetration. Default 2.0.
 		# Default: 2.0
 		# Range: 1.0 ~ 20.0
-		penetrationLossFactor = 1.1
+		penetrationLossFactor = 2.0
 		#Footprint radius (blocks) crushed per penetration layer. Large structures
 		#need their WHOLE leading face and the terrain under it cleared, or they
 		#rest on intact ground around the single-contact hole and stop dead.
@@ -116,7 +116,7 @@
 		#Damage intensity preset. Multiplied with damageMultipliers.totalDamageMultiplier.
 		#MILD=0.3x  CONSERVATIVE=0.6x  DEFAULT=1.0x  INTENSE=2.5x  DRAMATIC=6.0x
 		#Allowed Values: MILD, CONSERVATIVE, DEFAULT, INTENSE, DRAMATIC
-		damagePreset = "DRAMATIC"
+		damagePreset = "DEFAULT"
 		#Minimum impact energy (J) for any damage to be registered. Impacts below this are ignored entirely.
 		# Default: 40.0
 		# Range: 1.0 ~ 500.0
@@ -128,7 +128,7 @@
 		#Global damage multiplier applied to all impacts. Stacks with damagePreset.
 		# Default: 1.0
 		# Range: 0.1 ~ 10.0
-		totalDamageMultiplier = 10.0
+		totalDamageMultiplier = 1.0
 		#Additional damage multiplier applied only to physics structure blocks.
 		# Default: 1.0
 		# Range: 0.1 ~ 10.0
@@ -136,7 +136,7 @@
 		#Additional damage multiplier applied only to world blocks.
 		# Default: 1.0
 		# Range: 0.1 ~ 10.0
-		worldBlockDamageMultiplier = 8.0
+		worldBlockDamageMultiplier = 1.0
 		#Elastic floor (fatigue limit): a single hit below this fraction of a block's
 		#adjusted break threshold causes ZERO damage — purely elastic contact.
 		#Prevents gentle repeated contacts (waving a structure) from grinding blocks
@@ -157,7 +157,7 @@
 		#0.5 × bodyMass × cap². 0 disables. Default 40 m/s.
 		# Default: 40.0
 		# Range: 0.0 ~ 1000.0
-		physicsStructureMaxImpactSpeed = 1000.0
+		physicsStructureMaxImpactSpeed = 40.0
 
 	#Integration toggles for other mods.
 	[advanced.compatibility]
@@ -253,7 +253,7 @@
 		#penetration within a few blocks for almost any striker).
 		# Default: 0.15
 		# Range: 0.01 ~ 1.0
-		overburdenEfficiency = 0.02
+		overburdenEfficiency = 0.15
 		#Base accumulation threshold (J) for SOFT_SOIL blocks (dirt, sand, gravel, etc.),
 		#before the material break multiplier is applied.
 		# Default: 5.0
@@ -262,7 +262,7 @@
 		#Base accumulation threshold (J) for BRITTLE blocks (glass, ice, terracotta).
 		# Default: 15.0
 		# Range: 0.1 ~ 10000.0
-		brittleThresholdJ = 1.0
+		brittleThresholdJ = 15.0
 		#Base accumulation threshold (J) for WOOD blocks (planks, logs).
 		# Default: 20.0
 		# Range: 0.1 ~ 10000.0

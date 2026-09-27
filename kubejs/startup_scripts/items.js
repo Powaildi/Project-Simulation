@@ -4,8 +4,8 @@ StartupEvents.registry('item', e => {
     e.create('graphite').displayName('石墨')
     e.create('logistics_toolbox').displayName('物流工具箱')
     e.create('fluid_toolbox').displayName('液流工具箱')
-    e.create('infinite_heat_bar').displayName('无限加热燃料棒')
-    e.create('infinite_superheat_bar').displayName('无限超级加热燃料棒')
+    e.create('infinite_heat_bar').displayName('无限加热燃料棒').rarity('uncommon')
+    e.create('infinite_superheat_bar').displayName('无限超级加热燃料棒').rarity("epic")
     e.create('steel_sheet').displayName('钢板')
 
 })

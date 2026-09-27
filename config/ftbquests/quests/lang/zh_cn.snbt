@@ -1,4 +1,5 @@
 {
+	chapter.0E34EDD798193715.title: "异彩变幻"
 	chapter.1642F9C1277277FB.title: "不止农业"
 	chapter.267276FE11D1F343.title: "无限产矿"
 	chapter.2AA715C4FBF89DC9.title: "向天空奔去"
@@ -209,6 +210,7 @@
 	quest.1FC02254EFFE1CE0.title: "特殊传动手段"
 	quest.2111149AE352A053.quest_subtitle: "挖掉它，寻找陨石中心的外星科技"
 	quest.2142E4744C27EF45.quest_subtitle: "移动空间"
+	quest.2324794C4F63BE2A.quest_subtitle: "小创造马达"
 	quest.24482FF7F5A5C497.quest_desc: ["你知道JEI可以翻页吗？"]
 	quest.24482FF7F5A5C497.quest_subtitle: "最安全最方便的一集"
 	quest.24482FF7F5A5C497.title: "鼓风机触媒"
@@ -625,6 +627,7 @@
 	]
 	quest.72C8573949A44341.quest_subtitle: "你后续发展的重要助力"
 	quest.73A2BDD0064188B1.quest_desc: ["陨石罗盘会指向最近的陨石"]
+	quest.73EC1CCE9B735B71.quest_subtitle: "兰顿蚂蚁"
 	quest.743A85328F25C949.title: "形成需要下方的方块是基岩"
 	quest.757D007D46FCA353.quest_desc: [
 		"经过Apertyotis的改进，你可以修改已经打上的强力胶的范围，就像蜂蜜胶那样！"

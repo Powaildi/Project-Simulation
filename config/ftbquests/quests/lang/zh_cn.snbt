@@ -477,6 +477,9 @@
 	quest.592125B9214B82AA.title: "破坏面板和成型面板"
 	quest.5A1E0FBBF949AECD.quest_subtitle: "2FE/t -> 1AE/t"
 	quest.5A6139B22BD9F214.title: "能源存储组件"
+	quest.5B209FA5D5B7CA89.quest_desc: ["如果在完成前制作了传输物品的黄铜科技制品，将不能完成任务。"]
+	quest.5B209FA5D5B7CA89.quest_subtitle: "不能做黄铜漏斗等"
+	quest.5B209FA5D5B7CA89.title: "被动过滤产线挑战"
 	quest.5B64FA9A4C9FCD66.quest_subtitle: "使用含流体的容器过滤该流体"
 	quest.5C6ECCAAE59B0EA7.quest_desc: ["将铁粒或者锌粒与安山岩在工作台2x2交错摆放合成安山合金"]
 	quest.5C6ECCAAE59B0EA7.quest_subtitle: "我已启动"
@@ -503,6 +506,7 @@
 		"想要停止飞行，就再次双击空格。"
 	]
 	quest.5F93F939BA212B92.quest_subtitle: "创造飞行"
+	quest.5FE39298C63104FA.title: "电路板挑战辅助前置"
 	quest.60A8C8E612262147.quest_subtitle: "小型动态结构首选缓存"
 	quest.6137E43860EFCB87.title: "砂轮分液池"
 	quest.613F7DCF72C046DC.quest_desc: ["放在燃烧器或者烈焰人燃烧室上面，燃烧器燃烧时提供4096su应力，可以调整方向和转速。"]
@@ -522,6 +526,7 @@
 		"来暂停物理模拟，并让它们停下来，接下来使用工具枪传送到这个结构旁边，你还可以直接删除它。"
 	]
 	quest.639783FE12AA4993.quest_subtitle: "蓝图与收拾残局"
+	quest.63A6056E1032B84F.title: "禁用物品"
 	quest.6415ED9A6143E23F.quest_desc: ["除了无限水，它还能销毁输入的流体。"]
 	quest.6415ED9A6143E23F.quest_subtitle: "无限水"
 	quest.6460EA3BE31C33D9.quest_subtitle: "第一个应力来源"
@@ -702,6 +707,7 @@
 	task.14166143EDA6FFEE.title: "寻找浮空岛"
 	task.1474BD572BAC77D8.title: "任意石英粉"
 	task.15C17FF6E4EAAE37.title: "物品销毁"
+	task.1E4188269343C67B.title: "没有拿到过禁用物品"
 	task.1E650A9CB80CF602.title: "！？音乐？！"
 	task.1EBD1A182B6DA471.title: "是时候改造矿机了"
 	task.23E1A43248D83C35.title: "要不去干点别的事情？"

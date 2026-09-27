@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "2F59F0F0EB7C043A"
+	filename: "2f59f0f0eb7c043a"
 	group: "6DDED6A143CA022F"
 	icon: {
 		id: "gnkinetics:brass_gear"
@@ -194,6 +194,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				consume_items: true
 				count: 128L
 				id: "7EC0B5A44F170718"
 				item: { count: 1, id: "kubejs:circuit" }
@@ -235,6 +236,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				consume_items: true
 				count: 1024L
 				id: "7F5ED8C3501F4FCD"
 				item: { count: 1, id: "minecraft:iron_ingot" }

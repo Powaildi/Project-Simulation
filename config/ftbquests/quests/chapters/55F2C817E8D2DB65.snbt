@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "55F2C817E8D2DB65"
+	filename: "55f2c817e8d2db65"
 	group: "218ACD7D75A06A52"
 	icon: {
 		id: "create:precision_mechanism"

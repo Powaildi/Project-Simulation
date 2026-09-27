@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "7092222EFAF380AA"
+	filename: "7092222efaf380aa"
 	group: "6DDED6A143CA022F"
 	icon: {
 		id: "create:rotation_speed_controller"
@@ -801,14 +801,25 @@
 				"62F3F76E788E2F8F"
 			]
 			id: "66A3ADBBE58FA358"
-			rewards: [{
-				id: "5EF00024C6853232"
-				item: {
-					count: 1
-					id: "functionalstorage:linking_tool"
+			rewards: [
+				{
+					id: "5EF00024C6853232"
+					item: {
+						count: 1
+						id: "functionalstorage:linking_tool"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 4
+					id: "28CC3FA471129308"
+					item: {
+						count: 1
+						id: "functionalstorage:storage_controller"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "257F28BD4B30F488"
@@ -1184,53 +1195,15 @@
 		{
 			dependencies: ["7FC66E37182BFEE2"]
 			id: "659367C711A57B46"
-			rewards: [
-				{
-					count: 32
-					id: "1CF4B3730279DD86"
-					item: {
-						count: 1
-						id: "create:brass_funnel"
-					}
-					type: "item"
+			rewards: [{
+				count: 512
+				id: "2BCE8A01CB212642"
+				item: {
+					count: 1
+					id: "create:rose_quartz"
 				}
-				{
-					count: 32
-					id: "5AD51D1D1A515DBB"
-					item: {
-						count: 1
-						id: "create:brass_tunnel"
-					}
-					type: "item"
-				}
-				{
-					count: 32
-					id: "541EB358D96C171A"
-					item: {
-						count: 1
-						id: "create:smart_chute"
-					}
-					type: "item"
-				}
-				{
-					count: 16
-					id: "511BA239AADFE546"
-					item: {
-						count: 1
-						id: "create:smart_fluid_pipe"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "24F12C15960F6C49"
-					item: {
-						count: 1
-						id: "functionalstorage:storage_controller"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "4539C9C3D75D1111"
@@ -1290,6 +1263,15 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "11A2D28175E53D85"
+			rewards: [{
+				count: 32
+				id: "1DE20418C58A638E"
+				item: {
+					count: 1
+					id: "create:brass_funnel"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "314779A82DDE2D28"
 				item: { count: 1, id: "create:brass_funnel" }
@@ -1301,6 +1283,15 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "077ECF29212AFD4C"
+			rewards: [{
+				count: 32
+				id: "7909774D39F060EB"
+				item: {
+					count: 1
+					id: "create:brass_tunnel"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D05DE1542D39EC1"
 				item: { count: 1, id: "create:brass_tunnel" }
@@ -1312,6 +1303,15 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "43C16273D16F3372"
+			rewards: [{
+				count: 32
+				id: "513D39A0841FF156"
+				item: {
+					count: 1
+					id: "create:smart_chute"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "20486B2029CBAA7D"
 				item: { count: 1, id: "create:smart_chute" }
@@ -1323,6 +1323,12 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "5B64FA9A4C9FCD66"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "052989B7978F7012"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [{
 				id: "09D849F749FCAC1C"
 				item: { count: 1, id: "create:smart_fluid_pipe" }
@@ -1916,6 +1922,12 @@
 		{
 			dependencies: ["659367C711A57B46"]
 			id: "16C6D219ECD5A275"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49D42920FE677451"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "40A5014F0115C0C8"
@@ -2617,6 +2629,150 @@
 			}]
 			x: 17.5d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"5FE39298C63104FA"
+				"659367C711A57B46"
+				"0EFE5894220E5B85"
+			]
+			hide_until_deps_complete: false
+			hide_until_deps_visible: true
+			id: "5B209FA5D5B7CA89"
+			rewards: [
+				{
+					count: 128
+					id: "026EFD4CBDAEE6EE"
+					item: {
+						count: 1
+						id: "kubejs:circuit"
+					}
+					type: "item"
+				}
+				{
+					id: "0F9137527029FC96"
+					item: {
+						count: 1
+						id: "kubejs:infinite_superheat_bar"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "222E16FA0FE07967"
+					item: {
+						count: 1
+						id: "kubejs:infinite_heat_bar"
+					}
+					type: "item"
+				}
+				{
+					id: "757D49FB794B534E"
+					item: {
+						count: 1
+						id: "create_fantasizing:yin_yang_engine"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "69FBDA9767DC41E5"
+					item: {
+						count: 1
+						id: "create_rns:polished_resonant_amethyst"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0553DAE9C1ABD410"
+					item: {
+						count: 1
+						id: "createbigcannons:steel_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 256L
+				id: "6A47643230944EC6"
+				item: { count: 1, id: "kubejs:circuit" }
+				type: "item"
+			}]
+			x: 23.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["659367C711A57B46"]
+			hide_text_until_complete: true
+			id: "63A6056E1032B84F"
+			shape: "diamond"
+			tasks: [
+				{
+					disable_toast: true
+					id: "09AF3CFB3E303B4D"
+					item: { count: 1, id: "create:brass_funnel" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "55698F634673D0A2"
+					item: { count: 1, id: "create:smart_chute" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "018E5737425B9692"
+					item: { count: 1, id: "create:brass_tunnel" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0D01F469FE069C8C"
+					item: { count: 1, id: "dndesires:smart_hopper" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "4EFFFB5440837D74"
+					item: { count: 1, id: "aero_reformation:filter_patch" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "39A72D95F3A84EF5"
+					item: { count: 1, id: "fluidlogistics:smart_hopper" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "34E6581139128B5F"
+					item: { count: 1, id: "create_fantasizing:transporter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 22.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["659367C711A57B46"]
+			hide_until_deps_complete: true
+			id: "5FE39298C63104FA"
+			tasks: [{
+				id: "1E4188269343C67B"
+				type: "custom"
+			}]
+			x: 25.5d
+			y: 3.0d
 		}
 	]
 }

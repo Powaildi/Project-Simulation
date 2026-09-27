@@ -138,45 +138,45 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:donkey": true
+			"minecraft:polar_bear": true
+			"minecraft:cat": true
+			"minecraft:squid": true
+			"minecraft:creeper": true
+			"minecraft:skeleton": true
+			"minecraft:stray": true
+			"minecraft:enderman": true
+			"touhou_little_maid:fairy": true
+			"minecraft:goat": true
+			"minecraft:spider": true
 			"minecraft:rabbit": true
+			"minecraft:cod": false
+			"touhou_little_maid:maid": true
+			"minecraft:chicken": true
+			"minecraft:wolf": true
+			"minecraft:witch": true
+			"minecraft:turtle": true
+			"minecraft:pufferfish": false
+			"minecraft:glow_squid": true
+			"minecraft:bat": true
+			"minecraft:fox": true
+			"minecraft:trader_llama": true
+			"minecraft:horse": true
+			"minecraft:phantom": true
+			"minecraft:wandering_trader": true
+			"minecraft:sheep": true
+			"minecraft:pig": true
+			"minecraft:parrot": true
+			"minecraft:salmon": false
+			"minecraft:cow": true
+			"minecraft:ocelot": true
+			"minecraft:tropical_fish": false
+			"minecraft:donkey": true
 			"minecraft:zombie_villager": true
 			"minecraft:villager": true
-			"minecraft:ocelot": true
-			"minecraft:cow": true
-			"minecraft:enderman": true
-			"minecraft:skeleton": true
-			"minecraft:wolf": true
-			"minecraft:chicken": true
-			"minecraft:fox": true
-			"minecraft:zombie": true
-			"minecraft:parrot": true
-			"minecraft:sheep": true
-			"minecraft:bat": true
 			"minecraft:iron_golem": true
-			"minecraft:pig": true
 			"minecraft:drowned": true
-			"minecraft:cat": true
-			"minecraft:trader_llama": true
-			"minecraft:pufferfish": false
-			"minecraft:goat": true
-			"minecraft:creeper": true
-			"minecraft:phantom": true
-			"touhou_little_maid:fairy": true
-			"minecraft:polar_bear": true
-			"minecraft:horse": true
-			"minecraft:stray": true
 			"artifacts:mimic": true
-			"minecraft:glow_squid": true
-			"minecraft:squid": true
-			"minecraft:turtle": true
-			"touhou_little_maid:maid": true
-			"minecraft:wandering_trader": true
-			"minecraft:cod": false
-			"minecraft:spider": true
-			"minecraft:salmon": false
-			"minecraft:tropical_fish": false
-			"minecraft:witch": true
+			"minecraft:zombie": true
 			"minecraft:axolotl": true
 		}
 		

@@ -1,0 +1,16 @@
+let no_randomtick = [
+        'natures_spirit:pink_wisteria_vines',
+        'natures_spirit:purple_wisteria_vines',
+        'natures_spirit:blue_wisteria_vines',
+        'natures_spirit:white_wisteria_vines',
+        'natures_spirit:pink_wisteria_vines_plant',
+        'natures_spirit:purple_wisteria_vines_plant',
+        'natures_spirit:blue_wisteria_vines_plant',
+        'natures_spirit:white_wisteria_vines_plant'
+]
+
+no_randomtick.forEach(element=>{
+    BlockEvents.randomTick(element,e=>{
+        e.cancel()
+    })
+})

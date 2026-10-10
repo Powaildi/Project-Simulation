@@ -1,0 +1,35 @@
+{
+  "minecraft:skeleton": [
+    "terrafirma_like"
+  ],
+  "minecraft:enderman": [
+    "terrafirma_like"
+  ],
+  "minecraft:stray": [
+    "terrafirma_like"
+  ],
+  "minecraft:witch": [
+    "terrafirma_like"
+  ],
+  "minecraft:spider": [
+    "terrafirma_like"
+  ],
+  "minecraft:zombie": [
+    "terrafirma_like"
+  ],
+  "minecraft:drowned": [
+    "terrafirma_like"
+  ],
+  "minecraft:creeper": [
+    "terrafirma_like"
+  ],
+  "minecraft:zombie_villager": [
+    "terrafirma_like"
+  ],
+  "minecraft:husk": [
+    "terrafirma_like"
+  ],
+  "minecraft:bogged": [
+    "terrafirma_like"
+  ]
+}

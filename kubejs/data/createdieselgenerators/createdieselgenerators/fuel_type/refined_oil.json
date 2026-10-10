@@ -1,0 +1,20 @@
+{
+  "fluid": "kubejs:refined_oil",
+  "normal": {
+    "speed": 64.0,
+    "strength": 4096.0,
+    "burn_rate": 0.05
+  },
+  "modular": {
+    "speed": 64.0,
+    "strength": 6144.0,
+    "burn_rate": 0.05
+  },
+  "huge": {
+    "speed": 128.0,
+    "strength": 32768.0,
+    "burn_rate": 0.1
+  },
+  "sound_pitch": 0.9,
+  "burner_multiplier": 0.9
+}

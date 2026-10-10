@@ -1,0 +1,157 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "create_rns:silver_deposit_block",
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ]
+    },
+    {
+      "chance": 0.75,
+      "items": [
+        {
+          "item": "mekmm:nugget_silver"
+        }
+      ],
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "create:crushed_raw_silver"
+        }
+      ],
+      "catalysts": [
+        "create_rns:faint_resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -6910797
+    },
+    {
+      "chance": 5.0E-4,
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "catalysts": [
+        "create_rns:resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "chance": 0.25,
+      "items": [
+        {
+          "item": "mekmm:raw_silver"
+        }
+      ],
+      "catalysts": [
+        "create_rns:resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -8031553
+    },
+    {
+      "items": [
+        {
+          "item": "create:crimsite"
+        },
+        {
+          "item": "create:veridium"
+        },
+        {
+          "item": "create:asurine"
+        },
+        {
+          "item": "create:ochrum"
+        }
+      ],
+      "catalysts": [
+        "create_rns:faint_shattering_resonance"
+      ],
+      "jei_slot_color": -5075058
+    },
+    {
+      "chance": 0.3,
+      "items": [
+        {
+          "item": "mekmm:silver_ore"
+        },
+        {
+          "item": "mekmm:deepslate_silver_ore"
+        },
+        {
+          "item": "mekmm:block_raw_silver"
+        }
+      ],
+      "catalysts": [
+        "create_rns:shattering_resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -4229518
+    },
+    {
+      "chance": 0.15,
+      "items": [
+        {
+          "item": "minecraft:lapis_lazuli"
+        },
+        {
+          "item": "minecraft:diamond"
+        },
+        {
+          "item": "minecraft:emerald"
+        }
+      ],
+      "catalysts": [
+        "create_rns:faint_stabilizing_resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -7427662
+    },
+    {
+      "chance": 1.0E-5,
+      "items": [
+        {
+          "item": "create_rns:silver_deposit_block"
+        }
+      ],
+      "catalysts": [
+        "create_rns:stabilizing_resonance",
+        "create_rns:overclock"
+      ],
+      "jei_slot_color": -9261889
+    }
+  ]
+}
+
+        
+
+        
+
+        

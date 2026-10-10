@@ -1,0 +1,103 @@
+[chunk]
+	#是否启用区块核心缓存
+	#Whether to enable the chunk-core cache
+	enabled = true
+	#缓存最大容量（MB；影子端存档容量上限，超限触发热度淘汰）
+	#Max cache size in MB (shadow-world disk cap; excess triggers heat eviction)
+	# Default: 4096
+	# Range: 64 ~ 1048576
+	maxSizeMb = 4096
+	#热点分数阈值（低于此值视为冷 region 文件，清理时优先淘汰）
+	#Heat-score threshold (below = cold region file; preferred for eviction)
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	hotScoreThreshold = 0.3
+	#最近访问权重
+	#Recency weight in heat score
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	recencyWeight = 0.7
+	#访问频率权重
+	#Visit-frequency weight in heat score
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	frequencyWeight = 0.3
+	#清理检查间隔（刻）
+	#Cleanup check interval in ticks
+	# Default: 6000
+	# Range: 20 ~ 72000
+	cleanupIntervalTicks = 6000
+	#目标缓存大小（MB；0=自动）
+	#Target cache size in MB (0 = auto)
+	# Default: 0
+	# Range: 0 ~ 1048576
+	targetSizeMb = 0
+	#每轮最多淘汰的 region 文件数
+	#Max region files evicted per cleanup pass
+	# Default: 100
+	# Range: 1 ~ 100000
+	minCleanupBatchSize = 100
+	#是否启用分段增量（服务端规划 + 客户端应用）
+	#Enable section delta (server-side planning + client-side apply)
+	sectionDeltaEnabled = true
+	#每 tick 缓存读取生产上限（影子入队 + 影子读盘；主线程消费只受时间预算）
+	#Per-tick cache-read production cap (shadow enqueue + shadow disk); consume is time-budget only
+	# Default: 6
+	# Range: 1 ~ 512
+	maxChunksPerFrame = 6
+	#主线程 apply 预算（ms）
+	#Main-thread apply budget in ms
+	# Default: 15
+	# Range: 1 ~ 50
+	mainThreadChunkBudgetMs = 15
+	#是否启用 SeedGen（本地生成 pristine 区块；需双端同版本，默认关）。服务端开启时会下发世界种子
+	#Enable SeedGen (local pristine chunks; both sides same version; default off). Server enablement sends the world seed
+	seedGenEnabled = false
+	#超视渲染 OVD（影子双窗：clientRD>serverVD 时本地源回填环带）
+	#Beyond-view render OVD (shadow dual-window: local fill when clientRD > serverVD)
+	viewDistanceExtensionEnabled = true
+	#超视渲染 effective clientRD 上限
+	#Max effective client render distance for OVD
+	# Default: 16
+	# Range: 2 ~ 64
+	maxRenderDistance = 16
+	#光照光环半径（环）：影子端在服务端视距之外再多拉/算 N 环，专供权威边界柱补齐 3×3 邻域（对齐原版 ChunkStatus.LIGHT range=1）。光环柱只进影子端算光/缓存。0=关闭（回退到旧语义）。上限 1 = 服务端签发余量（切比雪夫外接盒比半径多 1），再大外环会被服务端拒
+	#Light halo radius in rings: the shadow pulls/computes N extra rings beyond the server view distance so that boundary columns get a complete 3x3 neighborhood (mirrors vanilla ChunkStatus.LIGHT range=1). Halo columns are computed only. 0 disables; max 1 = the server-issued slack (the chebyshev bounding box is one ring wider than the radius)
+	# Default: 1
+	# Range: 0 ~ 1
+	lightHaloRadius = 1
+
+[debug]
+	#元数据调试日志
+	#Metadata debug logging
+	metadataLogging = false
+	#主线程调度调试日志
+	#Main-thread dispatcher debug logging
+	dispatcherLogging = false
+	#异步调试日志
+	#Async-task debug logging
+	asyncLogging = false
+	#压缩调试日志
+	#Compression debug logging
+	compressionLogging = false
+	#区块 apply 调试日志
+	#Chunk-apply debug logging
+	chunkApplyLogging = false
+	#网络调试日志
+	#Network debug logging
+	networkLogging = false
+	#缓存调试日志
+	#Cache debug logging
+	cacheLogging = false
+	#光照验算与光包落地探针（历史别名）
+	#Legacy alias of debug.lightLogging
+	lightVerify = false
+	#光照调试（算光链路日志 + 探针）
+	#Light debug logging (light pipeline logs + probes)
+	lightLogging = false
+	#是否启用客户端网络指标
+	#Enable client network metrics
+	networkMetricsEnabled = false
+	#登出服务器时自动重置网络指标
+	#Auto-reset network metrics when leaving a server
+	networkMetricsAutoReset = true

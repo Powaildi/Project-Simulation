@@ -1,0 +1,14 @@
+[
+  {
+    "name": "terrafirma_like",
+    "priority": 0,
+    "minBlockLight": 0,
+    "maxBlockLight": 0,
+    "minSkyLight": 0,
+    "maxSkyLight": 0,
+    "weather": "any",
+    "skyAccess": "any",
+    "biomeIds": [],
+    "strict": false
+  }
+]

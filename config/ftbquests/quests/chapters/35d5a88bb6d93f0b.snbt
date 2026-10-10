@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "35d5a88bb6d93f0b"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "create:cardboard_package_12x10"
+	}
+	id: "35D5A88BB6D93F0B"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7683D9598438F7E0"]
+			id: "69A9CD6B58260B50"
+			rewards: [
+				{
+					count: 32
+					id: "435C84988011326C"
+					item: {
+						count: 1
+						id: "create:stock_link"
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "44124C97CF37F5FC"
+					item: {
+						count: 1
+						id: "create:package_frogport"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "56693F8C6EF43AD9"
+				item: { count: 1, id: "dndesires:overburden_casing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4FD590696D0A11F2"
+				"3C99CE791448EA97"
+			]
+			id: "12F132BF5D271CD8"
+			tasks: [{
+				id: "1AB35FB163DCAD6E"
+				item: { count: 1, id: "create:factory_gauge" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12F132BF5D271CD8"]
+			id: "3F6F0103BB774954"
+			tasks: [{
+				id: "6E780270432A0514"
+				item: { count: 1, id: "createimp:template_panel" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["69A9CD6B58260B50"]
+			id: "54B4593A79D7BA75"
+			tasks: [{
+				id: "7067DF82131D16CF"
+				item: { count: 1, id: "create:package_frogport" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["69A9CD6B58260B50"]
+			id: "3C99CE791448EA97"
+			tasks: [{
+				id: "5FB35AF03235F447"
+				item: { count: 1, id: "create:stock_link" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "5272612B58CCD8E0"
+			tasks: [{
+				id: "7BF82B8619CA97CD"
+				item: { count: 1, id: "create:packager" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C99CE791448EA97"]
+			id: "268A900DE2FABFC8"
+			tasks: [{
+				id: "2BD7B3A69F392A29"
+				item: { count: 1, id: "create:stock_ticker" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "59ED938C631E0340"
+			tasks: [{
+				id: "68C22D3E8F0D5086"
+				item: { count: 1, id: "create:repackager" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C99CE791448EA97"]
+			id: "5F5572D83536559F"
+			tasks: [{
+				id: "10F7C3CBC9F1C603"
+				item: { count: 1, id: "create:redstone_requester" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3C99CE791448EA97"]
+			id: "07C1CECB823DBF51"
+			tasks: [{
+				id: "6EF47B5B14146C27"
+				item: { count: 1, id: "createimp:work_warehouse" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			id: "106D017B47C80AC2"
+			tasks: [{
+				id: "07C3057EB16670FD"
+				item: { count: 1, id: "fluidlogistics:fluid_packager" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			id: "3BC4D9BC42D929FB"
+			tasks: [{
+				id: "1F782999C484CC07"
+				item: { count: 1, id: "createimp:batch_repackager" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "7841B31CE236BA4D"
+			tasks: [{
+				id: "273A12A13788E98E"
+				item: { count: 1, id: "fluidlogistics:fluid_repackager" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["54B4593A79D7BA75"]
+			id: "1ED62F8EB72D05BB"
+			tasks: [{
+				id: "71D379C8F472C350"
+				item: { count: 1, id: "fluidlogistics:copper_frogport" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "41BCD8CA37B11D06"
+			tasks: [{
+				id: "0FB9836779BE533C"
+				item: { count: 1, id: "create:chain_conveyor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "776212F3270867CF"
+			tasks: [{
+				id: "08C0B07D5093F7E0"
+				item: { count: 1, id: "minecraft:chain" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+	]
+}

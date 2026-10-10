@@ -1,0 +1,110 @@
+[storage]
+	#是否启用存档压缩（默认关；区块核心缓存独立不受影响）
+	#Enable save compression (default off; chunk cache unaffected)
+	enabled = false
+	#存储 ZSTD 压缩等级
+	#Storage ZSTD compression level
+	# Default: 3
+	# Range: 1 ~ 22
+	zstdLevel = 3
+
+[master]
+	#是否启用服务端网络通道（压缩/聚合/区块推送/实体优化）
+	#Enable server network channel (compression/aggregation/chunk push/entity optimization)
+	enabled = true
+	#局域网主机是否对远程玩家启用 Hassium 网络面（握手/聚合/推送/lightStrip 等）。默认关；本机 memory 连接始终原版；storage 仍仅专用服
+	#Enable Hassium network features for remote LAN players on an Open-to-LAN host (handshake/aggregation/push/lightStrip). Default off; host local memory connection stays vanilla; storage remains dedicated-only
+	enabledOnLan = false
+	#自有通道 ZSTD 压缩等级
+	#Private-channel ZSTD level
+	# Default: 3
+	# Range: 1 ~ 22
+	compressionLevel = 3
+	#是否启用包聚合；检测到 BandwidthOptimizer 时默认关（其批处理/流式压缩与聚合帧叠加冲突），显式 true 恒生效
+	#Enable packet aggregation; defaults to false when BandwidthOptimizer is present (its batching/streaming compression conflicts with aggregation frames); explicit true always applies
+	enablePacketAggregation = true
+	#冲刷兜底：超过该时长（ms）未冲刷则强制冲一次（tick 尾冲刷为主，应对主线程卡顿）
+	#Flush watchdog: force flush if none happened for this many ms (tick-end flush is primary; covers main-thread stalls)
+	# Default: 50
+	# Range: 1 ~ 5000
+	aggregationMaxWaitTimeMs = 50
+	#聚合最大大小
+	#Aggregation max size (bytes)
+	# Default: 262144
+	# Range: 1024 ~ 8388608
+	aggregationMaxSize = 262144
+	#第三方包 ID 的压缩/聚合排除列表（默认空）。Hassium 控制面与独立压缩通道已硬编码排除，改本列表不影响它们
+	#Third-party packet IDs excluded from compression / aggregation (default empty). Hassium control-plane and private channels are always hard-coded excluded; editing this list does not affect them
+	compressionBlacklist = []
+	#每玩家每 tick 区块下发上限：Pull FULL/DELTA 完成 + 原版通道整柱发送（满 tick ≈ 本值×20/s）
+	#Per-player per-tick chunk send cap: Pull FULL/DELTA completions + vanilla whole-chunk path (≈ value×20/s at full tick)
+	# Default: 5
+	# Range: 1 ~ 256
+	maxChunksPerTick = 5
+	#是否按玩家距离分四档降频下发实体更新（离得越远更新越稀）。默认开；关闭后距离档表失效，密度/压力/错峰仍可独立生效
+	#Enable distance-tiered entity updates (entities further away are updated less often). Enabled by default; turning it off disables only the distance tables — density, pressure and smooth-push remain independent
+	entityTieredUpdateEnabled = true
+	#四个距离档的实体更新间隔（刻），用逗号分隔，依次为 近/中/远/边缘；挡位边界是实体跟踪范围的 25%/50%/75%。默认 3,4,6,10（越远越稀）。数字要大不要小，须非递减；写 0 或留空用默认值。最终生效间隔（乘上密度/压力倍率后）建议 ≤ 20 刻：客户端平滑窗口上限 20 刻，超出会回退 3 刻窗口、画面走-停
+	#Entity update interval in ticks for the four distance tiers, comma-separated, ordered near/mid/far/edge (tier boundaries at 25%/50%/75% of the tracking range). Default 3,4,6,10. Values must be non-decreasing; 0 or blank means default. Keep the final effective interval (after density/pressure multipliers) at 20 ticks or below: the client smoothing window caps at 20, beyond which it falls back to a 3-tick window and movement stutters
+	entityTierIntervals = "3,4,6,10"
+	#掉落物与经验球的四档更新间隔（刻），逗号分隔、顺序同上，默认 2,4,8,16。物品数量多、带宽吃紧时可以把它们调稀；贴近玩家的掉落物建议不超过 3 刻，否则看起来会一跳一跳
+	#Update interval in ticks for dropped items and experience orbs across the same four tiers, default 2,4,8,16. Raise these values when many items are on the ground; keep the near value at 3 ticks or lower so items next to the player still move smoothly
+	entityItemTierIntervals = "2,4,8,16"
+	#是否启用区块热点降频：某个区块里实体过于密集时，对其中实体进一步加大更新间隔。默认开
+	#Enable hotspot throttling: when too many entities pile up in one chunk, their update interval is stretched further. Enabled by default
+	entityDensityThrottleEnabled = true
+	#每档热点阈值：实体所在区块的活跃实体数达到该值时，该档的间隔按对应倍率放大。逗号分隔按 近/中/远/边缘，默认 10,20,32,64，写 0 或留空用默认值
+	#Per-tier hotspot threshold: once the number of active entities in the entity's own chunk reaches this value, that tier's interval is multiplied by the matching factor. Comma-separated, near/mid/far/edge; default 10,20,32,64
+	entityDensityTierCounts = "10,20,32,64"
+	#每档热点倍率：达到上面阈值后间隔乘多少倍，逗号分隔按 近/中/远/边缘，默认 1.5,2.0,3.0,4.0（1.0 = 该档不放大）。支持小数；小于 1 按 1 处理；乘上压力倍率后再受 entityMaxThrottleFactor 限制
+	#Per-tier hotspot multiplier applied once the threshold above is reached, comma-separated, near/mid/far/edge; default 1.5,2.0,3.0,4.0 (1.0 means no change). Decimals allowed; values below 1 are treated as 1
+	entityDensityTierFactors = "1.5,2.0,3.0,4.0"
+	#热点倍率与压力倍率相乘后的总上限（默认 5），用来兜住最坏情况；调大 = 密集时降得更狠
+	#Upper bound on the product of the hotspot factor and the pressure factor (default 5). Raise it to throttle harder in crowded areas
+	# Default: 5
+	# Range: 1 ~ 16
+	entityMaxThrottleFactor = 5
+	#每个玩家每 tick 期望收到的实体更新包数（默认 256）。某个玩家持续超过这个量时，他视野内的实体更新会自动变稀，避免卡顿；0 = 不做这个自动限制
+	#Expected entity update packets per player per tick (default 256). When a player keeps exceeding it, entities in their view are updated less often to avoid lag; 0 = no automatic limit
+	# Default: 256
+	# Range: 0 ~ 100000
+	entityFrameBudgetPerPlayer = 256
+	#实体错峰推送：同一更新间隔的实体按 UUID 稳定错开发送时刻，3 刻总量不变但不再齐发尖峰。默认开；关闭后退回原版齐发
+	#Entity smooth push: entities sharing the same update interval are phase-staggered by UUID so total volume over an interval is unchanged but the per-tick spike is flattened. Enabled by default
+	entitySmoothPushEnabled = true
+
+[chunk]
+	#是否启用 SeedGen（服务端开启下发世界种子；客户端门控开时影子 tracking 触发 vanilla worldgen 本地生成，再 compare-pull；需双端同版本，默认关）。警告：开启会向客户端下发世界种子，等同泄露服务端种子
+	#Enable SeedGen (server sends world seed; client gates local worldgen via shadow tracking then compare-pull; both sides same version; default off). WARNING: this leaks the server world seed to clients
+	seedGenEnabled = false
+	#是否启用光照剥离（核心省带宽：真服剥光，影子端算光后打官方柱包；默认开）
+	#Enable light stripping (core bandwidth saver: server strips light, shadow packs official chunk packets; default on)
+	lightStrip = true
+
+[compat]
+	#是否强制要求客户端安装 Hassium
+	#Require the Hassium client mod
+	requireClientMod = false
+	#出错时是否自动降级
+	#Auto-downgrade on error
+	autoDowngradeOnError = true
+
+[debug]
+	#主线程调度调试日志
+	#Main-thread dispatcher debug logging
+	dispatcherLogging = false
+	#异步调试日志
+	#Async-task debug logging
+	asyncLogging = false
+	#压缩调试日志
+	#Compression debug logging
+	compressionLogging = false
+	#区块 apply 调试日志
+	#Chunk-apply debug logging
+	chunkApplyLogging = false
+	#网络调试日志
+	#Network debug logging
+	networkLogging = false
+	#导出聚合包调试流：所有经过服务端发包拦截点的 S2C 包（含编码后的聚合帧）逐行写入 logs/hassium-aggregated-packets/*.jsonl（payload 为 base64）。单人/LAN 集成服同样生效；每包写盘，性能开销大，仅诊断用
+	#Export aggregated-packet debug stream: every S2C packet passing the server send intercept (incl. encoded aggregation frames) is appended to logs/hassium-aggregated-packets/*.jsonl (payload base64). Works on singleplayer / integrated servers too; writes on every packet — diagnostics only
+	exportAggregatedPackets = false

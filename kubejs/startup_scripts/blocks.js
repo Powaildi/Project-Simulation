@@ -1,0 +1,20 @@
+StartupEvents.registry('block', e => {
+
+    e.create('chlorophyte').displayName("叶绿矿")
+        .item(item=>{item.rarity('rare')})
+    e.create('frankenstein').displayName("未苏醒的烈焰人燃烧室").fullBlock(false).notSolid()
+        .parentModel('create:block/blaze_burner/block_with_blaze').renderType('cutout')
+    e.create('industrial_iron_storage_block').displayName('工业铁存储方块')
+        .texture('dndecor:block/sheet_metals/industrial_top')
+        .item(item=>{item.rarity('uncommon')})
+
+})
+BlockEvents.modification(e=>{
+    e.modify('kubejs:chlorophyte',b=>{
+        b.setLightEmission(4)
+    })
+    let amethyst_type = ['ae2:cut_quartz_slab', 'ae2:smooth_quartz_slab', 'ae2:quartz_brick_slab', 'ae2:chiseled_quartz_slab', 'ae2:quartz_pillar_slab','ae2:fluix_block', 'ae2:fluix_stairs', 'ae2:fluix_wall', 'ae2:fluix_slab', 'extendedae:entro_block', 'extendedae:entro_budding_fully', 'extendedae:entro_budding_mostly', 'extendedae:entro_budding_half', 'extendedae:entro_budding_hardly', 'ae2:flawless_budding_quartz', 'ae2:flawed_budding_quartz', 'ae2:chipped_budding_quartz', 'ae2:damaged_budding_quartz', 'ae2:quartz_block', 'ae2:cut_quartz_block', 'ae2:smooth_quartz_block', 'ae2:quartz_bricks', 'ae2:quartz_pillar', 'ae2:chiseled_quartz_block', 'ae2:quartz_stairs', 'ae2:cut_quartz_stairs', 'ae2:smooth_quartz_stairs', 'ae2:quartz_brick_stairs', 'ae2:chiseled_quartz_stairs', 'ae2:quartz_pillar_stairs', 'ae2:quartz_wall', 'ae2:cut_quartz_wall', 'ae2:smooth_quartz_wall', 'ae2:quartz_brick_wall', 'ae2:chiseled_quartz_wall', 'ae2:quartz_pillar_wall', 'ae2:quartz_slab']
+    e.modify(amethyst_type,b=>{
+        b.setSoundType('amethyst')
+    })
+})

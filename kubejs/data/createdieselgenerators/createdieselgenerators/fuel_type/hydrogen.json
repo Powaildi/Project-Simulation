@@ -1,0 +1,20 @@
+{
+  "fluid": "mekanism:hydrogen",
+  "sound_pitch": 1,
+  "normal": {
+    "speed": 128.0,
+    "strength": 49152.0,
+    "burn_rate": 0.9
+  },
+  "modular": {
+    "speed": 128.0,
+    "strength": 65536.0,
+    "burn_rate": 0.9
+  },
+  "huge": {
+    "speed": 256.0,
+    "strength": 294912.0,
+    "burn_rate": 2.4
+  },
+  "burner_multiplier": 1.4
+}

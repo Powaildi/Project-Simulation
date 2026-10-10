@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1790995843996,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "E:\\1.21Minecraft\\versions\\Project Silulation\\config\\spark\\profile-2026-10-03_10.50.43.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1790990916934,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "E:\\1.21Minecraft\\versions\\Project Silulation\\config\\spark\\profile-2026-10-03_09.28.36.sparkprofile"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
+    "time": 1790844401547,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bdnQCDRcKm"
+    }
+  }
+]

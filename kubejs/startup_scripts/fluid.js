@@ -1,0 +1,118 @@
+StartupEvents.registry('fluid',e=>{
+    e.create('cryogen','kubejs:thin').displayName('冷冻液').tint('#9ABCE7').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+        .type(b=>{
+            b.temperature(0)
+            b.canHydrate(true)
+            b.canExtinguish(true)
+        })
+    
+    e.create('bone_meal_diluent','kubejs:thin').displayName('骨粉稀释液').tint('white').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+        .type(b=>{
+            b.temperature(300)
+            b.canHydrate(true)
+            b.canExtinguish(true)
+        })
+    e.create('wood_gas','kubejs:thin').displayName('液化木煤气').tint('#393657').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('lpg','kubejs:thin').displayName('液化石油气').tint('#87DFC5').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('refined_oil','kubejs:thick').displayName('精炼油').tint('yellow').renderType('solid')
+        .stillTexture('createdieselgenerators:block/diesel_still').flowingTexture('createdieselgenerators:block/diesel_flow')
+        .levelDecreasePerBlock(2)
+    e.create('lube','kubejs:thick').displayName('润滑油').tint('#7EEB5D').renderType('translucent')
+        .stillTexture('createdieselgenerators:block/ethanol_still').flowingTexture('createdieselgenerators:block/ethanol_flow')
+        .levelDecreasePerBlock(2)
+    e.create('tar','kubejs:thick').displayName('焦油').tint('#100A02').renderType('solid')
+        .stillTexture('createdieselgenerators:block/diesel_still').flowingTexture('createdieselgenerators:block/diesel_flow')
+        .levelDecreasePerBlock(2)
+    e.create('molten_quartz','kubejs:thick').displayName('熔融石英').tint('#DEDFD6')
+    .type(b=>{
+            b.temperature(1500)
+            b.viscosity(3000)
+            b.lightLevel(15)
+        }).levelDecreasePerBlock(2)
+    e.create('fluix_gasoline','kubejs:thin').displayName('福鲁伊克斯汽油').tint('light_purple').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+        .type(b=>{
+            b.density(900)
+            b.lightLevel(10)
+        }).levelDecreasePerBlock(2)
+    e.create('growth_solution','kubejs:thin').displayName('水晶生长液').tint('#85F7C6').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('mercury','kubejs:thin').displayName('水银').tint('white').renderType('solid')
+        //.stillTexture('create_dragons_plus:fluid/dye_still').flowingTexture('create_dragons_plus:fluid/dye_flow')
+        //.stillTexture('kubejs:block/mercury_still').flowingTexture('kubejs:block/mercury_flow')
+        .type(b=>{
+            b.density(13550)
+        })
+    e.create('liquid_air','kubejs:thin').displayName('液态空气').tint('#C8D5DB')
+    e.create('liquid_nether_air','kubejs:thin').displayName('液态下界空气').tint('#E0D0B2')
+    e.create('liquid_end_air','kubejs:thin').displayName('液态末地空气').tint('#CAE0B2')
+    e.create('void','kubejs:thin').displayName('虚空流质').renderType('cutout')
+    .stillTexture('kubejs:block/void_still').flowingTexture('kubejs:block/void_flow')
+    .type(b=>{
+            b.viscosity(0)
+            b.density(0)
+            b.canPushEntity(false)
+            b.canDrown(true)
+            b.canSwim(false)
+            b.canExtinguish(true)
+            b.fallDistanceModifier(0.5)
+            b.motionScale(0.001)
+            b.lightLevel(2)
+        }).block.resistance(0).speedFactor(1.1)
+    e.create('carbon_dioxide','kubejs:thick').displayName('二氧化碳').tint('gray')
+        .noBlock()
+    e.create('nitrogen','kubejs:thin').displayName('液氮').tint('#ECC968')
+    e.create('nitrogen_dioxide','kubejs:thin').displayName('液态二氧化氮').tint('#F19D4E')
+    e.create('nitric_acid','kubejs:thin').displayName('硝酸').tint('#DF6119').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('ammonia','kubejs:thin').displayName('液氨').tint('#8A6438').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('nitrogen_fertilizer','kubejs:thin').displayName('氮肥').tint('#EBE84F').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+    e.create('sodium_hydroxide','kubejs:thick').displayName('氢氧化钠').tint('#166C74')
+
+    e.create('molten_copper','kubejs:thick').displayName('熔融铜').tint('#FF6C40')
+    e.create('molten_iron','kubejs:thick').displayName('熔融铁').tint('#FFD8D8')
+    e.create('molten_gold','kubejs:thick').displayName('熔融金').tint('#FFF860')
+    e.create('molten_zinc','kubejs:thick').displayName('熔融锌').tint('#0EFF97')
+    e.create('molten_tin','kubejs:thick').displayName('熔融锡').tint('#FBFBF4')
+    e.create('molten_silver','kubejs:thick').displayName('熔融银').tint('#E0ECF8')
+    e.create('molten_brass','kubejs:thick').displayName('熔融黄铜').tint('#FCE892')
+    e.create('molten_industrial_iron','kubejs:thick').displayName('熔融工业铁').tint('#95A1FF')
+    e.create('molten_steel','kubejs:thick').displayName('熔融钢').tint('#585F64')
+    e.create('incomplete_steel','kubejs:thin').displayName('半成品钢').tint('#FFEBBB')
+})
+BlockEvents.modification(e=>{
+    let set_light_emission = [
+        ['kubejs:cryogen',4],
+        ['kubejs:molten_quartz',15],
+        ['kubejs:fluix_gasoline',10],
+        ['kubejs:mercury',2],
+        ['kubejs:void',2],
+        // ['createbigcannons:molten_bronze',15],
+        // ['createbigcannons:molten_cast_iron',15],
+        // ['createbigcannons:molten_steel',15],
+        // ['createbigcannons:molten_nethersteel',15],
+        
+        ['kubejs:molten_copper',15],
+        ['kubejs:molten_iron',15],
+        ['kubejs:molten_gold',15],
+        ['kubejs:molten_zinc',15],
+        ['kubejs:molten_tin',15],
+        ['kubejs:molten_silver',15],
+        ['kubejs:molten_brass',15],
+        ['kubejs:molten_industrial_iron',15],
+        ['kubejs:molten_steel',15],
+        ['kubejs:incomplete_steel',15]
+    ]
+    set_light_emission.forEach(element=>{
+        let [id,level] = element
+        e.modify(id,b=>{
+            b.setLightEmission(level)
+        })
+    })
+})

@@ -99,11 +99,11 @@
 	#Player won't drown underwater.
 	player_can_breath_underwater = false
 	#When players are in the air or water, they will no longer be subject to a five-time increase in digging time penalty
-	disable_dig_speed_penalty = true
+	disable_dig_speed_penalty = false
 	#Allow all players flying.
 	always_allow_flying = false
 	#Prevents players from automatically exiting flight mode when touching the ground.
-	keep_flying_on_ground = true
+	keep_flying_on_ground = false
 	#Allow rotation for blocks without a custom rotate implementation.
 	#Many mod authors do not override rotate and mirror when adding directional blocks.
 	#As a result, vanilla structure block placement and Create schematic printing are unable to correctly rotate these blocks.

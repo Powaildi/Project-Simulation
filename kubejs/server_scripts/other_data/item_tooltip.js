@@ -33,6 +33,8 @@ ItemEvents.modifyTooltips(e=>{
     
     e.add(['kubejs:industrial_iron_ingot', 'kubejs:industrial_iron_sheet', 'kubejs:industrial_iron_nugget'],Text.aqua(Text.translatable("tooltip.industrial_iron_texby")))
     e.add(['createdeco:industrial_iron_ingot', 'createdeco:industrial_iron_sheet', 'createdeco:industrial_iron_nugget'],Text.gray(Text.translatable("tooltip.deco_industrial_iron")))
+    
+    e.add('kubejs:clamper',Text.aqua(Text.translatable("tooltip.industrial_iron_texby")))
 
     e.add('bits_n_bobs:flywheel_bearing',Text.aqua(Text.translatable("tooltip.bits_n_bobs.flywheel_bearing")))
     e.add('bits_n_bobs:flywheel_bearing',{shift:true},[Text.green(Text.translatable("tooltip.bits_n_bobs.flywheel_bearing_shift"))])

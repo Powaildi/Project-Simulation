@@ -69,6 +69,23 @@
 	# Range: 10.0 ~ 1.0E8
 	creativeThrusterMultiblock3x3x3MaxThrust = 5000000.0
 
+[rcsThruster]
+	# Default: 100.0
+	# Range: 0.0 ~ 1.0E7
+	singleThrustPn = 100.0
+	# Default: 100.0
+	# Range: 0.0 ~ 1.0E7
+	fullThrustPerNozzlePn = 100.0
+	# Default: 1.0
+	# Range: 0.0 ~ 8.0
+	flameScale = 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 4.0
+	soundVolume = 1.0
+	# Default: 32
+	# Range: 1 ~ 256
+	soundRangeBlocks = 32
+
 [vectorThruster]
 	#Vector thruster base thrust at redstone 15 and full obstruction efficiency.
 	#Default tuned for 1000-unit thrust scale parity with Sable physics.
@@ -183,11 +200,11 @@
 
 [Burners]
 	#If true - both solid and liquid burners can provide heat to heated mixers allowing for pre-nether brass.
-	"Burners power heated mixers" = false
+	"Burners power heated mixers" = true
 	#Allow propulsion burners to heat Create steam engines.
-	"Burners heat steam engines" = false
+	"Burners heat steam engines" = true
 	#Allow seething burners to count as superheated for steam engines.
-	"Burners superheat steam engines" = false
+	"Burners superheat steam engines" = true
 	#Allow vanilla blaze burners under stirling engines to provide heat.
 	"Blaze burners heat stirling engines" = true
 	#Fuel consumption multiplier for solid burners. Higher values make inserted items burn faster.
@@ -196,10 +213,32 @@
 	"Solid burner fuel consumption multiplier" = 1.0
 
 [Cable]
-	#Maximum FE moved per tick by a single cable block.
+	#Maximum total FE moved per tick by each connected cable network, shared by all sources and consumers. Adding cables does not increase this limit.
 	# Default: 1000
 	# Range: 1 ~ 100000000
 	"Energy transfer" = 1000
+
+[creativeTools]
+	#Maximum connected blocks Auto Glue may scan before aborting.
+	#Higher values can increase server load when processing very large structures.
+	# Default: 8192
+	# Range: > 1
+	autoGlueMaxBlocks = 8192
+	#Maximum connected blocks the Contraption Mover may capture.
+	#Higher values increase schematic size and server processing cost.
+	# Default: 16384
+	# Range: > 1
+	contraptionMoverMaxBlocks = 16384
+	#Maximum connected blocks the Contraption Cloner may capture.
+	#Higher values increase schematic size and server processing cost.
+	# Default: 16384
+	# Range: > 1
+	contraptionClonerMaxBlocks = 16384
+	#Maximum connected blocks the Contraption Remover may delete.
+	#Higher values can increase server load when removing very large structures.
+	# Default: 16384
+	# Range: > 1
+	contraptionRemoverMaxBlocks = 16384
 
 ["Fuel Configuration"]
 	#Additional thruster fuel lines (same format as defaults: fluid_id=efficiencyPercent,burnRatePercent).

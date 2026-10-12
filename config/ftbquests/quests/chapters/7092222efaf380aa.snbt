@@ -32,7 +32,6 @@
 		}
 		{
 			click_action: "show_recipe:createdieselgenerators:burner"
-			dev: 1b
 			height: 1.0d
 			id: "3FB9428AA14AA8E3"
 			image: "minecraft:item/light_05"
@@ -2666,7 +2665,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["659367C711A57B46"]
+			dependencies: ["7FC66E37182BFEE2"]
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			id: "63A6056E1032B84F"
@@ -2719,14 +2718,14 @@
 			y: 2.25d
 		}
 		{
-			dependencies: ["659367C711A57B46"]
+			dependencies: ["7FC66E37182BFEE2"]
 			hide_until_deps_complete: true
 			id: "5FE39298C63104FA"
 			tasks: [{
 				id: "1E4188269343C67B"
 				type: "custom"
 			}]
-			x: 25.5d
+			x: 22.0d
 			y: 3.0d
 		}
 		{

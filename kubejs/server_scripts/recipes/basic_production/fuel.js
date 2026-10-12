@@ -31,10 +31,10 @@ ServerEvents.recipes(e=>{
             "id": "createdieselgenerators:wood_chip",
             "chance": 0.5
             }
-        ]
+        ],"processing_time":1
         })
         .id('milling/wood_chip_planks')
-    e.replaceInput({id:'createdieselgenerators:crushing/wood_chip_slabs'},'createdieselgenerators:chip_wood_block','createdieselgenerators:chip_wood_slab')
+    
     //液化木煤气
     e.recipes.vintageimprovements.pressurizing('minecraft:charcoal',Ingredient.of('#minecraft:logs'),125,Fluid.of('kubejs:wood_gas',250))
         .heated()
@@ -42,9 +42,9 @@ ServerEvents.recipes(e=>{
     e.recipes.vintageimprovements.pressurizing(['minecraft:charcoal',Fluid.of('kubejs:tar',100)],Ingredient.of('#minecraft:logs'),60,Fluid.of('kubejs:wood_gas',250))
         .superheated()
         .id('pressurizing/wood_gas_superheated')
-    e.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:wood_gas',75),'createdieselgenerators:chip_wood_block',60,0)
+    e.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:wood_gas',75),Ingredient.of('#minecraft:planks'),60,0)
         .heated()
-        .id('pressurizing/wood_gas_from_chip')
+        .id('pressurizing/wood_gas_planks')
 
     //种子油
     e.recipes.create.mixing(Fluid.of('createdieselgenerators:plant_oil',500),
@@ -74,7 +74,9 @@ ServerEvents.recipes(e=>{
     e.recipes.vintageimprovements.pressurizing([Fluid.of('createdieselgenerators:crude_oil',200)],
         [Fluid.of('minecraft:water',200),'mekanism:dust_coal'],125).secondaryFluidInput(Fluid.of('mekanism:hydrogen',100))
         .heated().id('pressurizing/crude_oil/coal')
-    
+    e.recipes.vintageimprovements.pressurizing([Fluid.of('createdieselgenerators:crude_oil',400)],
+        [Fluid.of('minecraft:water',400),'2x mekanism:bio_fuel'],125).secondaryFluidInput(Fluid.of('mekanism:hydrogen',150))
+        .heated().id('pressurizing/crude_oil/bio_fuel')
 
     //充能玫瑰茶途径
     e.recipes.create.mixing([Fluid.of('delighto_flight:charged_rose_tea',250),'ae2:certus_quartz_crystal'],

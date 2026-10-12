@@ -470,25 +470,6 @@ userWorldGenVersion = 0
 			#Value used for calculating the y-level for the anchor based on the type.
 			value = 64
 
-#Generation Settings for salt.
-[salt]
-	#Determines if salt should be added to world generation.
-	shouldGenerate = true
-	#Chance that salt generates in a chunk.
-	# Default: 2
-	# Range: 1 ~ 256
-	perChunk = 2
-	#Base radius of a vein of salt.
-	# Default: 2
-	# Range: 1 ~ 4
-	minRadius = 2
-	#Extended variability (spread) for the radius in a vein of salt.
-	maxRadius = 3
-	#Number of blocks to extend up and down when placing a vein of salt.
-	# Default: 1
-	# Range: 0 ~ 2031
-	halfHeight = 1
-
 #Generation Settings for Silver ore.
 [silver]
 	#Determines if Silver ore should be added to world generation.
@@ -581,3 +562,22 @@ userWorldGenVersion = 0
 			type = "ABSOLUTE"
 			#Value used for calculating the y-level for the anchor based on the type.
 			value = 64
+
+#Generation Settings for salt.
+[salt]
+	#Determines if salt should be added to world generation.
+	shouldGenerate = true
+	#Chance that salt generates in a chunk.
+	# Default: 2
+	# Range: 1 ~ 256
+	perChunk = 2
+	#Base radius of a vein of salt.
+	# Default: 2
+	# Range: 1 ~ 4
+	minRadius = 2
+	#Extended variability (spread) for the radius in a vein of salt.
+	maxRadius = 3
+	#Number of blocks to extend up and down when placing a vein of salt.
+	# Default: 1
+	# Range: 0 ~ 2031
+	halfHeight = 1

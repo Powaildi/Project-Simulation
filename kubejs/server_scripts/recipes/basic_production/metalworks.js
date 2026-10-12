@@ -122,6 +122,28 @@ ServerEvents.recipes(e=>{
     e.recipes.create.pressing('18x create:industrial_iron_block', 'kubejs:industrial_iron_storage_block')
         .id('pressing/industrial_iron_storage_block')
 
+    //安山合金
+    e.recipes.create.item_application('create:andesite_alloy',['minecraft:andesite',Ingredient.of(['minecraft:iron_nugget','create:zinc_nugget'],1)])
+        .id('item_application/andesite_alloy')
+    e.recipes.create.item_application('create:andesite_alloy_block',['minecraft:andesite',Ingredient.of(['minecraft:iron_ingot','create:zinc_ingot'],1)])
+        .id('item_application/andesite_alloy_block_manual_only')
+    
+    e.shaped('createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:andesite"]',
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],{
+            A:'kubejs:industrial_iron_sheet',
+            B:'minecraft:andesite'
+        }
+    ).id('crafting/mold/andesite')
+    e.recipes.createdieselgenerators.casting('4x create:andesite_alloy','kubejs:andesite',
+            Fluid.of('kubejs:molten_iron',120))
+            .id('casting/andesite_alloy_1')
+    e.recipes.createdieselgenerators.casting('9x create:andesite_alloy','kubejs:andesite',
+            Fluid.of('kubejs:molten_industrial_iron',120))
+            .id('casting/andesite_alloy_2')
     //----------------初始生产方法----------------
     e.recipes.create.compacting('2x kubejs:industrial_iron_ingot',['2x create:iron_sheet','create:andesite_alloy']).superheated()
         .id('compacting/industrial_iron_ingot')

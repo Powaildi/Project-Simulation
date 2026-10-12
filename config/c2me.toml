@@ -73,21 +73,6 @@ globalExecutorParallelism = "default"
 	# 
 	disableLoggingShutdownHook = "default"
 
-	[clientSideConfig.modifyMaxVDConfig]
-		# ================================================================
-		# (Default: true) Whether to modify maximum view distance
-		enabled = "default"
-		# ================================================================
-		# (Default: 60) Max render distance allowed in game options
-		maxViewDistance = "default"
-		# ================================================================
-		# (Default: true) Enable client-side support for extended render distance protocol (c2me:ext_render_distance_v1)
-		# This allows requesting render distances higher than 127 chunks from the server
-		# 
-		# Note: The server must advertise support this protocol for this to work
-		# 
-		enableExtRenderDistanceProtocol = "default"
-
 [vanillaWorldGenOptimizations]
 	# ================================================================
 	# (Default: true) Whether to use density function compiler to accelerate world generation
@@ -123,17 +108,6 @@ globalExecutorParallelism = "default"
 	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
 	# 
 	optimizeStructureWeightSampler = "default"
-
-[ioSystem]
-	# ================================================================
-	# (Default: true) Whether to use the optimized implementation of IO system
-	replaceImpl = "default"
-	# ================================================================
-	# (Default: 8192) Soft limit for io worker nbt cache
-	chunkDataCacheSoftLimit = "default"
-	# ================================================================
-	# (Default: 32678) Hard limit for io worker nbt cache
-	chunkDataCacheLimit = "default"
 
 [chunkSystem]
 	# ================================================================
@@ -262,3 +236,29 @@ globalExecutorParallelism = "default"
 	# Defaults to 200, which is 200%
 	# 
 	chunkSendingSpeedMultiplierPercentage = "default"
+
+	[clientSideConfig.modifyMaxVDConfig]
+		# ================================================================
+		# (Default: true) Whether to modify maximum view distance
+		enabled = "default"
+		# ================================================================
+		# (Default: 62) Max render distance allowed in game options
+		maxViewDistance = "default"
+		# ================================================================
+		# (Default: true) Enable client-side support for extended render distance protocol (c2me:ext_render_distance_v1)
+		# This allows requesting render distances higher than 127 chunks from the server
+		# 
+		# Note: The server must advertise support this protocol for this to work
+		# 
+		enableExtRenderDistanceProtocol = "default"
+
+[ioSystem]
+	# ================================================================
+	# (Default: true) Whether to use the optimized implementation of IO system
+	replaceImpl = "default"
+	# ================================================================
+	# (Default: 8192) Soft limit for io worker nbt cache
+	chunkDataCacheSoftLimit = "default"
+	# ================================================================
+	# (Default: 32678) Hard limit for io worker nbt cache
+	chunkDataCacheLimit = "default"

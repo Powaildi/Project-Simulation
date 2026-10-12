@@ -5,7 +5,7 @@ shareSurvivalProgressionWithTeams = false
 #Maximum RTS action radius in blocks.
 # Default: 128
 # Range: 48 ~ 512
-maxActionRadiusBlocks = 128
+maxActionRadiusBlocks = 256
 #Enable the RTS blueprint library tab, local blueprint upload, and server-side blueprint placement.
 enableBlueprints = true
 #Maximum non-air blocks allowed in one RTS blueprint import, capture, or placement job.

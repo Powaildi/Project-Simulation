@@ -1,11 +1,6 @@
 ServerEvents.recipes(e=>{
     let ti
     
-    //安山合金
-    e.recipes.create.item_application('create:andesite_alloy',['minecraft:andesite',Ingredient.of(['minecraft:iron_nugget','create:zinc_nugget'],1)])
-        .id('item_application/andesite_alloy')
-    e.recipes.create.item_application('create:andesite_alloy_block',['minecraft:andesite',Ingredient.of(['minecraft:iron_ingot','create:zinc_ingot'],1)])
-        .id('item_application/andesite_alloy_block_manual_only')
         
     //动力合成器
     e.replaceInput({id:'create:crafting/kinetics/mechanical_crafter'},'create:electron_tube','create:cogwheel')

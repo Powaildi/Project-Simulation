@@ -55,4 +55,4 @@
 		"fluid/air_current_block_interaction" = true
 		#.
 		#If Fragile Fluid Tank should be enabled (sable integration)
-		"fluid/fragile_fluid_tank" = false
+		"fluid/fragile_fluid_tank" = true

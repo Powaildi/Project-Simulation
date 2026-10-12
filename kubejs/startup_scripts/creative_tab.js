@@ -147,16 +147,19 @@ let machines =[
         'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bar"]', 
         'createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:andesite"]',
 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:amethyst"]', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:certus"]', 
+        'createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:entro"]',
         'vintageimprovements:convex_curving_head', 
         'vintageimprovements:concave_curving_head', 
         'vintageimprovements:w_shaped_curving_head', 
         'vintageimprovements:v_shaped_curving_head', 
         'dndesires:hydraulic_press', 
         'dndesires:gold_mixer', 
+
         'fluidlogistics:copper_basin', 
         'create:mechanical_crafter', 
         'createimp:batch_mechanical_crafter',
-
         'dndesires:industrial_fan',
         'mbd2:air_compressor',
         'mbd2:assembler', 

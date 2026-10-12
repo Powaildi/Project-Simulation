@@ -62,7 +62,7 @@
 	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
 	quest.058A306939F2A867.quest_desc: [""]
 	quest.058A306939F2A867.quest_subtitle: "动态结构"
-	quest.070C1AF80BD8C2E3.quest_desc: ["注意：工作盆盖板和工作盆铸造盖执行的不是同一种配方！"]
+	quest.070C1AF80BD8C2E3.quest_desc: ["工作盆盖板和机械动力：火炮的工作盆铸造盖（已经删除）执行的不是同一种配方。"]
 	quest.070C1AF80BD8C2E3.quest_subtitle: "放在工作盆上面"
 	quest.076B26BC1D242E98.quest_desc: ["需要这么多红石，怎么制作呢？"]
 	quest.077ECF29212AFD4C.quest_subtitle: "连接多条传送带，在顶部设定物流规则"

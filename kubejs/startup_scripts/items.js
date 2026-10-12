@@ -33,6 +33,17 @@ let registered_buckets = [
     'kubejs:molten_zinc_bucket', 'kubejs:molten_tin_bucket', 'kubejs:molten_silver_bucket', 'kubejs:molten_brass_bucket',
     'kubejs:molten_industrial_iron_bucket', 'kubejs:molten_steel_bucket', 'kubejs:incomplete_steel_bucket'
 ]
+let fuel_buckets = [
+    ['createdieselgenerators:plant_oil_bucket',5000], 
+    ['createdieselgenerators:ethanol_bucket',3333], 
+    ['createdieselgenerators:biodiesel_bucket',5000], 
+    ['createdieselgenerators:gasoline_bucket',20000], 
+    ['createdieselgenerators:diesel_bucket',20000], 
+    ['kubejs:wood_gas_bucket',5000], 
+    ['kubejs:lpg_bucket',10000], 
+    ['kubejs:ammonia_bucket',10000], 
+    ['kubejs:fluix_gasoline_bucket',20000]
+]
 
 ItemEvents.modification(e=>{
 
@@ -51,6 +62,12 @@ ItemEvents.modification(e=>{
             builder.saturation(0.25)
             builder.effect('minecraft:nausea',200,1,0.25)
             builder.eatSeconds(10)
+        })
+    })
+    fuel_buckets.forEach(element=>{
+        let [item,time] = element
+        e.modify(item,c=>{
+            c.setBurnTime(time) //ticks
         })
     })
 })

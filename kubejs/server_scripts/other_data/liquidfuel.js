@@ -11,7 +11,7 @@ LiquidFuel.modify(e=>{
     e.create('createdieselgenerators:gasoline').burnTime(20).consumedPerTick(1)
     e.create('kubejs:lpg').burnTime(30).consumedPerTick(3)
     e.create('kubejs:refined_oil').burnTime(15).consumedPerTick(1)
-    e.create('kubejs:wood_gas').burnTime(10).consumedPerTick(1)
+    e.create('kubejs:wood_gas').burnTime(10).consumedPerTick(2)
 
-    e.create('create_fantasizing:powder_snow').burnTime(10)
+
 })

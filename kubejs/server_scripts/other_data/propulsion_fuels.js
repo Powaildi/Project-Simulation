@@ -10,13 +10,13 @@ ServerEvents.generateData('after_mods',event => {
   // })
   
   ThrusterFuelManager.registerScriptedFuel('kubejs:wood_gas', {
-    thrustMultiplier: 1.0,
-    consumptionMultiplier: 1.0,
+    thrustMultiplier: 1.1,
+    consumptionMultiplier: 1.6,
     particle: 'plume'
   })
 
   ThrusterFuelManager.registerScriptedFuel('kubejs:lpg', {
-    thrustMultiplier: 1.4,
+    thrustMultiplier: 1.34985, //稍微多一点就能从被动变成超级加热
     consumptionMultiplier: 0.8,
     particle: 'plasma'
   })
@@ -56,16 +56,21 @@ ServerEvents.generateData('after_mods',event => {
   //   overrideColor: '#7EEB5D'
   // })
 
-  // // Override existing fuel behavior explicitly.
-  // ThrusterFuelManager.overrideFuel('minecraft:lava', {
-  //   thrustMultiplier:1.0,
-  //   consumptionMultiplier: 1.0,
-  //   particle: 'plume'
-  // })
+  // Override existing fuel behavior explicitly.
+  ThrusterFuelManager.overrideFuel('minecraft:lava', {
+    thrustMultiplier:0.44975, //稍微多一点就能从被动变成加热
+    consumptionMultiplier: 0.44,
+    particle: 'plume'
+  })
   
+  ThrusterFuelManager.overrideFuel('createdieselgenerators:biodiesel',{
+    thrustMultiplier:1.4, 
+    consumptionMultiplier: 1.1,
+    particle: 'plume'
+  })
 
 
   //Remove a fuel entirely.
   ThrusterFuelManager.removeFuel('minecraft:water')
-  ThrusterFuelManager.removeFuel('minecraft:lava')
+  //ThrusterFuelManager.removeFuel('minecraft:lava')
 })

@@ -19,6 +19,6 @@
 		overlay_pos: "top_left"
 		
 		# Default: true
-		show_overlay: false
+		show_overlay: true
 	}
 }

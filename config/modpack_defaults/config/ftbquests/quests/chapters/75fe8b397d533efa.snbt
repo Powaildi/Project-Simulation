@@ -1,0 +1,155 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "75fe8b397d533efa"
+	group: "218ACD7D75A06A52"
+	icon: {
+		id: "create_rns:mine_head"
+	}
+	id: "75FE8B397D533EFA"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			id: "34390F8254673F95"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "34B714D668089FFE"
+				item: { count: 1, id: "create_rns:deposit_scanner" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "296983BB4E678127"
+			tasks: [{
+				id: "3E979A6DDA7B0E1E"
+				item: { count: 1, id: "create_rns:miner_bearing" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "55EBEE3B63D35B7B"
+			tasks: [{
+				id: "1E6C24525F24B7DD"
+				item: { count: 1, id: "minecraft:iron_block" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2659EF42C6AB8EC7"]
+			hide_dependency_lines: true
+			id: "5FF1EB226DE4FA78"
+			tasks: [{
+				id: "00B79FB504E69086"
+				item: { count: 1, id: "create_rns:resonance_buffer" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			id: "543FB45766EFE1B0"
+			tasks: [{
+				id: "2A9BB674415BD11C"
+				item: { count: 1, id: "create_rns:mine_head" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"34390F8254673F95"
+				"64E754E35D37D2D8"
+			]
+			dependency_requirement: "one_completed"
+			id: "5738A46497E210F4"
+			tasks: [{
+				id: "6426D2050576ECC9"
+				item: { count: 1, id: "create_rns:resonant_amethyst" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5738A46497E210F4"]
+			id: "2659EF42C6AB8EC7"
+			tasks: [{
+				id: "376BF8B093C4C7BC"
+				item: { count: 1, id: "create_rns:polished_resonant_amethyst" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2659EF42C6AB8EC7"]
+			id: "3A7A79D470A26577"
+			tasks: [{
+				id: "605E615DE7043957"
+				item: { count: 1, id: "create_rns:resonator" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A7A79D470A26577"]
+			id: "06880C3209A10A59"
+			tasks: [{
+				id: "38F741C869EB0F32"
+				item: { count: 1, id: "create_rns:stabilizing_resonator" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A7A79D470A26577"]
+			id: "5FA9E3A30C2F7AF5"
+			tasks: [{
+				id: "3E876F809F87D7BE"
+				item: { count: 1, id: "create_rns:shattering_resonator" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			id: "398D70C6A7A9108D"
+			tasks: [{
+				id: "4FAFFB5E7388A751"
+				item: { count: 1, id: "create_rns:gold_deposit_block" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "7E1C22C477159E62"
+			tasks: [
+				{
+					id: "5898552998BCA72D"
+					item: { count: 1, id: "create:fluid_tank" }
+					type: "item"
+				}
+				{
+					id: "73E2C01977EF9202"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+	]
+}

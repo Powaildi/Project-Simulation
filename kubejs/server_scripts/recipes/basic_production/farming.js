@@ -9,10 +9,55 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing(Fluid.of('kubejs:bone_meal_diluent',500),
         [Fluid.of('minecraft:water',500),'4x minecraft:bone_meal'],90)
         .id('mixing/bone_meal_diluent')
-        
     //树木肥料
     e.shapeless('create:tree_fertilizer',[Ingredient.of('#minecraft:flowers',2),'minecraft:moss_block','minecraft:bone_meal'])
         .id('crafting/appliances/tree_fertilizer')
 
+    //盐水
+    e.recipes.create.mixing(Fluid.of('mekanism:brine',250),
+        [Fluid.of('minecraft:water',250),'mekanism:salt'],
+        125).id('mixing/mekanism/brine')
+
+    e.recipes.create.mixing('4x mekanism:salt',
+        [Fluid.of('mekanism:brine',1000)],
+        125).heated().id('mixing/mekanism/salt')
+
+    //糖
+    e.recipes.create.compacting('minecraft:sugar','minecraft:beetroot')
+    .heated().id('compacting/sugar_from_beetroot')
+    e.recipes.create.mixing('4x minecraft:sugar',
+        [Fluid.of('mekanism:brine',250),'minecraft:beetroot'],90)
+        .heated().id('mixing/sugar_from_beetroot')
+    
+    //面团
+    e.remove({id:'createdieselgenerators:basin_fermenting/dough'})
+    e.recipes.createdieselgenerators.basin_fermenting(['farmersdelight:wheat_dough',CreateItem.of('farmersdelight:wheat_dough',0.2)],
+        ['create:wheat_flour',Fluid.of('minecraft:water',100)],40
+        ).id('basin_fermenting/dough')
+        
+    //可逆的荧石粉
+    e.recipes.vintageimprovements.pressurizing(['minecraft:sweet_berries', 'minecraft:glowstone_dust'],
+        ['minecraft:glow_berries', 'minecraft:redstone'],25)
+        .superheated().id('pressurizing/berries_glowstone_a')
+    e.recipes.vintageimprovements.pressurizing(['minecraft:glow_berries', 'minecraft:redstone'],
+        ['minecraft:sweet_berries', 'minecraft:glowstone_dust'],25)
+        .heated().id('pressurizing/berries_glowstone_b')
+//染料类
+    //余烬面粉
+    e.recipes.create.mixing('16x create:cinder_flour',
+        [Fluid.of('create_dragons_plus:red_dye',500),'4x create:wheat_flour'],60)
+        .heated().id('mixing/create/cinder_flour')
+    //粘液块
+    e.recipes.create.mixing('minecraft:slime_block',
+        ['4x create:wheat_flour',Fluid.of('create_dragons_plus:lime_dye',1000)],90)
+        .id('mixing/slime_block')
+    //蜂蜜
+    e.recipes.create.mixing(Fluid.of('create:honey',250),
+        [Fluid.of('create_dragons_plus:yellow_dye',250),'minecraft:sugar','minecraft:slime_ball'],
+        390).id('mixing/create/honey')
+    //蜜脾
+    e.recipes.create.filling('minecraft:honeycomb',
+        [Ingredient.of(['farmersdelight:canvas','delighto_flight:cloud_silk']),Fluid.of('create:honey',250)]
+        ).id('filling/honeycomb')
     
 })

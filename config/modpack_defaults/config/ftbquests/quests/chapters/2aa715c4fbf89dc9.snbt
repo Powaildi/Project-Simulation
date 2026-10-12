@@ -223,6 +223,14 @@
 		}
 		{
 			id: "0B1CC582366222D7"
+			rewards: [{
+				id: "209D8D8BEF781D5E"
+				item: {
+					count: 1
+					id: "createdieselgenerators:plant_oil_bucket"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "40A58C8B0D33FBDE"
@@ -825,6 +833,16 @@
 			}]
 			x: 13.0d
 			y: -2.5d
+		}
+		{
+			id: "33DA0C36B0EEF62A"
+			tasks: [{
+				id: "054040D2CA571FF5"
+				item: { count: 1, id: "aeronautics_utility_objects:damping_stress_bearing" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
 		}
 	]
 }

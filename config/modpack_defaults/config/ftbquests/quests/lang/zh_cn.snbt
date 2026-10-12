@@ -62,7 +62,7 @@
 	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
 	quest.058A306939F2A867.quest_desc: [""]
 	quest.058A306939F2A867.quest_subtitle: "动态结构"
-	quest.070C1AF80BD8C2E3.quest_desc: ["注意：工作盆盖板和工作盆铸造盖执行的不是同一种配方！"]
+	quest.070C1AF80BD8C2E3.quest_desc: ["工作盆盖板和机械动力：火炮的工作盆铸造盖（已经删除）执行的不是同一种配方。"]
 	quest.070C1AF80BD8C2E3.quest_subtitle: "放在工作盆上面"
 	quest.076B26BC1D242E98.quest_desc: ["需要这么多红石，怎么制作呢？"]
 	quest.077ECF29212AFD4C.quest_subtitle: "连接多条传送带，在顶部设定物流规则"
@@ -96,10 +96,16 @@
 	quest.0B1C1CC339570182.quest_subtitle: "提供和吸收物质"
 	quest.0B1CC582366222D7.quest_desc: [
 		"通入燃料后燃烧，热量的状态和烈焰人燃烧室类似。"
-		"冰冷："
-		"温热："
-		"灼热："
-		"只能用于加热斯特林机。"
+		"冰冷：无热量"
+		"温热：被动"
+		"灼热：加热"
+		"炽热：超级加热"
+		"{@pagebreak}"
+		"[魔改]对于流体燃烧室，加热等级与流体的推力有关："
+		"加热需要超过45%"
+		"超级加热需要超过135%"
+		""
+		"流体桶上有该流体的推进剂信息。"
 	]
 	quest.0B1CC582366222D7.quest_subtitle: "高炉cos烈焰人燃烧室"
 	quest.0B1CC582366222D7.title: "燃烧器"
@@ -297,6 +303,13 @@
 		"去除了洞穴中的怪异音效？"
 	]
 	quest.337A0C9565DEDAEB.title: "连锁挖矿/连锁套壳"
+	quest.33DA0C36B0EEF62A.quest_desc: [
+		"根据连接的物理结构的转速输出应力。"
+		"最高输出200000su"
+		"如果有黑名单方块，则是40000su"
+		"上限以配置为准，提示仅供参考。"
+	]
+	quest.33DA0C36B0EEF62A.quest_subtitle: "想办法让它转起来"
 	quest.33F6A2180EABBB49.quest_desc: [
 		"每10mB/t就能提供一级锅炉的水量。"
 		"还有很多好用的应力源，多在其他任务中找找吧！"

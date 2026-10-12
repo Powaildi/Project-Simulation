@@ -4,7 +4,7 @@ ServerEvents.recipes(e=>{
         e.replaceInput({input:item},item,unify_to)
         e.replaceOutput({output:item},item,unify_to)
     }
-    
+    unifyRecipe('create:dough','farmersdelight:wheat_dough')
     unifyRecipe('create:powdered_obsidian','mekanism:dust_obsidian')
     unifyRecipe('mekanism:sawdust','createdieselgenerators:wood_chip')
     unifyRecipe('mekanism:dye_base','minecraft:clay_ball')

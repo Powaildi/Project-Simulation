@@ -22,10 +22,6 @@ ServerEvents.recipes(e=>{
     //高炉
     e.recipes.create.deploying('minecraft:blast_furnace',['minecraft:furnace','create:iron_sheet'])
         .id('deploying/minecraft/blast_furnace')
-    //粘液块
-    e.recipes.create.mixing('minecraft:slime_block',
-        ['4x create:wheat_flour',Fluid.of('create_dragons_plus:lime_dye',1000)],90)
-        .id('mixing/slime_block')
     //钻石
     e.recipes.vintageimprovements.pressurizing('minecraft:diamond','kubejs:graphite',125)
         .superheated().id('pressurizing/diamond')

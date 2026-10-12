@@ -58,9 +58,6 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing('5x minecraft:blaze_powder',['minecraft:blaze_powder','minecraft:wind_charge','4x create:cinder_flour'],125)
         .id('mixing/blaze_powder')
 
-    //余烬面粉
-    e.recipes.create.mixing('16x create:cinder_flour',[Fluid.of('create_dragons_plus:red_dye',500),'4x create:wheat_flour'],60)
-        .heated().id('mixing/create/cinder_flour')
 
     //运输器、传输器
     e.shaped('fluidlogistics:fluid_transporter',[
@@ -120,9 +117,6 @@ ServerEvents.recipes(e=>{
         .id('vacuumizing/cryogen')
     
 
-    //糖
-    e.recipes.create.compacting('minecraft:sugar','minecraft:beetroot').heated()
-        .id('compacting/sugar_from_beetroot')
     //红石构件
     ti = 'vintageimprovements:incomplete_redstone_module'
     e.recipes.create.sequenced_assembly('vintageimprovements:redstone_module','create:brass_sheet',[

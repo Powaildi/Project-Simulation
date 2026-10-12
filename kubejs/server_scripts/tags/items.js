@@ -5,7 +5,12 @@ ServerEvents.tags('item',e=>{
     e.add("c:cheese",'natures_spirit:cheese_bucket')
     e.add("c:cheeses",'natures_spirit:cheese_bucket')
     e.add('c:plates/steel','kubejs:steel_sheet')
-    e.add('createdieselgenerators:fermentable',['kaleidoscope_cookery:flour', 'kaleidoscope_cookery:rice', 'minecraft:sweet_berries', 'delighto_flight:cloud_berries', 'farmersdelight:pumpkin_slice', 'minecraft:melon_slice',  'kaleidoscope_cookery:raw_noodles', 'farmersdelight:raw_pasta'])
+    e.add('createdieselgenerators:fermentable',
+        [
+            'create:wheat_flour', 'farmersdelight:wheat_dough', 'farmersdelight:rice', 'farmersdelight:raw_pasta',
+            'minecraft:sweet_berries', 'delighto_flight:cloud_berries', 'farmersdelight:pumpkin_slice', 'minecraft:melon_slice', 
+            'kaleidoscope_cookery:flour', 'kaleidoscope_cookery:rice', 'kaleidoscope_cookery:raw_noodles'
+        ])
     e.add('kubejs:fluxing_medium',['create:limestone','minecraft:calcite','minecraft:bone_meal'])
     e.add('kubejs:burner_eat',['mekanism:basic_fluid_tank', 'mekanism:advanced_fluid_tank', 'mekanism:elite_fluid_tank', 'mekanism:ultimate_fluid_tank', 'mekanism:creative_fluid_tank', 'fluidlogistics:copper_bucket', 'createdieselgenerators:canister'])
 

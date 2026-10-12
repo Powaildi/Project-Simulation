@@ -16,6 +16,10 @@ ServerEvents.recipes(e=>{
         .id('item_application/entro_manual_only')
     //石英生产
     //紫水晶
+    e.recipes.create.item_application([CreateItem.of('minecraft:budding_amethyst',0.01),CreateItem.of('4x minecraft:amethyst_shard',0.75)],
+        ['minecraft:amethyst_block','minecraft:amethyst_shard'])
+        .id('item_application/budding_amethyst')
+        
     e.recipes.create.filling('minecraft:amethyst_cluster',['minecraft:large_amethyst_bud',Fluid.of('minecraft:water',100)])
         .id('filling/amethyst_cluster/4')
     e.recipes.create.filling('minecraft:large_amethyst_bud',['minecraft:medium_amethyst_bud',Fluid.of('minecraft:water',100)])

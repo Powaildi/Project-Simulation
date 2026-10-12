@@ -6,21 +6,46 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing('4x createdieselgenerators:asphalt_block',
         ['2x minecraft:gravel','2x minecraft:sand',Fluid.of('kubejs:tar',100)])
         .id('mixing/createdieselgenerators/asphalt_block')
-
+    //木屑
+    e.shapeless('4x createdieselgenerators:wood_chip','createdieselgenerators:chip_wood_block')
+        .id('crafting/createdieselgenerators/wood_chip')
+    e.remove({id:'createdieselgenerators:crushing/wood_chip_planks'})
+    e.custom({
+        "type": "create:milling",
+        "ingredients": [
+            {
+            "type": "neoforge:difference",
+            "base": [
+                {
+                "tag": "minecraft:planks"
+                },
+                {
+                "item": "minecraft:bamboo_mosaic"
+                }
+            ],
+            "subtracted": {
+                "item": "createdieselgenerators:chip_wood_block"
+            }
+            }
+        ],
+        "results": [
+            {
+            "id": "createdieselgenerators:wood_chip",
+            "count": 7
+            },
+            {
+            "id": "createdieselgenerators:wood_chip",
+            "chance": 0.5
+            }
+        ],"processing_time":1
+        })
+        .id('milling/wood_chip_planks')
 //工作盆发酵
 //   "heat_requirement": "heated",
-    //乙醇
-    e.remove({id:'createdieselgenerators:basin_fermenting/fermentable'})
-    e.remove({id:'createdieselgenerators:bulk_fermenting/fermentable'})
     
-    e.recipes.createdieselgenerators.basin_fermenting(Fluid.of('createdieselgenerators:ethanol',200),
-        [Ingredient.of('#createdieselgenerators:fermentable'),'createdieselgenerators:wood_chip',Fluid.of('minecraft:water',200)],
-        400).id('basin_fermenting/ethanol')
     
 //批量发酵
-    e.recipes.createdieselgenerators.bulk_fermenting(Fluid.of('createdieselgenerators:ethanol',300),
-        [Ingredient.of('#createdieselgenerators:fermentable'),'createdieselgenerators:wood_chip',Fluid.of('minecraft:water',300)],
-        300).id('bulk_fermenting/ethanol')
+    
     e.recipes.createdieselgenerators.bulk_fermenting([Fluid.of('mekanism:brine',1000),'minecraft:cobblestone'],
         [Fluid.of('minecraft:water',1000),'minecraft:cobblestone'],
         300).superheated().id('bulk_fermenting/mekanism/brine')

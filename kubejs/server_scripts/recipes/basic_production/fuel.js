@@ -1,39 +1,5 @@
 ServerEvents.recipes(e=>{    
 
-    //木屑
-    e.shapeless('4x createdieselgenerators:wood_chip','createdieselgenerators:chip_wood_block')
-        .id('crafting/createdieselgenerators/wood_chip')
-    e.remove({id:'createdieselgenerators:crushing/wood_chip_planks'})
-    e.custom({
-        "type": "create:milling",
-        "ingredients": [
-            {
-            "type": "neoforge:difference",
-            "base": [
-                {
-                "tag": "minecraft:planks"
-                },
-                {
-                "item": "minecraft:bamboo_mosaic"
-                }
-            ],
-            "subtracted": {
-                "item": "createdieselgenerators:chip_wood_block"
-            }
-            }
-        ],
-        "results": [
-            {
-            "id": "createdieselgenerators:wood_chip",
-            "count": 7
-            },
-            {
-            "id": "createdieselgenerators:wood_chip",
-            "chance": 0.5
-            }
-        ],"processing_time":1
-        })
-        .id('milling/wood_chip_planks')
     
     //液化木煤气
     e.recipes.vintageimprovements.pressurizing('minecraft:charcoal',Ingredient.of('#minecraft:logs'),125,Fluid.of('kubejs:wood_gas',250))
@@ -50,6 +16,15 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing(Fluid.of('createdieselgenerators:plant_oil',500),
         [Ingredient.of('#c:seeds',4)],90)
         .heated().id('mixing/seed_oil')
+    //乙醇
+    e.remove({id:'createdieselgenerators:basin_fermenting/fermentable'})
+    e.remove({id:'createdieselgenerators:bulk_fermenting/fermentable'})
+    e.recipes.createdieselgenerators.basin_fermenting(Fluid.of('createdieselgenerators:ethanol',200),
+        [Ingredient.of('#createdieselgenerators:fermentable'),'createdieselgenerators:wood_chip',Fluid.of('minecraft:water',200)],
+        400).id('basin_fermenting/ethanol')
+    e.recipes.createdieselgenerators.bulk_fermenting(Fluid.of('createdieselgenerators:ethanol',300),
+        [Ingredient.of('#createdieselgenerators:fermentable'),'createdieselgenerators:wood_chip',Fluid.of('minecraft:water',300)],
+        300).id('bulk_fermenting/ethanol')
     //生物柴油
     e.recipes.create.mixing(Fluid.of('createdieselgenerators:biodiesel',200),
         [Fluid.of('createdieselgenerators:plant_oil',100),Fluid.of('createdieselgenerators:ethanol',100)],90)
@@ -63,6 +38,10 @@ ServerEvents.recipes(e=>{
     e.recipes.vintageimprovements.pressurizing(Fluid.of('createdieselgenerators:biodiesel',500),
         Fluid.of('createdieselgenerators:ethanol',200),90).secondaryFluidInput(Fluid.of('createdieselgenerators:plant_oil',200))
         .heated().id('pressurizing/biodiesel_2')
+    //生物柴油用途
+    e.recipes.vintageimprovements.centrifugation(['minecraft:egg',Fluid.of('createdieselgenerators:diesel',100)],
+        ['minecraft:bone_meal',Fluid.of('createdieselgenerators:biodiesel',100)],70)
+        .id('centrifugation/biodiesel')
 
     //原油再生
     e.recipes.vintageimprovements.pressurizing([Fluid.of('createdieselgenerators:crude_oil',200)],
@@ -110,7 +89,7 @@ ServerEvents.recipes(e=>{
             .id('filling/redstone/'+fuel.replace(':','/'))
         e.recipes.vintageimprovements.pressurizing('4x minecraft:redstone',
             '4x create:cinder_flour',90).secondaryFluidInput(Fluid.of(fuel,amount*4))
-            .heated().id('pressurizing/redstone/'+fuel.replace(':','/'))
+            .id('pressurizing/redstone/'+fuel.replace(':','/'))
     })
     //利用燃料生产荧石
     let glowstone_fuel = [

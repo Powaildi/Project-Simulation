@@ -1,9 +1,18 @@
 ServerEvents.recipes(e=>{
-    let potion_mundane = Fluid.ingredientOf('create:potion',{"minecraft:potion_contents":{potion:"minecraft:mundane"}},true)
         
+    //甜水
+    e.recipes.create.mixing(Fluid.of('kubejs:sweet_water',500),
+        [Fluid.of('minecraft:water',500),'minecraft:sugar'],125)
+        .id('mixing/sweet_water_1')
+    e.recipes.create.mixing(Fluid.of('kubejs:sweet_water',500),
+        [Fluid.of('minecraft:water',450),Fluid.of('create:honey',50)],60)
+        .id('mixing/sweet_water_2')
+    e.recipes.create.compacting([Fluid.of('kubejs:sweet_water',200),'2x minecraft:melon_seeds'],
+        '2x minecraft:melon_slice')
+        .id('compacting/sweet_water')
     //骨粉再生
     e.recipes.createdieselgenerators.basin_fermenting('3x minecraft:bone',
-        ['3x minecraft:bone_meal',Fluid.sizedIngredientOf(potion_mundane,50)],
+        ['3x minecraft:bone_meal',Fluid.of('kubejs:sweet_water',50)],
         60).id('basin_fermenting/bone')
     //骨粉稀释液
     e.recipes.create.mixing(Fluid.of('kubejs:bone_meal_diluent',500),

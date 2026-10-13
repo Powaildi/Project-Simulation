@@ -70,4 +70,10 @@ ItemEvents.modification(e=>{
             c.setBurnTime(time) //ticks
         })
     })
+    e.modify(['create_aeronautics_toolgun:survival_structure_tool', 'create_aeronautics_toolgun:magnetic_gun', 'fluidlogistics:hand_pointer', 'create_aeronautics_toolgun:portable_structure_container', 'create_aeronautics_toolgun:disposable_vehicle_container',
+        'create:rotation_speed_controller', 'createdieselgenerators:huge_diesel_engine']
+        ,i=>i.setRarity('uncommon'))
+    e.modify(['minecraft:echo_shard'
+        ]
+        ,i=>i.setRarity('rare'))
 })

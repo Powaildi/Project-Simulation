@@ -34,6 +34,7 @@
     "block.mbd2.ant_nest":"蚂蚁窝",
 
     "fluid_type.kubejs.cryogen":"冷冻液",
+    "fluid_type.kubejs.sweet_water":"甜水",
     "fluid_type.kubejs.bone_meal_diluent":"骨粉稀释液",
     "fluid_type.kubejs.wood_gas":"液化木煤气",
     "fluid_type.kubejs.lpg":"液化石油气",
@@ -67,6 +68,7 @@
     "fluid_type.kubejs.incomplete_steel":"半成品钢",
 
     "item.kubejs.cryogen_bucket":"冷冻液桶",
+    "item.kubejs.sweet_water_bucket":"甜水桶",
     "item.kubejs.bone_meal_diluent_bucket":"骨粉稀释液桶",
     "item.kubejs.wood_gas_bucket":"液化木煤气桶",
     "item.kubejs.lpg_bucket":"液化石油气桶",

@@ -160,7 +160,7 @@ ServerEvents.recipes(e=>{
     })
 
     //椰子
-    e.recipes.create.emptying([Fluid.of('create:potion',1000,{"create:potion_fluid_bottle_type":"regular","minecraft:potion_contents":{potion:"minecraft:mundane"}}),'2x natures_spirit:coconut_half'],
+    e.recipes.create.emptying([Fluid.of('kubejs:sweet_water',1000),'2x natures_spirit:coconut_half'],
         'natures_spirit:coconut').id('emptying/natures_spirit/coconut')
     e.recipes.create.compacting(['minecraft:sugar','natures_spirit:coconut_shell'],Item.of('natures_spirit:coconut_half'))
         .id('compacting/natures_spirit/coconut_half')

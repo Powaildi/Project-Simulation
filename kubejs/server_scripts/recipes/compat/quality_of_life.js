@@ -19,6 +19,8 @@ ServerEvents.recipes(e=>{
         .id('centrifugation/ghast_tear')
     //快速产木桶
     e.recipes.vintageimprovements.turning('minecraft:barrel',Ingredient.of('#minecraft:logs'),40)
+    //骷髅头
+    e.recipes.vintageimprovements.turning('minecraft:skeleton_skull','minecraft:bone_block',200)
     //高炉
     e.recipes.create.deploying('minecraft:blast_furnace',['minecraft:furnace','create:iron_sheet'])
         .id('deploying/minecraft/blast_furnace')

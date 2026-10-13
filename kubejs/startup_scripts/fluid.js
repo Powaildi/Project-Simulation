@@ -6,7 +6,12 @@ StartupEvents.registry('fluid',e=>{
             b.canHydrate(true)
             b.canExtinguish(true)
         })
-    
+    e.create('sweet_water','kubejs:thin').displayName('甜水').tint('#BDDAE7').renderType('translucent')
+        .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
+        .type(b=>{
+            b.canHydrate(true)
+            b.canExtinguish(true)
+        })
     e.create('bone_meal_diluent','kubejs:thin').displayName('骨粉稀释液').tint('white').renderType('translucent')
         .stillTexture('minecraft:block/water_still').flowingTexture('minecraft:block/water_flow')
         .type(b=>{

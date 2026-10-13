@@ -64,6 +64,9 @@ ServerEvents.recipes(e=>{
     e.replaceInput({id:'createdieselgenerators:crafting/bulk_fermenter'},'create:andesite_alloy','kubejs:industrial_iron_sheet')
     //过重负担机壳
     e.replaceInput({output:'dndesires:overburden_casing'},'create:andesite_casing','create:industrial_iron_block')
+    e.recipes.create.deploying('3x dndesires:overburden_casing',['create:industrial_iron_block','kubejs:industrial_iron_sheet'])
+        .id('deploying/dndesires/overburden_casing')
+
     e.remove({or:[{id:'create:crafting/logistics/stock_link'},{id:'create:crafting/logistics/package_frogport'},{id:'createphantom:phantomport'},{id:'createphantom:mini_phantom'},{id:'create_mobile_packages:robo_bee'}]})
     e.replaceInput({id:'fluidlogistics:copper_frogport'},'create:item_vault','dndesires:overburden_casing')
     

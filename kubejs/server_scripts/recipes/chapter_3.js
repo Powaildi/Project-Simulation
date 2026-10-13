@@ -53,6 +53,11 @@ ServerEvents.recipes(e=>{
         e.recipes.create.filling(ti,[ti,Fluid.of(candidates2[4],250)])
         ])
         .transitionalItem(ti).id('sequenced_assembly/alternative_chromatic_compound_liquid')
+    //太极芯片组（使用数据包）
+    e.recipes.vintageimprovements.pressurizing(['create_fantasizing:incomplete_taiji_chipset[create:sequenced_assembly={id:"create_fantasizing:sequenced_assembly/taiji_chipset_shadow_plating",progress:0.5f,step:3}]', 'create_fantasizing:incomplete_taiji_chipset[create:sequenced_assembly={id:"create_fantasizing:sequenced_assembly/taiji_chipset_exposing",progress:0.5f,step:3}]'],
+        ['create_fantasizing:incomplete_taiji_chipset[create:sequenced_assembly={id:"create_fantasizing:sequenced_assembly/taiji_chipset_shadow_plating",progress:0.33333334f,step:2}]', 'create_fantasizing:incomplete_taiji_chipset[create:sequenced_assembly={id:"create_fantasizing:sequenced_assembly/taiji_chipset_exposing",progress:0.33333334f,step:2}]'],
+    25).secondaryFluidInput(Fluid.of('kubejs:cryogen',200))
+    .id('pressurizing/helper/incomplete_taiji_chipset')
     
     //传统炼钢劣化
     e.remove({output:'mekanism:enriched_iron'})
@@ -65,4 +70,87 @@ ServerEvents.recipes(e=>{
     e.remove({id:'createbigcannons:mixing/alloy_steel'})
     //反应堆玻璃
     e.replaceInput({id:'mekanismgenerators:reactor/glass'},'mekanism:enriched_iron','mekanism:ingot_steel')
+
+    //钢板
+    // e.recipes.create.pressing('kubejs:steel_sheet','mekanism:ingot_steel')
+    //     .id('pressing/steel_sheet')
+    e.recipes.vintageimprovements.hammering('kubejs:steel_sheet','mekanism:ingot_steel')
+        .id('hammering/steel_sheet')
+    e.custom({
+            "type": "dndesires:hydraulic_compacting",
+            "ingredients": [
+                {"item": 'mekanism:ingot_steel'},
+            ],
+            "results": [
+                {
+                "count": 1,
+                "id": 'kubejs:steel_sheet'
+                }
+            ]
+        }).id('hydraulic_compacting/steel_sheet')
+    //钢制机壳
+    e.remove({id:'mekanism:steel_casing'})
+    ti = 'dndesires:industrial_casing'
+    e.recipes.create.sequenced_assembly('mekanism:steel_casing','dndesires:overburden_casing',[
+        e.recipes.create.deploying(ti,[ti,'ae2:quartz_glass']),
+        e.recipes.create.deploying(ti,[ti,'vintageimprovements:steel_spring']),
+        e.recipes.create.deploying(ti,[ti,'vintageimprovements:steel_rod']),
+        e.recipes.create.deploying(ti,[ti,'vintageimprovements:steel_rod']),
+        e.recipes.create.deploying(ti,[ti,'kubejs:steel_sheet']),
+        e.recipes.vintageimprovements.vacuumizing([ti],[ti,'mekanism:ingot_osmium',Fluid.of('kubejs:nitrogen',100)],30)
+            .secondaryFluidInput(2)
+    ],ti).loops(4).id('sequenced_assembly/steel_casing')
+    //mek管道
+    e.remove({output:['mekanism:basic_mechanical_pipe', 'mekanism:basic_pressurized_tube', 'mekanism:basic_logistical_transporter', 'mekanism:basic_universal_cable', 'mekanism:basic_thermodynamic_conductor']})
+    e.shaped('12x mekanism:basic_mechanical_pipe',
+        [
+            'AAA',
+            'BBB',
+            'AAA'
+        ],{
+            A:'kubejs:steel_sheet',
+            B:'ae2:quartz_glass'
+        }
+    ).id('crafting/basic_mechanical_pipe')
+    e.shaped('12x mekanism:basic_pressurized_tube',
+        [
+            'AAA',
+            'BBB',
+            'AAA'
+        ],{
+            A:'kubejs:steel_sheet',
+            B:'mekanism:ingot_osmium'
+        }
+    ).id('crafting/basic_pressurized_pipe')
+    e.shaped('12x mekanism:basic_logistical_transporter',
+        [
+            'AAA',
+            'BCB',
+            'AAA'
+        ],{
+            A:'kubejs:steel_sheet',
+            B:'minecraft:wind_charge',
+            C:'mekanism:basic_control_circuit'
+        }
+    ).id('crafting/basic_logistical_transporter')
+    e.shaped('12x mekanism:basic_universal_cable',
+        [
+            'AAA',
+            'BBB',
+            'AAA'
+        ],{
+            A:'kubejs:steel_sheet',
+            B:'ae2:quartz_vibrant_glass'
+        }
+    ).id('crafting/basic_universal_cable')
+    e.shaped('12x mekanism:basic_thermodynamic_conductor',
+        [
+            'AAA',
+            'BBB',
+            'AAA'
+        ],{
+            A:'kubejs:steel_sheet',
+            B:'create:shadow_steel'
+        }
+    ).id('crafting/basic_thermodynamic_conductor')
 })

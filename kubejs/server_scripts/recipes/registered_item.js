@@ -3,8 +3,7 @@ ServerEvents.recipes(e=>{
     e.replaceOutput({input:'minecraft:deepslate_coal_ore'},'minecraft:coal','kubejs:graphite')
     e.replaceInput({input:'#minecraft:coals'},'#minecraft:air','#minecraft:air')
 
-    e.recipes.create.pressing('kubejs:steel_sheet','mekanism:ingot_steel')
-        .id('pressing/steel_sheet')
+
     e.shaped('kubejs:clamper',[
         ' A ',
         'BCB',

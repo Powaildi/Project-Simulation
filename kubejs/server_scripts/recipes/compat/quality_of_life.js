@@ -136,7 +136,12 @@ ServerEvents.recipes(e=>{
         e.recipes.create.deploying(ti,[ti,'create:brass_nugget']),
         e.recipes.create.filling(ti,[ti,Fluid.of('createdieselgenerators:plant_oil',100)])
     ],ti).id('simulated:sequenced_assembly/gyroscopic_mechanism')
-    
+    e.recipes.vintageimprovements.vacuumizing
+    // let aaa = e.recipes.vintageimprovements.pressurizing('create_fantasizing:incomplete_taiji_chipset[create:sequenced_assembly={id:"create_fantasizing:sequenced_assembly/taiji_chipset_exposing",progress:0.5f,step:3}]',
+    //     'create:refined_radiance'
+    // )
+    // aaa.serialize()
+    // console.log(aaa.json)
     //飞控
     ti = 'create_flight_control:incomplete_control_unit'
     e.recipes.create.sequenced_assembly('create_flight_control:control_unit','create:brass_sheet',[

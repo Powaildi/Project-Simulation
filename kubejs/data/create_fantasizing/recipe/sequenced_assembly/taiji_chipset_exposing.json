@@ -1,0 +1,128 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:printed_silicon"
+  },
+  "results": [
+    {
+      "id": "create_fantasizing:taiji_chipset"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        },
+        {
+          "item": "create:refined_radiance"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ]
+    },
+    {
+      "type": "create_fantasizing:exposing",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ]
+    },
+    {
+      "type": "vintageimprovements:pressurizing",
+      "ingredients": [
+        {
+          "fluid": "kubejs:cryogen",
+          "amount": 200,
+          "type": "neoforge:single"
+        },
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        },
+        {
+          "items": "create_fantasizing:incomplete_taiji_chipset",
+          "components": {
+            "create:sequenced_assembly": {
+              "id": "create_fantasizing:sequenced_assembly/taiji_chipset_shadow_plating",
+              "progress": 0.33333334,
+              "step": 2
+            }
+          },
+          "type":"neoforge:components"
+        }
+      ],
+      "secondary_fluid_input":0,
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        },
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset",
+          "components": {
+            "create:sequenced_assembly": {
+              "id": "create_fantasizing:sequenced_assembly/taiji_chipset_shadow_plating",
+              "progress": 0.5,
+              "step": 3
+            }
+          }
+        }
+      ],
+      "processing_time": 25
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        },
+        {
+          "item": "create:shadow_steel"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ]
+    },
+    {
+      "type": "create_fantasizing:shadow_plating",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_fantasizing:incomplete_taiji_chipset"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_fantasizing:incomplete_taiji_chipset"
+  }
+}

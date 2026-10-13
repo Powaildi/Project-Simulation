@@ -5,7 +5,7 @@
   "packmode": "",
   "save_dev_properties_in_config": false,
   "allow_async_streams": true,
-  "match_json_recipes": true,
+  "match_json_recipes": false,
   "ignore_custom_unique_recipe_ids": false,
   "startup_error_gui": true,
   "startup_error_report_url": "",

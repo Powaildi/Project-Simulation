@@ -17,7 +17,7 @@ miningDepth = 10
 # Whether deposits never run out of resources.
 infiniteDeposits = true
 # Whether deposits can be attached to a contraption or moved by a piston.
-movableDeposits = false
+movableDeposits = true
 # Maximum scanning distance of the Deposit Scanner in chunks.
 # Default: 300
 # Range: > 0

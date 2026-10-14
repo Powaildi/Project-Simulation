@@ -6,6 +6,11 @@ ServerEvents.recipes(e=>{
     e.recipes.create.mixing('4x createdieselgenerators:asphalt_block',
         ['2x minecraft:gravel','2x minecraft:sand',Fluid.of('kubejs:tar',100)])
         .id('mixing/createdieselgenerators/asphalt_block')
+    //煤炭离心机
+    e.recipes.vintageimprovements.centrifugation('2x minecraft:coal',
+        Fluid.of('createdieselgenerators:crude_oil',100),70)
+        .id('centrifugation/crude_oil')
+
     //木屑
     e.shapeless('4x createdieselgenerators:wood_chip','createdieselgenerators:chip_wood_block')
         .id('crafting/createdieselgenerators/wood_chip')
@@ -118,6 +123,21 @@ ServerEvents.recipes(e=>{
     ).superheated().id('distillation/crude_oil/4_layer_superheated')
 
     //精炼油
+    e.recipes.createdieselgenerators.distillation(
+        [
+            Fluid.of('createdieselgenerators:gasoline',200),
+            Fluid.of('kubejs:lpg',100)
+        ],
+        Fluid.of('createdieselgenerators:diesel',200),
+        150
+    ).heated().id('distillation/diesel')
+    e.recipes.createdieselgenerators.distillation(
+        [
+            Fluid.of('kubejs:lpg',200)
+        ],
+        Fluid.of('createdieselgenerators:gasoline',100),
+        150
+    ).heated().id('distillation/gasoline')
     //        Fluid.of(,100),
     //液态空气
     e.recipes.createdieselgenerators.distillation(

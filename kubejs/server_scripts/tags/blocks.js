@@ -16,4 +16,10 @@ ServerEvents.tags('block',e=>{
         'minecraft:composter', 'minecraft:crafter', 'minecraft:note_block', 'minecraft:cauldron','minecraft:copper_bulb', 'minecraft:exposed_copper_bulb', 'minecraft:weathered_copper_bulb', 'minecraft:oxidized_copper_bulb', 'minecraft:waxed_copper_bulb', 'minecraft:waxed_exposed_copper_bulb', 'minecraft:waxed_weathered_copper_bulb', 'minecraft:waxed_oxidized_copper_bulb', 'mbd2:air_compressor', 'mbd2:assembler', 'mbd2:sprinkler'
     ]
     e.add('create:wrench_pickup',pickup)
+    e.add('create:non_movable',[
+        'create_rns:depleted_deposit_block','create_rns:iron_deposit_block','create_rns:copper_deposit_block','create_rns:zinc_deposit_block',
+        'create_rns:gold_deposit_block','create_rns:redstone_deposit_block','create_rns:tin_deposit_block','create_rns:lead_deposit_block',
+        'create_rns:uranium_deposit_block','create_rns:quartz_deposit_block','create_rns:silver_deposit_block','create_rns:coal_deposit_block',
+        'create_rns:platinum_deposit_block','create_rns:osmium_deposit_block','create_rns:lapis_deposit_block'
+    ])
 })

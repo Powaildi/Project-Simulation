@@ -24,9 +24,6 @@ ServerEvents.recipes(e=>{
     //高炉
     e.recipes.create.deploying('minecraft:blast_furnace',['minecraft:furnace','create:iron_sheet'])
         .id('deploying/minecraft/blast_furnace')
-    //钻石
-    e.recipes.vintageimprovements.pressurizing('minecraft:diamond','kubejs:graphite',125)
-        .superheated().id('pressurizing/diamond')
     //附魔书
     //忠诚
     e.recipes.create.mixing('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:loyalty":1}}]',
@@ -46,22 +43,11 @@ ServerEvents.recipes(e=>{
         .id('deploying/enchanted_book/sweeping_edge')
     
 //农夫乐事
-    e.shapeless('farmersdelight:organic_compost',
-        ['minecraft:dirt', '2x minecraft:bone_meal', '2x mekanism:bio_fuel', '2x createdieselgenerators:wood_chip']
-    ).id('crafting/farmersdelight/organic_compost')
+    
 //机械动力
     //链式传动箱
     e.shapeless('4x create:encased_chain_drive',['create:andesite_casing','minecraft:chain'])
         .id('crafting/create/encased_chain_drive')
-    //圆石
-    e.recipes.create.mixing('16x minecraft:cobblestone',[Fluid.of('minecraft:water',250),Fluid.of('minecraft:lava',250)],90)
-        .id('mixing/cobblestone')
-    //黑曜石
-    e.recipes.create.mixing('minecraft:obsidian',[Fluid.of('kubejs:cryogen',100),Fluid.of('minecraft:lava',250)],60)
-        .id('mixing/obsidian')
-    //坚固板
-    e.recipes.create.compacting('2x create:sturdy_sheet','minecraft:obsidian')
-        .heated().id('compacting/create/sturdy_sheet')
     //烈焰人燃烧室
     ti = 'kubejs:frankenstein'
     e.recipes.create.sequenced_assembly('create:blaze_burner','create:empty_blaze_burner',[
@@ -309,6 +295,9 @@ ServerEvents.recipes(e=>{
     e.recipes.create.sequenced_assembly('minecraft:diamond','minecraft:coal_block',[
         e.recipes.create.pressing('minecraft:coal_block','minecraft:coal_block')
     ])
-    .transitionalItem('minecraft:coal_block').loops(114514).id('sequenced_assembly/diamond_114514')    
+    .transitionalItem('minecraft:coal_block').loops(114514).id('sequenced_assembly/diamond_114514') 
+    e.recipes.create.filling(CreateItem.of('kubejs:graphite',0.5),
+        ['create:millstone',Fluid.of('create_dragons_plus:black_dye',250)])   
+        .id('filling/graphite')
     
 })

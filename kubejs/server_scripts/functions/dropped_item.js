@@ -13,4 +13,5 @@ ItemEntityEvents.death(e=>{
     let item = e.itemEntity.getItem()
     if(item.getRarity() == 'COMMON')return//只选择贵重物品
     let player = e.level.getNearestPlayer(e.itemEntity,100000)//让最近的玩家获得该物品
+    player.give(item)
 })

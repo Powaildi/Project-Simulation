@@ -79,8 +79,14 @@ ServerEvents.recipes(e=>{
     e.recipes.mekanism.separating('2x kubejs:sodium_hydroxide','1x mekanism:chlorine','10x mekanism:brine')
     e.recipes.mekanism.separating('2x mekanism:sodium','1x mekanism:oxygen','2x kubejs:sodium_hydroxide')
     //火把改出木炭
-    e.replaceOutput({id:'mekanism:sawing/torch'},'minecraft:coal','minecraft:charcoal')
+    //e.replaceOutput({id:'mekanism:sawing/torch'},'minecraft:coal','minecraft:charcoal')
 
+    //碳粉
+    e.recipes.mekanism.crushing('3x mekanism:dust_charcoal','minecraft:charcoal')
+        .id('mekanism:crushing/charcoal_dust')
+    e.recipes.mekanism.crushing('3x mekanism:dust_coal','minecraft:coal')
+        .id('mekanism:processing/coal/to_dust')
+    
     
 
     //融合机染料产出改变

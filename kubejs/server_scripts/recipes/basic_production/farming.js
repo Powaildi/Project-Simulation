@@ -43,14 +43,11 @@ ServerEvents.recipes(e=>{
     e.recipes.createdieselgenerators.basin_fermenting(['farmersdelight:wheat_dough',CreateItem.of('farmersdelight:wheat_dough',0.2)],
         ['create:wheat_flour',Fluid.of('minecraft:water',100)],40
         ).id('basin_fermenting/dough')
-        
-    //可逆的荧石粉
-    e.recipes.vintageimprovements.pressurizing(['minecraft:sweet_berries', 'minecraft:glowstone_dust'],
-        ['minecraft:glow_berries', 'minecraft:redstone'],25)
-        .superheated().id('pressurizing/berries_glowstone_a')
-    e.recipes.vintageimprovements.pressurizing(['minecraft:glow_berries', 'minecraft:redstone'],
-        ['minecraft:sweet_berries', 'minecraft:glowstone_dust'],25)
-        .heated().id('pressurizing/berries_glowstone_b')
+    
+    //有机肥料
+    e.shapeless('farmersdelight:organic_compost',
+        ['minecraft:dirt', '2x minecraft:bone_meal', '2x mekanism:bio_fuel', '2x createdieselgenerators:wood_chip']
+        ).id('crafting/farmersdelight/organic_compost')
 //染料类
     //余烬面粉
     e.recipes.create.mixing('16x create:cinder_flour',

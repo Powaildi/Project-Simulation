@@ -1,3 +1,0 @@
-PlayerEvents.chat(e=>{
-    
-})

@@ -76,4 +76,7 @@ ItemEvents.modification(e=>{
     e.modify(['minecraft:echo_shard'
         ]
         ,i=>i.setRarity('rare'))
+    e.modify(['create_fantasizing:incomplete_taiji_chipset'
+        ]
+        ,i=>i.setMaxStackSize(2))
 })

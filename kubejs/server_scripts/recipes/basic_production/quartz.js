@@ -78,11 +78,19 @@ ServerEvents.recipes(e=>{
         .id('create:milling/compat/ae2/certus_quartz')
     e.recipes.create.milling('ae2:fluix_dust','ae2:fluix_crystal',90)
         .id('create:milling/compat/ae2/fluix_crystal')
+    //石英混合物
+    e.remove({id:'extendedae:quartz_blend_alt'})
+    e.recipes.create.mixing('12x extendedae:quartz_blend',
+        [Ingredient.of('#ae2:all_quartz_dust',2),Ingredient.of(['mekanism:dust_coal','mekanism:dust_charcoal'],4),Ingredient.of('#c:sands',6)],
+        90).heated().id('mixing/quartz_blend')
     //熔融石英
     e.recipes.create.mixing(Fluid.of('kubejs:molten_quartz',250),Ingredient.of('#ae2:all_quartz_dust'),90)
         .superheated().id('mixing/molten_quartz_1')
     e.recipes.create.mixing(Fluid.of('kubejs:molten_quartz',500),'extendedae:quartz_blend',60)
         .superheated().id('mixing/molten_quartz_2')
+    e.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:molten_quartz',500),'extendedae:quartz_blend',25)
+        .secondaryFluidOutput(Fluid.of('kubejs:carbon_dioxide',500))
+        .superheated().id('pressurizing/molten_quartz')
     //熔融石英用途
     e.recipes.create.mixing('2x ae2:quartz_fiber',
         [Fluid.of('kubejs:molten_quartz',250),'minecraft:string'],60)

@@ -97,8 +97,8 @@ ServerEvents.recipes(e=>{
         e.recipes.create.deploying(ti,[ti,'vintageimprovements:steel_rod']),
         e.recipes.create.deploying(ti,[ti,'vintageimprovements:steel_rod']),
         e.recipes.create.deploying(ti,[ti,'kubejs:steel_sheet']),
-        e.recipes.vintageimprovements.vacuumizing([ti],[ti,'mekanism:ingot_osmium',Fluid.of('kubejs:nitrogen',100)],30)
-            .secondaryFluidInput(2)
+        e.recipes.vintageimprovements.vacuumizing([ti],[ti,'mekanism:ingot_osmium'],30)
+            .secondaryFluidInput(Fluid.of('kubejs:nitrogen',100))
     ],ti).loops(4).id('sequenced_assembly/steel_casing')
     //mek管道
     e.remove({output:['mekanism:basic_mechanical_pipe', 'mekanism:basic_pressurized_tube', 'mekanism:basic_logistical_transporter', 'mekanism:basic_universal_cable', 'mekanism:basic_thermodynamic_conductor']})

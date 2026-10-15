@@ -1,0 +1,18 @@
+{
+  "parent": "kubejs:project_simulation",
+  "display": {
+    "icon": {
+      "id": "minecraft:lava_bucket"
+    },
+    "title": "一千零一液",
+    "description": "让烈焰人燃烧室成功通过岩浆点燃",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "manual_trigger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

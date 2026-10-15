@@ -667,6 +667,8 @@
 		"对称风帆不产生推力，通过施加阻力转向。"
 	]
 	quest.78FABF903D0B3007.quest_subtitle: "升力和阻力"
+	quest.7A5176E9980636C9.quest_desc: ["少量生产是不需要通过它的，但是它很有用。"]
+	quest.7A5176E9980636C9.quest_subtitle: "高效生产"
 	quest.7A5176E9980636C9.title: "熔融石英"
 	quest.7CF777E5AD31A03E.quest_desc: [
 		"冷冻液是一些前期物品高级配方和以后获取液态空气的必需品。"
@@ -716,6 +718,7 @@
 	task.2863BF7C1F5A5FD8.title: "任意抽屉"
 	task.29692A3292EAD779.title: "我知道了"
 	task.2A552C74AEB2E69F.title: "内含Tweakeroo"
+	task.312688EB9D7A0F63.title: "我知道了"
 	task.3195FBC8ABE52356.title: "第二章由此开始"
 	task.320BE1EF7193CF04.title: "观察矿床"
 	task.367BE7D99ABC79D0.title: "你随时可以开始后面的章节"

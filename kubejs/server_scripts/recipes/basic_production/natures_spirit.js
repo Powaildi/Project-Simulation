@@ -142,6 +142,9 @@ ServerEvents.recipes(e=>{
     //黑硅岩
     e.recipes.create.crushing([Item.of('natures_spirit:pink_sand'),CreateItem.of('minecraft:quartz',0.5),CreateItem.of('extendedae:quartz_blend',0.25)],
     Ingredient.of('natures_spirit:chert')).id('crushing/natures_spirit/chert')
+    e.recipes.create.compacting('natures_spirit:chert',
+        ['natures_spirit:sandy_soil',Ingredient.of(['extendedae:quartz_blend', 'mekanism:dust_quartz', 'ae2:certus_quartz_dust'])]
+    ).id('ompacting/natures_spirit/chert')
     //黑硅岩矿石
     let ores = [
         ['minecraft:coal_ore','natures_spirit:chert_coal_ore'],

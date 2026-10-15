@@ -21,7 +21,25 @@ ServerEvents.recipes(e=>{
     //树木肥料
     e.shapeless('create:tree_fertilizer',[Ingredient.of('#minecraft:flowers',2),'minecraft:moss_block','minecraft:bone_meal'])
         .id('crafting/appliances/tree_fertilizer')
-
+    //苔藓
+    e.recipes.create.mixing('3x minecraft:moss_block',
+        ['2x minecraft:stone', 'minecraft:moss_block',Fluid.of('minecraft:water',100)],205)
+        .id('mixing/moss_block_1')
+    e.recipes.create.mixing('9x minecraft:moss_block',
+        ['8x minecraft:stone', 'minecraft:moss_block','minecraft:bone_meal',Fluid.of('minecraft:water',100)],60)
+        .id('mixing/moss_block_2')
+    //泥土
+    e.recipes.vintageimprovements.pressurizing(['4x minecraft:dirt', '4x minecraft:glow_berries'],
+        ['4x minecraft:soul_soil', '4x minecraft:sweet_berries'],60)
+        .id('pressurizing/soul_soil_desoul')
+    e.recipes.create.mixing(['minecraft:mud', 'minecraft:poisonous_potato'],
+        [ 'minecraft:soul_soil', 'minecraft:potato'],25)
+        .id('mixing/soul_soil_desoul')
+    e.recipes.create.milling
+    //马铃薯花
+    e.recipes.create.filling('farmersdelight:wild_potatoes',
+        ['minecraft:poisonous_potato',Fluid.of('minecraft:water',100)])
+        .id('filling/poisonous_potato')
     //盐水
     e.recipes.create.mixing(Fluid.of('mekanism:brine',250),
         [Fluid.of('minecraft:water',250),'mekanism:salt'],
@@ -48,6 +66,8 @@ ServerEvents.recipes(e=>{
     e.shapeless('farmersdelight:organic_compost',
         ['minecraft:dirt', '2x minecraft:bone_meal', '2x mekanism:bio_fuel', '2x createdieselgenerators:wood_chip']
         ).id('crafting/farmersdelight/organic_compost')
+    e.recipes.createdieselgenerators.basin_fermenting('farmersdelight:rich_soil','farmersdelight:organic_compost',400)
+        .id('basin_fermenting/farmersdelight/rich_soil')
 //染料类
     //余烬面粉
     e.recipes.create.mixing('16x create:cinder_flour',

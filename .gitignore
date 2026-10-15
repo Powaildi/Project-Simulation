@@ -108,3 +108,9 @@ out/
 datapacks/
 nodes/
 PCL/
+
+config/c2me.toml
+config/iris.properties
+config/zfastnoise.mixin.properties
+config/worldedit/worldedit.properties
+kubejs/config/common.json

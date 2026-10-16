@@ -87,7 +87,17 @@ ServerEvents.recipes(e=>{
     e.recipes.mekanism.crushing('3x mekanism:dust_coal','minecraft:coal')
         .id('mekanism:processing/coal/to_dust')
     
-    
+    //电解核心
+    e.shaped('mekanism:electrolytic_core',[
+        'ABA',
+        'CAD',
+        'ABA'
+    ],{
+        A:'mekanism:alloy_infused',
+        B:'mekanism:ingot_osmium',
+        C:'kubejs:industrial_iron_sheet',
+        D:'create:brass_sheet'
+    }).id('mekanism:electrolytic_core')
 
     //融合机染料产出改变
     let combines = e.findRecipes({type:'mekanism:combining',output:Ingredient.of('#c:dyes')})

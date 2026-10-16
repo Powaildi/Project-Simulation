@@ -27,4 +27,6 @@ ServerEvents.tags('item',e=>{
     e.add('c:glass/colorless',['minecraft:glass', 'create:tiled_glass', 'create:framed_glass', 'create:horizontal_framed_glass', 'create:vertical_framed_glass'])
 
     e.add('vintageimprovements:curving_heads',['ae2:calculation_processor_press', 'ae2:engineering_processor_press', 'ae2:logic_processor_press', 'ae2:silicon_press', 'extendedae:concurrent_processor_press'])
+
+    e.add('kubejs:electrodes',['vintageimprovements:refined_radiance_rod', 'vintageimprovements:shadow_steel_rod', 'vintageimprovements:platinum_rod', 'kubejs:electrode'])
 })

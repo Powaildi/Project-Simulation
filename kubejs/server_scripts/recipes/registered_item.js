@@ -3,7 +3,10 @@ ServerEvents.recipes(e=>{
     e.replaceOutput({input:'minecraft:deepslate_coal_ore'},'minecraft:coal','kubejs:graphite')
     e.replaceInput({input:'#minecraft:coals'},'#minecraft:air','#minecraft:air')
 
-
+    e.shaped('kubejs:electrode',['A','A'],{A:'kubejs:graphite'})
+        .id('crafting/electrode')
+    e.recipes.createdieselgenerators.compression_molding('kubejs:electrode','createdieselgenerators:lines','kubejs:graphite')
+        .id('compression_molding/electrode')
     e.shaped('kubejs:clamper',[
         ' A ',
         'BCB',
@@ -47,4 +50,15 @@ ServerEvents.recipes(e=>{
         B:'minecraft:packed_mud',
         C:'create_fantasizing:taiji_chipset'
     })
+
+    e.shaped('mbd2:electrolyser',[
+        ' A ',
+        'CBC',
+        ' D '
+    ],{
+        A:'kubejs:circuit',
+        B:'kubejs:industrial_iron_storage_block',
+        C:'kubejs:electrode',
+        D:'mekanism:electrolytic_core'
+    }).id('crafting/mbd2/electrolyser')
 })

@@ -8,6 +8,7 @@
 
     "item.kubejs.circuit":"电路板",
     "item.kubejs.graphite":"石墨",
+    "item.kubejs.electrode":"石墨电极",
     "item.kubejs.logistics_toolbox":"物流工具箱",
     "item.kubejs.fluid_toolbox":"液流工具箱",
     "item.kubejs.advanced_toolbox":"高级工具箱",
@@ -27,11 +28,13 @@
 
     "block.kubejs.chlorophyte":"叶绿矿",
 
+    "block.direct_chute.direct_chute":"直通溜槽",
 
     "block.mbd2.air_compressor":"空气压缩机",
     "block.mbd2.assembler":"自动化组装机（WIP）",
     "block.mbd2.sprinkler":"喷灌器",
     "block.mbd2.ant_nest":"蚂蚁窝",
+    "block.mbd2.electrolyser":"小型电解池（WIP）",
 
     "fluid_type.kubejs.cryogen":"冷冻液",
     "fluid_type.kubejs.sweet_water":"甜水",
@@ -159,6 +162,8 @@
     "tooltip.vessel":"没有可以思考的心智，\n没有可以屈服的意志，\n没有为苦难哭泣的声音",
 
     "tooltip.small_flowers":"在Sable子维度中可以用骨粉增殖",
+
+    "tooltip.frontlights":"空手右键开关灯",
 
     "warn.kubejs.stop_burner_eat_container":"系统阻止了你这么做，理由是烈焰人会连着容器一起吃。"
 }

@@ -1,0 +1,26 @@
+#Path to the backup directory (relative to the Minecraft server directory)
+backupPath = "backups"
+#Enable automatic periodic backups
+autoBackupEnabled = true
+#Interval between automatic backups in minutes
+# Default: 30
+# Range: 1 ~ 1440
+autoBackupIntervalMinutes = 30
+#Maximum number of snapshots to keep (0 = unlimited, oldest will be deleted when exceeded)
+# Default: 0
+# Range: > 0
+maxSnapshots = 10
+#Zstd compression level (1-22, higher = better compression but slower)
+# Default: 3
+# Range: 1 ~ 22
+compressionLevel = 3
+#Permission level required to use /chronovault commands (0-4)
+#0 = all players (recommended for single player)
+#2 = gamemaster+
+#4 = op only
+# Default: 2
+# Range: 0 ~ 4
+commandPermissionLevel = 2
+#Should a save-all be forced before backup?
+#Recommended to keep enabled for data consistency
+saveAllBeforeBackup = true

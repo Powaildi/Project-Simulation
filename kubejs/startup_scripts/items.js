@@ -2,6 +2,7 @@ StartupEvents.registry('item', e => {
     //注册物品
     e.create('circuit').displayName('电路板')
     e.create('graphite').displayName('石墨')
+    e.create('electrode').displayName('石墨电极').texture('vintageimprovements:item/steel_rod')
     e.create('logistics_toolbox').displayName('物流工具箱')
     e.create('fluid_toolbox').displayName('液流工具箱')
     e.create('advanced_toolbox').displayName('高级工具箱').rarity('uncommon')

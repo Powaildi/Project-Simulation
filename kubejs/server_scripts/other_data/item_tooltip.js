@@ -66,6 +66,10 @@ ItemEvents.modifyTooltips(e=>{
     e.add(['createpropulsion:platinum_fluid_vessel'],{shift:true},Text.white(Text.translatable("tooltip.vessel")))
 
     e.add('#minecraft:small_flowers',Text.green(Text.translatable("tooltip.small_flowers")))
+
+    e.add(['dndecor:brass_frontlight', 'dndecor:andesite_frontlight', 'dndecor:zinc_frontlight', 'dndecor:copper_frontlight', 'dndecor:industrial_frontlight', 'dndecor:gold_frontlight', 'dndecor:iron_frontlight', 'dndecor:netherite_frontlight'],
+       Text.yellow(Text.translatable("tooltip.frontlights"))
+    )
     
 })
 // Text.translatable("tooltip.")

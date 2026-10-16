@@ -22,4 +22,5 @@ ServerEvents.tags('block',e=>{
         'create_rns:uranium_deposit_block','create_rns:quartz_deposit_block','create_rns:silver_deposit_block','create_rns:coal_deposit_block',
         'create_rns:platinum_deposit_block','create_rns:osmium_deposit_block','create_rns:lapis_deposit_block'
     ])
+    e.add('kubejs:frontlights',['dndecor:brass_frontlight', 'dndecor:andesite_frontlight', 'dndecor:zinc_frontlight', 'dndecor:copper_frontlight', 'dndecor:industrial_frontlight', 'dndecor:gold_frontlight', 'dndecor:iron_frontlight', 'dndecor:netherite_frontlight'])
 })

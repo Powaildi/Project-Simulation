@@ -14,20 +14,20 @@ const $ItemHandlerCapability = Java.loadClass('net.neoforged.neoforge.capabiliti
 const $Direction = Java.loadClass('net.minecraft.core.Direction')
 
 const CYCLE_TICKS = 20
-const FLUID_PER_CYCLE = 2000
+const FLUID_PER_CYCLE = 10000
 
 // 相对控制器的局部偏移 [dx, dy, dz]
 // 左侧输入储罐（2 格高）
-const NEGATIVE_INPUT_TANK = [[-2, 0, 0], [-2, 1, 0]]
+const NEGATIVE_INPUT_TANK = [[2, 0, 0], [2, 1, 0]]
 // 右侧输入储罐（2 格高）
-const POSITIVE_INPUT_TANK = [[2, 0, 0], [2, 1, 0]]
+const POSITIVE_INPUT_TANK = [[-2, 0, 0], [-2, 1, 0]]
 
 // 底部左侧横向储罐
-const NEGATIVE_OUTPUT_TANK = [[-2, -3, -1], [-2, -3, 0], [-2, -3, 1]]
+const NEGATIVE_OUTPUT_TANK = [[2, -3, -1], [2, -3, 0], [2, -3, 1]]
 // 底部中间（前方）横向储罐
 const EXTRA_OUTPUT_TANK = [[-1, -3, -2], [0, -3, -2], [1, -3, -2]]
 // 底部右侧横向储罐
-const POSITIVE_OUTPUT_TANK = [[2, -3, -1], [2, -3, 0], [2, -3, 1]]
+const POSITIVE_OUTPUT_TANK = [[-2, -3, -1], [-2, -3, 0], [-2, -3, 1]]
 
 // 后下方物品保险库
 const ITEM_VAULT = [[-1, -2, 2], [0, -2, 2], [1, -2, 2]]

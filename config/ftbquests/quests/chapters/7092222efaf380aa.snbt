@@ -1177,6 +1177,7 @@
 				{
 					id: "5BCC764E1D8E811C"
 					item: { count: 1, id: "createdieselgenerators:oil_barrel" }
+					optional_task: true
 					type: "item"
 				}
 			]

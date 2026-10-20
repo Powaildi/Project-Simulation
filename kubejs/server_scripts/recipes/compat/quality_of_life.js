@@ -299,5 +299,8 @@ ServerEvents.recipes(e=>{
     e.recipes.create.filling(CreateItem.of('kubejs:graphite',0.5),
         ['create:millstone',Fluid.of('create_dragons_plus:black_dye',250)])   
         .id('filling/graphite')
-    
+    e.recipes.vintageimprovements.pressurizing([Fluid.of('mekanism:sulfur_dioxide',300),`minecraft:bread[item_name='{"color":"black","italic":false,"translate":"item.minecraft.bread"}']`],
+        [Fluid.of('mekanism:sulfuric_acid',300),'minecraft:sugar'],125)
+        .secondaryFluidOutput(Fluid.of('kubejs:carbon_dioxide',300))
+        .id('pressurizing/black_bread')
 })

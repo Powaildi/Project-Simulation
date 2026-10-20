@@ -298,14 +298,22 @@
 		{
 			dependencies: ["5052189BAE862825"]
 			id: "456E24408BCEC751"
-			rewards: [{
-				id: "3E99C9702F1E4E30"
-				item: {
-					count: 1
-					id: "kubejs:infinite_superheat_bar"
+			rewards: [
+				{
+					id: "3E99C9702F1E4E30"
+					item: {
+						count: 1
+						id: "kubejs:infinite_superheat_bar"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					exclude_from_claim_all: true
+					id: "4C0904B048E58993"
+					table_id: 7330627440131725180L
+					type: "choice"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "6F7059913C5F8E0F"
@@ -400,21 +408,27 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -5.0d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["75BC1BB1DCC33ADC"]
+			dependencies: [
+				"75BC1BB1DCC33ADC"
+				"12C1E9B2D99472E4"
+			]
 			id: "2821A39257C20B5C"
+			size: 1.5d
 			tasks: [{
 				id: "1F9C6CF1EC867AB5"
 				item: { count: 1, id: "createdieselgenerators:huge_diesel_engine" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
+			dependencies: ["1DDC1845509FC0E1"]
+			hide_dependency_lines: true
 			id: "4DE9D3E768D99882"
 			tasks: [{
 				id: "5A63E34AB89EB13C"
@@ -442,7 +456,11 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["36CE9ED59BC646AD"]
+			dependencies: [
+				"36CE9ED59BC646AD"
+				"1DDC1845509FC0E1"
+			]
+			dependency_requirement: "one_completed"
 			id: "4150DF097AEA7093"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -596,7 +614,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["456E24408BCEC751"]
+			dependencies: [
+				"456E24408BCEC751"
+				"41FBF52C040D80F2"
+			]
 			hide_until_deps_complete: true
 			id: "1B15DAA931F356C8"
 			invisible: true
@@ -668,7 +689,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4FD590696D0A11F2"]
@@ -777,6 +798,55 @@
 			]
 			x: -4.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["41FBF52C040D80F2"]
+			id: "1DDC1845509FC0E1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E68CB285EE77983"
+				table_id: 7330627440131725180L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "7944A99CAD96D57F"
+				item: { count: 1, id: "mbd2:electrolyser" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			id: "41FBF52C040D80F2"
+			tasks: [{
+				id: "33E0F8F8C9314EEE"
+				item: { count: 1, id: "mekanism:metallurgic_infuser" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["32636BBE66E62E51"]
+			id: "12C1E9B2D99472E4"
+			tasks: [{
+				id: "4D05EAD9E204260C"
+				item: { count: 1, id: "simulated:engine_assembly" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["75BC1BB1DCC33ADC"]
+			id: "32636BBE66E62E51"
+			tasks: [{
+				id: "20E7EFACD577F80C"
+				item: { count: 1, id: "kubejs:lube_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
 		}
 	]
 }

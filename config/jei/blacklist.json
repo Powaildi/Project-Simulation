@@ -1,3 +1,6 @@
 [
-  {"version":2}
+  {"version":2},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"electroenergetics:plant_oil"},"type":"fluid_stack"}},
+  {"hide_mode":"WILDCARD","ingredient":{"ingredient":{"id":"electroenergetics:plant_oil_bucket"},"type":"item_stack"}},
+  {"hide_mode":"SINGLE","ingredient":{"ingredient":{"id":"mekanism:creative_fluid_tank","components":"{\"mekanism:fluids\":{fluid_tanks:[{amount:2147483647,id:\"electroenergetics:plant_oil\"}]}}"},"type":"item_stack"}}
 ]

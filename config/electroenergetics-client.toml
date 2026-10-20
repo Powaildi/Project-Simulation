@@ -1,6 +1,6 @@
 #.
 #Show AC content in the creative tab.
-showACContent = false
+showACContent = true
 #.
 #Disables flywheel wire rendering
 disableFlywheelWireRendering = false

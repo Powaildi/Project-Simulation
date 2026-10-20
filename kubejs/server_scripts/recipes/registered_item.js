@@ -61,4 +61,17 @@ ServerEvents.recipes(e=>{
         C:'kubejs:electrode',
         D:'mekanism:electrolytic_core'
     }).id('crafting/mbd2/electrolyser')
+
+    e.shaped('mbd2:crusher',[
+        ' A ',
+        'CBC',
+        ' D '
+    ],{
+        A:'kubejs:circuit',
+        B:'kubejs:industrial_iron_storage_block',
+        C:'dndecor:large_industrial_cogwheel',
+        D:'create:chute'
+    }).id('crafting/mbd2/crusher')
+    e.shapeless('mbd2:crusher_part',['create:andesite_casing', 'create:shaft'])
+        .id('crafting/crusher_part')
 })

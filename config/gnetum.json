@@ -90,6 +90,12 @@
       },
       "pass": 1
     },
+    "aeroworks:console_hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "mekanism:radiation_overlay": {
       "enabled": {
         "value": "AUTO"
@@ -144,6 +150,12 @@
       },
       "pass": 2
     },
+    "naturescompass:natures_compass": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "minecraft:boss_overlay": {
       "enabled": {
         "value": "AUTO"
@@ -191,6 +203,12 @@
         "value": "AUTO"
       },
       "pass": 1
+    },
+    "explorerscompass:explorers_compass": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
     },
     "xaerohud:hud": {
       "enabled": {

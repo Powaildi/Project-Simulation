@@ -113,5 +113,8 @@ ServerEvents.recipes(e=>{
         e.recipes.mekanism.combining(output,main_input,extra_input).id(element.getId())
     })
 
-    
+    // let replicators = e.recipeStream({id:/.*replicator.*/})
+    // replicators.forEach(r=>{
+    //     console.log(r.json)
+    // })
 })

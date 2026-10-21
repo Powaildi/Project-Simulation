@@ -48,7 +48,7 @@
 			id: "232BC24FABBDD578"
 			item: {
 				count: 1
-				id: "createdeco:industrial_iron_ingot"
+				id: "kubejs:industrial_iron_ingot"
 			}
 			weight: 0.5f
 		}

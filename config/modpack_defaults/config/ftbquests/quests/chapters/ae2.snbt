@@ -559,12 +559,6 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "6E92E2F9654D6B87"
-					item: { components: { "ftbquests:missing_item": "createaddition:tesla_coil" }, count: 1, id: "ftbquests:missing_item" }
-					optional_task: true
-					type: "item"
-				}
 			]
 			x: 8.5d
 			y: 3.0d
@@ -686,13 +680,24 @@
 		}
 		{
 			dependencies: ["65583F207526AA83"]
+			icon: {
+				id: "kubejs:molten_quartz_bucket"
+			}
 			id: "7A5176E9980636C9"
 			shape: "diamond"
-			tasks: [{
-				id: "4A2F9E38C57A84CF"
-				item: { count: 1, id: "kubejs:molten_quartz_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "312688EB9D7A0F63"
+					optional_task: true
+					type: "checkmark"
+				}
+				{
+					id: "4A2F9E38C57A84CF"
+					item: { count: 1, id: "kubejs:molten_quartz_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 8.5d
 			y: 4.5d
 		}

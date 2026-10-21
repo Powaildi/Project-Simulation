@@ -802,12 +802,22 @@
 		{
 			dependencies: ["41FBF52C040D80F2"]
 			id: "1DDC1845509FC0E1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7E68CB285EE77983"
-				table_id: 7330627440131725180L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E68CB285EE77983"
+					table_id: 7330627440131725180L
+					type: "choice"
+				}
+				{
+					id: "476107731F1C5EC1"
+					item: {
+						count: 1
+						id: "electroenergetics:converter"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7944A99CAD96D57F"
 				item: { count: 1, id: "mbd2:electrolyser" }
@@ -847,6 +857,23 @@
 			}]
 			x: 1.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["7683D9598438F7E0"]
+			id: "368C0F407C3AF0E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DAC1DDEBCA2B4AF"
+				table_id: 7330627440131725180L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6B2DACF1522D9E31"
+				item: { count: 1, id: "mbd2:crusher" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
 		}
 	]
 }

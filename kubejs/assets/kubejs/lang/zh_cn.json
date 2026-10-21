@@ -34,7 +34,9 @@
     "block.mbd2.assembler":"自动化组装机（WIP）",
     "block.mbd2.sprinkler":"喷灌器",
     "block.mbd2.ant_nest":"蚂蚁窝",
-    "block.mbd2.electrolyser":"小型电解池（WIP）",
+    "block.mbd2.electrolyser":"小型电解池",
+    "block.mbd2.crusher":"小型粉碎机",
+    "block.mbd2.crusher_part":"小型粉碎机部件",
 
     "fluid_type.kubejs.cryogen":"冷冻液",
     "fluid_type.kubejs.sweet_water":"甜水",

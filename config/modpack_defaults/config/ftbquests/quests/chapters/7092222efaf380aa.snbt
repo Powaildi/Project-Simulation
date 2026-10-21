@@ -1177,6 +1177,7 @@
 				{
 					id: "5BCC764E1D8E811C"
 					item: { count: 1, id: "createdieselgenerators:oil_barrel" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1413,8 +1414,11 @@
 				{
 					id: "53E8E6DC2450A3B4"
 					item: {
+						components: {
+							"ftbquests:missing_item": "create:filter"
+						}
 						count: 1
-						id: "create:filter"
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}
@@ -1546,8 +1550,11 @@
 			rewards: [{
 				id: "15BB714C2F62FD09"
 				item: {
+					components: {
+						"ftbquests:missing_item": "create:filter"
+					}
 					count: 1
-					id: "create:filter"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

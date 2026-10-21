@@ -12,6 +12,7 @@
 	chapter.6B6916B21A0B9243.title: "欢迎来到机械动力：模拟计划"
 	chapter.6D812D0F1FB67760.title: "长途运输"
 	chapter.7092222EFAF380AA.title: "启动流程"
+	chapter.74A248479D9EC957.title: "电气时代"
 	chapter.7535927818BB5361.title: "超越维度"
 	chapter.75FE8B397D533EFA.title: "无限采矿"
 	chapter_group.218ACD7D75A06A52.title: "第二章 物流时代"
@@ -60,6 +61,15 @@
 	quest.040DF246743F2681.quest_subtitle: "下单和自动合成"
 	quest.05080367636F746B.quest_subtitle: "超级燃烧之一"
 	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
+	quest.054D8038C897F5EC.quest_desc: [
+		"这是电力学原版唯一发电方式。"
+		"转子基础应力消耗为6xRPM；"
+		"每个定子消耗144xRPM应力，"
+		"提供144W/RPM功率，1.44V/RPM电压。"
+		"在末端放电刷以输出电力。"
+	]
+	quest.054D8038C897F5EC.quest_subtitle: "应力发电"
+	quest.054D8038C897F5EC.title: "发电设施"
 	quest.058A306939F2A867.quest_desc: [""]
 	quest.058A306939F2A867.quest_subtitle: "动态结构"
 	quest.070C1AF80BD8C2E3.quest_desc: ["工作盆盖板和机械动力：火炮的工作盆铸造盖（已经删除）执行的不是同一种配方。"]
@@ -173,6 +183,8 @@
 		"不要把重要的东西丢上这个传送带！"
 		"现在还有专门的销毁装置"
 	]
+	quest.16E3B88D91C0CEFB.quest_desc: ["能装很多元件，不妨自己试试。"]
+	quest.16E3B88D91C0CEFB.quest_subtitle: "紧凑化"
 	quest.18F42B310CF3BA9B.quest_subtitle: "便携的储罐"
 	quest.19C7F226F860613E.quest_desc: [
 		"Mob Neutralizer 改变了怪物对你的探测范围，"
@@ -197,6 +209,14 @@
 	quest.1CD1C5B8A1C8234D.quest_subtitle: "常见小型引擎"
 	quest.1D07141C7211A806.quest_desc: ["如果你直接站在铁把手所在物理结构上，你就不能把自己拉起来。"]
 	quest.1D07141C7211A806.quest_subtitle: "小明能把自己拉起来吗？"
+	quest.1DDC1845509FC0E1.quest_desc: [
+		"多方块结构，请用蓝图打出来。"
+		"黑色块为阴极，白色块为阳极。"
+		"流体从上面储罐输入，下面储罐输出；"
+		"物品向机器输入，下面物品保险库输出；"
+		"能量直接接到机器上，接线端子为装饰。"
+	]
+	quest.1DDC1845509FC0E1.quest_subtitle: "能做，但是不太好用"
 	quest.1E220BF067A4AABB.quest_subtitle: "用它再生是前期不错的手段"
 	quest.1E3A8BA45D26C457.quest_subtitle: "更轻的雪"
 	quest.1EF93DED50739580.quest_subtitle: "编辑元件"
@@ -206,6 +226,12 @@
 	quest.2111149AE352A053.quest_subtitle: "挖掉它，寻找陨石中心的外星科技"
 	quest.2142E4744C27EF45.quest_subtitle: "移动空间"
 	quest.2324794C4F63BE2A.quest_subtitle: "小创造马达"
+	quest.242D04EC02FCA753.quest_desc: [
+		"远程运输应力，不过，把燃料运过去给柴油机烧会更好吗？"
+		"如果发现了电表倒转，请向我汇报。"
+	]
+	quest.242D04EC02FCA753.quest_subtitle: "远距离传输应力"
+	quest.242D04EC02FCA753.title: "电动马达"
 	quest.24482FF7F5A5C497.quest_desc: ["你知道JEI可以翻页吗？"]
 	quest.24482FF7F5A5C497.quest_subtitle: "最安全最方便的一集"
 	quest.24482FF7F5A5C497.title: "鼓风机触媒"
@@ -222,15 +248,20 @@
 		"使用扳手shift右键装配后的矿车能直接带走矿车上的东西。"
 	]
 	quest.259C4083619FD9B8.quest_subtitle: "一把抓住，顷刻炼化"
+	quest.259C4C39C685CC08.quest_desc: [
+		"扳手右键端子改变外观。"
+		"多重端子之间是绝缘的。"
+	]
 	quest.26323D539543CF46.quest_subtitle: "让别人用"
 	quest.270B696D6B36D811.quest_desc: [
 		"你可能在别的包见过那个灰色的水龙头。"
-		"它是Supplemantaries的，然而这个包没有，建议不要为此安装这个mod！"
+		"它是Supplementaries的，然而这个包没有，建议不要为此安装这个mod！"
 		"水龙头能注液和填充工作盆，但是不能填充流体到封闭的容器。"
 		"或许一些中期的科技能帮到你！"
 		"{@pagebreak}"
 		"水龙头不能对传送带上的物品注液，那是注液器和智能水龙头才能干的事情。"
 	]
+	quest.2821A39257C20B5C.quest_subtitle: "现版本最强"
 	quest.29B0B67CB6D44B5D.quest_desc: ["后续内容正在制作"]
 	quest.29B0B67CB6D44B5D.quest_subtitle: "通用机械的大门向你打开"
 	quest.2ADE68F0135119C2.quest_desc: [
@@ -247,6 +278,7 @@
 	quest.2C6E930E52925654.quest_desc: ["[ \"请打开任务的下一节：\", { \"text\": \"向天空奔去\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0530F866F0C5EDD2\" } } ]"]
 	quest.2C6E930E52925654.quest_subtitle: "我不属于这里，但是也会动"
 	quest.2CDB253624DF5677.title: "鼓风机（吸）"
+	quest.2D1D727F250A0749.quest_subtitle: "单向通过"
 	quest.2D84C696D048115A.quest_desc: ["物品在使用后打上不可破坏标签。"]
 	quest.2F10E89A968A75D9.quest_desc: [
 		"将它贴在你的物理结构上，右键就能查看受力图。"
@@ -291,6 +323,11 @@
 	quest.31F0CE31EEACF0BD.title: "石英母岩"
 	quest.327172E392FDDA31.title: "无线红石"
 	quest.32C1EFB075E6E149.quest_subtitle: "相对无用"
+	quest.32CDD37407C86240.quest_desc: [
+		"手持空线轴右键接好的电线以回收电线。"
+		"手持万用表看电线可以看到电流和方向。"
+	]
+	quest.32CDD37407C86240.quest_subtitle: "由此开始"
 	quest.3305E1F485852A08.quest_subtitle: "设置管理员"
 	quest.33544FE083DAD503.quest_subtitle: "中间是另一个网络"
 	quest.337A0C9565DEDAEB.quest_desc: [
@@ -323,6 +360,19 @@
 	quest.34390F8254673F95.quest_subtitle: "实体方块"
 	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
 	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
+	quest.368C0F407C3AF0E4.quest_desc: [
+		"多方块结构，请用蓝图打出来。"
+		"根据转速，提供不同的处理速度，档位："
+		"16/32/64/128/192/256"
+		"接入256转速时，应力消耗将会大幅增加！"
+	]
+	quest.36A32CDAE1D82E05.quest_subtitle: "尚未准备好"
+	quest.36A32CDAE1D82E05.title: "三相交流电"
+	quest.36AD269895E3CF64.quest_desc: [
+		"让它先烧坏总比不知道哪根随机烧坏要好。"
+		"手持保险丝右键保险丝座可以放入小的保险丝。"
+	]
+	quest.36AD269895E3CF64.quest_subtitle: "防止电线烧坏"
 	quest.37097B68F6CC04CF.quest_subtitle: "还可以给无线终端充能"
 	quest.38307E4620129ECB.quest_desc: ["非常适合收拾爆了一堆物品的情况！"]
 	quest.38307E4620129ECB.quest_subtitle: "推荐使用"
@@ -353,10 +403,16 @@
 		"更多的修改，详见Wheels Upon Chairs的配置文件。"
 	]
 	quest.3D8FEA109DE83181.title: "抽油机"
+	quest.3DDC0E5C35FFB778.quest_subtitle: "另一种开关"
 	quest.3E3DE48243CBFD65.title: "破坏核心和成型核心"
 	quest.3EFEB4F6AA3160A3.quest_subtitle: "复制配置"
 	quest.3F12D190F7E0183C.quest_subtitle: "传动元件的最终形态"
 	quest.3F268AF2847961FD.quest_subtitle: "试试用它来制作安山合金"
+	quest.3F5E66DB4191C626.quest_desc: [
+		"电流表串联在线路中；"
+		"电压表与用电器并联。"
+	]
+	quest.3F5E66DB4191C626.title: "电流表，电压表"
 	quest.3F91B9A9B32FC4DF.quest_subtitle: "用于放置物品和流体等组件"
 	quest.3FF5C9B379E26866.quest_desc: [
 		"将方块以物品形式扔出去，或者放在世界中。然后看着它，Jade（就是屏幕顶部的那个东西）会显示它的物理性质，比如质量(kpg)。"
@@ -387,6 +443,10 @@
 	]
 	quest.4600A08AC1E40CFF.quest_subtitle: "扔在工作盆里面"
 	quest.4600A08AC1E40CFF.title: "铸模"
+	quest.466260F4C832FFE8.quest_desc: [
+		"提高电压可以降低电流损耗。"
+		"长时间超功率运行会燃烧。"
+	]
 	quest.46DA82F7690C2145.quest_subtitle: "不做不影响进度"
 	quest.46DA82F7690C2145.title: "完全支线"
 	quest.48B8B5226A03CFFB.quest_desc: ["堆在网络任意位置就能发挥功能"]
@@ -406,6 +466,8 @@
 	quest.4B6C5761E541D393.quest_subtitle: "召唤陨石，然后接住它，以获得丰厚奖励"
 	quest.4D0CD0B67A260396.quest_desc: ["放在存产物的箱子周围，将产物吸收到维度网络。"]
 	quest.4D0CD0B67A260396.quest_subtitle: "吸取周围容器"
+	quest.4DB7F0DCCFE5DEB8.quest_desc: ["用扳手调整箭头方向。"]
+	quest.4DB7F0DCCFE5DEB8.quest_subtitle: "与FE体系转换"
 	quest.4EB08D6A562C58B9.quest_desc: [
 		"我在世界出生点放置了一个铁矿床，它应该对你有不小的帮助！"
 		"直接挖掘矿床不会掉落任何东西！"
@@ -472,6 +534,7 @@
 	quest.52DBE39A81CFB72F.quest_subtitle: "推力"
 	quest.52DBE39A81CFB72F.title: "螺旋桨"
 	quest.5309CF54BE9339B7.quest_subtitle: "接受物品，创建子网"
+	quest.535DF83782F85297.title: "灯泡"
 	quest.5489EACC0072DA0A.quest_desc: ["结构名称：Cloud Island"]
 	quest.5489EACC0072DA0A.quest_subtitle: "使用结构罗盘"
 	quest.5491BE8E5291EBC9.quest_subtitle: "无法手动取出"
@@ -547,6 +610,8 @@
 	]
 	quest.64E754E35D37D2D8.quest_subtitle: "长按调节转速"
 	quest.65583F207526AA83.title: "任意石英粉"
+	quest.6587CD058FF31E77.quest_desc: ["让两个不同起点的装配半成品在加压处汇合。"]
+	quest.6587CD058FF31E77.quest_subtitle: "你中有我"
 	quest.658AFFBC6A390283.quest_desc: [
 		"计划在月球生成"
 		"暂时可以通过充能玫瑰茶合成"
@@ -578,6 +643,7 @@
 	quest.6A84323C16937D1B.quest_subtitle: "隔断网络，不隔断能量传输"
 	quest.6BB61A20A98ECE6D.quest_subtitle: "跟物理体跳入虚空"
 	quest.6BB61A20A98ECE6D.title: "探访末地之海"
+	quest.6BBECEC4CFFA9EE5.title: "开关"
 	quest.6C664D445C80C5BC.title: "类似正常刷石机"
 	quest.6C70A9FFB4A2AE94.quest_desc: [
 		"开放容器"
@@ -665,6 +731,8 @@
 		"对称风帆不产生推力，通过施加阻力转向。"
 	]
 	quest.78FABF903D0B3007.quest_subtitle: "升力和阻力"
+	quest.7A5176E9980636C9.quest_desc: ["少量生产是不需要通过它的，但是它很有用。"]
+	quest.7A5176E9980636C9.quest_subtitle: "高效生产"
 	quest.7A5176E9980636C9.title: "熔融石英"
 	quest.7CF777E5AD31A03E.quest_desc: [
 		"冷冻液是一些前期物品高级配方和以后获取液态空气的必需品。"
@@ -714,6 +782,7 @@
 	task.2863BF7C1F5A5FD8.title: "任意抽屉"
 	task.29692A3292EAD779.title: "我知道了"
 	task.2A552C74AEB2E69F.title: "内含Tweakeroo"
+	task.312688EB9D7A0F63.title: "我知道了"
 	task.3195FBC8ABE52356.title: "第二章由此开始"
 	task.320BE1EF7193CF04.title: "观察矿床"
 	task.367BE7D99ABC79D0.title: "你随时可以开始后面的章节"
@@ -721,6 +790,7 @@
 	task.389316D7CA06CE43.title: "完全支线"
 	task.3A040D0F880F771D.title: "寻找采矿机"
 	task.3D6EBAA4FA82E6EE.title: "挑战-接住陨石"
+	task.41DF54C96076DAB1.title: "任意电动马达"
 	task.42465A15053A01A6.title: "被动过滤"
 	task.477F78D205C8C031.title: "挖掘陨石"
 	task.52B4094779BE502C.title: "游戏规则"
@@ -729,6 +799,7 @@
 	task.63D281AAE9BA2B2A.title: "快速展开产线(Legacy)"
 	task.673D8822323F6B8C.title: "或者你有你的想法"
 	task.683402D386BCBC62.title: "寻找陨石"
+	task.69805AA5904BA71B.title: "我知道了"
 	task.6D4A5293BC66AACC.title: "精准采集"
 	task.72420D31DF865D4E.title: "假如我直接飞"
 	task.74742F5B15A36BBC.title: "没有耐久"

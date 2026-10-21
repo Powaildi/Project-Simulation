@@ -209,6 +209,13 @@
 	quest.1CD1C5B8A1C8234D.quest_subtitle: "常见小型引擎"
 	quest.1D07141C7211A806.quest_desc: ["如果你直接站在铁把手所在物理结构上，你就不能把自己拉起来。"]
 	quest.1D07141C7211A806.quest_subtitle: "小明能把自己拉起来吗？"
+	quest.1DDC1845509FC0E1.quest_desc: [
+		"多方块结构，请用蓝图打出来。"
+		"黑色块为阴极，白色块为阳极。"
+		"流体从上面储罐输入，下面储罐输出；"
+		"物品向机器输入，下面物品保险库输出；"
+		"能量直接接到机器上，接线端子为装饰。"
+	]
 	quest.1DDC1845509FC0E1.quest_subtitle: "能做，但是不太好用"
 	quest.1E220BF067A4AABB.quest_subtitle: "用它再生是前期不错的手段"
 	quest.1E3A8BA45D26C457.quest_subtitle: "更轻的雪"
@@ -254,6 +261,7 @@
 		"{@pagebreak}"
 		"水龙头不能对传送带上的物品注液，那是注液器和智能水龙头才能干的事情。"
 	]
+	quest.2821A39257C20B5C.quest_subtitle: "现版本最强"
 	quest.29B0B67CB6D44B5D.quest_desc: ["后续内容正在制作"]
 	quest.29B0B67CB6D44B5D.quest_subtitle: "通用机械的大门向你打开"
 	quest.2ADE68F0135119C2.quest_desc: [
@@ -352,6 +360,12 @@
 	quest.34390F8254673F95.quest_subtitle: "实体方块"
 	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
 	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
+	quest.368C0F407C3AF0E4.quest_desc: [
+		"多方块结构，请用蓝图打出来。"
+		"根据转速，提供不同的处理速度，档位："
+		"16/32/64/128/192/256"
+		"接入256转速时，应力消耗将会大幅增加！"
+	]
 	quest.36A32CDAE1D82E05.quest_subtitle: "尚未准备好"
 	quest.36A32CDAE1D82E05.title: "三相交流电"
 	quest.36AD269895E3CF64.quest_desc: [

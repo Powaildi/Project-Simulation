@@ -43,7 +43,8 @@ function manhattan(pos, centerX, centerZ) {
 }
 
 function isAir(level, pos) {
-    return level.getBlock(pos.x, pos.y, pos.z).id === AIR_ID
+    let block = level.getBlock(pos.x, pos.y, pos.z)
+    return block.id === AIR_ID || block.id === 'minecraft:cave_air'
 }
 
 function worldPosition(level, pos) {
@@ -80,6 +81,10 @@ function compactActive() {
     staticToSandTask.A = staticToSandTask.A.filter(entry => entry.zone === 'A')
 }
 
+function compactWaiting() {
+    staticToSandTask.W = staticToSandTask.W.filter(entry => entry.zone === 'W')
+}
+
 function isFakePlayer(player) {
     if (typeof player.isFake === 'function') return player.isFake()
     if (typeof player.isFakePlayer === 'function') return player.isFakePlayer()
@@ -112,22 +117,26 @@ function selectBlocks(level, start, blockId) {
     return selected
 }
 
-function addSelection(level, selected, blockId) {
+function addSelection(level, selected, blockId, center) {
     if (selected.length === 0) return
 
-    let minX = selected[0].x
-    let maxX = selected[0].x
-    let minZ = selected[0].z
-    let maxZ = selected[0].z
-    selected.forEach(pos => {
-        minX = Math.min(minX, pos.x)
-        maxX = Math.max(maxX, pos.x)
-        minZ = Math.min(minZ, pos.z)
-        maxZ = Math.max(maxZ, pos.z)
-    })
+    if (center == null) {
+        let minX = selected[0].x
+        let maxX = selected[0].x
+        let minZ = selected[0].z
+        let maxZ = selected[0].z
+        selected.forEach(pos => {
+            minX = Math.min(minX, pos.x)
+            maxX = Math.max(maxX, pos.x)
+            minZ = Math.min(minZ, pos.z)
+            maxZ = Math.max(maxZ, pos.z)
+        })
+        center = {
+            x: Math.floor((minX + maxX) / 2),
+            z: Math.floor((minZ + maxZ) / 2)
+        }
+    }
 
-    let centerX = Math.floor((minX + maxX) / 2)
-    let centerZ = Math.floor((minZ + maxZ) / 2)
     let additions = []
     selected.forEach(pos => {
         let key = positionKey(level, pos)
@@ -137,8 +146,8 @@ function addSelection(level, selected, blockId) {
             level: level,
             pos: pos,
             blockId: blockId,
-            centerX: centerX,
-            centerZ: centerZ,
+            centerX: center.x,
+            centerZ: center.z,
             lastPos: null,
             horizontalMoves: 0,
             zone: 'A'
@@ -224,6 +233,7 @@ function processEntry(entry, pendingA) {
 
     if (target == null) {
         entry.zone = 'W'
+        staticToSandTask.W.push(entry)
         return
     }
 
@@ -279,14 +289,20 @@ BlockEvents.rightClicked(e => {
     if (player.getMainHandItem().id !== STATIC_TO_SAND) return
     if (block.id === AIR_ID) return
 
+    let directPhaseTwo = player.isShiftKeyDown()
+    let center = directPhaseTwo
+        ? { x: Math.floor(player.xo), z: Math.floor(player.zo) }
+        : null
     let selected = selectBlocks(level, block.pos, block.id)
     if (selected.length === 0) return
-    addSelection(level, selected, block.id)
+    addSelection(level, selected, block.id, center)
     if (!isFakePlayer(player)) staticToSandTask.participants.add(player)
     if (!staticToSandTask.running) {
         staticToSandTask.running = true
-        staticToSandTask.phase = 1
+        staticToSandTask.phase = directPhaseTwo ? 2 : 1
         staticToSandTask.tickCount = 0
+    } else if (directPhaseTwo) {
+        staticToSandTask.phase = 2
     }
 })
 
@@ -300,10 +316,9 @@ ServerEvents.tick(e => {
         let entry = staticToSandTask.A[i]
         if (entry.zone === 'A') processEntry(entry, pendingA)
     }
-    if(staticToSandTask.phase == 2)console.log(staticToSandTask.A)
+
     appendUnique(staticToSandTask.A, pendingA)
     compactActive()
-    console.log('Active:'+staticToSandTask.A.length)
-    console.log('Waiting:'+staticToSandTask.W.length)
+    compactWaiting()
     advancePhaseOrFinish()
 })

@@ -726,6 +726,11 @@
 	quest.76E86999888CF0BD.quest_desc: ["手持恩特罗种子右键世界中的福鲁伊克斯块。"]
 	quest.76E86999888CF0BD.quest_subtitle: "像你做第一个安山机壳那样"
 	quest.77C2DA5E42C07511.quest_desc: ["将产物输出到前方的开放容器"]
+	quest.78419DC8BB3E5AC1.quest_desc: [
+		"对右键的方块连锁进行模拟，它们会尝试填坑。"
+		"可能造成巨大卡顿，不要随意使用！"
+	]
+	quest.78419DC8BB3E5AC1.quest_subtitle: "重塑矿脉"
 	quest.78FABF903D0B3007.quest_desc: [
 		"风帆产生向蒙皮那一面的推力"
 		"对称风帆不产生推力，通过施加阻力转向。"

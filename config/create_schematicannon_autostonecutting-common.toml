@@ -1,0 +1,20 @@
+[stonecutting]
+	#When the Schematicannon cannot find a material that can be produced by a stonecutter recipe, automatically craft it from the raw ingredient found in adjacent containers.
+	printCrafting = true
+	#When generating the material checklist, convert every material that can be produced by a stonecutter recipe back into its raw ingredient (rounded up).
+	checklistReverse = true
+	#Yuushya Townscape / Yuushya Modelling support. Those blocks are cut from intermediate items
+	#(blueprints, 模板 templates), which in turn are cut from a raw item (Bismuth Crystal, Pictor
+	#油漆工). With this on, the intermediate steps are reversed away: a finished block is sourced
+	#from the raw item at the bottom of the chain, with the counts of the recipes unchanged.
+	yuushyaBismuth = true
+	#Treat items that only differ by a vanilla colour prefix (red and green concrete powder,
+	#purple and green stained glass, ...) as interchangeable: the cannon may print one colour from
+	#any other colour, the checklist merges them into one "(Any Color)" line and the stock keeper
+	#pulls whichever colours the network has. When a colour is crafted from a colourless item plus
+	#a dye (terracotta, glass, candles), the list asks for that colourless item instead.
+	anyColor = true
+	#Merge the wooden cutting chain into a single step: 1 log -> 6 planks -> wooden shapes, so one
+	#log is treated as the stonecutting source of 6 planks, 12 slabs, 6 stairs, 6 doors, 6 fences,
+	#6 trapdoors, 6 fences gates, 6 signs, 6 pressure plates, 6 buttons and so on.
+	woodCuttingChain = true

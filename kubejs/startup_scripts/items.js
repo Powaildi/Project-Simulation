@@ -14,6 +14,7 @@ StartupEvents.registry('item', e => {
     e.create('industrial_iron_sheet').displayName('工业铁板').rarity('uncommon')
     e.create('industrial_iron_nugget').displayName('工业铁粒').rarity('uncommon')
     e.create('clamper').displayName('固定器').rarity('rare')
+    e.create('static_to_sand').displayName('化地为砂').rarity('uncommon')
 
 })
 CDGEvents.molds(e=>{

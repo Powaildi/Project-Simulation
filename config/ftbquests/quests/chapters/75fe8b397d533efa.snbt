@@ -151,5 +151,17 @@
 			x: 2.5d
 			y: -1.0d
 		}
+		{
+			id: "78419DC8BB3E5AC1"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "45513FED1BE6F134"
+				item: { count: 1, id: "kubejs:static_to_sand" }
+				type: "item"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
 	]
 }

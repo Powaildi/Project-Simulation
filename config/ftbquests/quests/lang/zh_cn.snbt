@@ -729,6 +729,9 @@
 	quest.78419DC8BB3E5AC1.quest_desc: [
 		"对右键的方块连锁进行模拟，它们会尝试填坑。"
 		"可能造成巨大卡顿，不要随意使用！"
+		"{@pagebreak}"
+		"你还可以修改对应mod的部分配置，"
+		"以让世界中的沙子以别样的方式落下！"
 	]
 	quest.78419DC8BB3E5AC1.quest_subtitle: "重塑矿脉"
 	quest.78FABF903D0B3007.quest_desc: [

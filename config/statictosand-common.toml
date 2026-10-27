@@ -1,0 +1,33 @@
+#Maximum number of connected blocks selected by the static_to_sand item
+# Default: 1024
+# Range: > 1
+staticToSandMaxBlocks = 1024
+#Block tags used by StaticToSandEvent approximate matching
+approximateMatchingTags = ["minecraft:dirt", "statictosand:approximate_stone", "minecraft:terracotta"]
+#Whether gravity blocks are handled as StaticToSandEvents
+#Allowed Values: NONE, WHITELIST, BLACKLIST, ALL
+gravityBlockMode = "WHITELIST"
+#Maximum number of connected blocks selected for gravity block events
+# Default: 3
+# Range: > 1
+gravityBlockMaxBlocks = 3
+#Number of horizontal moves before an entry is put into the waiting zone
+# Default: 32
+# Range: > 1
+horizontalMoveLimit = 32
+#Minimum horizontal moves before an isolated entry enters the waiting zone
+# Default: 4
+# Range: > 0
+isolationMoveLimit = 4
+#Maximum number of blocks in the active zone
+# Default: 4096
+# Range: > 1
+activeBlockLimit = 4096
+#Maximum number of blocks in the waiting zone
+# Default: 16384
+# Range: > 1
+waitingBlockLimit = 16384
+#Whether fluids count as air for movement targets
+fluidsAreAir = false
+#Whether a falling block leaves a neighboring fluid source behind
+replaceFallingBlockWithFluid = false

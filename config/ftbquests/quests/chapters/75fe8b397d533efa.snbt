@@ -156,8 +156,8 @@
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "45513FED1BE6F134"
-				item: { count: 1, id: "kubejs:static_to_sand" }
+				id: "5A918BFCB6081671"
+				item: { count: 1, id: "statictosand:static_to_sand" }
 				type: "item"
 			}]
 			x: 3.75d

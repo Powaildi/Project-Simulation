@@ -203,7 +203,7 @@ key_key.jei.cheatOneItem2:key.mouse.right
 key_key.jei.cheatItemStack:key.mouse.left:SHIFT
 key_key.jei.cheatItemStack2:key.mouse.middle
 key_key.jei.toggleCheatModeConfigButton:key.mouse.left:CONTROL
-key_key.jei.toggleEditMode:key.keyboard.unknown
+key_key.jei.toggleEditMode:key.keyboard.keypad.7
 key_key.jei.toggleHideIngredient:key.mouse.left:CONTROL
 key_key.jei.toggleWildcardHideIngredient:key.mouse.right:CONTROL
 key_key.jei.recipeBack:key.keyboard.backspace
@@ -228,11 +228,11 @@ key_gui.xaero_toggle_dimension:key.keyboard.unknown
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_simulated.keyinfo.rotate_mode:key.keyboard.tab
 key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
@@ -293,6 +293,7 @@ key_dndesires.keyinfo.drill_active:key.keyboard.left.alt
 key_key.aero_cam_sync.toggle:key.keyboard.i
 key_key.aero_cam_sync.open_config:key.keyboard.unknown
 key_key.aero_cam_sync.add_mainhand_item_client:key.keyboard.unknown
+key_key.tracks.open_tuning:key.keyboard.j
 key_key.beyonddimensions.open_gui:key.keyboard.h
 key_key.beyonddimensions.open_terminal_quick_key:key.keyboard.p
 key_key.beyonddimensions.main_hand_item_transfer_key:key.mouse.middle

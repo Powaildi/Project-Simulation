@@ -16,7 +16,7 @@
 	#Stress units provided by the Yin Yang Engine
 	# Default: 32768.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	yin_yang_stress_provide = 262144.0
+	yin_yang_stress_provide = 65536.0
 
 [block_placer]
 	#Maximum hardness of blocks the Block Placer can break/replace. Blocks with higher hardness are ignored.

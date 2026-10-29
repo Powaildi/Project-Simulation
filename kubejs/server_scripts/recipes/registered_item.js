@@ -74,4 +74,18 @@ ServerEvents.recipes(e=>{
     }).id('crafting/mbd2/crusher')
     e.shapeless('mbd2:crusher_part',['create:andesite_casing', 'create:shaft'])
         .id('crafting/crusher_part')
+
+    e.shaped('statictosand:static_to_sand',[
+        ' AB',
+        'CDE',
+        'FG '
+    ],{
+        A:'minecraft:dirt',
+        B:'minecraft:nether_star',
+        C:'minecraft:stone',
+        D:'create_fantasizing:taiji_chipset',
+        E:'minecraft:sand',
+        F:'create:brass_hand',
+        G:'minecraft:gravel'
+    }).id('crafting/static_to_sand')
 })

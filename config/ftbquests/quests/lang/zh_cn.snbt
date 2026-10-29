@@ -495,6 +495,11 @@
 	quest.55EBEE3B63D35B7B.quest_subtitle: "可以让钻井范围增大"
 	quest.55EBEE3B63D35B7B.title: "在钻头上放置3x3铁块"
 	quest.56C5E859D3CB0D82.quest_desc: ["被套壳以后，用扳手右键传动杆的两面，可以开关应力在这两个面的传输。"]
+	quest.57AB73CDF5473F5D.quest_desc: [
+		"如果你在创造模式，请认准创造流体储罐："
+		"按下alt，内含流体必须是Fantasizing Again的，所有配方用的都是它。"
+		"而FluidLogistics的就不行。"
+	]
 	quest.592125B9214B82AA.title: "破坏面板和成型面板"
 	quest.5A1E0FBBF949AECD.quest_subtitle: "2FE/t -> 1AE/t"
 	quest.5B209FA5D5B7CA89.quest_desc: [

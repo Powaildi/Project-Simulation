@@ -10,5 +10,15 @@
 	images: [ ]
 	order_index: 8
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "7F329CD64CF4DCA6"
+		size: 1.5d
+		tasks: [{
+			id: "1AAAB65BD4DDB07A"
+			item: { count: 1, id: "powergrid:conductive_casing" }
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 }

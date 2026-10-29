@@ -429,6 +429,10 @@ let tools = [
     'minecraft:slime_ball', 
     'simulated:honey_glue', 
     'fluidlogistics:hand_pointer',
+    'statictosand:static_to_sand', 
+    'createpropulsion:assembler_stick', 
+    'createpropulsion:auto_glue', 
+    'create:schematic_table',
 
     'functionalstorage:linking_tool', 
     'functionalstorage:configuration_tool', 

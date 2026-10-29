@@ -169,9 +169,9 @@ MEJSEvents.entityTick(e=>{
 
     switch(turn_mode){
     //在白格上右转，在黑格上左转
-    case(0):ant.setRotation(ant.yRotO%360+90,0)//计划为黑格
+    case(0):ant.setRotation(ant.yRotO%360+270,0)//计划为黑格
     break
-    case(1):ant.setRotation(ant.yRotO%360+270,0)//计划为白格
+    case(1):ant.setRotation(ant.yRotO%360+90,0)//计划为白格
     break
     case(2):ant.setRotation(ant.yRotO%360+180,0)//计划为边界
     break

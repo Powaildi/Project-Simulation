@@ -67,6 +67,9 @@
 	quest.070C1AF80BD8C2E3.quest_subtitle: "放在工作盆上面"
 	quest.076B26BC1D242E98.quest_desc: ["需要这么多红石，怎么制作呢？"]
 	quest.077ECF29212AFD4C.quest_subtitle: "连接多条传送带，在顶部设定物流规则"
+	quest.07E18EF9D9851F5B.quest_desc: [""]
+	quest.07E18EF9D9851F5B.quest_subtitle: "???"
+	quest.07E18EF9D9851F5B.title: "瘫痪"
 	quest.082BC4F3A23DF1A3.quest_subtitle: "浮力"
 	quest.08C6A7A19C537F32.quest_subtitle: "是的，它可以合成"
 	quest.0983EC4C5B82647D.quest_desc: [
@@ -258,6 +261,13 @@
 	quest.2C6E930E52925654.quest_subtitle: "我不属于这里，但是也会动"
 	quest.2CDB253624DF5677.title: "鼓风机（吸）"
 	quest.2D84C696D048115A.quest_desc: ["物品在使用后打上不可破坏标签。"]
+	quest.2E95B6DDB5845BC3.quest_desc: [
+		"绝大多数染色方块有这样的对应关系，"
+		"还会保留一部分方块状态。"
+		"通常来说，例外就是普通规则那些混凝土。"
+	]
+	quest.2E95B6DDB5845BC3.quest_subtitle: "左边黑右边白"
+	quest.2E95B6DDB5845BC3.title: "颜色"
 	quest.2F10E89A968A75D9.quest_desc: [
 		"将它贴在你的物理结构上，右键就能查看受力图。"
 		"点左边能够开关力的显示。"
@@ -331,6 +341,9 @@
 		"但是，把矿床移走，标记不会跟着走。"
 	]
 	quest.34390F8254673F95.quest_subtitle: "实体方块"
+	quest.34D621E013E537E7.quest_desc: ["蚂蚁经过时不转换，也不转向"]
+	quest.34D621E013E537E7.quest_subtitle: "0°"
+	quest.34D621E013E537E7.title: "滑行块"
 	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
 	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
 	quest.368C0F407C3AF0E4.quest_desc: [
@@ -532,6 +545,10 @@
 		"[魔改]玩家吃掉以后获得创造飞行能力。"
 		"经过Apertyotis的改进，你在空中挖掘速度不会降低，即使触碰地板也不会停止飞行！"
 		"想要停止飞行，就再次双击空格。"
+		"{@pagebreak}"
+		"给女仆吃可以让她免疫摔落伤害。"
+		"车万女仆曾经存在该整合包中，但是删除了。"
+		"如果想要请自行下载。"
 	]
 	quest.5F93F939BA212B92.quest_subtitle: "创造飞行"
 	quest.5FE39298C63104FA.title: "电路板挑战辅助前置"
@@ -654,6 +671,26 @@
 	]
 	quest.72C8573949A44341.quest_subtitle: "你后续发展的重要助力"
 	quest.73A2BDD0064188B1.quest_desc: ["陨石罗盘会指向最近的陨石"]
+	quest.73EC1CCE9B735B71.quest_desc: [
+		"手持盔甲架右键蚂蚁窝，盔甲架就会变成蚂蚁，放在地上就开始运行。"
+		"在蚂蚁窝上方放置音符盒，蚂蚁会按照音符盒的音调调整速度，音调越高就越慢；红石充能音符盒会使得蚂蚁停下。"
+		"拆除蚂蚁窝会让蚂蚁消失。"
+		"{@pagebreak}"
+		"运动中的蚂蚁每次移动会旋转（白右转，黑左转），然后改变脚下方块的颜色，再向前一格。"
+		"对于不认识的方块，蚂蚁会转180°，对于空气和冰，蚂蚁不会转。"
+		"进行某些转换太快时蚂蚁会瘫痪一段时间。在细雪中则持续瘫痪。"
+		"{@pagebreak}"
+		"常见的转换已经写在右侧任务中。"
+		"除此以外，染色方块会这样转换："
+		"黑色-白色"
+		"&8灰色&r-&7淡灰色&r"
+		"&9蓝色&r-&6橙色&r"
+		"&#A54F20棕色&r-&b淡蓝色&r"
+		"&c红色&r-&2绿色&r"
+		"&#BB26FF紫色&r-&e黄色&r"
+		"&d品红色&r-&a黄绿色&r"
+		"&#FF96E5粉色&r-&3青色&r"
+	]
 	quest.73EC1CCE9B735B71.quest_subtitle: "兰顿蚂蚁"
 	quest.743A85328F25C949.title: "形成需要下方的方块是基岩"
 	quest.757D007D46FCA353.quest_desc: [
@@ -682,6 +719,14 @@
 	quest.766AC93DBAEB43EF.title: "采集工具"
 	quest.76E86999888CF0BD.quest_desc: ["手持恩特罗种子右键世界中的福鲁伊克斯块。"]
 	quest.76E86999888CF0BD.quest_subtitle: "像你做第一个安山机壳那样"
+	quest.76F877E9CB0069A5.quest_desc: [
+		"数字大于1的转换：黑变白会加冷却时间，白变黑会减冷却时间。"
+		"冷却使用冷冻值（TicksFrozen）计算。"
+		"冷冻值超过2400或者等于140会使蚂蚁进入瘫痪状态；"
+		"进入后冷冻值下降到1200以下会恢复。"
+	]
+	quest.76F877E9CB0069A5.quest_subtitle: "左边黑右边白"
+	quest.76F877E9CB0069A5.title: "普通规则"
 	quest.77C2DA5E42C07511.quest_desc: ["将产物输出到前方的开放容器"]
 	quest.78419DC8BB3E5AC1.quest_desc: [
 		"对右键的方块连锁进行模拟，它们会尝试填坑。"
@@ -696,6 +741,9 @@
 		"对称风帆不产生推力，通过施加阻力转向。"
 	]
 	quest.78FABF903D0B3007.quest_subtitle: "升力和阻力"
+	quest.7999C1D3E4A954EE.quest_desc: ["蚂蚁在此格转换会旋转180°"]
+	quest.7999C1D3E4A954EE.quest_subtitle: "180°"
+	quest.7999C1D3E4A954EE.title: "边界块"
 	quest.7A5176E9980636C9.quest_desc: ["少量生产是不需要通过它的，但是它很有用。"]
 	quest.7A5176E9980636C9.quest_subtitle: "高效生产"
 	quest.7A5176E9980636C9.title: "熔融石英"
@@ -703,12 +751,12 @@
 		"冷冻液是一些前期物品高级配方和以后获取液态空气的必需品。"
 		"除此以外……"
 		"{@pagebreak}"
-		"TicksFrozen是记录实体在细雪中时间的nbt，以下称冷冻值。"
+		"TicksFrozen是记录实体在细雪中时间的nbt，我们约定以下将它称为冷冻值。"
 		"实体在细雪中，冷冻值每tick+1，最多到达140，达到后每2s受到1点冷冻（minecraft:freeze）伤害；"
 		"在细雪以外（包括在冷冻液和冷冻配方的风中）冷冻值每tick-2。"
 		"[机械动力：龙+]在冷冻配方鼓风机的风中的实体每tick冷冻值+3，最多140。"
 		"{@pagebreak}"
-		"冷冻液中的实体，冷冻值可以超过140。"
+		"冷冻液中（细雪和冷冻风之外）的实体，冷冻值可以超过140。"
 		"玩家在冷冻液中："
 		"每tick冷冻值+9，然后x0.99，最终会到达594；"
 		"冷冻值到达140后每2s造成2点冷冻伤害。"

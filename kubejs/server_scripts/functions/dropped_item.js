@@ -3,9 +3,10 @@ EntityEvents.spawned('minecraft:item',e=>{
     if(entity.getNbt().get('Thrower') == null){
         entity.setTicksUntilDespawn(1200)
     }
-    let item = entity.getItem()
-    if(item.getRarity() == 'COMMON')return
-    item.setFireResistant()
+    //添加抗火
+    // let item = entity.getItem()
+    // if(item.getRarity() == 'COMMON')return
+    // item.setFireResistant()
 })
 
 ItemEntityEvents.death(e=>{

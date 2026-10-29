@@ -160,6 +160,7 @@ ServerEvents.recipes(e=>{
         D:'create:copper_sheet',
         E:'create:electron_tube'
     }).id('vintageimprovements:craft/laser')
+    e.remove({id:'vintageimprovements:mechanical_crafting/laser'})
     //树叶振动处理
     // e.recipes.vintageimprovements.leaves_vibrating('minecraft:leaf_litter',Ingredient.of("#minecraft:leaves",1),16)
     //     .id('vintageimprovements:vibrating/leaves_vibrating')

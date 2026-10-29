@@ -20,6 +20,19 @@ ServerEvents.recipes(e=>{
         e.recipes.create.deploying(ti,[ti,'mekanism:ingot_lead']),
         e.recipes.create.filling(ti,[ti,Fluid.of('mekanism:sulfuric_acid',250)])
     ],ti).id('sequenced_assembly/powergrid/battery')
+    //太阳能板
+    e.remove({id:'powergrid:sequenced_assembly/solar_panel'})
+    ti = 'powergrid:incomplete_solar_panel'
+    e.recipes.create.sequenced_assembly('6x powergrid:solar_panel','ae2:quartz_glass',[
+        e.recipes.vintageimprovements.laser_cutting(ti,ti),
+        e.recipes.create.deploying(ti,[ti,'create:polished_rose_quartz']),
+        e.recipes.create.deploying(ti,[ti,'minecraft:slime_ball']),
+        e.recipes.create.deploying(ti,[ti,'ae2:printed_silicon']),
+        e.recipes.create.filling(ti,[ti,Fluid.of('kubejs:cryogen',100)]),
+        e.recipes.create.deploying(ti,[ti,'create:copper_sheet']),
+    ],ti).loops(3).id('sequenced_assembly/powergrid/solar_panel')
+
+
     //变压器铁芯
     e.remove({id:'powergrid:sequenced_assembly/transformer_core'})
     e.recipes.vintageimprovements.turning('powergrid:transformer_core','kubejs:industrial_iron_storage_block')
@@ -33,11 +46,14 @@ ServerEvents.recipes(e=>{
         .id('coiling/resistive_coil')
 
     //替换材料
-    e.replaceInput({output:['powergrid:generator_large_induction_rotor','powergrid:electric_motor','powergrid:hv_switch', 'powergrid:generator_housing', 'powergrid:factory_light', 'powergrid:spark_gap', 'powergrid:light_fixture','powergrid:fuse_holder']},
+    e.replaceInput({output:['powergrid:generator_large_induction_rotor','powergrid:electric_motor','powergrid:electromagnet',
+            'powergrid:heating_coil','powergrid:cord_junction','powergrid:hv_switch', 'powergrid:generator_housing', 'powergrid:thermometer',
+            'powergrid:factory_light', 'powergrid:spark_gap', 'powergrid:light_fixture','powergrid:fuse_holder','powergrid:modular_display']},
         'create:iron_sheet','kubejs:industrial_iron_sheet')
-    e.replaceInput({output:['powergrid:contactor']},
+    e.replaceInput({output:['powergrid:contactor','powergrid:hv_breaker','powergrid:alarm_bell']},
         'minecraft:iron_ingot', 'kubejs:industrial_iron_ingot')
-    
+    e.replaceInput({output:['powergrid:cord_junction']},
+        'minecraft:iron_nugget','kubejs:industrial_iron_nugget')
     //动力合成退化
     e.remove({output:'powergrid:basin_heater'})
     e.shaped('powergrid:basin_heater',[

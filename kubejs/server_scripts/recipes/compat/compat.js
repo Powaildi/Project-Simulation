@@ -6,23 +6,7 @@ ServerEvents.recipes(e=>{
     // e.remove({id:'createdieselgenerators:compacting/plant_oil'})
     //去除出错的搅拌配方，但是不恢复
     e.remove({type:'create:mixing',mod:'createdieselgenerators'})
-//电力学
-    //去除3粒合线配方 因为CCA不在所以不去除
-    if(Platform.isLoaded('createaddition')){
-        e.remove({id:'electroenergetics:crafting/copper_wire'})
-        e.remove({id:'electroenergetics:crafting/electrum_wire'})
-        e.remove({id:'electroenergetics:crafting/iron_wire'})
-    }else{
-        e.recipes.create.cutting('3x electroenergetics:copper_wire','create:copper_sheet')
-            .id('cutting/electroenergetics/copper_wire')
-        e.recipes.create.cutting('3x electroenergetics:iron_wire','create:iron_sheet')
-            .id('cutting/electroenergetics/iron_wire')
-    }
-    //变压器铁片
-    e.remove({id:'electroenergetics:stonecutting/transformer_core_lamination'})
-    e.recipes.vintageimprovements.turning('electroenergetics:transformer_core_lamination',Item.of('create:iron_sheet'),40)
-    //去除植物油配方
-    e.remove({id:'electroenergetics:compacting/plant_oil'})
+
 //经典改进
     //清除硫
     e.remove({id:"vintageimprovements:pressurizing/sulfur_dioxide"})

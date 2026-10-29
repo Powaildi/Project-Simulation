@@ -11,8 +11,8 @@ ServerEvents.recipes(e=>{
     }).id('mekanism:cardboard_box')
 
     let rolling = [
-        ['3x electroenergetics:copper_wire','create:copper_sheet'],
-        ['3x electroenergetics:iron_wire','create:iron_sheet'],
+        ['5x powergrid:wire','create:copper_sheet'],
+        ['5x powergrid:iron_wire','create:iron_sheet'],
         ['2x simulated:spring','kubejs:industrial_iron_ingot'],
         ['simulated:spring','minecraft:iron_ingot'],
     ]
@@ -21,7 +21,6 @@ ServerEvents.recipes(e=>{
             ['2x createaddition:copper_rod','minecraft:copper_ingot'],
             ['2x createaddition:iron_rod','minecraft:iron_ingot'],        
             ['2x createaddition:electrum_rod','createaddition:electrum_ingot'],
-            ['3x electroenergetics:electrum_wire','createaddition:electrum_sheet'],
             ['2x createaddition:gold_rod','minecraft:gold_ingot'],
             ['2x createaddition:gold_wire','create:golden_sheet'],
             ['simulated:spring','createaddition:iron_rod']
@@ -35,9 +34,11 @@ ServerEvents.recipes(e=>{
         ['minecraft:barrel','#minecraft:logs'],
         ['create:brass_hand','create:brass_ingot'],
         ['create:electron_tube','create:polished_rose_quartz'],
-        ['create:polished_rose_quartz','create:rose_quartz'],
-        ['electroenergetics:transformer_core_lamination','create:iron_sheet']
+        ['create:polished_rose_quartz','create:rose_quartz']
     ]
+    if(Platform.isLoaded('electroenergetics')){
+        lathing.push(['electroenergetics:transformer_core_lamination','create:iron_sheet'])
+    }
     lathing.forEach(element=>{
         let [output,input] = element
         e.recipes.mekmm.lathe(output,input)

@@ -35,7 +35,15 @@ ServerEvents.recipes(e=>{
         //去除木棍产生物质
         e.remove({id:'createaddition:mixing/biomass_from_stricks'})
     }
-
+//电力学
+    if(Platform.isLoaded('electroenergetics')){
+        //变压器铁片
+        e.remove({id:'electroenergetics:stonecutting/transformer_core_lamination'})
+        e.recipes.vintageimprovements.turning('electroenergetics:transformer_core_lamination',Item.of('create:iron_sheet'),40)
+        //去除植物油配方
+        e.remove({id:'electroenergetics:compacting/plant_oil'})
+    }
+    
 //CBC 火炮
     if(Platform.isLoaded('createaddition')){
         //移动火炮铸模配方

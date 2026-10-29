@@ -11,14 +11,14 @@ ServerEvents.recipes(e=>{
     //电路板
     ti = 'create:brass_sheet'
     e.recipes.create.sequenced_assembly('kubejs:circuit','create:brass_sheet',[
-        e.recipes.create.deploying(ti,[ti,'electroenergetics:copper_wire']),
+        e.recipes.create.deploying(ti,[ti,Ingredient.of('#c:wires/copper')]),
         e.recipes.create.deploying(ti,[ti,'create:electron_tube']),
         e.recipes.create.deploying(ti,[ti,'minecraft:iron_nugget'])
     ])
     .transitionalItem(ti).loops(3).id('sequenced_assembly/circuit')
     e.recipes.create.sequenced_assembly('kubejs:circuit','create:brass_sheet',[
         e.recipes.create.deploying(ti,[ti,'ae2:printed_silicon']),
-        e.recipes.create.deploying(ti,[ti,'electroenergetics:copper_wire']),
+        e.recipes.create.deploying(ti,[ti,Ingredient.of('#c:wires/copper')]),
         e.recipes.create.deploying(ti,[ti,'create:electron_tube']),
         e.recipes.create.filling(ti,[ti,Fluid.of('kubejs:cryogen',100)]),
     ])

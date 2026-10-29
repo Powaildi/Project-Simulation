@@ -42,16 +42,16 @@
   "adapt_cloud_distance": true,
   "cloud_distance": 0,
   "dont_use_sodium_builder_threads": false,
-  "render_pressure": 2,
+  "render_pressure": 1,
   "lod_boundary_buffer": 1,
   "enable_lod_boundary_fade": true,
   "lod_boundary_fade_length": 16,
   "lod_boundary_inset": 8,
   "earth_curve_ratio": 0,
   "enable_extended_request_distance": false,
-  "request_distance": 48,
+  "request_distance": 24,
   "use_environmental_fog": true,
-  "leaf_lod_mode": "balanced",
+  "leaf_lod_mode": "fast",
   "enable_far_player_rendering": true,
   "enable_far_vehicle_rendering": true,
   "render_far_player_names": true,
@@ -69,5 +69,5 @@
   "ecliptic_seasons_snow_lod": true,
   "ecliptic_seasons_lod_auto_reload": false,
   "ecliptic_seasons_reload_on_season_change": true,
-  "show_join_message": true
+  "show_join_message": false
 }

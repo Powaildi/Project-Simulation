@@ -10,7 +10,7 @@
     "kubejs:aero",
     "createpropulsion:main_tab",
     "create_flight_control:main",
-    "electroenergetics:base",
+    "powergrid:main",
     "create:base",
     "createdieselgenerators:cdg_creative_tab",
     "create_rns:create_rns",
@@ -66,7 +66,8 @@
     "rtsbuilding:rtsbuilding",
     "sophisticatedcore:main",
     "ae2:facades",
-    "escalated:base"
+    "escalated:base",
+    "frequency:frequency_create_tab"
   ],
   "hiddenTabs": []
 }

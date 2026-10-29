@@ -6,7 +6,7 @@ staticToSandMaxBlocks = 1024
 approximateMatchingTags = ["minecraft:dirt", "statictosand:approximate_stone", "minecraft:terracotta"]
 #Whether gravity blocks are handled as StaticToSandEvents
 #Allowed Values: NONE, WHITELIST, BLACKLIST, ALL
-gravityBlockMode = "WHITELIST"
+gravityBlockMode = "NONE"
 #Maximum number of connected blocks selected for gravity block events
 # Default: 3
 # Range: > 1
@@ -28,6 +28,6 @@ activeBlockLimit = 4096
 # Range: > 1
 waitingBlockLimit = 16384
 #Whether fluids count as air for movement targets
-fluidsAreAir = false
+fluidsAreAir = true
 #Whether a falling block leaves a neighboring fluid source behind
-replaceFallingBlockWithFluid = false
+replaceFallingBlockWithFluid = true

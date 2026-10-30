@@ -1,4 +1,5 @@
 {
+	chapter.055B6B51630AD364.title: "工程集合兑换处"
 	chapter.0E34EDD798193715.title: "异彩变幻"
 	chapter.1642F9C1277277FB.title: "不止农业"
 	chapter.267276FE11D1F343.title: "无限产矿"
@@ -61,21 +62,15 @@
 	quest.040DF246743F2681.quest_subtitle: "下单和自动合成"
 	quest.05080367636F746B.quest_subtitle: "超级燃烧之一"
 	quest.0530F866F0C5EDD2.quest_subtitle: "现在开始搭建你的第一艘飞艇"
-	quest.054D8038C897F5EC.quest_desc: [
-		"这是电力学原版唯一发电方式。"
-		"转子基础应力消耗为6xRPM；"
-		"每个定子消耗144xRPM应力，"
-		"提供144W/RPM功率，1.44V/RPM电压。"
-		"在末端放电刷以输出电力。"
-	]
-	quest.054D8038C897F5EC.quest_subtitle: "应力发电"
-	quest.054D8038C897F5EC.title: "发电设施"
 	quest.058A306939F2A867.quest_desc: [""]
 	quest.058A306939F2A867.quest_subtitle: "动态结构"
 	quest.070C1AF80BD8C2E3.quest_desc: ["工作盆盖板和机械动力：火炮的工作盆铸造盖（已经删除）执行的不是同一种配方。"]
 	quest.070C1AF80BD8C2E3.quest_subtitle: "放在工作盆上面"
 	quest.076B26BC1D242E98.quest_desc: ["需要这么多红石，怎么制作呢？"]
 	quest.077ECF29212AFD4C.quest_subtitle: "连接多条传送带，在顶部设定物流规则"
+	quest.07E18EF9D9851F5B.quest_desc: [""]
+	quest.07E18EF9D9851F5B.quest_subtitle: "???"
+	quest.07E18EF9D9851F5B.title: "瘫痪"
 	quest.082BC4F3A23DF1A3.quest_subtitle: "浮力"
 	quest.08C6A7A19C537F32.quest_subtitle: "是的，它可以合成"
 	quest.0983EC4C5B82647D.quest_desc: [
@@ -183,8 +178,6 @@
 		"不要把重要的东西丢上这个传送带！"
 		"现在还有专门的销毁装置"
 	]
-	quest.16E3B88D91C0CEFB.quest_desc: ["能装很多元件，不妨自己试试。"]
-	quest.16E3B88D91C0CEFB.quest_subtitle: "紧凑化"
 	quest.18F42B310CF3BA9B.quest_subtitle: "便携的储罐"
 	quest.19C7F226F860613E.quest_desc: [
 		"Mob Neutralizer 改变了怪物对你的探测范围，"
@@ -226,12 +219,6 @@
 	quest.2111149AE352A053.quest_subtitle: "挖掉它，寻找陨石中心的外星科技"
 	quest.2142E4744C27EF45.quest_subtitle: "移动空间"
 	quest.2324794C4F63BE2A.quest_subtitle: "小创造马达"
-	quest.242D04EC02FCA753.quest_desc: [
-		"远程运输应力，不过，把燃料运过去给柴油机烧会更好吗？"
-		"如果发现了电表倒转，请向我汇报。"
-	]
-	quest.242D04EC02FCA753.quest_subtitle: "远距离传输应力"
-	quest.242D04EC02FCA753.title: "电动马达"
 	quest.24482FF7F5A5C497.quest_desc: ["你知道JEI可以翻页吗？"]
 	quest.24482FF7F5A5C497.quest_subtitle: "最安全最方便的一集"
 	quest.24482FF7F5A5C497.title: "鼓风机触媒"
@@ -248,10 +235,6 @@
 		"使用扳手shift右键装配后的矿车能直接带走矿车上的东西。"
 	]
 	quest.259C4083619FD9B8.quest_subtitle: "一把抓住，顷刻炼化"
-	quest.259C4C39C685CC08.quest_desc: [
-		"扳手右键端子改变外观。"
-		"多重端子之间是绝缘的。"
-	]
 	quest.26323D539543CF46.quest_subtitle: "让别人用"
 	quest.270B696D6B36D811.quest_desc: [
 		"你可能在别的包见过那个灰色的水龙头。"
@@ -278,8 +261,14 @@
 	quest.2C6E930E52925654.quest_desc: ["[ \"请打开任务的下一节：\", { \"text\": \"向天空奔去\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0530F866F0C5EDD2\" } } ]"]
 	quest.2C6E930E52925654.quest_subtitle: "我不属于这里，但是也会动"
 	quest.2CDB253624DF5677.title: "鼓风机（吸）"
-	quest.2D1D727F250A0749.quest_subtitle: "单向通过"
 	quest.2D84C696D048115A.quest_desc: ["物品在使用后打上不可破坏标签。"]
+	quest.2E95B6DDB5845BC3.quest_desc: [
+		"绝大多数染色方块有这样的对应关系，"
+		"还会保留一部分方块状态。"
+		"通常来说，例外就是普通规则那些混凝土。"
+	]
+	quest.2E95B6DDB5845BC3.quest_subtitle: "左边黑右边白"
+	quest.2E95B6DDB5845BC3.title: "颜色"
 	quest.2F10E89A968A75D9.quest_desc: [
 		"将它贴在你的物理结构上，右键就能查看受力图。"
 		"点左边能够开关力的显示。"
@@ -323,11 +312,6 @@
 	quest.31F0CE31EEACF0BD.title: "石英母岩"
 	quest.327172E392FDDA31.title: "无线红石"
 	quest.32C1EFB075E6E149.quest_subtitle: "相对无用"
-	quest.32CDD37407C86240.quest_desc: [
-		"手持空线轴右键接好的电线以回收电线。"
-		"手持万用表看电线可以看到电流和方向。"
-	]
-	quest.32CDD37407C86240.quest_subtitle: "由此开始"
 	quest.3305E1F485852A08.quest_subtitle: "设置管理员"
 	quest.33544FE083DAD503.quest_subtitle: "中间是另一个网络"
 	quest.337A0C9565DEDAEB.quest_desc: [
@@ -358,6 +342,9 @@
 		"但是，把矿床移走，标记不会跟着走。"
 	]
 	quest.34390F8254673F95.quest_subtitle: "实体方块"
+	quest.34D621E013E537E7.quest_desc: ["蚂蚁经过时不转换，也不转向"]
+	quest.34D621E013E537E7.quest_subtitle: "0°"
+	quest.34D621E013E537E7.title: "滑行块"
 	quest.359347966FFF79F0.quest_desc: ["不是玩家或者破坏面板我不吃-吴京"]
 	quest.359347966FFF79F0.quest_subtitle: "掉落赛特斯石英水晶"
 	quest.368C0F407C3AF0E4.quest_desc: [
@@ -366,13 +353,6 @@
 		"16/32/64/128/192/256"
 		"接入256转速时，应力消耗将会大幅增加！"
 	]
-	quest.36A32CDAE1D82E05.quest_subtitle: "尚未准备好"
-	quest.36A32CDAE1D82E05.title: "三相交流电"
-	quest.36AD269895E3CF64.quest_desc: [
-		"让它先烧坏总比不知道哪根随机烧坏要好。"
-		"手持保险丝右键保险丝座可以放入小的保险丝。"
-	]
-	quest.36AD269895E3CF64.quest_subtitle: "防止电线烧坏"
 	quest.37097B68F6CC04CF.quest_subtitle: "还可以给无线终端充能"
 	quest.38307E4620129ECB.quest_desc: ["非常适合收拾爆了一堆物品的情况！"]
 	quest.38307E4620129ECB.quest_subtitle: "推荐使用"
@@ -388,6 +368,7 @@
 	quest.3A7A79D470A26577.quest_subtitle: "附着在采矿机动态结构上"
 	quest.3BDBB52B158BEBFA.title: "羊毛自增殖"
 	quest.3BE27FEE59ECE692.quest_desc: ["更多的压印模板不会在这里展示，而是将它们的产物放在任务中。"]
+	quest.3CE8C1893130AAB1.title: "镂空平台"
 	quest.3D4147E44C0A90F8.quest_desc: ["从ME控制器拉出来32个频道"]
 	quest.3D4147E44C0A90F8.quest_subtitle: "传递32个频道"
 	quest.3D4147E44C0A90F8.title: "致密线缆"
@@ -403,16 +384,10 @@
 		"更多的修改，详见Wheels Upon Chairs的配置文件。"
 	]
 	quest.3D8FEA109DE83181.title: "抽油机"
-	quest.3DDC0E5C35FFB778.quest_subtitle: "另一种开关"
 	quest.3E3DE48243CBFD65.title: "破坏核心和成型核心"
 	quest.3EFEB4F6AA3160A3.quest_subtitle: "复制配置"
 	quest.3F12D190F7E0183C.quest_subtitle: "传动元件的最终形态"
 	quest.3F268AF2847961FD.quest_subtitle: "试试用它来制作安山合金"
-	quest.3F5E66DB4191C626.quest_desc: [
-		"电流表串联在线路中；"
-		"电压表与用电器并联。"
-	]
-	quest.3F5E66DB4191C626.title: "电流表，电压表"
 	quest.3F91B9A9B32FC4DF.quest_subtitle: "用于放置物品和流体等组件"
 	quest.3FF5C9B379E26866.quest_desc: [
 		"将方块以物品形式扔出去，或者放在世界中。然后看着它，Jade（就是屏幕顶部的那个东西）会显示它的物理性质，比如质量(kpg)。"
@@ -443,10 +418,6 @@
 	]
 	quest.4600A08AC1E40CFF.quest_subtitle: "扔在工作盆里面"
 	quest.4600A08AC1E40CFF.title: "铸模"
-	quest.466260F4C832FFE8.quest_desc: [
-		"提高电压可以降低电流损耗。"
-		"长时间超功率运行会燃烧。"
-	]
 	quest.46DA82F7690C2145.quest_subtitle: "不做不影响进度"
 	quest.46DA82F7690C2145.title: "完全支线"
 	quest.48B8B5226A03CFFB.quest_desc: ["堆在网络任意位置就能发挥功能"]
@@ -466,8 +437,6 @@
 	quest.4B6C5761E541D393.quest_subtitle: "召唤陨石，然后接住它，以获得丰厚奖励"
 	quest.4D0CD0B67A260396.quest_desc: ["放在存产物的箱子周围，将产物吸收到维度网络。"]
 	quest.4D0CD0B67A260396.quest_subtitle: "吸取周围容器"
-	quest.4DB7F0DCCFE5DEB8.quest_desc: ["用扳手调整箭头方向。"]
-	quest.4DB7F0DCCFE5DEB8.quest_subtitle: "与FE体系转换"
 	quest.4EB08D6A562C58B9.quest_desc: [
 		"我在世界出生点放置了一个铁矿床，它应该对你有不小的帮助！"
 		"直接挖掘矿床不会掉落任何东西！"
@@ -534,7 +503,6 @@
 	quest.52DBE39A81CFB72F.quest_subtitle: "推力"
 	quest.52DBE39A81CFB72F.title: "螺旋桨"
 	quest.5309CF54BE9339B7.quest_subtitle: "接受物品，创建子网"
-	quest.535DF83782F85297.title: "灯泡"
 	quest.5489EACC0072DA0A.quest_desc: ["结构名称：Cloud Island"]
 	quest.5489EACC0072DA0A.quest_subtitle: "使用结构罗盘"
 	quest.5491BE8E5291EBC9.quest_subtitle: "无法手动取出"
@@ -542,6 +510,11 @@
 	quest.55EBEE3B63D35B7B.quest_subtitle: "可以让钻井范围增大"
 	quest.55EBEE3B63D35B7B.title: "在钻头上放置3x3铁块"
 	quest.56C5E859D3CB0D82.quest_desc: ["被套壳以后，用扳手右键传动杆的两面，可以开关应力在这两个面的传输。"]
+	quest.57AB73CDF5473F5D.quest_desc: [
+		"如果你在创造模式，请认准创造流体储罐："
+		"按下alt，内含流体必须是Fantasizing Again的，所有配方用的都是它。"
+		"而FluidLogistics的就不行。"
+	]
 	quest.592125B9214B82AA.title: "破坏面板和成型面板"
 	quest.5A1E0FBBF949AECD.quest_subtitle: "2FE/t -> 1AE/t"
 	quest.5B209FA5D5B7CA89.quest_desc: [
@@ -574,6 +547,10 @@
 		"[魔改]玩家吃掉以后获得创造飞行能力。"
 		"经过Apertyotis的改进，你在空中挖掘速度不会降低，即使触碰地板也不会停止飞行！"
 		"想要停止飞行，就再次双击空格。"
+		"{@pagebreak}"
+		"给女仆吃可以让她免疫摔落伤害。"
+		"车万女仆曾经存在该整合包中，但是删除了。"
+		"如果想要请自行下载。"
 	]
 	quest.5F93F939BA212B92.quest_subtitle: "创造飞行"
 	quest.5FE39298C63104FA.title: "电路板挑战辅助前置"
@@ -627,6 +604,7 @@
 	quest.6706F28CEEC4A914.quest_desc: ["手持做好的合成存储器shift+右键，就可以将存储组件拆出来。"]
 	quest.6706F28CEEC4A914.quest_subtitle: "下单需要它们"
 	quest.6706F28CEEC4A914.title: "合成存储器"
+	quest.67C1844AB978BB15.title: "实心平台"
 	quest.6890721B1847FA48.title: "鼓风机"
 	quest.692C7BC7223EF273.quest_desc: [
 		"你不一定要拉满转速，因为128rpm和256rpm的生产速度可能是一样的。"
@@ -643,7 +621,6 @@
 	quest.6A84323C16937D1B.quest_subtitle: "隔断网络，不隔断能量传输"
 	quest.6BB61A20A98ECE6D.quest_subtitle: "跟物理体跳入虚空"
 	quest.6BB61A20A98ECE6D.title: "探访末地之海"
-	quest.6BBECEC4CFFA9EE5.title: "开关"
 	quest.6C664D445C80C5BC.title: "类似正常刷石机"
 	quest.6C70A9FFB4A2AE94.quest_desc: [
 		"开放容器"
@@ -697,6 +674,26 @@
 	]
 	quest.72C8573949A44341.quest_subtitle: "你后续发展的重要助力"
 	quest.73A2BDD0064188B1.quest_desc: ["陨石罗盘会指向最近的陨石"]
+	quest.73EC1CCE9B735B71.quest_desc: [
+		"手持盔甲架右键蚂蚁窝，盔甲架就会变成蚂蚁，放在地上就开始运行。"
+		"在蚂蚁窝上方放置音符盒，蚂蚁会按照音符盒的音调调整速度，音调越高就越慢；红石充能音符盒会使得蚂蚁停下。"
+		"拆除蚂蚁窝会让蚂蚁消失。"
+		"{@pagebreak}"
+		"运动中的蚂蚁每次移动会旋转（白右转，黑左转），然后改变脚下方块的颜色，再向前一格。"
+		"对于不认识的方块，蚂蚁会转180°，对于空气和冰，蚂蚁不会转。"
+		"进行某些转换太快时蚂蚁会瘫痪一段时间。在细雪中则持续瘫痪。"
+		"{@pagebreak}"
+		"常见的转换已经写在右侧任务中。"
+		"除此以外，染色方块会这样转换："
+		"黑色-白色"
+		"&8灰色&r-&7淡灰色&r"
+		"&9蓝色&r-&6橙色&r"
+		"&#A54F20棕色&r-&b淡蓝色&r"
+		"&c红色&r-&2绿色&r"
+		"&#BB26FF紫色&r-&e黄色&r"
+		"&d品红色&r-&a黄绿色&r"
+		"&#FF96E5粉色&r-&3青色&r"
+	]
 	quest.73EC1CCE9B735B71.quest_subtitle: "兰顿蚂蚁"
 	quest.743A85328F25C949.title: "形成需要下方的方块是基岩"
 	quest.757D007D46FCA353.quest_desc: [
@@ -725,12 +722,31 @@
 	quest.766AC93DBAEB43EF.title: "采集工具"
 	quest.76E86999888CF0BD.quest_desc: ["手持恩特罗种子右键世界中的福鲁伊克斯块。"]
 	quest.76E86999888CF0BD.quest_subtitle: "像你做第一个安山机壳那样"
+	quest.76F877E9CB0069A5.quest_desc: [
+		"数字大于1的转换：黑变白会加冷却时间，白变黑会减冷却时间。"
+		"冷却使用冷冻值（TicksFrozen）计算。"
+		"冷冻值超过2400或者等于140会使蚂蚁进入瘫痪状态；"
+		"进入后冷冻值下降到1200以下会恢复。"
+	]
+	quest.76F877E9CB0069A5.quest_subtitle: "左边黑右边白"
+	quest.76F877E9CB0069A5.title: "普通规则"
 	quest.77C2DA5E42C07511.quest_desc: ["将产物输出到前方的开放容器"]
+	quest.78419DC8BB3E5AC1.quest_desc: [
+		"对右键的方块连锁进行模拟，它们会尝试填坑。"
+		"可能造成巨大卡顿，不要随意使用！"
+		"{@pagebreak}"
+		"你还可以修改对应mod的部分配置，"
+		"以让世界中的沙子以别样的方式落下！"
+	]
+	quest.78419DC8BB3E5AC1.quest_subtitle: "重塑矿脉"
 	quest.78FABF903D0B3007.quest_desc: [
 		"风帆产生向蒙皮那一面的推力"
 		"对称风帆不产生推力，通过施加阻力转向。"
 	]
 	quest.78FABF903D0B3007.quest_subtitle: "升力和阻力"
+	quest.7999C1D3E4A954EE.quest_desc: ["蚂蚁在此格转换会旋转180°"]
+	quest.7999C1D3E4A954EE.quest_subtitle: "180°"
+	quest.7999C1D3E4A954EE.title: "边界块"
 	quest.7A5176E9980636C9.quest_desc: ["少量生产是不需要通过它的，但是它很有用。"]
 	quest.7A5176E9980636C9.quest_subtitle: "高效生产"
 	quest.7A5176E9980636C9.title: "熔融石英"
@@ -738,12 +754,12 @@
 		"冷冻液是一些前期物品高级配方和以后获取液态空气的必需品。"
 		"除此以外……"
 		"{@pagebreak}"
-		"TicksFrozen是记录实体在细雪中时间的nbt，以下称冷冻值。"
+		"TicksFrozen是记录实体在细雪中时间的nbt，我们约定以下将它称为冷冻值。"
 		"实体在细雪中，冷冻值每tick+1，最多到达140，达到后每2s受到1点冷冻（minecraft:freeze）伤害；"
 		"在细雪以外（包括在冷冻液和冷冻配方的风中）冷冻值每tick-2。"
 		"[机械动力：龙+]在冷冻配方鼓风机的风中的实体每tick冷冻值+3，最多140。"
 		"{@pagebreak}"
-		"冷冻液中的实体，冷冻值可以超过140。"
+		"冷冻液中（细雪和冷冻风之外）的实体，冷冻值可以超过140。"
 		"玩家在冷冻液中："
 		"每tick冷冻值+9，然后x0.99，最终会到达594；"
 		"冷冻值到达140后每2s造成2点冷冻伤害。"
@@ -764,6 +780,8 @@
 	quest.7EAF8A360F2537E4.title: "存储组件"
 	reward_table.1F0DEC7FABA05ED2.title: "Later"
 	reward_table.313E5583C983D8B5.title: "Mid_High"
+	reward_table.3A9AA559BF5EE8BB.title: "Platform-Solid"
+	reward_table.47642F4BAF0C3793.title: "Platform-Hollow"
 	reward_table.5729B203CA6FA43A.title: "Mid_Low"
 	reward_table.65BB9ED145C8577C.title: "Starter"
 	task.0500AB400FBFC5BF.title: "怪物相对中立"
@@ -790,7 +808,6 @@
 	task.389316D7CA06CE43.title: "完全支线"
 	task.3A040D0F880F771D.title: "寻找采矿机"
 	task.3D6EBAA4FA82E6EE.title: "挑战-接住陨石"
-	task.41DF54C96076DAB1.title: "任意电动马达"
 	task.42465A15053A01A6.title: "被动过滤"
 	task.477F78D205C8C031.title: "挖掘陨石"
 	task.52B4094779BE502C.title: "游戏规则"
@@ -799,7 +816,6 @@
 	task.63D281AAE9BA2B2A.title: "快速展开产线(Legacy)"
 	task.673D8822323F6B8C.title: "或者你有你的想法"
 	task.683402D386BCBC62.title: "寻找陨石"
-	task.69805AA5904BA71B.title: "我知道了"
 	task.6D4A5293BC66AACC.title: "精准采集"
 	task.72420D31DF865D4E.title: "假如我直接飞"
 	task.74742F5B15A36BBC.title: "没有耐久"

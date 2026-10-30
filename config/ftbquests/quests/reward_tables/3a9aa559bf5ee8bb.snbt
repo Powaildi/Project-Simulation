@@ -1,0 +1,11 @@
+{
+	id: "3A9AA559BF5EE8BB"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ id: "640A83A4C427EAB6", item: { components: { "minecraft:custom_data": { File: "白平台.nbt" } }, count: 1, id: "createsimpleschematic:simple_schematic" } }
+		{ id: "36F06115340AA294", item: { components: { "minecraft:custom_data": { File: "白平台-方纹.nbt" } }, count: 1, id: "createsimpleschematic:simple_schematic" } }
+		{ id: "697F71E830A9AE62", item: { components: { "minecraft:custom_data": { File: "黑平台.nbt" } }, count: 1, id: "createsimpleschematic:simple_schematic" } }
+		{ id: "43FCE42836FF1A74", item: { components: { "minecraft:custom_data": { File: "黑平台-方纹.nbt" } }, count: 1, id: "createsimpleschematic:simple_schematic" } }
+	]
+}

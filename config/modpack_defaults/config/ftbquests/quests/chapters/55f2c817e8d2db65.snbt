@@ -812,8 +812,11 @@
 				{
 					id: "476107731F1C5EC1"
 					item: {
+						components: {
+							"ftbquests:missing_item": "electroenergetics:converter"
+						}
 						count: 1
-						id: "electroenergetics:converter"
+						id: "ftbquests:missing_item"
 					}
 					type: "item"
 				}

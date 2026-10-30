@@ -88,4 +88,14 @@ ServerEvents.recipes(e=>{
         F:'create:brass_hand',
         G:'minecraft:gravel'
     }).id('crafting/static_to_sand')
+
+    e.shaped('createsimpleschematic:simple_packer',[
+        'CAC',
+        'ABA',
+        'CAC'
+    ],{
+        A:'create:cardboard_block',
+        B:'minecraft:slime_block',
+        C:'kubejs:industrial_iron_sheet'
+    }).id('crafting/simple_packer')
 })

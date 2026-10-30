@@ -1,4 +1,5 @@
 {
+	chapter.055B6B51630AD364.title: "工程集合兑换处"
 	chapter.0E34EDD798193715.title: "异彩变幻"
 	chapter.1642F9C1277277FB.title: "不止农业"
 	chapter.267276FE11D1F343.title: "无限产矿"
@@ -367,6 +368,7 @@
 	quest.3A7A79D470A26577.quest_subtitle: "附着在采矿机动态结构上"
 	quest.3BDBB52B158BEBFA.title: "羊毛自增殖"
 	quest.3BE27FEE59ECE692.quest_desc: ["更多的压印模板不会在这里展示，而是将它们的产物放在任务中。"]
+	quest.3CE8C1893130AAB1.title: "镂空平台"
 	quest.3D4147E44C0A90F8.quest_desc: ["从ME控制器拉出来32个频道"]
 	quest.3D4147E44C0A90F8.quest_subtitle: "传递32个频道"
 	quest.3D4147E44C0A90F8.title: "致密线缆"
@@ -602,6 +604,7 @@
 	quest.6706F28CEEC4A914.quest_desc: ["手持做好的合成存储器shift+右键，就可以将存储组件拆出来。"]
 	quest.6706F28CEEC4A914.quest_subtitle: "下单需要它们"
 	quest.6706F28CEEC4A914.title: "合成存储器"
+	quest.67C1844AB978BB15.title: "实心平台"
 	quest.6890721B1847FA48.title: "鼓风机"
 	quest.692C7BC7223EF273.quest_desc: [
 		"你不一定要拉满转速，因为128rpm和256rpm的生产速度可能是一样的。"
@@ -777,6 +780,8 @@
 	quest.7EAF8A360F2537E4.title: "存储组件"
 	reward_table.1F0DEC7FABA05ED2.title: "Later"
 	reward_table.313E5583C983D8B5.title: "Mid_High"
+	reward_table.3A9AA559BF5EE8BB.title: "Platform-Solid"
+	reward_table.47642F4BAF0C3793.title: "Platform-Hollow"
 	reward_table.5729B203CA6FA43A.title: "Mid_Low"
 	reward_table.65BB9ED145C8577C.title: "Starter"
 	task.0500AB400FBFC5BF.title: "怪物相对中立"

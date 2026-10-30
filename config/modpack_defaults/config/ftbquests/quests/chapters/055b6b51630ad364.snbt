@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "055b6b51630ad364"
+	group: "5C60B2A5FE1D41C3"
+	icon: {
+		components: {
+			"minecraft:custom_data": {
+				File: "小型粉碎机.nbt"
+			}
+		}
+		id: "createsimpleschematic:simple_schematic"
+	}
+	id: "055B6B51630AD364"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			id: "67C1844AB978BB15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52D1A97503BE5CE1"
+				table_id: 4222869405494601915L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "2B336296A957EDB3"
+				item: { count: 1, id: "create:andesite_alloy_block" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			id: "3CE8C1893130AAB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D218E8099DA5BA5"
+				table_id: 5144288676469815187L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "59C3119F8C377B4A"
+				item: { count: 1, id: "create:industrial_iron_block" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			id: "601D0430CB1A6E47"
+			rewards: [{
+				id: "477529305F87E156"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							File: "小型电解池.nbt"
+						}
+					}
+					count: 1
+					id: "createsimpleschematic:simple_schematic"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5738CFADFB8D0D84"
+					item: { count: 1, id: "mbd2:electrolyser" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1A0CA9993255B745"
+					item: { count: 1, id: "kubejs:industrial_iron_storage_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "639B9111CBD05537"
+					item: { count: 1, id: "create:brass_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4471082F005E64A9"
+					item: { count: 1, id: "minecraft:copper_block" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			id: "54C6F8789F8795DA"
+			rewards: [{
+				id: "40A36E7031846BCC"
+				item: {
+					components: {
+						"minecraft:custom_data": {
+							File: "小型粉碎机.nbt"
+						}
+					}
+					count: 1
+					id: "createsimpleschematic:simple_schematic"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "53482B41213AA9CA"
+					item: { count: 1, id: "mbd2:crusher" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5A651A90F9D1FD25"
+					item: { count: 1, id: "create:andesite_alloy_block" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "774C824F96875D5D"
+					item: { count: 1, id: "kubejs:industrial_iron_storage_block" }
+					type: "item"
+				}
+				{
+					id: "7D30FB76DD6159E8"
+					item: { count: 1, id: "minecraft:copper_block" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.5d
+		}
+	]
+}

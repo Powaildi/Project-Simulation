@@ -133,5 +133,380 @@
 			x: 7.0d
 			y: 0.0d
 		}
+		{
+			id: "76F877E9CB0069A5"
+			rewards: [
+				{
+					id: "2D320803E81158CC"
+					item: {
+						count: 1
+						id: "minecraft:white_concrete"
+					}
+					type: "item"
+				}
+				{
+					id: "183E9568E7197B61"
+					item: {
+						count: 1
+						id: "minecraft:snow_block"
+					}
+					type: "item"
+				}
+				{
+					id: "4E4B2848E03721BB"
+					item: {
+						count: 1
+						id: "minecraft:diorite"
+					}
+					type: "item"
+				}
+				{
+					id: "3762EC62A9C2470B"
+					item: {
+						count: 1
+						id: "minecraft:stone"
+					}
+					type: "item"
+				}
+				{
+					id: "477E617354D6AA1C"
+					item: {
+						count: 1
+						id: "minecraft:glass"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "15B3FDC31BD307E2"
+					item: {
+						count: 1
+						id: "minecraft:raw_gold_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6709C4BDA00208D3"
+					item: {
+						count: 1
+						id: "minecraft:raw_iron_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1D9C19A5FA6DA71C"
+					item: {
+						count: 1
+						id: "create:raw_zinc_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "47D5544275FC5EC9"
+					item: {
+						count: 1
+						id: "minecraft:raw_copper_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5DFE2AF4E61DEEA9"
+					item: {
+						count: 1
+						id: "minecraft:coal_block"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4563B1D9D598B097"
+					item: {
+						count: 1
+						id: "minecraft:honey_block"
+					}
+					type: "item"
+				}
+				{
+					count: 400
+					id: "42C5AE6D9ACF2281"
+					item: {
+						count: 1
+						id: "minecraft:quartz_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [
+				{
+					id: "5FAAD0BE9153BF90"
+					item: { count: 1, id: "minecraft:black_concrete" }
+					type: "item"
+				}
+				{
+					id: "6F5E00E2F1F1929D"
+					item: { count: 1, id: "minecraft:gray_concrete" }
+					type: "item"
+				}
+				{
+					id: "4D22B5D1C290382B"
+					item: { count: 1, id: "minecraft:light_gray_concrete" }
+					type: "item"
+				}
+				{
+					id: "47241ED41A707495"
+					item: { count: 1, id: "minecraft:deepslate" }
+					type: "item"
+				}
+				{
+					id: "27EF6C9E8C50EE9A"
+					item: { count: 1, id: "minecraft:tinted_glass" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7EF0FB3F864390D3"
+					item: { count: 1, id: "create:ochrum" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0BAF05CA530111F9"
+					item: { count: 1, id: "create:crimsite" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "275D4CCCB4D4F325"
+					item: { count: 1, id: "create:asurine" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "5B424A53E7174A87"
+					item: { count: 1, id: "create:veridium" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A70D6336E4B0E04"
+					item: { count: 1, id: "mekanism:block_charcoal" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0856DB54880D98A5"
+					item: { count: 1, id: "minecraft:slime_block" }
+					type: "item"
+				}
+				{
+					count: 400L
+					id: "3A800245140C8F0F"
+					item: { count: 1, id: "create:rose_quartz_block" }
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			id: "7999C1D3E4A954EE"
+			rewards: [
+				{
+					id: "08CB44892656E8A2"
+					item: {
+						count: 1
+						id: "minecraft:lapis_block"
+					}
+					type: "item"
+				}
+				{
+					id: "3F0D95DEB74E4287"
+					item: {
+						count: 1
+						id: "minecraft:brown_mushroom_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2E4A46C3F1F481AC"
+					item: { count: 1, id: "minecraft:redstone_block" }
+					type: "item"
+				}
+				{
+					id: "3D0AF020F4FE2810"
+					item: { count: 1, id: "minecraft:red_mushroom_block" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			disable_toast: true
+			id: "34D621E013E537E7"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0A4F47A0B9EDF3EE"
+					item: { count: 1, id: "minecraft:ice" }
+					type: "item"
+				}
+				{
+					id: "3EE82BCDD48A580D"
+					item: { count: 1, id: "minecraft:packed_ice" }
+					type: "item"
+				}
+				{
+					id: "5EC40202812E2C33"
+					item: { count: 1, id: "minecraft:blue_ice" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			disable_toast: true
+			id: "07E18EF9D9851F5B"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "671C1C19EEF87403"
+					item: { count: 1, id: "minecraft:powder_snow_bucket" }
+					type: "item"
+				}
+				{
+					id: "68FC9F098B9F9257"
+					item: { count: 1, id: "kubejs:cryogen_bucket" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			id: "2E95B6DDB5845BC3"
+			rewards: [
+				{
+					id: "0822AAABF57196E8"
+					item: {
+						count: 1
+						id: "minecraft:white_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "7396A826D3501697"
+					item: {
+						count: 1
+						id: "minecraft:light_gray_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "077E4A81DDD82AA5"
+					item: {
+						count: 1
+						id: "minecraft:orange_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "66168F878151D40E"
+					item: {
+						count: 1
+						id: "minecraft:light_blue_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "76CBD3CE0613F8D8"
+					item: {
+						count: 1
+						id: "minecraft:green_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "3F9FB0BED1CF965E"
+					item: {
+						count: 1
+						id: "minecraft:yellow_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "478161362083D8CA"
+					item: {
+						count: 1
+						id: "minecraft:lime_wool"
+					}
+					type: "item"
+				}
+				{
+					id: "0CEDCBA9E8B25277"
+					item: {
+						count: 1
+						id: "minecraft:cyan_wool"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "0D8912FB37EBEF0F"
+					item: { count: 1, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					id: "3FF462818B3BB02D"
+					item: { count: 1, id: "minecraft:gray_wool" }
+					type: "item"
+				}
+				{
+					id: "1018189690E75591"
+					item: { count: 1, id: "minecraft:blue_wool" }
+					type: "item"
+				}
+				{
+					id: "1F49F93EFE95391C"
+					item: { count: 1, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					id: "603BE00AAFD4441B"
+					item: { count: 1, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					id: "25A3EC4E59700152"
+					item: { count: 1, id: "minecraft:purple_wool" }
+					type: "item"
+				}
+				{
+					id: "1072F113D0DF25A1"
+					item: { count: 1, id: "minecraft:magenta_wool" }
+					type: "item"
+				}
+				{
+					id: "1605F08D2ACDF986"
+					item: { count: 1, id: "minecraft:pink_wool" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.5d
+		}
 	]
 }

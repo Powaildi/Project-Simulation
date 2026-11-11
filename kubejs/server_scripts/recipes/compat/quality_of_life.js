@@ -239,6 +239,12 @@ ServerEvents.recipes(e=>{
         //删除颜料配方
         //按配方 ID 的前缀删除，精准拦截 palettes/dyeing/ 下的所有配方
         e.remove({ id: /railways:mixing\/palettes\/dyeing\/.*/ });
+        //代偿配方：切石
+        let locometal = ['railways:riveted_locometal', 'railways:brown_riveted_locometal', 'railways:maroon_riveted_locometal', 'railways:red_riveted_locometal', 'railways:vermilion_riveted_locometal', 'railways:orange_riveted_locometal', 'railways:granite_riveted_locometal', 'railways:dripstone_riveted_locometal', 'railways:ochrum_riveted_locometal', 'railways:yellow_riveted_locometal', 'railways:chartreuse_riveted_locometal', 'railways:olive_green_riveted_locometal', 'railways:lime_riveted_locometal', 'railways:green_riveted_locometal', 'railways:pine_green_riveted_locometal', 'railways:cyan_riveted_locometal', 'railways:sea_green_riveted_locometal', 'railways:turquoise_riveted_locometal', 'railways:light_blue_riveted_locometal', 'railways:blue_riveted_locometal', 'railways:royal_blue_riveted_locometal', 'railways:purple_riveted_locometal', 'railways:magenta_riveted_locometal', 'railways:light_gray_riveted_locometal', 'railways:tuff_riveted_locometal', 'railways:gray_riveted_locometal', 'railways:scorchia_riveted_locometal', 'railways:black_riveted_locometal']
+        locometal.forEach(item=>{
+            e.stonecutting(item,Ingredient.of('#kubejs:locometal'))
+        })
+        
     }
     
 //杂项

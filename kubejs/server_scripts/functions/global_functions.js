@@ -116,6 +116,15 @@ function moveItems(outSlots, target) {
     }
 }
 
+
+//-------------------------------------------------------
+
+
+const $ContentModifier = Java.loadClass("com.lowdragmc.mbd2.api.recipe.content.ContentModifier")
+
+
+//-------------------------------------------------------
+
 /**
  * 对数组进行多次 Fisher-Yates 洗牌（直接修改原数组）
  * 洗牌次数越多，元素的原始位置被打散得越彻底。

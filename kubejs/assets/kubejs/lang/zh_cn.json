@@ -177,5 +177,8 @@
 
     "tooltip.frontlights":"空手右键开关灯",
 
+    "tooltip.player_head_1":"用命名牌右键头颅得到该玩家的头",
+    "tooltip.player_head_2":"玩家死亡时会掉落自己的头",
+
     "warn.kubejs.stop_burner_eat_container":"系统阻止了你这么做，理由是烈焰人会连着容器一起吃。"
 }

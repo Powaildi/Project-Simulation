@@ -70,6 +70,8 @@ ItemEvents.modifyTooltips(e=>{
     e.add(['dndecor:brass_frontlight', 'dndecor:andesite_frontlight', 'dndecor:zinc_frontlight', 'dndecor:copper_frontlight', 'dndecor:industrial_frontlight', 'dndecor:gold_frontlight', 'dndecor:iron_frontlight', 'dndecor:netherite_frontlight'],
        Text.yellow(Text.translatable("tooltip.frontlights"))
     )
+
+    e.add('minecraft:player_head',[Text.green(Text.translatable("tooltip.player_head_1")),Text.yellow(Text.translatable("tooltip.player_head_2"))])
     
 })
 // Text.translatable("tooltip.")

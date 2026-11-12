@@ -22,7 +22,7 @@ const MAX_LENGTH = 20
  * @param {Internal.$BlockPos} pos 
  * @param {number[]} offset 
  * @param {number} distance
- * @returns 
+ * @returns {number}
  */
 function getHeatMultiplier(level,pos,offset,distance) {
     if (!level.isLoaded(pos)) {

@@ -15,11 +15,11 @@
 // 所以 0.5x 时数量 1 最低保留为 1。
 
 
-const MAX_RECURSION = 20
+const MAX_LENGTH = 20
 
 /**
  * 
- * @param {$BlockPos} pos 
+ * @param {Internal.$BlockPos} pos 
  * @param {number[]} offset 
  * @param {number} distance
  * @returns 
@@ -39,15 +39,15 @@ function getHeatMultiplier(level,pos,offset,distance) {
     pos = pos.offset(offset)
     distance++
     
-    if(distance >= MAX_RECURSION)return value
+    if(distance >= MAX_LENGTH)return value
     return value + getHeatMultiplier(level,pos,offset,distance)
 }
 
 /**
  * 
- * @param {*} level 
- * @param {*} machine 
- * @param {*} facing 
+ * @param {Internal.$Level} level 
+ * @param {Internal.$MBDMachine} machine 
+ * @param {Internal.$Direction} facing 
  * @returns 
  */
 function getBurnerMultiplier(level, machine, facing) {
@@ -57,6 +57,23 @@ function getBurnerMultiplier(level, machine, facing) {
     return multiplier
 }
 
+/**
+ * 
+ * @param {Internal.$Level} level 
+ * @param {Internal.$BlockPos} pos
+ * @param {Internal.$Direction} facing 
+ * @param {string} blockid 
+ */
+function getlength(level,pos,facing,blockid){
+    let length = 0
+    let offset = localRotation(facing, 0, 0, 1)
+    for(let i=0;i<=MAX_LENGTH;i++){
+        //第一次会运行到机器
+        if(level.getBlock(pos).getId() == blockid) length++
+        pos = pos.offset(offset)
+    }
+    return length
+}
 
 MBDMachineEvents.onBeforeRecipeModify('mbd2:thermoelectric_generator', e => {
     const event = e.getEvent()
@@ -64,7 +81,7 @@ MBDMachineEvents.onBeforeRecipeModify('mbd2:thermoelectric_generator', e => {
     const level = machine.level
     const facing = machine.getFrontFacing().orElse($Direction.NORTH)
 
-    let multiplier = getBurnerMultiplier(level, machine, facing)
+    let multiplier = Number(getBurnerMultiplier(level, machine, facing))
 
     const recipe = event.getRecipe()
 
@@ -72,4 +89,32 @@ MBDMachineEvents.onBeforeRecipeModify('mbd2:thermoelectric_generator', e => {
         .copy($ContentModifier.multiplier(Math.max(multiplier,1)),false,'in')
         .copy($ContentModifier.multiplier(Math.max(multiplier,0.1)),false,'out')
     event.setRecipe(scaled)
+
+    
+    let blockid = 'railways:diorite_plated_locometal'
+    let length = getlength(level,machine.pos,facing,blockid)
+    machine.setCustomData({'multiplier':multiplier,'length':length})
+})
+
+MBDMachineEvents.onRecipeWorking('mbd2:thermoelectric_generator', e =>{
+    const event = e.getEvent()
+    const machine = event.machine
+    const level = machine.level
+    const facing = machine.getFrontFacing().orElse($Direction.NORTH)
+
+    let data = machine.getCustomData()
+    let multiplier = data.getFloat('multiplier')
+    let length = data.getFloat('length')
+
+    let pos = machine.pos
+    let offset = localRotation(facing,0,1,1+(length-1)/2)
+    let center_loc = [pos.x+0.5+offset[0],pos.y+0.5+offset[1],pos.z+0.5+offset[2]]
+
+    let particle_count = length/5
+    if(multiplier>=40) particle_count = Math.max(length,Math.log2(multiplier))//39.9是福鲁伊克斯汽油在10格长的可控燃烧室的值
+    if(multiplier>length){//至少需要1个超级加热
+        level.spawnParticles('farmersdelight:steam',false,
+            center_loc[0],center_loc[1],center_loc[2],offset[0]/2,0.5,offset[2]/2,
+            Math.ceil(particle_count),Math.max(1,Math.log2(multiplier))/200)
+    }
 })

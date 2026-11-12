@@ -18,6 +18,9 @@ ServerEvents.recipes(e=>{
         D:'delighto_flight:cloud_silk'
     }).id('crafting/clamper')
 
+
+
+
     e.shaped('mbd2:sprinkler',[
         'CDC',
         'ABA',
@@ -73,7 +76,32 @@ ServerEvents.recipes(e=>{
         D:'create:chute'
     }).id('crafting/mbd2/crusher')
     e.shapeless('mbd2:crusher_part',['create:andesite_casing', 'create:shaft'])
-        .id('crafting/crusher_part')
+        .id('crafting/mbd2/crusher_part')
+
+    e.shaped('mbd2:thermoelectric_generator',[
+        ' A ',
+        'BCD',
+        ' A '
+    ],{
+        A:'minecraft:copper_block',
+        B:'kubejs:circuit',
+        C:'ae2:printed_silicon',
+        D:'kubejs:industrial_iron_storage_block'
+    }).id('crafting/mbd2/thermoelectric_generator')
+    e.shaped('mbd2:generator_terminal',[
+        ' B ',
+        'ABA'
+    ],{
+        A:'create:copper_sheet',
+        B:'kubejs:industrial_iron_ingot'
+    }).id('crafting/mbd2/generator_terminal')
+
+
+
+
+
+
+
 
     e.shaped('statictosand:static_to_sand',[
         ' AB',

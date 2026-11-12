@@ -1,10 +1,12 @@
 //priority: 999
 
-let $BlockPos = Java.loadClass("net.minecraft.core.BlockPos");
+const $BlockPos = Java.loadClass("net.minecraft.core.BlockPos");
+const $Level = Java.loadClass("org.slf4j.event.Level");
+const $LevelBlock = Java.loadClass("dev.latvian.mods.kubejs.level.LevelBlock");
+const $Direction = Java.loadClass('net.minecraft.core.Direction')
+
 const $MBDMachine = Java.loadClass("com.lowdragmc.mbd2.common.machine.MBDMachine");
 const $ContentModifier = Java.loadClass("com.lowdragmc.mbd2.api.recipe.content.ContentModifier")
-let $LevelBlock = Java.loadClass("dev.latvian.mods.kubejs.level.LevelBlock");
-const $Direction = Java.loadClass('net.minecraft.core.Direction')
 const $FluidAction = Java.loadClass('net.neoforged.neoforge.fluids.capability.IFluidHandler$FluidAction')
 const $FluidHandlerCapability = Java.loadClass('net.neoforged.neoforge.capabilities.Capabilities$FluidHandler')
 const $ItemHandlerCapability = Java.loadClass('net.neoforged.neoforge.capabilities.Capabilities$ItemHandler')
@@ -13,12 +15,12 @@ const $ItemHandlerCapability = Java.loadClass('net.neoforged.neoforge.capabiliti
 /**
  * 把相对控制器的局部偏移转换为世界坐标。
  * 局部 +x 沿机器右侧，局部 +z 沿机器后方。
- * @param {$MBDMachine} machine
- * @param {$Direction} facing 
+ * @param {Internal.$MBDMachine} machine
+ * @param {Internal.$Direction} facing 
  * @param {number} dx 
  * @param {number} dy 
  * @param {number} dz 
- * @returns {$BlockPos}
+ * @returns {Internal.$BlockPos}
  */
 function localToWorld(machine, facing, dx, dy, dz) {
     let rightX = 0
@@ -48,7 +50,7 @@ function localToWorld(machine, facing, dx, dy, dz) {
 }
 /**
  * 根据提供的方向旋转坐标
- * @param {$Direction} facing 
+ * @param {Internal.$Direction} facing 
  * @param {number} dx 
  * @param {number} dy 
  * @param {number} dz 
@@ -84,11 +86,11 @@ function localRotation(facing, dx, dy, dz) {
 /**
  * 依次尝试一组位置，返回第一个带有指定能力的外部方块处理器。
  * Create 的储罐/保险库只在多方块控制器方块上暴露能力，所以要遍历整组。
- * @param {*} level 
- * @param {$MBDMachine} machine 
- * @param {$Direction} facing 
+ * @param {Internal.$Level} level 
+ * @param {Internal.$MBDMachine} machine 
+ * @param {Internal.$Direction} facing 
  * @param {Number[]} offsets 
- * @param {*} capability 
+ * @param {Internal.$FluidHandlerCapability | Internal.$ItemHandlerCapability} capability 
  * @returns 
  */
 function findBlockHandler(level, machine, facing, offsets, capability) {
@@ -174,7 +176,7 @@ function moveItems(outSlots, target) {
 
 /**
  * 获取方块的燃烧室等级，不一定是整数，不是燃烧室返回-1.
- * @param {$LevelBlock} block 
+ * @param {Internal.$LevelBlock} block 
  * @returns 
  */
 function getBurnerHeat(block){

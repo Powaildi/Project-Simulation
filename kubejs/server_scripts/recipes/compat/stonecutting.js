@@ -9,17 +9,10 @@ ServerEvents.recipes(e=>{
      */
     function addStonecutting(list,ingredient,recipename){
         let digits = Math.ceil(Math.max(Math.log10(list.length),1))
-        // for(let i=0;i<list.length;i++){
-        //     let item = Item.of(list[i])
-        //     e.stonecutting(item,ingredient)
-        //         .id('stonecutting/'+recipename+'_'+i.toString().padStart(digits, '0')+'/'+item.id.replace(':','/'))
-        // }
-        //这个是乱序的
         list.forEach((item,index)=>{
             item = Item.of(item)
             e.stonecutting(item,ingredient)
-            //    .id('stonecutting/'+recipename+'_'+index.toString().padStart(digits, '0')+'/'+item.id.replace(':','/'))
-                .id('stonecutting/'+recipename+'/'+item.id.replace(':','/'))
+                .id('stonecutting/'+recipename+'_'+index.toString().padStart(digits, '0')+'/'+item.id.replace(':','/'))
         })
     }
     //红石构件切石
@@ -56,10 +49,10 @@ ServerEvents.recipes(e=>{
         'aeroworks:button_module', 'aeroworks:wheel_module', 'aeroworks:throttle_quadrant_module', 'aeroworks:yoke_module'
         //'2x redstonepen:control_box',
     ]
-    // redstones.forEach((item,index)=>{
-    //     item = Item.of(item)
-    //     e.stonecutting(item,'vintageimprovements:redstone_module')
-    //         .id('stonecutting/redstone_'+index.toString().padStart(2, '0')+'/'+item.id.replace(':','/'))
-    // })
     addStonecutting(redstones,'vintageimprovements:redstone_module','redstone')
+
+    let industrial_iron_block = [
+        'railways:diorite_plated_locometal', 'railways:gray_locometal_trapdoor', '2x create:metal_girder', '2x dndecor:diagonal_girder'
+    ]
+    addStonecutting(industrial_iron_block,'create:industrial_iron_block','industrial_iron_block')
 })

@@ -21,9 +21,25 @@ ServerEvents.recipes(e=>{
     e.recipes.vintageimprovements.turning('minecraft:barrel',Ingredient.of('#minecraft:logs'),40)
     //骷髅头
     e.recipes.vintageimprovements.turning('minecraft:skeleton_skull','minecraft:bone_block',200)
+    //头颅
+    e.recipes.create.deploying('minecraft:zombie_head',['minecraft:skeleton_skull','minecraft:rotten_flesh'])
+        .id('deploying/zombie_head')
+    e.recipes.create.deploying('minecraft:player_head',['minecraft:zombie_head','minecraft:leather'])
+        .id('deploying/player_head')
+    e.recipes.create.deploying('minecraft:piglin_head',['minecraft:player_head','minecraft:porkchop'])
+        .id('deploying/piglin_head')
+    e.recipes.create.deploying('minecraft:creeper_head',['minecraft:zombie_head','minecraft:tnt'])
+        .id('deploying/creeper_head')
     //高炉
     e.recipes.create.deploying('minecraft:blast_furnace',['minecraft:furnace','create:iron_sheet'])
         .id('deploying/minecraft/blast_furnace')
+    //蛙眀灯
+    e.shapeless('minecraft:ochre_froglight',
+        ['minecraft:magma_cream', 'minecraft:glowstone_dust', 'minecraft:yellow_dye'])
+    e.shapeless('minecraft:verdant_froglight',
+        ['minecraft:magma_cream', 'minecraft:glowstone_dust', 'minecraft:lime_dye'])
+    e.shapeless('minecraft:pearlescent_froglight',
+        ['minecraft:magma_cream', 'minecraft:glowstone_dust', 'minecraft:pink_dye'])
     //附魔书
     //忠诚
     e.recipes.create.mixing('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:loyalty":1}}]',
@@ -41,6 +57,7 @@ ServerEvents.recipes(e=>{
     e.recipes.create.deploying('minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:sweeping_edge":1}}]',
         ['minecraft:book','minecraft:iron_sword'])
         .id('deploying/enchanted_book/sweeping_edge')
+
     
 //农夫乐事
     
@@ -218,6 +235,9 @@ ServerEvents.recipes(e=>{
     e.recipes.create.crushing(['2x create:cinder_flour',CreateItem.of('mekanism:dust_sulfur')],'dndesires:breccia')
         .id('crushing/dndesires/breccia')
 
+    //下界合金窗灯
+    e.recipes.create.item_application('dndecor:netherite_lamp',['dndecor:industrial_lamp', 'minecraft:netherite_ingot'])
+        .keepHeldItem().id('item_application/dndecor/netherite_lamp')
 //物流附加
     //打包机加速器
     e.remove({id:'createadditionallogistics:crafting/logistics/package_accelerator'})

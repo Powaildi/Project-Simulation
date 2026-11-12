@@ -5,6 +5,19 @@
       "name": "Powaildi",
       "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
     },
+    "time": 1794498848054,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Q3w1voFtf3"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Powaildi",
+      "uniqueId": "62d8462a-90fc-4b94-a65d-cbd2ac9eefdf"
+    },
     "time": 1794398962737,
     "type": "Profiler",
     "data": {

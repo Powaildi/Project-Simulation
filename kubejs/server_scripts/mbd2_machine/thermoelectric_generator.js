@@ -58,19 +58,19 @@ function getBurnerMultiplier(level, machine, facing) {
 }
 
 /**
- * 
+ * 检测长度，不包括pos那一格
  * @param {Internal.$Level} level 
  * @param {Internal.$BlockPos} pos
- * @param {Internal.$Direction} facing 
+ * @param {number[]} offset 
  * @param {string} blockid 
  */
-function getlength(level,pos,facing,blockid){
+function getlength(level,pos,offset,blockid){
     let length = 0
-    let offset = localRotation(facing, 0, 0, 1)
-    for(let i=0;i<=MAX_LENGTH;i++){
-        //第一次会运行到机器
-        if(level.getBlock(pos).getId() == blockid) length++
+    for(let i=0;i<MAX_LENGTH;i++){
+        //起始位置是机器，向后一格才到要检测的方块
         pos = pos.offset(offset)
+        if(level.getBlock(pos).getId() == blockid) length++
+        else return length
     }
     return length
 }
@@ -92,7 +92,8 @@ MBDMachineEvents.onBeforeRecipeModify('mbd2:thermoelectric_generator', e => {
 
     
     let blockid = 'railways:diorite_plated_locometal'
-    let length = getlength(level,machine.pos,facing,blockid)
+    let offset = localRotation(facing, 0, 0, 1)
+    let length = getlength(level,machine.pos,offset,blockid)
     machine.setCustomData({'multiplier':multiplier,'length':length})
 })
 
